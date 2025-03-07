@@ -1,0 +1,470 @@
+setvariable scnr_files ".\scenarios"
+
+createmodpackage
+ODST_Maps
+Firefight maps converted for multiplayer.
+Vegetal
+1.0
+Multiplayer
+
+
+useaudiocache "C:\Caches\Audio"
+useshadercache "C:\Caches\Shaders"
+
+################################################################################
+		// ALPHA SITE
+################################################################################
+
+opencachefile "c:/3odst/sc130.map"
+donotreplacegroups foot
+portmultiplayerscenario !bipeds MPobject
+alphasite
+10001
+Alpha Site
+Fight in the close-quarters ONI interior.
+set_survival_b
+0
+1
+2
+
+Exit
+
+EditTag levels\custom\alphasite\alphasite.scnr
+# remove wall weapons
+setfield Scenery[50].PaletteIndex -1
+setfield Scenery[51].PaletteIndex -1
+setfield Scenery[52].PaletteIndex -1
+setfield Scenery[53].PaletteIndex -1
+setfield Scenery[56].PaletteIndex -1
+setfield Scenery[57].PaletteIndex -1
+setfield Scenery[60].PaletteIndex -1
+# remove broken ssmg
+setfield Weapons[4].PaletteIndex -1
+# remove healthpack mounts
+setfield Scenery[45].PaletteIndex -1
+setfield Scenery[46].PaletteIndex -1
+# remove armory shelves
+setfield Scenery[25].PaletteIndex -1
+setfield Scenery[26].PaletteIndex -1
+setfield Scenery[43].PaletteIndex -1
+setfield Scenery[44].PaletteIndex -1
+importmapvariant MapFile "scnr_files\map_variants\odst_alphasite\sandbox.map"
+SaveTagChanges
+Exit
+
+	#lsnd buff
+#edittag sound\levels\atlas\sc130_oni\oni_ext\oni_ext.sound_looping
+#setfield tracks[0].gain -5
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\sc130_oni\oni_int\oni_int.sound_looping
+#setfield tracks[0].gain 30
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\sc130_oni\oni_ext_windy\oni_ext_windy.sound_looping
+#setfield tracks[0].gain -5
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\sc130_oni\oni_int_uptop\oni_int_uptop.sound_looping
+#setfield tracks[0].gain -5
+#savetagchanges
+#exit
+
+################################################################################
+		// CHASM TEN
+################################################################################
+
+opencachefile "c:/3odst/l200.map"
+donotreplacegroups foot
+portmultiplayerscenario !bipeds MPobject
+chasmten
+10002
+Chasm Ten
+Fight in the infested underground.
+set_survival
+6
+
+Exit
+
+EditTag levels\custom\chasmten\chasmten.scnr
+importmapvariant MapFile "scnr_files\map_variants\chasmten00\sandbox.map"
+SetField Machines[6].MachineFlags None
+SetField Machines[7].MachineFlags None
+SetField Machines[8].MachineFlags None
+SetField Machines[9].MachineFlags None
+SetField Machines[10].MachineFlags None
+SetField Machines[11].MachineFlags None
+SetField Machines[12].MachineFlags None
+SetField Machines[13].MachineFlags None
+SetField Machines[14].MachineFlags None
+SetField Machines[15].MachineFlags None
+SetField Machines[16].MachineFlags None
+SetField Machines[17].MachineFlags None
+SetField Machines[18].MachineFlags None
+SetField Machines[19].MachineFlags None
+SetField Machines[20].MachineFlags None
+SetField Machines[21].MachineFlags None
+SetField Machines[22].MachineFlags None
+SetField Machines[23].MachineFlags None
+SetField Machines[24].MachineFlags None
+SetField Machines[25].MachineFlags None
+SetField Machines[26].MachineFlags None
+SetField Machines[27].MachineFlags None
+SetField Machines[28].MachineFlags None
+SetField Machines[29].MachineFlags None
+SetField Machines[30].MachineFlags None
+SetField Machines[31].MachineFlags None
+SetField Machines[32].MachineFlags None
+SetField Machines[33].MachineFlags None
+SetField Machines[34].MachineFlags None
+SetField Machines[35].MachineFlags None
+SetField Machines[36].MachineFlags None
+SetField Machines[37].MachineFlags None
+SetField Machines[38].MachineFlags None
+SetField Machines[39].MachineFlags None
+SetField Machines[40].MachineFlags None
+SetField Machines[75].MachineFlags None
+SetField Machines[76].MachineFlags None
+SetField Machines[77].MachineFlags None
+SetField Machines[78].MachineFlags None
+SetField Machines[79].MachineFlags None
+SetField Machines[80].MachineFlags None
+SetField Machines[81].MachineFlags None
+SetField Machines[82].MachineFlags None
+SetField Machines[83].MachineFlags None
+SetField Machines[84].MachineFlags None
+SetField Machines[100].MachineFlags None
+SetField Machines[115].MachineFlags None
+SetField Machines[116].MachineFlags None
+SetField Machines[117].MachineFlags None
+SetField Machines[6].DeviceFlags None
+SetField Machines[7].DeviceFlags None
+SetField Machines[8].DeviceFlags None
+SetField Machines[9].DeviceFlags None
+SetField Machines[10].DeviceFlags None
+SetField Machines[11].DeviceFlags None
+SetField Machines[12].DeviceFlags None
+SetField Machines[13].DeviceFlags None
+SetField Machines[14].DeviceFlags None
+SetField Machines[15].DeviceFlags None
+SetField Machines[16].DeviceFlags None
+SetField Machines[17].DeviceFlags None
+SetField Machines[18].DeviceFlags None
+SetField Machines[19].DeviceFlags None
+SetField Machines[20].DeviceFlags None
+SetField Machines[21].DeviceFlags None
+SetField Machines[22].DeviceFlags None
+SetField Machines[23].DeviceFlags None
+SetField Machines[24].DeviceFlags None
+SetField Machines[25].DeviceFlags None
+SetField Machines[26].DeviceFlags None
+SetField Machines[27].DeviceFlags None
+SetField Machines[28].DeviceFlags None
+SetField Machines[29].DeviceFlags None
+SetField Machines[30].DeviceFlags None
+SetField Machines[31].DeviceFlags None
+SetField Machines[32].DeviceFlags None
+SetField Machines[33].DeviceFlags None
+SetField Machines[34].DeviceFlags None
+SetField Machines[35].DeviceFlags None
+SetField Machines[36].DeviceFlags None
+SetField Machines[37].DeviceFlags None
+SetField Machines[38].DeviceFlags None
+SetField Machines[39].DeviceFlags None
+SetField Machines[40].DeviceFlags None
+SetField Machines[75].DeviceFlags None
+SetField Machines[76].DeviceFlags None
+SetField Machines[77].DeviceFlags None
+SetField Machines[78].DeviceFlags None
+SetField Machines[79].DeviceFlags None
+SetField Machines[80].DeviceFlags None
+SetField Machines[81].DeviceFlags None
+SetField Machines[82].DeviceFlags None
+SetField Machines[83].DeviceFlags None
+SetField Machines[84].DeviceFlags None
+SetField Machines[100].DeviceFlags None
+SetField Machines[115].DeviceFlags None
+SetField Machines[116].DeviceFlags None
+SetField Machines[117].DeviceFlags None
+SetField Crates[101].PaletteIndex -1
+SetField Crates[102].PaletteIndex -1
+SetField Crates[103].PaletteIndex -1
+SetField Crates[104].PaletteIndex -1
+SetField Crates[106].PaletteIndex -1
+SetField Crates[107].PaletteIndex -1
+SetField Crates[108].PaletteIndex -1
+SetField Crates[109].PaletteIndex -1
+SetField CratePalette[17].Object null
+SetField CratePalette[18].Object null
+# remove wall weapons
+setfield Scenery[29].PaletteIndex -1
+setfield Scenery[30].PaletteIndex -1
+setfield Scenery[31].PaletteIndex -1
+importmapvariant MapFile "scnr_files\map_variants\ChasmtenTerries\sandbox.map"
+SaveTagChanges
+Exit
+
+#lsnd buff
+#edittag sound\levels\atlas\l200\data_hallways\data_hallways.sound_looping
+#setfield tracks[0].gain 0
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\quiet_roomtone\quiet_roomtone.sound_looping
+#setfield tracks[0].gain 30
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\jeffries_tube\jeffries_tube.sound_looping
+#setfield tracks[0].gain 10
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\big_cooler_hallway\big_cooler_hallway.sound_looping
+#setfield tracks[0].gain 0
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\big_cooler_room\big_cooler_room.sound_looping
+#setfield tracks[0].gain 0
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\l200_survival_space\l200_survival_space.sound_looping
+#setfield tracks[0].gain 30
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\l200\datacore_amb\datacore_amb.sound_looping
+#setfield tracks[0].gain 5
+#savetagchanges
+#exit
+
+
+################################################################################
+		// RALLY POINT
+################################################################################
+
+opencachefile "c:/3odst/h100.map"
+donotreplacegroups foot
+portmultiplayerscenario !bipeds MPobject
+rallypointnight
+10004
+Rally Point
+Fight with your back against the wall.
+set_survival_b
+7
+8
+
+Exit
+
+EditTag levels\custom\rallypointnight\rallypointnight.scnr
+importmapvariant MapFile "scnr_files\map_variants\rallypoint00\sandbox.map"
+# remove wall weapons
+setfield Scenery[46].PaletteIndex -1
+setfield Scenery[47].PaletteIndex -1
+setfield Machines[1].DeviceFlags InitiallyOff,NotUsableFromAnySide
+setfield Machines[3].DeviceFlags InitiallyOff,NotUsableFromAnySide
+setfield Machines[5].DeviceFlags InitiallyOff,NotUsableFromAnySide
+setfield Machines[5].DeviceFlags InitiallyOff,NotUsableFromAnySide
+# reactivate front mach
+setfield Machines[35].MachineFlags None
+setfield Machines[41].PaletteIndex -1
+# disable front shield door
+setfield Crates[6].PaletteIndex -1
+# disable front room kill volume
+removeblockelements scenariokilltriggers 0 *
+# disable front soft barrier
+setfield SoftCeilings[2].Flags IgnoreBipeds,IgnoreVehicles,IgnoreCamera
+importmapvariant MapFile "scnr_files\map_variants\Plaza_Terr_01\sandbox.map"
+# remove armory shelves
+setfield Scenery[15].PaletteIndex -1
+setfield Scenery[16].PaletteIndex -1
+setfield Scenery[17].PaletteIndex -1
+setfield Scenery[18].PaletteIndex -1
+# remove wall healthpack mounts
+setfield Scenery[49].PaletteIndex -1
+setfield Scenery[14].PaletteIndex -1
+setfield Scenery[13].PaletteIndex -1
+SaveTagChanges
+Exit
+
+# increase evac door range
+edittag objects\levels\atlas\h100\evac_door\evac_door_fast.device_machine
+setfield DelayTime 0
+setfield AutomaticActivationRadius 3
+savetagchanges
+exit
+
+# lsnd buff
+#edittag sound\levels\030_outskirts\earth_ext\earth_ext\earth_ext.sound_looping
+#setfield tracks[0].gain 5
+#setfield tracks[1].gain 5
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\h100\rain\rain.sound_looping
+#setfield tracks[0].gain 15
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\h100\hub_interior_night\hub_interior_night.sound_looping
+#setfield tracks[0].gain 0
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\h100\rain\rain_half.sound_looping
+#setfield tracks[0].gain 0
+#savetagchanges
+#exit
+#edittag sound\levels\atlas\h100\hub_int_large_night\hub_int_large_night.sound_looping
+#setfield tracks[0].gain 10
+#savetagchanges
+#exit
+#edittag 
+#setfield tracks[0].gain 
+#savetagchanges
+#exit
+
+
+################################################################################
+		// COASTAL HIGHWAY BSPGROUP 0
+################################################################################
+
+#opencachefile "c:/3odst/l300.map"
+#donotreplacegroups foot
+#PortMultiplayerScenario !bipeds MPobject
+#coastalintro
+#9514
+#Knifepoint
+#A map for which there is no description. 1-1000 players
+#0
+#1
+#2
+#7
+#
+#Exit
+#
+#EditTag levels\custom\coastalintro\coastalintro.scnr
+#SetField Machines[18].Position 105 193 4.4
+#SetField Machines[21].PaletteIndex -1
+#SetField Machines[22].PaletteIndex -1
+#SetField Machines[29].PaletteIndex -1
+#SetField Machines[31].PaletteIndex -1
+#SetField Machines[35].Position 75.7 185 4.400243
+#SetField Machines[35].Rotation 0 0 0
+#SetField Machines[36].PaletteIndex -1
+#SetField Machines[37].PaletteIndex -1
+#ImportMapVariant MapFile "scnr_files\map_variants\CoastalIntro_00\sandbox.map"
+#SaveTagChanges
+#Exit
+
+################################################################################
+		// H100 STREETS GENERAL
+################################################################################
+
+opencachefile "c:/3odst/h100.map"
+donotreplacegroups foot
+portmultiplayerscenario !bipeds MPobject
+nightstreets
+32572
+Night Streets
+Nightlife of a new variety.
+18
+6
+8
+
+Exit
+
+edittag levels\custom\nightstreets\nightstreets.scnr
+	# mid-range weapon start
+setfield PlayerStartingProfile[0].PrimaryWeapon objects\weapons\rifle\battle_rifle\battle_rifle.weap
+	# fix object spawning
+foreach Scenery setfield PlacementFlags none
+foreach Machines setfield PlacementFlags none
+foreach Crates setfield PlacementFlags none
+	# disable cov forcefields
+setfield Crates[2].PaletteIndex -1
+setfield Crates[3].PaletteIndex -1
+setfield Crates[25].PaletteIndex -1
+	# disable soft ceilings
+foreach SoftCeilings setfield Flags IgnoreBipeds,IgnoreVehicles,IgnoreHugeVehicles
+	# lock hub doors
+setfield Machines[5].DeviceFlags InitiallyOff,NotUsableFromAnySide
+setfield Machines[6].DeviceFlags InitiallyOff,NotUsableFromAnySide
+	# remove security door scenery
+setfield scenery[14].paletteindex -1
+setfield scenery[15].paletteindex -1
+setfield scenery[16].paletteindex -1
+setfield scenery[17].paletteindex -1
+setfield scenery[18].paletteindex -1
+setfield scenery[97].paletteindex -1
+	# import basic spawns, oddball, koth
+importmapvariant MapFile "scnr_files\map_variants\nightstreets_0\sandbox.map"
+removeblockelements Terminals 0 *
+savetagchanges
+exit
+
+################################################################################
+		// Dust or other sc110
+################################################################################
+
+opencachefile "c:/3odst/sc110.map"
+donotreplacegroups foot
+PortMultiplayerScenario !bipeds MPobject
+lostplatoon
+64617
+Lost Platoon
+Fight in the dead center of the park. 6-16 players
+7
+3
+4
+6
+
+Exit
+
+EditTag levels\custom\lostplatoon\lostplatoon.scnr
+ImportMapVariant MapFile "scnr_files\map_variants\LostPlatoon_00\sandbox.map"
+# remove armory shelves
+setfield Scenery[35].PaletteIndex -1
+setfield Scenery[36].PaletteIndex -1
+setfield Scenery[37].PaletteIndex -1
+setfield Scenery[38].PaletteIndex -1
+# remove wall weapons
+setfield Scenery[149].PaletteIndex -1
+setfield Scenery[150].PaletteIndex -1
+setfield Scenery[151].PaletteIndex -1
+# move excessive mid healthpacks to offense
+setfield Equipment[4].Position -194.93 -483.24 6.37
+# change excessive healthpacks to gravlifts
+setfield EquipmentPalette[3].Object objects\equipment\gravlift_equipment\gravlift_equipment.equipment
+setfield Equipment[5].PaletteIndex 3
+setfield Equipment[5].Position -187.51 -487.83 8.55
+setfield Equipment[7].PaletteIndex 3
+setfield Equipment[7].Position -202.97 -522.03 7.33
+# relocate beamrifle
+SaveTagChanges
+Exit
+
+	# snde buff
+#foreach snde setfield RoomIntensity 0
+#foreach snde named: jay_stone_room setfield RoomIntensity -2
+#foreach snde named: cave_salvation_cpaul setfield RoomIntensity -2
+#foreach snde named: cpaul_little_something_slightly_bigger_new setfield RoomIntensity -3
+#foreach snde named: cpaul_stone_room setfield RoomIntensity 4
+#foreach snde named: cpaul_little_somethin_slightly_smaller_new setfield RoomIntensity -3
+#foreach snde named: cpaul_stone_room_zanzibar_base setfield RoomIntensity 2
+#foreach snde named: cpaul_stone_room_new_zanzibar setfield RoomIntensity -1
+#foreach snde named: jay_cave setfield RoomIntensity -3
+#foreach snde named: cpaul_sewer_pipe setfield RoomIntensity 3
+#foreach snde named: jay_voi_tight setfield RoomIntensity 2
+#foreach snde named: cpaul_little_somethin_new setfield RoomIntensity -3
+
+
+################################################################################
+		// other
+################################################################################
+
+	# ambient sound sncl increase
+#edittag *.sncl
+#setfield Classes[33].GainBounds 5 5
+#savetagchanges
+#exit
+
+		// finish up
+
+addmodfiles "scnr_files\images_odst"
+
+savemodpackage
+quit
