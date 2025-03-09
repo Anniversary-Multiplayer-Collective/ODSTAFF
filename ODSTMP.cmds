@@ -2692,6 +2692,112 @@ exit
 // WEAPON EDITS
 ////////////////////////////////////////////////////////////////////////////////
 
+// MISC
+edittag objects\weapons\melee\energy_blade\energy_blade.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\energy_blade\energy_blade_useless.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+setfield WeaponTypeName offset_gravity_hammer
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponTypeName offset_magnum
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum.weapon
+setfield WeaponTypeName offset_magnum
+savetagchanges
+
+exit
+edittag objects\weapons\pistol\excavator\excavator.weapon
+setfield WeaponTypeName offset_mauler
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\needler\needler.weapon
+setfield WeaponTypeName offset_needler
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+setfield WeaponTypeName offset_assault_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+setfield WeaponTypeName offset_battle_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+setfield WeaponTypeName offset_beam_rifle
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+setfield WeaponTypeName offset_carbine_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg.weapon
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+setfield WeaponTypeName offset_sniper_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+setfield WeaponTypeName offset_spiker
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\shotgun\shotgun.weapon
+setfield WeaponTypeName offset_shotgun
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+setfield WeaponTypeName offset_fuel_rod
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+setfield WeaponTypeName offset_rocket_launcher
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+setfield WeaponTypeName offset_spartan_laser
+savetagchanges
+exit
+
+edittag objects\weapons\support_low\brute_shot\brute_shot.weapon
+setfield WeaponTypeName offset_bruteshot
+savetagchanges
+exit
+
 // AUTOMAG
 
 edittag objects\weapons\pistol\automag\projectiles\automag_bullet.proj
