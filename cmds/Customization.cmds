@@ -1,0 +1,117 @@
+## scnr
+
+edittag levels\ui\mainmenu\mainmenu.scnr
+setfield BipedPalette[2].Object objects\characters\odst_recon\odst_recon.biped
+setfield WeaponPalette[0].Object objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield ObjectNames[24].Name "appearance_ssmg"
+setfield ObjectNames[33].Name "odst_appearance"
+compilescripts "workingdir\scenarios\scripts\mm_odst_10-21-22.hsc"
+savetagchanges
+exit
+
+// MULTIPLAYER GLOBALS
+
+stringid add mp_odst_name
+stringid add mp_odst_description
+stringid add gear
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+
+setstring english mp_odst_name "ODST"
+setstring english mp_odst_description "Feet first into hell."
+
+setstring english headgear "Headgear"
+setstring english chest "Chest"
+setstring english knife "Knife"
+setstring english gear "Gear"
+savetagchanges
+exit
+
+edittag multiplayer\multiplayer_globals.mulg
+removeblockelements Universal[0].CustomizableCharacters 0 *
+addblockelements Universal[0].CustomizableCharacters
+
+editblock Universal[0].CustomizableCharacters[0]
+setfield CharacterName odst_mp_player
+addblockelements Regions 4
+
+setfield Regions[0].Name headgear
+addblockelements Regions[0].Permutations 5
+foreach Regions[0].Permutations addblockelements Variant
+foreach Regions[0].Permutations setfield Variant[0].Region headgear
+setfield Regions[0].Permutations[0].Variant[0].Permutation off
+setfield Regions[0].Permutations[1].Variant[0].Permutation mickey
+setfield Regions[0].Permutations[2].Variant[0].Permutation romeo
+setfield Regions[0].Permutations[3].Variant[0].Permutation dutch
+setfield Regions[0].Permutations[4].Variant[0].Permutation sergeant
+
+setfield Regions[1].Name chest
+addblockelements Regions[1].Permutations 2
+addblockelements Regions[1].Permutations[1].Variant
+setfield Regions[1].Permutations[1].Variant[0].Region chest
+setfield Regions[1].Permutations[1].Variant[0].Permutation broken
+
+setfield Regions[2].Name knife
+addblockelements Regions[2].Permutations 2
+foreach Regions[2].Permutations addblockelements Variant
+foreach Regions[2].Permutations setfield Variant[0].Region knife
+setfield Regions[2].Permutations[0].Variant[0].Permutation off
+setfield Regions[2].Permutations[1].Variant[0].Permutation on
+
+setfield Regions[3].Name gear
+addblockelements Regions[3].Permutations 6
+foreach Regions[3].Permutations addblockelements Variant
+foreach Regions[3].Permutations setfield Variant[0].Region gear
+setfield Regions[3].Permutations[0].Variant[0].Permutation standard
+setfield Regions[3].Permutations[1].Variant[0].Permutation mickey
+setfield Regions[3].Permutations[2].Variant[0].Permutation romeo
+setfield Regions[3].Permutations[3].Variant[0].Permutation dutch
+setfield Regions[3].Permutations[4].Variant[0].Permutation sergeant
+setfield Regions[3].Permutations[5].Variant[0].Permutation johnson
+exit
+exit
+savetagchanges
+exit
+
+edittag multiplayer\multiplayer_globals.mulg
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[0].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[1].Name mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[2].Name romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[3].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[4].Name sergeant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[0].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[1].Name broken
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[1].Name on
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Name standard
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Name mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[2].Name romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[3].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[4].Name sergeant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[5].Name johnson
+savetagchanges
+exit
+
+// MOD GLOBALS
+
+edittag multiplayer\mod_globals.modg
+# remove elites and elite customization
+removeblockelements PlayerCharacterSets[0].Characters 1 1
+removeblockelements PlayerCharacterCustomizations 1 1
+# character info
+SetField PlayerCharacterSets[0].Characters[0].DisplayName ODST
+SetField PlayerCharacterSets[0].Characters[0].Name odst_mp_player
+# customization info
+setfield PlayerCharacterCustomizations[0].CharacterName mp_odst_name
+setfield PlayerCharacterCustomizations[0].CharacterDescription mp_odst_description
+# set color defaults
+foreach PlayerCharacterCustomizations setfield CharacterColors.ValidColorFlags PrimaryColor,SecondaryColor
+foreach PlayerCharacterCustomizations setfield CharacterColors.TeamOverrideFlags PrimaryColor,SecondaryColor
+foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[0].Default 0 90 90 90
+foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[1].Default 0 20 20 20
+foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Name -1
+foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Description -1
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 33
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 28
+savetagchanges
+exit
