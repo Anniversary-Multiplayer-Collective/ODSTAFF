@@ -5,7 +5,7 @@ SetVariable workingdir < Respository folder >
 SetVariable modsfolder < ElDewrito mods folder >
 
 CreateModPackage 1 Large
-ODSTMP
+ODSTAMP
 Shoot other ODSTs in various locales.
 Vegetal & AMP Collective
 0.1
@@ -2958,6 +2958,23 @@ exit
 #exit
 
 // MISC
+
+
+
+
+#<< Inherit Animations >>#
+
+edittag objects\characters\odst_recon\odst_recon.model_animation_graph
+setinheritance MCC objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.biped
+addblockelements SyncActionCamera.CameraTracks
+setfield SyncActionCamera.CameraTracks[0].Track camera\biped_assassination_camera.camera_track
+savetagchanges
+exit
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
