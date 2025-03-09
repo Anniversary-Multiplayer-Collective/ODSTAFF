@@ -138,7 +138,7 @@
 	(object_destroy_containing "editor_")
 	(object_destroy_containing "survival_")
 	(object_destroy_containing "server_browser_")
-	(camera_set_animation_relative_with_speed_?boolean_real "objects\characters\cinematic_camera\ui\valhalla\valhalla" "camera_path_main1" "none" "xxxanchorxxx" 0.5 true mainmenu_offset)
+	(camera_set_animation_relative_with_speed_loop_offset "objects\characters\cinematic_camera\ui\valhalla\valhalla" "camera_path_main1" "none" "xxxanchorxxx" 0.5 true mainmenu_offset)
 	(set mainmenu_offset (real_random_range 0 1))
 	(sleep_forever)
 )
