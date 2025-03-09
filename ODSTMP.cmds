@@ -2917,20 +2917,6 @@ setfield DefaultShieldImpact null
 savetagchanges
 exit
 
-// MAINMENU SCNR
-
-stringid add odst_appearance
-stringid add appearance_ssmg
-
-edittag levels\ui\mainmenu\mainmenu.scnr
-setfield ObjectNames[1].Name odst_appearance
-setfield ObjectNames[7].Name appearance_ssmg
-setfield BipedPalette[0].Object objects\characters\odst_recon\odst_recon.biped
-setfield WeaponPalette[0].Object objects\weapons\rifle\smg_silenced\smg_silenced.weapon
-compilescripts "workingdir\scenarios\scripts\mm_odst_10-21-22.hsc"
-savetagchanges
-exit
-
 // MULTIPLAYER GLOBALS
 
 stringid add mp_odst_name
@@ -3019,6 +3005,8 @@ foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[0].Default
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[1].Default 0 20 20 20
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Name -1
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Description -1
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 33
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 28
 savetagchanges
 exit
 
@@ -3090,7 +3078,9 @@ Vegetal & AMP Collective
 MainMenu Multiplayer Character
 
 OpenModPackage "workingdir\paks\Halo3ODSTMenu v1_0 Patched.pak"
-ApplyModPackage
+ApplyModPackageTags
+multiplayer\mod_globals.mod_globals
+Done
 ExitModPackage
 
 openmodpackage modsfolder\odstmp.pak
@@ -3099,19 +3089,10 @@ levels\ui\mainmenu\mainmenu.scenario
 Done
 ExitModPackage
 
+## scnr
 
-
-
-#<< Inherit Animations >>#
-
-edittag objects\characters\odst_recon\odst_recon.model_animation_graph
-setinheritance MCC objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.biped
-addblockelements SyncActionCamera.CameraTracks
-setfield SyncActionCamera.CameraTracks[0].Track camera\biped_assassination_camera.camera_track
+edittag levels\ui\mainmenu\mainmenu.scnr
+setfield WeaponPalette[0].Object objects\weapons\rifle\smg_silenced\smg_silenced.weapon
 savetagchanges
 exit
 
