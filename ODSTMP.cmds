@@ -1788,6 +1788,19 @@ setfield Modes[0].WeaponClass[*].Label flag
 setfield Modes[0].WeaponClass[*].WeaponType[1].Label f
 	# inherit ED spartan animations
 setinheritance mcc objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
+	# modify inheritance to inherit animations to finger bones as well
+SetField InheritanceList[0].NodeMap[21].LocalNode 43
+SetField InheritanceList[0].NodeMap[24].LocalNode 44
+SetField InheritanceList[0].NodeMap[25].LocalNode 45
+SetField InheritanceList[0].NodeMap[26].LocalNode 46
+SetField InheritanceList[0].NodeMap[29].LocalNode 47
+SetField InheritanceList[0].NodeMap[30].LocalNode 48
+SetField InheritanceList[0].NodeMap[31].LocalNode 49
+SetField InheritanceList[0].NodeMap[34].LocalNode 50
+SetField InheritanceList[0].NodeMap[35].LocalNode 51
+SetField InheritanceList[0].NodeMap[36].LocalNode 52
+SetField InheritanceList[0].NodeMap[39].LocalNode 53
+SetField InheritanceList[0].NodeMap[40].LocalNode 54
 	# end sort
 sortmodes
 savetagchanges
