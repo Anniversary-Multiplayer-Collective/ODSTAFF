@@ -39,6 +39,25 @@ Exit
 
 UpdateMapFiles "h3maps\info"
 
+////////////////////////////////////////////////////////////////////////////////
+// Vadum and Cabin Fever
+////////////////////////////////////////////////////////////////////////////////
+
+OpenCacheFile "workingdir\CustomMaps\mp_vadum.map"
+nameblamtag levels\multi\shadow_bridge\mp_shadow_bridge.scenario levels\multi\shadow_bridge\mp_vadum
+ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
+donotreplacegroups foot
+PortTag !UpdateMapFiles !Elites *.scnr
+Exit
+
+OpenCacheFile "workingdir\CustomMaps\roundabout.map"
+ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
+donotreplacegroups foot
+PortTag !UpdateMapFiles !Elites *.scnr
+Exit
+
+UpdateMapFiles "workingdir\CustomMaps\info"
+
 opencachefile "odstmaps\sc130.map"
 donotreplacegroups foot
 portmultiplayerscenario !Bipeds MPObject
