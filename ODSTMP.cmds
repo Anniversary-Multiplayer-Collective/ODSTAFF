@@ -4,6 +4,7 @@ SetVariable odstmaps < Halo 3 ODST 360 maps folder>
 SetVariable workingdir < Respository folder >
 SetVariable modsfolder < ElDewrito mods folder >
 
+//Update at the end of the script
 CreateModPackage 1 Large
 ODSTAMP
 Shoot other ODSTs in various locales.
@@ -37,6 +38,25 @@ PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
 UpdateMapFiles "h3maps\info"
+
+////////////////////////////////////////////////////////////////////////////////
+// Vadum and Cabin Fever
+////////////////////////////////////////////////////////////////////////////////
+
+OpenCacheFile "workingdir\CustomMaps\mp_vadum.map"
+nameblamtag levels\multi\shadow_bridge\mp_shadow_bridge.scenario levels\multi\shadow_bridge\mp_vadum
+ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
+donotreplacegroups foot
+PortTag !UpdateMapFiles !Elites *.scnr
+Exit
+
+OpenCacheFile "workingdir\CustomMaps\roundabout.map"
+ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
+donotreplacegroups foot
+PortTag !UpdateMapFiles !Elites *.scnr
+Exit
+
+UpdateMapFiles "workingdir\CustomMaps\info"
 
 opencachefile "odstmaps\sc130.map"
 donotreplacegroups foot
@@ -687,6 +707,14 @@ SetField BipedGroundPhysics.RuntimeUphillK0 0.7071068
 SetField BipedGroundPhysics.RuntimeUphillK1 0.7660444
 setfield GrenadeAngle 10	// down from 15 default
 setfield GrenadeVelocity 9.125	// up from 8.25 default. spartan is 10
+	# assassinations
+setfield Assassination.ToolStowAnchor knife_stow_anchor
+setfield Assassination.ToolHandMarker right_hand
+setfield Assassination.ToolMarker ass_wpn_placement
+setfield Assassination.Weapon objects\props\human\unsc\spartan_knife\spartan_knife.scenery
+setfield Assassination.Response globals\damage_responses\player_assassination.damage_response_definition
+addblockelements SyncActionCamera.CameraTracks
+setfield SyncActionCamera.CameraTracks[0].Track camera\biped_assassination_camera.camera_track
 savetagchanges
 exit
 
@@ -1785,8 +1813,21 @@ copyblockelements Modes[0].WeaponClass 9 1
 pasteblockelements Modes[0].WeaponClass
 setfield Modes[0].WeaponClass[*].Label flag
 setfield Modes[0].WeaponClass[*].WeaponType[1].Label f
-	# sprint
-setinheritance sprint objects\characters\masterchief\masterchief.model_animation_graph
+	# inherit ED spartan animations
+setinheritance mcc objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
+	# modify inheritance to inherit animations to finger bones as well
+SetField InheritanceList[0].NodeMap[21].LocalNode 43
+SetField InheritanceList[0].NodeMap[24].LocalNode 44
+SetField InheritanceList[0].NodeMap[25].LocalNode 45
+SetField InheritanceList[0].NodeMap[26].LocalNode 46
+SetField InheritanceList[0].NodeMap[29].LocalNode 47
+SetField InheritanceList[0].NodeMap[30].LocalNode 48
+SetField InheritanceList[0].NodeMap[31].LocalNode 49
+SetField InheritanceList[0].NodeMap[34].LocalNode 50
+SetField InheritanceList[0].NodeMap[35].LocalNode 51
+SetField InheritanceList[0].NodeMap[36].LocalNode 52
+SetField InheritanceList[0].NodeMap[39].LocalNode 53
+SetField InheritanceList[0].NodeMap[40].LocalNode 54
 	# end sort
 sortmodes
 savetagchanges
@@ -1815,7 +1856,19 @@ edittag objects\characters\odst_recon\odst_podium.jmad
 removeblockelements Modes 0 *
 removeblockelements Animations 0 *
 removeblockelements InheritanceList 0 *
-setinheritance combat objects\characters\masterchief\masterchief_podium.jmad
+setinheritance combat objects\characters\masterchief\masterchief_podium.jmad TightenNodes
+SetField InheritanceList[0].NodeMap[21].LocalNode 43
+SetField InheritanceList[0].NodeMap[24].LocalNode 44
+SetField InheritanceList[0].NodeMap[25].LocalNode 45
+SetField InheritanceList[0].NodeMap[26].LocalNode 46
+SetField InheritanceList[0].NodeMap[29].LocalNode 47
+SetField InheritanceList[0].NodeMap[30].LocalNode 48
+SetField InheritanceList[0].NodeMap[31].LocalNode 49
+SetField InheritanceList[0].NodeMap[34].LocalNode 50
+SetField InheritanceList[0].NodeMap[35].LocalNode 51
+SetField InheritanceList[0].NodeMap[36].LocalNode 52
+SetField InheritanceList[0].NodeMap[39].LocalNode 53
+SetField InheritanceList[0].NodeMap[40].LocalNode 54
 savetagchanges
 exit
 
@@ -1828,9 +1881,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1839,9 +1889,7 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
+setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 savetagchanges
 exit
 
@@ -1850,9 +1898,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1861,9 +1906,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1872,9 +1914,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1883,9 +1922,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1894,9 +1930,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1905,9 +1938,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1916,9 +1946,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1927,9 +1954,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1938,9 +1962,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1949,9 +1970,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1960,9 +1978,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1971,9 +1986,6 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
-removeblockelements InheritanceList[0].NodeMap 0 *
-removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -1993,13 +2005,13 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 #setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #removeblockelements InheritanceList[0].NodeMap 0 *
 #removeblockelements InheritanceList[0].NodeMapFlags 0 *
-setfield InheritanceList[0].Flags None
 savetagchanges
 exit
 
@@ -2719,6 +2731,112 @@ exit
 // WEAPON EDITS
 ////////////////////////////////////////////////////////////////////////////////
 
+// MISC
+edittag objects\weapons\melee\energy_blade\energy_blade.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\energy_blade\energy_blade_useless.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+setfield WeaponTypeName offset_gravity_hammer
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponTypeName offset_magnum
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum.weapon
+setfield WeaponTypeName offset_magnum
+savetagchanges
+
+exit
+edittag objects\weapons\pistol\excavator\excavator.weapon
+setfield WeaponTypeName offset_mauler
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\needler\needler.weapon
+setfield WeaponTypeName offset_needler
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+setfield WeaponTypeName offset_assault_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+setfield WeaponTypeName offset_battle_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+setfield WeaponTypeName offset_beam_rifle
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+setfield WeaponTypeName offset_carbine_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg.weapon
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+setfield WeaponTypeName offset_sniper_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+setfield WeaponTypeName offset_spiker
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\shotgun\shotgun.weapon
+setfield WeaponTypeName offset_shotgun
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+setfield WeaponTypeName offset_fuel_rod
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+setfield WeaponTypeName offset_rocket_launcher
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+setfield WeaponTypeName offset_spartan_laser
+savetagchanges
+exit
+
+edittag objects\weapons\support_low\brute_shot\brute_shot.weapon
+setfield WeaponTypeName offset_bruteshot
+savetagchanges
+exit
+
 // AUTOMAG
 
 edittag objects\weapons\pistol\automag\projectiles\automag_bullet.proj
@@ -2958,6 +3076,28 @@ exit
 #exit
 
 // MISC
+SaveModPackage "modsfolder\ODSTMP.pak"
+ExitModPackage
+
+////////////////////////////////////////////////////////////////////////////////
+// ADD MAIN MENU PAK AND OPTIMIZE
+////////////////////////////////////////////////////////////////////////////////
+CreateModPackage 1 large
+ODSTAMP
+Shoot other ODSTs in various locales.
+Vegetal & AMP Collective
+0.1
+MainMenu Multiplayer Character
+
+OpenModPackage "workingdir\paks\Halo3ODSTMenu v1_0 Patched.pak"
+ApplyModPackage
+ExitModPackage
+
+openmodpackage modsfolder\odstmp.pak
+ApplyModPackageTags
+levels\ui\mainmenu\mainmenu.scenario
+Done
+ExitModPackage
 
 
 
