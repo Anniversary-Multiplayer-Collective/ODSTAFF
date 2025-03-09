@@ -3070,7 +3070,7 @@ Vegetal & AMP Collective
 0.1
 MainMenu Multiplayer Character
 
-OpenModPackage workingdir\paks\Halo3ODSTMenu.pak
+OpenModPackage "workingdir\paks\Halo3ODSTMenu v1_0 Patched.pak"
 ApplyModPackage
 ExitModPackage
 
