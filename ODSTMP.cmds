@@ -1,8 +1,8 @@
-D:\ElDewrito\0.7.1\maps\tags.dat
-SetVariable h3maps "F:\Bruh\H3Combined"
-SetVariable odstmaps "F:\Bruh\H3ODSTMaps"
-SetVariable workingdir "C:\Users\Harry Ricketts\Documents\GitHub\Dank\ODSTAMP"
-SetVariable modsfolder "D:\ElDewrito\0.7.1\mods"
+< ElDewrito maps folder >
+SetVariable h3maps < Halo 3 360 maps folder >
+SetVariable odstmaps < Halo 3 ODST 360 maps folder>
+SetVariable workingdir < Respository folder >
+SetVariable modsfolder < ElDewrito mods folder >
 
 CreateModPackage 1 Large
 ODSTMP
