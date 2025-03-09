@@ -688,6 +688,14 @@ SetField BipedGroundPhysics.RuntimeUphillK0 0.7071068
 SetField BipedGroundPhysics.RuntimeUphillK1 0.7660444
 setfield GrenadeAngle 10	// down from 15 default
 setfield GrenadeVelocity 9.125	// up from 8.25 default. spartan is 10
+	# assassinations
+setfield Assassination.ToolStowAnchor knife_stow_anchor
+setfield Assassination.ToolHandMarker right_hand
+setfield Assassination.ToolMarker ass_wpn_placement
+setfield Assassination.Weapon objects\props\human\unsc\spartan_knife\spartan_knife.scenery
+setfield Assassination.Response globals\damage_responses\player_assassination.damage_response_definition
+addblockelements SyncActionCamera.CameraTracks
+setfield SyncActionCamera.CameraTracks[0].Track camera\biped_assassination_camera.camera_track
 savetagchanges
 exit
 
