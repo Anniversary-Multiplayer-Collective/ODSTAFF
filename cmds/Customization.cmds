@@ -13,7 +13,6 @@ exit
 
 stringid add mp_odst_name
 stringid add mp_odst_description
-stringid add gear
 
 edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
 
@@ -89,6 +88,11 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[2].Name 
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[3].Name dutch
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[4].Name sergeant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[5].Name johnson
+
+# podium
+setfield Universal[0].PodiumAnimations[0].AnimationGraph objects\characters\odst_recon\odst_podium.jmad
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomPrimaryWeapon objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield Universal[0].PodiumAnimations[0].MoveAnimations[0].CustomSecondaryWeapon objects\weapons\pistol\automag\automag.weapon
 savetagchanges
 exit
 
