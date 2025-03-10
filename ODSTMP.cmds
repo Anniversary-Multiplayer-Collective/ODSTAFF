@@ -2998,14 +2998,6 @@ setfield bloomintensity.strength 0.2
 savetagchanges
 exit
 
-// HUD WARP (Can't be 100% accurate but it's better than nothing)
-edittag ui\chud\globals.chgd
-setfield hudglobals[0].hudattributes[0].WarpSourceFovY 5
-setfield hudglobals[0].hudattributes[0].WarpSourceAspect 1
-setfield hudglobals[0].hudattributes[0].WarpDestinationOffsetZ -0.95
-SaveTagChanges
-Exit
-
 // MISC
 SaveModPackage "modsfolder\ODSTMP.pak"
 ExitModPackage
