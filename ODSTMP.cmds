@@ -3109,6 +3109,9 @@ setfield PlayerCharacterSets[1].Characters[3].DisplayName "Flood Human"
 savetagchanges
 exit
 
+// Automag font fix
+runcommands workingdir\cmds\automagstrings.cmds
+
 savemodpackage
 
 
