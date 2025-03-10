@@ -3016,6 +3016,91 @@ ExitModPackage
 ## Post mainmenu edits
 runcommands workingdir\cmds\Customization.cmds
 
+OpenModPackage "workingdir\paks\FloodCombatBipeds.pak"
+applymodpackage
+exitmodpackage
+
+edittag globals\globals.globals
+addblockelements PlayerRepresentation
+setfield PlayerRepresentation[6].Name flood_tank
+setfield PlayerRepresentation[6].FirstPersonHands objects\characters\flood_tank\fp.render_model
+setfield PlayerRepresentation[6].FirstPersonBody objects\characters\flood_tank\fp_body.render_model
+setfield PlayerRepresentation[6].ThirdPersonUnit objects\characters\flood_tank\flood_tank.biped
+setfield PlayerRepresentation[6].BinocularsZoomInSound sound\dialog\combat\flood_tank\invsgt.sound
+setfield PlayerRepresentation[6].BinocularsZoomOutSound sound\dialog\combat\flood_tank\lst_cntct.sound
+setfield PlayerRepresentation[6].CombatDialogue sound\dialog\combat\flood_tank.dialogue
+addblockelements PlayerRepresentation
+setfield PlayerRepresentation[7].FirstPersonHands objects\characters\floodcombat_human\fp.render_model
+setfield PlayerRepresentation[7].FirstPersonBody objects\characters\floodcombat_elite\fp_body.render_model
+setfield PlayerRepresentation[7].ThirdPersonUnit objects\characters\floodcombat_elite\floodcombat_elite.biped
+setfield PlayerRepresentation[7].BinocularsZoomInSound sound\dialog\combat\flood_gm2\floodcombat\srprs.sound
+setfield PlayerRepresentation[7].BinocularsZoomOutSound sound\dialog\combat\flood_gm2\floodcombat\whn.sound
+setfield PlayerRepresentation[7].CombatDialogue sound\dialog\combat\flood_gm2.dialogue
+addblockelements PlayerRepresentation
+setfield PlayerRepresentation[8].FirstPersonHands objects\characters\floodcombat_human\fp.render_model
+setfield PlayerRepresentation[8].FirstPersonBody objects\characters\floodcombat_brute\fp_body.render_model
+setfield PlayerRepresentation[8].ThirdPersonUnit objects\characters\floodcombat_brute\floodcombat_brute.biped
+setfield PlayerRepresentation[8].BinocularsZoomInSound sound\dialog\combat\flood_gm1\floodcombat_brute\srprs.sound
+setfield PlayerRepresentation[8].BinocularsZoomOutSound sound\dialog\combat\flood_gm1\floodcombat_brute\lift.sound
+setfield PlayerRepresentation[8].CombatDialogue sound\dialog\combat\flood_gm1.dialogue
+setfield PlayerRepresentation[7].Name floodcombat_elite
+stringid add flood_elite
+setfield PlayerRepresentation[8].Name floodcombat_brute
+stringid add flood_brute
+addblockelements PlayerRepresentation
+setfield PlayerRepresentation[9].Name floodcombat_human
+setfield PlayerRepresentation[9].FirstPersonHands objects\characters\floodcombat_human\fp.render_model
+setfield PlayerRepresentation[9].FirstPersonBody objects\characters\floodcombat_human\fp_body.render_model
+setfield PlayerRepresentation[9].ThirdPersonUnit objects\characters\floodcombat_human\floodcombat_human.biped
+setfield PlayerRepresentation[9].BinocularsZoomInSound sound\dialog\combat\flood_gm3\floodcombat\pstcmbt.sound
+setfield PlayerRepresentation[9].BinocularsZoomOutSound sound\dialog\combat\flood_gm3\floodcombat\ordr_re.sound
+setfield PlayerRepresentation[9].CombatDialogue sound\dialog\combat\flood_gm3.dialogue
+addblockelements PlayerCharacterTypes
+setfield PlayerCharacterTypes[2].Name flood_tank
+setfield PlayerCharacterTypes[2].MultiplayerRepresentation 6
+setfield PlayerCharacterTypes[2].CampaignRepresentation 6
+addblockelements PlayerCharacterTypes
+setfield PlayerCharacterTypes[3].Name floodcombat_elite
+setfield PlayerCharacterTypes[3].CampaignRepresentation 7
+setfield PlayerCharacterTypes[3].MultiplayerRepresentation 7
+addblockelements PlayerCharacterTypes
+setfield PlayerCharacterTypes[4].Name floodcombat_brute
+setfield PlayerCharacterTypes[4].CampaignRepresentation 8
+setfield PlayerCharacterTypes[4].MultiplayerRepresentation 8
+addblockelements PlayerCharacterTypes
+setfield PlayerCharacterTypes[5].Name floodcombat_human
+setfield PlayerCharacterTypes[5].CampaignRepresentation 9
+setfield PlayerCharacterTypes[5].MultiplayerRepresentation 9
+savetagchanges
+exit
+
+edittag multiplayer\mod_globals.mod_globals
+addblockelements PlayerCharacterSets
+setfield PlayerCharacterSets[1].DisplayName "Infection"
+setfield PlayerCharacterSets[1].Name infection
+setfield PlayerCharacterSets[1].RandomChance 0.1
+addblockelements PlayerCharacterSets[1].Characters
+setfield PlayerCharacterSets[1].Characters[0].RandomChance 0.1
+setfield PlayerCharacterSets[1].Characters[0].DisplayName "Flood Tank"
+setfield PlayerCharacterSets[1].Characters[0].Name flood_tank
+addblockelements PlayerCharacterSets[1].Characters
+setfield PlayerCharacterSets[1].Characters[1].Name floodcombat_elite
+setfield PlayerCharacterSets[1].Characters[1].DisplayName "Flood Elite"
+setfield PlayerCharacterSets[1].Characters[1].RandomChance 0.1
+addblockelements PlayerCharacterSets[1].Characters
+setfield PlayerCharacterSets[1].Characters[2].RandomChance 0.1
+setfield PlayerCharacterSets[1].Characters[2].Name floodcombat_brute
+setfield PlayerCharacterSets[1].Characters[2].DisplayName "Flood Brute"
+addblockelements PlayerCharacterSets[1].Characters
+setfield PlayerCharacterSets[1].Characters[3].Name floodcombat_human
+setfield PlayerCharacterSets[1].Characters[3].RandomChance 0.1
+setfield PlayerCharacterSets[1].Characters[3].DisplayName "Flood Human"
+savetagchanges
+exit
+
+savemodpackage
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
