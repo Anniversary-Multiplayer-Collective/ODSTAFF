@@ -2662,6 +2662,13 @@ exit
 // WEAPON GENERAL FIXUPS
 ////////////////////////////////////////////////////////////////////////////////
 
+// Fix the little screen being offset on the sniper
+
+edittag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
+setargument self_illum_map transform 0.6 0.6 0.2 0.2
+savetagchanges
+exit
+
 // Remove Grenades from player starting profiles
 	
 foreach scnr foreach PlayerStartingProfile SetField StartingFragGrenadeCount 0
