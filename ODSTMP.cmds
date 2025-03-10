@@ -37,7 +37,11 @@ donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
-UpdateMapFiles "h3maps\info"
+OpenCacheFile "h3maps\spacecamp.map"
+ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
+donotreplacegroups foot
+PortTag !UpdateMapFiles !Elites *.scnr
+Exit
 
 ////////////////////////////////////////////////////////////////////////////////
 // Vadum and Cabin Fever
