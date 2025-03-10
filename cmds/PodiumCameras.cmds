@@ -1,0 +1,142 @@
+EditTag levels\custom\alphasite\alphasite.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 417.669 -0.203 18.163
+SetField CutsceneCameraPoints[0].Orientation 178.302 5.443 -0.161
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 407.838 -6.809 15.499
+SetField CutsceneCameraPoints[1].Orientation -44.910 -0.045 -0.373
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\dlc\midship\midship.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 2.371 10.330 5.393
+SetField CutsceneCameraPoints[0].Orientation -110.316 5.093 13.484
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -9.706 4.908 2.016
+SetField CutsceneCameraPoints[1].Orientation -0.512 0.136 0.121
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\dlc\lockout\lockout.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -6.308 3.333 -5.365
+SetField CutsceneCameraPoints[0].Orientation -40.605 -12.063 10.157
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -1.645 6.993 -7.972
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\dlc\spacecamp\spacecamp.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -2.735 -12.428 0.923
+SetField CutsceneCameraPoints[0].Orientation 70.170 -6.505 -17.442
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 9.361 4.706 0.517
+SetField CutsceneCameraPoints[1].Orientation -180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\dlc\armory\armory.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -14.154 0.038 -8.368
+SetField CutsceneCameraPoints[0].Orientation -0.240 -5.753 0.024
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -7.636 -0.016 -9.787
+SetField CutsceneCameraPoints[1].Orientation 180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\zedd\roundabout\roundabout.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -280.545 -442.471 -3.343
+SetField CutsceneCameraPoints[0].Orientation -109.137 5.442 15.285
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -284.625 -435.111 -6.117
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\custom\chasmten\chasmten.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 167.299 18.292 -29.294
+SetField CutsceneCameraPoints[0].Orientation -117.960 7.414 13.664
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 168.386 -0.008 -29.946
+SetField CutsceneCameraPoints[1].Orientation -180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\custom\lostplatoon\lostplatoon.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position -240.130 -466.114 18.031
+SetField CutsceneCameraPoints[0].Orientation -51.679 -8.856 11.023
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -160.318 -459.269 8.357
+SetField CutsceneCameraPoints[1].Orientation 44.957 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\custom\nightstreets\nightstreets.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 34.940 -209.073 10.101
+SetField CutsceneCameraPoints[0].Orientation -86.449 -1.132 17.673
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 108.052 -165.007 5.914
+SetField CutsceneCameraPoints[1].Orientation 180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\custom\rallypointnight\rallypointnight.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 132.096 -0.530 6.842
+SetField CutsceneCameraPoints[0].Orientation 24.401 -2.922 -1.324
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 126.072 -0.023 5.108
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\multi\shadow_bridge\mp_vadum.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 1.569 -2.493 0.964
+SetField CutsceneCameraPoints[0].Orientation 114.845 6.074 -12.873
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 0.031 -6.800 -0.813
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit

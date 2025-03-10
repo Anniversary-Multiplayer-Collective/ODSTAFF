@@ -2998,6 +2998,9 @@ setfield bloomintensity.strength 0.2
 savetagchanges
 exit
 
+// Podium and Prematch Cameras
+RunCommands workingdir\cmds\PodiumCameras.cmds
+
 // MISC
 SaveModPackage "modsfolder\ODSTMP.pak"
 ExitModPackage
