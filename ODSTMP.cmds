@@ -2834,6 +2834,11 @@ setfield WeaponTypeName offset_plasma_rife
 savetagchanges
 exit
 
+edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
 edittag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
 setfield WeaponTypeName offset_fuel_rod
 savetagchanges
