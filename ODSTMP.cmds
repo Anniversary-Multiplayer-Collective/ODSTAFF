@@ -1819,8 +1819,6 @@ copyblockelements Modes[0].WeaponClass 9 1
 pasteblockelements Modes[0].WeaponClass
 setfield Modes[0].WeaponClass[*].Label flag
 setfield Modes[0].WeaponClass[*].WeaponType[1].Label f
-	# remove broken mongoose passanger animations
-removeblockelements Modes 51 1
 	# inherit ED spartan animations
 setinheritance mcc objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
 	# modify inheritance to inherit animations to finger bones as well
