@@ -1,159 +1,178 @@
-#echo <<Strings>>
-
-stringid add reach
-stringid add spartan_helmet_reach
-stringid add spartan_helmet_reach_description
-stringid add raven_1
-stringid add spartan_helmet_raven_1
-stringid add spartan_helmet_raven_1_description
-stringid add raven_2
-stringid add spartan_helmet_raven_2
-stringid add spartan_helmet_raven_2_description
-stringid add raven_3
-stringid add spartan_helmet_raven_3
-stringid add spartan_helmet_raven_3_description
-stringid add raven_4
-stringid add spartan_helmet_raven_4
-stringid add spartan_helmet_raven_4_description
-stringid add h2a
-stringid add spartan_helmet_h2a
-stringid add spartan_helmet_h2a_description
-stringid add spartan_helmet_dare
-stringid add spartan_helmet_dare_description
-stringid add Romeo
-stringid add right_headgear
-stringid add spartan_right_headgear_raven_2
-stringid add spartan_right_headgear_raven_2_description
-stringid add spartan_right_headgear_raven_3
-stringid add spartan_right_headgear_raven_3_description
-stringid add spartan_right_headgear_raven_4
-stringid add spartan_right_headgear_raven_4_description
-stringid add 1_hul
-stringid add spartan_right_headgear_1_hul
-stringid add spartan_right_headgear_1_hul_description
-stringid add hul
-stringid add spartan_right_headgear_hul
-stringid add spartan_right_headgear_hul_description
-stringid add spartan_headgear_dutch
-stringid add spartan_headgear_dutch_description
-stringid add spartan_headgear_knife
-stringid add spartan_headgear_knife_description
-stringid add spartan_headgear_dare
-stringid add spartan_headgear_dare_description
-stringid add spartan_headgear_raven_1
-stringid add spartan_headgear_raven_1_description
-stringid add spartan_headgear_raven_2
-stringid add spartan_headgear_raven_2_description
-stringid add spartan_headgear_raven_3
-stringid add spartan_headgear_raven_3_description
-stringid add spartan_headgear_raven_4
-stringid add spartan_headgear_raven_4_description
-stringid add spartan_headgear_reach
-stringid add spartan_headgear_reach_description
-stringid add spartan_headgear_marine
-stringid add spartan_headgear_marine_description
-stringid add spartan_headgear_h2a
-stringid add spartan_headgear_h2a_description
+stringid add helmet
+stringid add chest
+stringid add l_shoulder
+stringid add r_shoulder
 stringid add stomach
-stringid add l_shoulder_base
-stringid add l_shoulder_base_description
-stringid add l_shoulder_off
-stringid add l_shoulder_off_description
-stringid add l_shoulder_mickey
-stringid add l_shoulder_mickey_description
-stringid add l_shoulder_romeo
-stringid add l_shoulder_romeo_description
-stringid add l_shoulder_raven_1
-stringid add l_shoulder_raven_1_description
-stringid add l_shoulder_raven_2
-stringid add l_shoulder_raven_2_description
-stringid add l_shoulder_raven_3
-stringid add l_shoulder_raven_3_description
-stringid add l_shoulder_raven_4
-stringid add l_shoulder_raven_4_description
-stringid add l_shoulder_reach
-stringid add l_shoulder_reach_description
-stringid add l_shoulder_marine
-stringid add l_shoulder_marine_description
-stringid add l_shoulder_h3
-stringid add l_shoulder_h3_description
-stringid add h3
-stringid add l_shoulder_h2a
-stringid add l_shoulder_h2a_description
-stringid add r_shoulder_base
-stringid add r_shoulder_base_description
-stringid add r_shoulder_off
-stringid add r_shoulder_off_description
-stringid add r_shoulder_mickey
-stringid add r_shoulder_mickey_description
-stringid add r_shoulder_romeo
-stringid add r_shoulder_romeo_description
-stringid add r_shoulder_raven_1
-stringid add r_shoulder_raven_1_description
-stringid add r_shoulder_raven_2
-stringid add r_shoulder_raven_2_description
-stringid add r_shoulder_raven_3
-stringid add r_shoulder_raven_3_description
-stringid add r_shoulder_raven_4
-stringid add r_shoulder_raven_4_description
-stringid add r_shoulder_reach
-stringid add r_shoulder_reach_description
-stringid add r_shoulder_marine
-stringid add r_shoulder_marine_description
-stringid add r_shoulder_h3
-stringid add r_shoulder_h3_description
-stringid add r_shoulder_h2a
-stringid add r_shoulder_h2a_description
+stringid add right_headgear
 stringid add left_headgear
-stringid add left_headgear_description
-stringid add left_headgear_mickey
-stringid add left_headgear_mickey_description
-stringid add left_headgear_dutch
-stringid add left_headgear_dutch_description
-stringid add left_headgear_sergeant
-stringid add left_headgear_sergeant_description
-stringid add left_headgear_raven_2
-stringid add left_headgear_raven_2_description
-stringid add left_headgear_raven_3
-stringid add left_headgear_raven_3_description
-stringid add left_headgear_1_hul
-stringid add left_headgear_1_hul_description
-stringid add left_headgear_hul
-stringid add left_headgear_hul_description
 stringid add top_headgear
-stringid add top_headgear_description
-stringid add left_headgear_romeo
-stringid add left_headgear_romeo_description
-stringid add left_headgear_raven_4
-stringid add left_headgear_raven_4_description
-stringid add left_headgear_fc
-stringid add left_headgear_fc_description
-stringid add left_headgear_aug
-stringid add left_headgear_aug_description
-stringid add aug
-stringid add left_headgear_nxra
-stringid add left_headgear_nxra_description
-stringid add nxra
-stringid add left_headgear_i
-stringid add left_headgear_i_description
-stringid add i
-stringid add mp_rookie
-stringid add mp_dutch
-stringid add mp_mickey
-stringid add mp_romeo
-stringid add mp_raven_1
-stringid add mp_raven_2
-stringid add mp_raven_3
-stringid add mp_raven_4
-stringid add mp_standard
-stringid add mp_dare
-stringid add mp_h3
-stringid add mp_h2a
+stringid add legs
+stringid add backpack
+stringid add body
+stringid add hands
+stringid add base
+stringid add off
+stringid add off_description
+stringid add custom_base_description
+stringid add custom_mp_dutch
+stringid add custom_dutch_description
+stringid add custom_mp_reach
+stringid add custom_mp_reach_description
+stringid add custom_mp_raven_1
+stringid add custom_mp_raven_1_description
+stringid add custom_mp_raven_2
+stringid add custom_mp_raven_2_description
+stringid add custom_mp_raven_3
+stringid add custom_mp_raven_3_description
+stringid add custom_mp_raven_4
+stringid add custom_mp_raven_4_description
+stringid add custom_mp_h2a
+stringid add custom_mp_h2a_description
+stringid add custom_mp_dare
+stringid add custom_mp_dare_description
+stringid add custom_mp_h3
+stringid add custom_mp_h3_description
+stringid add custom_mp_mickey
+stringid add custom_mp_mickey_description
+stringid add custom_mp_romeo
+stringid add custom_mp_romeo_description
+stringid add custom_mp_marine
+stringid add custom_mp_broken
+stringid add custom_mp_broken_description
+stringid add custom_mp_sup
+stringid add custom_mp_sup_description
+stringid add custom_mp_knife
+stringid add custom_mp_knife_description
+stringid add custom_mp_marine_description
+stringid add custom_mp_hul
+stringid add custom_mp_hul_description
+stringid add custom_mp_cnm
+stringid add custom_mp_cnm_description
+stringid add custom_mp_odstcnm
+stringid add custom_mp_odstcnm_description
+stringid add custom_mp_typhon
+stringid add custom_mp_typhon_description
+stringid add custom_mp_com
+stringid add custom_mp_com_description
+stringid add custom_mp_starlight
+stringid add custom_mp_starlight_description
+stringid add custom_mp_hul
+stringid add custom_mp_hul_description
+stringid add custom_mp_binoc
+stringid add custom_mp_binoc_description
+stringid add custom_mp_typeo5
+stringid add custom_mp_typeo5_description
+stringid add custom_mp_ua
+stringid add custom_mp_ua_description
+stringid add custom_mp_typee3
+stringid add custom_mp_typee3_description
+stringid add custom_mp_typeb1
+stringid add custom_mp_typeb1_description
+stringid add custom_mp_huli
+stringid add custom_mp_huli_description
+stringid add custom_mp_typec1
+stringid add custom_mp_typec1_description
+stringid add custom_mp_fingerless_gloves
+stringid add custom_mp_fingerless_gloves_description
+stringid add custom_mp_full_gloves
+stringid add custom_mp_full_gloves_description
+stringid add custom_mp_backpack
+stringid add custom_mp_backpack_description
+stringid add custom_mp_backpack_hardshell
+stringid add custom_mp_backpack_hardshell_description
+stringid add custom_mp_backpack_comm
+stringid add custom_mp_backpack_comm_description
+stringid add custom_mp_hulrs
+stringid add custom_mp_hulrs_description
 
 edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
 setstring english helmet "Helmet"
+setstring english l_shoulder "Left Shoulder"
+setstring english r_shoulder "Right Shoulder"
+setstring english stomach "Stomach" 
+setstring english right_headgear "Right Headgear"
+setstring english left_headgear "Left Headgear"
+setstring english top_headgear "Top Headgear"
+setstring english legs "Legs"
+setstring english backpack "Backpack"
+setstring english body "Body"
+setstring english hands "Hands"
+setstring english off "Off"
+setstring english off_description "Who needs it anyways."
+setstring english base "ODST - Standard"
+setstring english custom_base_description "The standard armor worn by Orbital Drop Shock Troopers, which was originally designed for use with the MJOLNIR system."
+setstring english custom_mp_dutch "ODST - Hardshell"
+setstring english custom_dutch_description "Reinforced ODST-HS helmet for heavy weapon and breaching specialists. Customized with death's head rictus."
+setstring english custom_mp_reach "ODST - Bullfrog"
+setstring english custom_mp_reach_description "Members of these units are specialized in three-dimensional combat in dense urban and rugged natural environments, using aerial vectors to tactical advantage."
+setstring english custom_mp_raven_1 "ODST - TAC"
+setstring english custom_mp_raven_1_description "The ODST/TAC armor is used by troopers operating in a command role. It was employed by Ethan Graves of Fireteam Raven during the Battle of Installation 04."
+setstring english custom_mp_raven_2 "ODST - HVY"
+setstring english custom_mp_raven_2_description "The ODST/HVY armor is used by troopers operating in a heavy weapons role. It was employed by Victor Ramos of Fireteam Raven during the Battle of Installation 04"
+setstring english custom_mp_raven_3 "ODST - COM"
+setstring english custom_mp_raven_3_description "The ODST/COMM armor is used for calling in artillery and ortillery support. It was employed by Marcus Hudson of Fireteam Raven during the Battle of Installation 04."
+setstring english custom_mp_raven_4 "ODST - DEMO"
+setstring english custom_mp_raven_4_description "The ODST/DEMO armor is used for combat engineering and demolitions work. It was employed by Ava Lang of Fireteam Raven during the Battle of Installation 04."
+setstring english custom_mp_h2a "ODST - BDU"
+setstring english custom_mp_h2a_description "The ODST BDU has been in use since the Insurrection, if not earlier, and remains unmatched in its ability to protect its wearer over other BDUs during the toughest operations."
+setstring english custom_mp_dare "ODST - S-1/ONI Recon"
+setstring english custom_mp_dare_description "The S-1 reconnaissance PPE/BDU is a specialized Office of Naval Intelligence variant of the ODST armor."
+setstring english custom_mp_h3 "ODST - Variant"
+setstring english custom_mp_h3_description "A variant of the standard issue ODST armor."
+setstring english custom_mp_mickey "ODST - UA/PPE"
+setstring english custom_mp_mickey_description "An up-armored variant of the ODST BDU, the ODST/UA PPE is issued to personnel whose specialization requires extra armor, such as demolition experts."
+setstring english custom_mp_romeo "ODST - Sharpshooter"
+setstring english custom_mp_romeo_description "The sharpshooter BDU is issued to sniper experts in the field. This BDU is designed to give an ODST sharpshooter more freedom in combat."
+setstring english custom_mp_marine "ODST - Gungnir/Marine"
+setstring english custom_mp_marine_description "The Supplemental Armor, Pauldron, ODST[G] was developed as part of the GUNGNIR Program. Marine armor adpated to be worn by ODSTS. This variant originally designed by Misriah Armory"
+setstring english custom_mp_hulrs "HUL-RS"
+setstring english custom_mp_hulrs_description "The hardened uplink/remote sensor package (HU/RS) is an external helmet attachment, which integrates the Hardened Uplink with a remote sensor into a single attachment."
+setstring english custom_mp_cnm "CNM - FARNDALE"
+setstring english custom_mp_cnm_description "The AN/PCK-221 FARNDALE is an uplink co-processor manufactured by the Watershed Division, allowing real-time access to Office of Naval Intelligence Military Intelligence data vaults"
+setstring english custom_mp_odstcnm "ODST - CNM"
+setstring english custom_mp_odstcnm_description "The Command Network Module or CNM, is a communication device utilized by the United Nations Space Command, this model was specifical adopted as an ODST helmet attachment."
+setstring english custom_mp_typhon "CNM - TYPHON"
+setstring english custom_mp_typhon_description "Manufactured by Beweglichkeitsrüstungsysteme, the AN/PZY-6011Y TYPHON model augments the situational images for upper-echelon command intelligence analysis."
+setstring english custom_mp_com "COMM"
+setstring english custom_mp_com_description "Manufactured by Beweglichkeitsrüstungsysteme, the AN/PZY-6011Y TYPHON model augments the situational images for upper-echelon command intelligence analysis."
+setstring english custom_mp_starlight "CNM - Starlight"
+setstring english custom_mp_starlight_description "The STARLIGHT attachment, identified as a CNM in operation Reach, and the FARNDALE module are available as attachments on several helmets"
+setstring english custom_mp_hul "HUL"
+setstring english custom_mp_hul_description "Designed and manufactured by Watershed Division, the COURIER PEARL module is the third-generation module, featuring an external hardened uplink for military intelligence acquisition."
+setstring english custom_mp_binoc "O/I Optics"
+setstring english custom_mp_binoc_description "The O/I (Ocular/Integration) optics device is a helmet attachment worn by snipers in the United Nations Space Command armed forces. They are employed by ODST donning the sharpshooter variant of the ODST armor and UNSC Army personnel."
+setstring english custom_mp_typeo5 "UA - Type O5"
+setstring english custom_mp_typeo5_description "The Type O5 is a module manufactured by Materials Group for enhancing helmet armor."
+setstring english custom_mp_ua "UA - Type SN"
+setstring english custom_mp_ua_description "UA, short for up-armored, is a series of supplemental armor attachments and accessories."
+setstring english custom_mp_typee3 "UA -Type E3"
+setstring english custom_mp_typee3_description "The Type E3 is a module manufactured by Materials Group for enhancing helmet armor."
+setstring english custom_mp_typeb1 "UA -Type B1"
+setstring english custom_mp_typeb1_description "The Type B1 is a module manufactured by Materials Group for enhancing helmet armor."
+setstring english custom_mp_huli "HUL-I"
+setstring english custom_mp_huli_description "The Model 990101-1 FLAMINGO is a Harden UpLink-Improved (HUL-I) module, an upgraded variant of the standard issue HUL unit."
+setstring english custom_mp_typec1 "UA - Type C1"
+setstring english custom_mp_typec1_description "The Type C1 is a module manufactured by Materials Group for enhancing helmet armor."
+setstring english custom_mp_fingerless_gloves "Fingerless"
+setstring english custom_mp_fingerless_gloves_description "Fingerless gloves are useful for warmth and dexterity, and can be used for a variety of activities."
+setstring english custom_mp_full_gloves "Full Gloves"
+setstring english custom_mp_full_gloves_description "Full gloves are useful for warmth and extra grip."
+setstring english custom_mp_backpack "M/LBE Hard Case"
+setstring english custom_mp_backpack_description "Designated as the M/LBE Hard Case, the rucksack issued to ODSTs is, for all intents and purposes, an armored backpack that attaches to the back of the armored vest."
+setstring english custom_mp_backpack_hardshell "M/LBE Hard Shell Case"
+setstring english custom_mp_backpack_hardshell_description "Designated as the M/LBE Hard Shell Case, which contained a biofoam canister. Extra protection to protect said biofoam."
+setstring english custom_mp_backpack_comm "M/LBE COM Case"
+setstring english custom_mp_backpack_comm_description "Designated as the M/LBE COM Case, is used for communcations."
+setstring english custom_mp_broken "ODST - Broken"
+setstring english custom_mp_broken_description "This piece of armor has seen better days."
+setstring english custom_mp_sup "ODST - Support"
+setstring english custom_mp_sup_description "Standard isse ODST chest piece with some extra carry weight to it."
+setstring english custom_mp_knife "ODST - Knife"
+setstring english custom_mp_knife_description "You call that a knife? This is a knife!"
 savetagchanges
 exit
+
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -166,7 +185,7 @@ exit
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name base
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description base
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation base
@@ -178,16 +197,10 @@ exit
 
 echo dutch helmet
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_dutch "dutch"
-setstring english spartan_helmet_mp_dutch_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_dutch
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_dutch_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_dutch_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation dutch
@@ -216,16 +229,11 @@ exit
 echo reach helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_reach "reach"
-setstring english spartan_helmet_mp_reach_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_reach
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_reach_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_reach_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation reach
@@ -253,16 +261,10 @@ exit
 echo raven_1 helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_raven_1 "raven_1"
-setstring english spartan_helmet_mp_raven_1_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_1
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_1_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_1
@@ -292,16 +294,11 @@ exit
 
 echo raven_2 helmet
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_raven_2 "raven_2"
-setstring english spartan_helmet_mp_raven_2_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_2
@@ -330,16 +327,11 @@ exit
 echo raven_3 helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_raven_3 "raven_3"
-setstring english spartan_helmet_mp_raven_3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_3
@@ -370,16 +362,11 @@ exit
 echo raven_4 helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_raven_4 "raven_4"
-setstring english spartan_helmet_mp_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_4
@@ -411,16 +398,11 @@ exit
 echo h2a helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_h2a "h2a"
-setstring english spartan_helmet_mp_h2a_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_h2a
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_h2a_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_h2a_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation h2a
@@ -449,16 +431,11 @@ exit
 echo dare helmet
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_helmet_mp_dare "dare"
-setstring english spartan_helmet_mp_dare_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_dare
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_dare_description
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_dare_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation dare
@@ -517,11 +494,6 @@ exit
 echo raven_2 Right Headgear
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_right_headgear_mp_raven_2 "raven_2"
-setstring english spartan_right_headgear_mp_raven_2_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -559,12 +531,6 @@ echo raven_3 Right Headgear
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_right_headgear_mp_raven_3 "raven_3"
-setstring english spartan_right_headgear_mp_raven_3_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_raven_3
@@ -596,11 +562,6 @@ exit
 echo raven_4 Right Headgear
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_right_headgear_mp_raven_4 "raven_4"
-setstring english spartan_right_headgear_mp_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -634,11 +595,6 @@ echo 1_hul Right Headgear
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_right_headgear_mp_1_hul "1_hul"
-setstring english spartan_right_headgear_mp_1_hul_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -674,11 +630,6 @@ echo hul Right Headgear
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_right_headgear_mp_hul "hul"
-setstring english spartan_right_headgear_mp_hul_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -724,10 +675,23 @@ exit
 	echo fix name
 
 edittag *.mulg
-setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].name raven_1 
-setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].name sergeant 
-setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[4].name raven_2
 setfield Universal[0].CustomizableCharacters[0].Regions[1].name right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[0].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[0].Description off_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[1].Name custom_mp_hulrs
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[1].Description custom_mp_hulrs_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].Name custom_mp_cnm
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].Description custom_mp_cnm_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Name custom_mp_odstcnm
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Description custom_mp_odstcnm_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[4].Name custom_mp_typhon
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[4].Description custom_mp_typhon_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[5].Name custom_mp_com
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[5].Description custom_mp_com_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[6].Name custom_mp_starlight
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[6].Description custom_mp_starlight_description
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[7].Name custom_mp_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[7].Description custom_mp_hul_description
 setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Variant[0].Region right_headgear
 savetagchanges
 exit
@@ -744,25 +708,22 @@ exit
 
 edittag *.mulg
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant[0].Permutation base
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[1].Name broken
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[1].Name custom_mp_broken
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[1].Description custom_mp_broken_description
 savetagchanges
 exit
 
 echo dutch chest
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_dutch "dutch"
-setstring english spartan_headgear_mp_dutch_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_dutch
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_dutch_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_sup
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_sup_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation dutch
@@ -789,16 +750,11 @@ exit
 
 echo knife chest
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_knife "knife"
-setstring english spartan_headgear_mp_knife_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_knife
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_knife_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_knife
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_knife_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation knife
@@ -827,16 +783,11 @@ exit
 echo dare chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_dare "dare"
-setstring english spartan_headgear_mp_dare_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_dare
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_dare_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_dare_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation dare
@@ -865,16 +816,11 @@ exit
 echo raven_1 chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_1 "raven_1"
-setstring english spartan_headgear_mp_raven_1_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_1
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_1_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_1
@@ -903,16 +849,10 @@ exit
 echo raven_2 chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_2 "raven_2"
-setstring english spartan_headgear_mp_raven_2_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_2
@@ -947,16 +887,10 @@ exit
 echo raven_3 chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_3 "raven_3"
-setstring english spartan_headgear_mp_raven_3_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_3
@@ -991,16 +925,11 @@ exit
 echo raven_4 chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_4 "raven_4"
-setstring english spartan_headgear_mp_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_4
@@ -1032,16 +961,11 @@ exit
 
 echo reach chest
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_reach "reach"
-setstring english spartan_headgear_mp_reach_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_reach
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_reach_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_reach_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation reach
@@ -1070,16 +994,11 @@ exit
 echo marine chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_marine "marine"
-setstring english spartan_headgear_mp_marine_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_marine
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_marine_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_marine_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation marine
@@ -1109,16 +1028,11 @@ exit
 echo h2a chest
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_h2a "h2a"
-setstring english spartan_headgear_mp_h2a_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_h2a
-setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_h2a_description
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description custom_mp_h2a_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation h2a
@@ -1152,10 +1066,11 @@ exit
 edittag *.mulg
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Name stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Description custom_base_description
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Variant[0].Permutation base
-
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Description off_description
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Variant[0].Permutation off
 savetagchanges
@@ -1183,16 +1098,11 @@ exit
 echo dare stomach
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_dare "dare"
-setstring english spartan_headgear_mp_dare_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_dare
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_dare_description
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name custom_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description custom_mp_dare_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation dare
@@ -1224,16 +1134,11 @@ exit
 echo raven_1 stomach
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_1 "raven_1"
-setstring english spartan_headgear_mp_raven_1_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_1
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_1_description
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_1
@@ -1263,16 +1168,11 @@ exit
 echo raven_2 stomach
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_2 "raven_2"
-setstring english spartan_headgear_mp_raven_2_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_2
@@ -1304,16 +1204,11 @@ exit
 echo raven_3 stomach
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_3 "raven_3"
-setstring english spartan_headgear_mp_raven_3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_3
@@ -1341,16 +1236,11 @@ exit
 
 echo raven_4 stomach
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english spartan_headgear_mp_raven_4 "raven_4"
-setstring english spartan_headgear_mp_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_4
@@ -1400,12 +1290,6 @@ savetagchanges
 exit
 
 
-
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder "Left Shoulder"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name l_shoulder
@@ -1416,16 +1300,11 @@ exit
 	echo base left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_base "base"
-setstring english l_shoulder_base_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_base_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -1436,16 +1315,11 @@ exit
 	echo off left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_off "off"
-setstring english l_shoulder_off_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_off
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_off_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description off_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation off
@@ -1476,16 +1350,11 @@ exit
 	echo mickey left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_mickey "mickey"
-setstring english l_shoulder_mickey_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_mickey
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_mickey_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_mickey_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
@@ -1515,16 +1384,11 @@ exit
 	echo romeo left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_romeo "romeo"
-setstring english l_shoulder_romeo_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_romeo
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_romeo_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_romeo_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
@@ -1553,16 +1417,11 @@ exit
 
 	echo raven_1 left shoulder
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_raven_1 "raven_1"
-setstring english l_shoulder_raven_1_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_1
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_1_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
@@ -1593,16 +1452,11 @@ exit
 	echo raven_2 left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_raven_2 "raven_2"
-setstring english l_shoulder_raven_2_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
@@ -1632,16 +1486,11 @@ exit
 	echo raven_3 left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_raven_3 "raven_3"
-setstring english l_shoulder_raven_3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
@@ -1671,16 +1520,11 @@ exit
 	echo raven_4 left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_raven_4 "raven_4"
-setstring english l_shoulder_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
@@ -1710,16 +1554,11 @@ exit
 	echo reach left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_reach "reach"
-setstring english l_shoulder_reach_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_reach
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_reach_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_reach_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation reach
@@ -1748,16 +1587,11 @@ exit
 	echo marine left shoulder
 	
 	
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_marine "marine"
-setstring english l_shoulder_marine_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_marine
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_marine_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_marine_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation marine
@@ -1787,16 +1621,11 @@ exit
 	echo h3 left shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_h3 "Halo 3"
-setstring english l_shoulder_h3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_h3
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_h3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
@@ -1826,16 +1655,11 @@ exit
 	echo h2a left shoulder
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english l_shoulder_h2a "h2a"
-setstring english l_shoulder_h2a_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_h2a
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_h2a_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h2a_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
@@ -1866,10 +1690,6 @@ exit
 	echo right shoulder 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder "Right Shoulder"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -1882,16 +1702,11 @@ exit
 	echo base right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_base "base"
-setstring english r_shoulder_base_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_base_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -1902,16 +1717,11 @@ exit
 	echo off right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_off "off"
-setstring english r_shoulder_off_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_off
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_off_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description off_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation off
@@ -1921,16 +1731,11 @@ exit
 	echo mickey right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_mickey "mickey"
-setstring english r_shoulder_mickey_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_mickey
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_mickey_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_mickey_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
@@ -1959,16 +1764,11 @@ exit
 	echo romeo right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_romeo "romeo"
-setstring english r_shoulder_romeo_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_romeo
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_romeo_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_romeo_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
@@ -1997,16 +1797,11 @@ exit
 	echo raven_1 right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_raven_1 "raven_1"
-setstring english r_shoulder_raven_1_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_1
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_1_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
@@ -2036,16 +1831,11 @@ exit
 	echo raven_2 right shoulder
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_raven_2 "raven_2"
-setstring english r_shoulder_raven_2_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
@@ -2076,16 +1866,11 @@ exit
 	echo raven_3 right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_raven_3 "raven_3"
-setstring english r_shoulder_raven_3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
@@ -2115,16 +1900,11 @@ exit
 	echo raven_4 right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_raven_4 "raven_4"
-setstring english r_shoulder_raven_4_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
@@ -2154,16 +1934,11 @@ exit
 	echo reach right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_reach "reach"
-setstring english r_shoulder_reach_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_reach
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_reach_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_reach_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation reach
@@ -2193,16 +1968,11 @@ exit
 	echo marine right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_marine "marine"
-setstring english r_shoulder_marine_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_marine
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_marine_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_marine_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation marine
@@ -2231,16 +2001,11 @@ exit
 	echo h3 right shoulder
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_h3 "halo 3"
-setstring english r_shoulder_h3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_h3
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_h3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
@@ -2266,18 +2031,13 @@ SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
 savetagchanges
 exit
 
-	echo h3 right shoulder
+	echo h2a right shoulder
 	
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english r_shoulder_h2a "h2a"
-setstring english r_shoulder_h2a_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_h2a
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_h2a_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h2a_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
@@ -2307,10 +2067,6 @@ exit
 		Echo Names
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear "left_headgear"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -2340,16 +2096,11 @@ exit
 	echo base left headgear
 	
 	
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear "left_headgear"
-setstring english left_headgear_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description off_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -2360,16 +2111,11 @@ exit
 	echo mickey left headgear
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_mickey "mickey"
-setstring english left_headgear_mickey_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_mickey
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_mickey_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_hulrs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_hulrs_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
@@ -2399,16 +2145,11 @@ exit
 	echo dutch left headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_dutch "dutch"
-setstring english left_headgear_dutch_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_dutch_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_cnm
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_cnm_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
@@ -2438,16 +2179,11 @@ exit
 	echo sergeant left headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_sergeant "sergeant"
-setstring english left_headgear_sergeant_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_sergeant
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_sergeant_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_odstcnm
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_odstcnm_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation sergeant
@@ -2476,16 +2212,10 @@ exit
 	echo raven_2 left headgear
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_raven_2 "raven_2"
-setstring english left_headgear_raven_2_description "."
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_raven_2
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_raven_2_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typhon
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_typhon_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
@@ -2515,16 +2245,11 @@ exit
 	echo raven_3 left headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_raven_3 "raven_3"
-setstring english left_headgear_raven_3_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_raven_3
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_raven_3_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_com
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_com_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
@@ -2555,16 +2280,11 @@ exit
 	echo 1_hul left headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_1_hul "1_hul"
-setstring english left_headgear_1_hul_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_1_hul
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_1_hul_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_starlight
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_starlight_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation 1_hul
@@ -2594,16 +2314,11 @@ exit
 	echo hul left headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english left_headgear_hul "hul"
-setstring english left_headgear_hul_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_hul
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_hul_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_hul_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation hul
@@ -2634,10 +2349,6 @@ exit
 		Echo Names
 		
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear "top_headgear"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -2667,16 +2378,11 @@ exit
 	echo base top headgear
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear "top_headgear"
-setstring english top_headgear_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description off_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -2687,16 +2393,12 @@ exit
 	echo romeo top headgear
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_romeo "romeo"
-setstring english top_headgear_romeo_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_romeo
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_romeo_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_binoc
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_binoc_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
@@ -2726,16 +2428,12 @@ exit
 	echo raven_4 top headgear
 	
 	
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_raven_4 "raven_4"
-setstring english top_headgear_raven_4_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_raven_4
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_raven_4_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typeo5
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_typeo5_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
@@ -2766,16 +2464,12 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_fc "fc"
-setstring english top_headgear_fc_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_fc
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_fc_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_ua
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_ua_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation fc
@@ -2810,16 +2504,12 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_aug "aug"
-setstring english top_headgear_aug_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_aug
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_aug_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typee3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_typee3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation aug
@@ -2853,16 +2543,11 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_nxra "nxra"
-setstring english top_headgear_nxra_description "."
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_nxra
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_nxra_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typeb1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_typeb1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation nxra
@@ -2893,16 +2578,12 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_i "i"
-setstring english top_headgear_i_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_i
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_i_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_huli
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_huli_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation i
@@ -2932,16 +2613,12 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english top_headgear_hul "hul"
-setstring english top_headgear_hul_description "."
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_hul
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_hul_description
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typec1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_typec1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation hul
@@ -2971,17 +2648,12 @@ exit
 	ECHO legs
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english legs "legs"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name legs
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -3006,23 +2678,14 @@ exit
 
 
 
-
-
-
-
-
-
 	echo rookie legs
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english rookie "rookie"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name rookie
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation rookie
@@ -3055,14 +2718,12 @@ exit
 	echo dutch legs
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english dutch "dutch"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
@@ -3098,14 +2759,11 @@ exit
 	echo mickey legs
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english mickey "mickey"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_mickey_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
@@ -3140,14 +2798,12 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english romeo "romeo"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_romeo_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
@@ -3183,14 +2839,12 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_1 "raven_1"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
@@ -3224,14 +2878,12 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_2 "raven_2"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
@@ -3266,14 +2918,12 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_3 "raven_3"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
@@ -3308,14 +2958,12 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_4 "raven 4"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
@@ -3364,17 +3012,14 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english backpack "backpack"
-savetagchanges
-exit
+
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name backpack
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description off_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
@@ -3408,14 +3053,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english rookie "Rookie"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name rookie
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_backpack_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
@@ -3454,14 +3096,10 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english dutch "dutch"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_backpack_hardshell
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_backpack_hardshell_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
@@ -3498,14 +3136,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english mickey "mickey"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_backpack_comm
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_backpack_comm_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
@@ -3539,14 +3174,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english dare "dare"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dare
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_dare_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dare
@@ -3580,14 +3212,10 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_1 "raven_1"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_1_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
@@ -3620,14 +3248,10 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_2 "raven_2"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_2_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
@@ -3658,14 +3282,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_3 "raven_3"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
@@ -3697,14 +3318,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english raven_4 "raven_4"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_raven_4_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
@@ -3735,10 +3353,6 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english body "body"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -3751,14 +3365,11 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english standard "standard"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name standard
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
@@ -3774,14 +3385,10 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english h3 "Halo 3"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h3_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
@@ -3813,14 +3420,11 @@ exit
 
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english h2a "Halo 2 A"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_h2a_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
@@ -3851,10 +3455,6 @@ exit
 	
 
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english hands "hands"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -3866,14 +3466,11 @@ exit
 	
 	
 
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english standard "standard"
-savetagchanges
-exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name standard
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_fingerless_gloves
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_fingerless_gloves_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region hands
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
@@ -3897,17 +3494,10 @@ exit
 
 	echo h3
 
-
-
-
-edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
-setstring english h3 "Halo 3"
-savetagchanges
-exit
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_full_gloves
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description custom_mp_full_gloves_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region hands
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
@@ -4383,38 +3973,6 @@ savetagchanges
 exit
 
 edittag objects\characters\odst_recon\fp_body\fp_body.render_model
-RemoveBlockElements Regions 0 *
-AddBlockElements Regions 5
-SetField Regions[0].Name body
-AddBlockElements Regions[0].Permutations 3
-SetField Regions[0].Permutations[0].Name standard
-SetField Regions[0].Permutations[1].Name h3
-SetField Regions[0].Permutations[2].Name h2a
-SetField Regions[1].Name d_waist
-AddBlockElements Regions[1].Permutations 1
-SetField Regions[1].Permutations[0].Name standard
-SetField Regions[2].Name gear
-AddBlockElements Regions[2].Permutations 5
-SetField Regions[2].Permutations[0].Name romeo
-SetField Regions[2].Permutations[1].Name standard
-SetField Regions[2].Permutations[2].Name mickey
-SetField Regions[2].Permutations[3].Name sergeant
-SetField Regions[2].Permutations[4].Name dutch
-SetField Regions[3].Name legs
-AddBlockElements Regions[3].Permutations 9
-SetField Regions[3].Permutations[0].Name mickey
-SetField Regions[3].Permutations[1].Name dutch
-SetField Regions[3].Permutations[2].Name rookie
-SetField Regions[3].Permutations[3].Name base
-SetField Regions[3].Permutations[4].Name raven_1
-SetField Regions[3].Permutations[5].Name raven_4
-SetField Regions[3].Permutations[6].Name raven_3
-SetField Regions[3].Permutations[7].Name raven_2
-SetField Regions[3].Permutations[8].Name romeo
-SetField Regions[4].Name chest
-AddBlockElements Regions[4].Permutations 1
-SetField Regions[4].Permutations[0].Name h2a
-
 RemoveBlockElements Materials 0 *
 AddBlockElements Materials 10
 SetField Materials[0].RenderMethod objects\characters\odst\shaders\odst_armor.shader
