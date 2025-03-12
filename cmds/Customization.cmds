@@ -118,3 +118,5 @@ setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 3
 setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 28
 savetagchanges
 exit
+
+runcommands workingdir\cmds\ODSTCustomization.cmds

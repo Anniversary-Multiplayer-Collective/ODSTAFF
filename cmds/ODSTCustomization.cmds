@@ -1,13 +1,3 @@
-< ElDewrito maps folder >
-SetVariable h3maps < Halo 3 360 maps folder >
-SetVariable h3mccmaps < Halo 3 MCC maps folder >
-SetVariable odstmaps < Halo 3 ODST 360 maps folder >
-SetVariable reachmaps < Halo Reach 360 maps folder >
-SetVariable workingdir < Respository folder >
-SetVariable modsfolder < ElDewrito mods folder >
-
-openmodpackage modsfolder\odstmp
-
 #echo <<Strings>>
 
 stringid add reach
@@ -3948,7 +3938,7 @@ exit
 
 
 
-opencachefile "mcch3maps\sandbox.map"
+opencachefile "h3mccmaps\sandbox.map"
 porttag objects\characters\masterchief\shaders\odst_raven_1.shader
 porttag objects\characters\masterchief\shaders\odst_raven_2.shader
 porttag objects\characters\masterchief\shaders\odst_raven_3.shader
@@ -3957,6 +3947,9 @@ porttag objects\characters\masterchief\shaders\odst_raven_1_visor.shader
 porttag objects\characters\masterchief\shaders\odst_raven_2_visor.shader
 porttag objects\characters\masterchief\shaders\odst_raven_3_visor.shader
 porttag objects\characters\masterchief\shaders\odst_raven_4_visor.shader
+porttag objects\characters\masterchief\shaders\flair_ear_piece_emile.shader
+porttag objects\characters\masterchief\shaders\flair_ear_piece_adrianna.shader
+porttag objects\characters\masterchief\shaders\flair_helmet_player_jai_aug.shader
 exit
 
 
@@ -4338,17 +4331,7 @@ exit
 
 
 edittag objects\characters\odst\odst.render_model
-replacerendergeometry "workingdir\ODSTcustomization\odst.dae"
-exit
-
-
-edittag objects\characters\odst\odst.render_model
-replacerendergeometry "workingdir\ODSTcustomization\odst.dae"
-exit
-
-
-
-edittag objects\characters\odst\odst.render_model
+addblockelements Materials 55
 SetField Materials[0].RenderMethod null
 SetField Materials[1].RenderMethod objects\characters\odst\shaders\odst_armor.shader
 SetField Materials[2].RenderMethod objects\characters\odst\shaders\odst_armor_steel.shader
@@ -4401,36 +4384,15 @@ SetField Materials[46].RenderMethod objects\characters\spartan_jorge\shaders\spa
 SetField Materials[47].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
 SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
 SetField Materials[49].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
+SetField Materials[50].RenderMethod objects\characters\odst_recon\shaders\odst_fp_arms.shader
+SetField Materials[51].RenderMethod objects\characters\marine\shaders\marine.shader
+SetField Materials[52].RenderMethod objects\characters\odst_recon\shaders\odst_handwriting.shader_decal
+SetField Materials[53].RenderMethod objects\characters\odst\shaders\mc_emblem.shader_decal
+SetField Materials[54].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+SetField Materials[55].RenderMethod objects\characters\odst\shaders\odst_badges.shader_decal
+replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
 savetagchanges
 exit
-
-
-
-
-
-
-
-
-
-
-
-	echo fix leg perms
-
-
-
-edittag objects\characters\odst\odst.render_model
-setfield Geometry.Meshes[13].Type Skinned
-setfield Geometry.Meshes[14].Type Skinned
-setfield Geometry.Meshes[15].Type Skinned
-setfield Geometry.Meshes[16].Type Skinned
-setfield Geometry.Meshes[17].Type Skinned
-setfield Geometry.Meshes[18].Type Skinned
-setfield Geometry.Meshes[19].Type Skinned
-setfield Geometry.Meshes[20].Type Skinned
-setfield Geometry.Meshes[21].Type Skinned
-savetagchanges
-exit
-
 
 	echo raven colors
 	echo raven_1
@@ -4523,7 +4485,7 @@ savetagchanges
 exit
 
 edittag objects\characters\odst\bitmaps\odst_gear_standard_cc.bitmap
-importbitmap 0 workingdir\ODSTcustomizatio\bitmaps\base\odst_gear_standard_cc.dds
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_gear_standard_cc.dds
 exit
 
 edittag objects\characters\odst\bitmaps\odst_gear_standard.bitmap
