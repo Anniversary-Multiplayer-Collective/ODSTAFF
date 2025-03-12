@@ -4515,6 +4515,16 @@ exit
 
 
 
+	echo >Fix Biped rotating in customization<
+	
+edittag multiplayer\mod_globals.mod_globals
+removeblockelements PlayerCharacterCustomizations[0].RegionCameraScripts 0 5
+setfield PlayerCharacterCustomizations[0].RegionCameraScripts[1].RegionName "backpack"
+setfield PlayerCharacterCustomizations[0].RegionCameraScripts[0].BipedRotation 325
+setfield PlayerCharacterCustomizations[0].RegionCameraScripts[1].BipedRotation 500
+savetagchanges
+exit
+
 
 
 
