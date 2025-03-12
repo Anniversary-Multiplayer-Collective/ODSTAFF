@@ -1,6 +1,6 @@
 < ElDewrito maps folder >
 SetVariable h3maps < Halo 3 360 maps folder >
-SetVariable mcch3maps < Halo 3 MCC maps folder >
+SetVariable h3mccmaps < Halo 3 MCC maps folder >
 SetVariable odstmaps < Halo 3 ODST 360 maps folder >
 SetVariable reachmaps < Halo Reach 360 maps folder >
 SetVariable workingdir < Respository folder >
