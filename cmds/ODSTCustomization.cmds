@@ -4331,11 +4331,12 @@ exit
 
 
 edittag objects\characters\odst\odst.render_model
-addblockelements Materials 55
-SetField Materials[0].RenderMethod null
+RemoveBlockElements Materials 0 *
+AddBlockElements Materials 45
+SetField Materials[0].RenderMethod objects\characters\odst\shaders\odst_badges.shader_decal
 SetField Materials[1].RenderMethod objects\characters\odst\shaders\odst_armor.shader
 SetField Materials[2].RenderMethod objects\characters\odst\shaders\odst_armor_steel.shader
-SetField Materials[3].RenderMethod objects\characters\odst\shaders\odst_fp_arms_fixed.shader
+SetField Materials[3].RenderMethod objects\characters\odst_recon\shaders\odst_fp_arms.shader
 SetField Materials[4].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
 SetField Materials[5].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
 SetField Materials[6].RenderMethod objects\characters\masterchief\shaders\h2_legs.shader
@@ -4347,49 +4348,36 @@ SetField Materials[11].RenderMethod objects\characters\masterchief\shaders\odst_
 SetField Materials[12].RenderMethod objects\characters\masterchief\shaders\odst_raven_3.shader
 SetField Materials[13].RenderMethod objects\characters\masterchief\shaders\odst_raven_4.shader
 SetField Materials[14].RenderMethod objects\characters\masterchief\shaders\reach_chest.shader
-SetField Materials[15].RenderMethod objects\characters\masterchief\shaders\marine_chest.shader
-SetField Materials[16].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
-SetField Materials[17].RenderMethod objects\characters\masterchief\shaders\h2_legs.shader
-SetField Materials[18].RenderMethod shaders\invalid.shader
-SetField Materials[19].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
-SetField Materials[20].RenderMethod objects\characters\odst\shaders\gear_light.shader
-SetField Materials[21].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
-SetField Materials[22].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_kat.shader
-SetField Materials[23].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
-SetField Materials[24].RenderMethod objects\characters\odst_recon\shaders\fp_skin.shader
-SetField Materials[25].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
-SetField Materials[26].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
-
-SetField Materials[27].RenderMethod shaders\invalid.shader
-SetField Materials[28].RenderMethod shaders\invalid.shader
-
-SetField Materials[29].RenderMethod objects\characters\odst\shaders\odst_helmet.shader
-SetField Materials[30].RenderMethod objects\characters\masterchief\shaders\odst_visor_c.shader
-SetField Materials[31].RenderMethod objects\characters\odst\shaders\dutch_emblems_dec.shader_decal
-SetField Materials[32].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
-SetField Materials[33].RenderMethod objects\characters\masterchief\shaders\reach_visor_c.shader
-SetField Materials[34].RenderMethod objects\characters\masterchief\shaders\raven_1_visor_c.shader
-SetField Materials[35].RenderMethod objects\characters\masterchief\shaders\raven_2_visor_c.shader
-SetField Materials[36].RenderMethod objects\characters\masterchief\shaders\raven_3_visor_c.shader
-SetField Materials[37].RenderMethod objects\characters\masterchief\shaders\raven_4_visor_c.shader
-SetField Materials[38].RenderMethod objects\characters\masterchief\shaders\h2aodst_helm.shader
-SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\h2aodst_visor.shader
-SetField Materials[40].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet.shader
-SetField Materials[41].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet_visor.shader
-SetField Materials[42].RenderMethod objects\characters\masterchief\shaders\reach_shoulders.shader
-SetField Materials[43].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
-SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jai.shader
-SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
-SetField Materials[46].RenderMethod objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
-SetField Materials[47].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
-SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
-SetField Materials[49].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
-SetField Materials[50].RenderMethod objects\characters\odst_recon\shaders\odst_fp_arms.shader
-SetField Materials[51].RenderMethod objects\characters\marine\shaders\marine.shader
-SetField Materials[52].RenderMethod objects\characters\odst_recon\shaders\odst_handwriting.shader_decal
-SetField Materials[53].RenderMethod objects\characters\odst\shaders\mc_emblem.shader_decal
-SetField Materials[54].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
-SetField Materials[55].RenderMethod objects\characters\odst\shaders\odst_badges.shader_decal
+SetField Materials[15].RenderMethod objects\characters\marine\shaders\marine.shader
+SetField Materials[16].RenderMethod objects\characters\odst_recon\shaders\odst_handwriting.shader_decal
+SetField Materials[17].RenderMethod objects\characters\odst\shaders\mc_emblem.shader_decal
+SetField Materials[18].RenderMethod objects\characters\masterchief\shaders\flair_ear_piece_emile.shader
+SetField Materials[19].RenderMethod objects\characters\odst\shaders\gear_light.shader
+SetField Materials[20].RenderMethod objects\characters\masterchief\shaders\flair_ear_piece_adrianna.shader
+SetField Materials[21].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_kat.shader
+SetField Materials[22].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
+SetField Materials[23].RenderMethod objects\characters\odst_recon\shaders\fp_skin.shader
+SetField Materials[24].RenderMethod objects\characters\masterchief\shaders\flair_helmet_player_jai_aug.shader
+SetField Materials[25].RenderMethod objects\characters\odst\shaders\odst_helmet.shader
+SetField Materials[26].RenderMethod objects\characters\masterchief\shaders\odst_visor_c.shader
+SetField Materials[27].RenderMethod objects\characters\odst\shaders\dutch_emblems_dec.shader_decal
+SetField Materials[28].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
+SetField Materials[29].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+SetField Materials[30].RenderMethod objects\characters\masterchief\shaders\raven_1_visor_c.shader
+SetField Materials[31].RenderMethod objects\characters\masterchief\shaders\raven_2_visor_c.shader
+SetField Materials[32].RenderMethod objects\characters\masterchief\shaders\raven_3_visor_c.shader
+SetField Materials[33].RenderMethod objects\characters\masterchief\shaders\raven_4_visor_c.shader
+SetField Materials[34].RenderMethod objects\characters\masterchief\shaders\h2aodst_helm.shader
+SetField Materials[35].RenderMethod objects\characters\masterchief\shaders\h2aodst_visor.shader
+SetField Materials[36].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet.shader
+SetField Materials[37].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet_visor.shader
+SetField Materials[38].RenderMethod objects\characters\masterchief\shaders\reach_shoulders.shader
+SetField Materials[39].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+SetField Materials[40].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
+SetField Materials[41].RenderMethod objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
+SetField Materials[42].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
+SetField Materials[43].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
+SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
 replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
 savetagchanges
 exit
