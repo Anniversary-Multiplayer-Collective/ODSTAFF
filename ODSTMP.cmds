@@ -1834,14 +1834,14 @@ SetField InheritanceList[0].NodeMap[35].LocalNode 51
 SetField InheritanceList[0].NodeMap[36].LocalNode 52
 SetField InheritanceList[0].NodeMap[39].LocalNode 53
 SetField InheritanceList[0].NodeMap[40].LocalNode 54
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[2].GraphIndex -1
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[2].Animation -1
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[3].GraphIndex -1
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[3].Animation -1
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[4].GraphIndex -1
-setfield Modes[1].WeaponClass[5].WeaponType[9].Set.Overlays[4].Animation -1
 	# end sort
 sortmodes
+savetagchanges
+exit
+
+# Fix graph for inheritance usage
+edittag objects\characters\masterchief\masterchief.model_animation_graph
+FixGraphForInheritance
 savetagchanges
 exit
 
