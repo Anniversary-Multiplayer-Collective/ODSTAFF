@@ -4515,7 +4515,7 @@ exit
 
 
 
-	echo >Fix Biped rotating in customization<
+	echo Fix Biped rotating in customization<
 	
 edittag multiplayer\mod_globals.mod_globals
 removeblockelements PlayerCharacterCustomizations[0].RegionCameraScripts 0 5
