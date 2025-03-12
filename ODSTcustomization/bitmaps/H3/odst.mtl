@@ -1,0 +1,50 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v4.1.0)
+
+newmtl odst_helmet
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+map_Kd objects\characters\odst\bitmaps\odst_helmet_diffuse.tif
+
+newmtl odst_visor
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+map_Kd objects\characters\odst\bitmaps\odst_helmet_diffuse.tif
+
+newmtl odst_handwriting
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+map_Kd objects\characters\odst\bitmaps\personal_decals[0].tif
+
+newmtl odst_rankstripe
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+
+newmtl odst_badges
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+map_Kd objects\characters\odst\bitmaps\badges_diffuse.tif
+
+newmtl odst_armor
+Kd 1 1 1
+Ks 0 0 0
+Ke 0 0 0
+Tf 1 1 1
+illum 1
+map_Kd objects\characters\odst\bitmaps\odst_body_diffuse.tif
+

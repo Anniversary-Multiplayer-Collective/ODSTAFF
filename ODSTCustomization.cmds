@@ -1,0 +1,4569 @@
+< ElDewrito maps folder >
+SetVariable h3maps < Halo 3 360 maps folder >
+SetVariable mcch3maps < Halo 3 MCC maps folder >
+SetVariable odstmaps < Halo 3 ODST 360 maps folder >
+SetVariable workingdir < Respository folder >
+SetVariable modsfolder < ElDewrito mods folder >
+
+openmodpackage modsfolder\odstmp
+
+#echo <<Strings>>
+
+stringid add reach
+stringid add spartan_helmet_reach
+stringid add spartan_helmet_reach_description
+stringid add raven_1
+stringid add spartan_helmet_raven_1
+stringid add spartan_helmet_raven_1_description
+stringid add raven_2
+stringid add spartan_helmet_raven_2
+stringid add spartan_helmet_raven_2_description
+stringid add raven_3
+stringid add spartan_helmet_raven_3
+stringid add spartan_helmet_raven_3_description
+stringid add raven_4
+stringid add spartan_helmet_raven_4
+stringid add spartan_helmet_raven_4_description
+stringid add h2a
+stringid add spartan_helmet_h2a
+stringid add spartan_helmet_h2a_description
+stringid add spartan_helmet_dare
+stringid add spartan_helmet_dare_description
+stringid add Romeo
+stringid add right_headgear
+stringid add spartan_right_headgear_raven_2
+stringid add spartan_right_headgear_raven_2_description
+stringid add spartan_right_headgear_raven_3
+stringid add spartan_right_headgear_raven_3_description
+stringid add spartan_right_headgear_raven_4
+stringid add spartan_right_headgear_raven_4_description
+stringid add 1_hul
+stringid add spartan_right_headgear_1_hul
+stringid add spartan_right_headgear_1_hul_description
+stringid add hul
+stringid add spartan_right_headgear_hul
+stringid add spartan_right_headgear_hul_description
+stringid add spartan_headgear_dutch
+stringid add spartan_headgear_dutch_description
+stringid add spartan_headgear_knife
+stringid add spartan_headgear_knife_description
+stringid add spartan_headgear_dare
+stringid add spartan_headgear_dare_description
+stringid add spartan_headgear_raven_1
+stringid add spartan_headgear_raven_1_description
+stringid add spartan_headgear_raven_2
+stringid add spartan_headgear_raven_2_description
+stringid add spartan_headgear_raven_3
+stringid add spartan_headgear_raven_3_description
+stringid add spartan_headgear_raven_4
+stringid add spartan_headgear_raven_4_description
+stringid add spartan_headgear_reach
+stringid add spartan_headgear_reach_description
+stringid add spartan_headgear_marine
+stringid add spartan_headgear_marine_description
+stringid add spartan_headgear_h2a
+stringid add spartan_headgear_h2a_description
+stringid add stomach
+stringid add l_shoulder_base
+stringid add l_shoulder_base_description
+stringid add l_shoulder_off
+stringid add l_shoulder_off_description
+stringid add l_shoulder_mickey
+stringid add l_shoulder_mickey_description
+stringid add l_shoulder_romeo
+stringid add l_shoulder_romeo_description
+stringid add l_shoulder_raven_1
+stringid add l_shoulder_raven_1_description
+stringid add l_shoulder_raven_2
+stringid add l_shoulder_raven_2_description
+stringid add l_shoulder_raven_3
+stringid add l_shoulder_raven_3_description
+stringid add l_shoulder_raven_4
+stringid add l_shoulder_raven_4_description
+stringid add l_shoulder_reach
+stringid add l_shoulder_reach_description
+stringid add l_shoulder_marine
+stringid add l_shoulder_marine_description
+stringid add l_shoulder_h3
+stringid add l_shoulder_h3_description
+stringid add h3
+stringid add l_shoulder_h2a
+stringid add l_shoulder_h2a_description
+stringid add r_shoulder_base
+stringid add r_shoulder_base_description
+stringid add r_shoulder_off
+stringid add r_shoulder_off_description
+stringid add r_shoulder_mickey
+stringid add r_shoulder_mickey_description
+stringid add r_shoulder_romeo
+stringid add r_shoulder_romeo_description
+stringid add r_shoulder_raven_1
+stringid add r_shoulder_raven_1_description
+stringid add r_shoulder_raven_2
+stringid add r_shoulder_raven_2_description
+stringid add r_shoulder_raven_3
+stringid add r_shoulder_raven_3_description
+stringid add r_shoulder_raven_4
+stringid add r_shoulder_raven_4_description
+stringid add r_shoulder_reach
+stringid add r_shoulder_reach_description
+stringid add r_shoulder_marine
+stringid add r_shoulder_marine_description
+stringid add r_shoulder_h3
+stringid add r_shoulder_h3_description
+stringid add r_shoulder_h2a
+stringid add r_shoulder_h2a_description
+stringid add left_headgear
+stringid add left_headgear_description
+stringid add left_headgear_mickey
+stringid add left_headgear_mickey_description
+stringid add left_headgear_dutch
+stringid add left_headgear_dutch_description
+stringid add left_headgear_sergeant
+stringid add left_headgear_sergeant_description
+stringid add left_headgear_raven_2
+stringid add left_headgear_raven_2_description
+stringid add left_headgear_raven_3
+stringid add left_headgear_raven_3_description
+stringid add left_headgear_1_hul
+stringid add left_headgear_1_hul_description
+stringid add left_headgear_hul
+stringid add left_headgear_hul_description
+stringid add top_headgear
+stringid add top_headgear_description
+stringid add left_headgear_romeo
+stringid add left_headgear_romeo_description
+stringid add left_headgear_raven_4
+stringid add left_headgear_raven_4_description
+stringid add left_headgear_fc
+stringid add left_headgear_fc_description
+stringid add left_headgear_aug
+stringid add left_headgear_aug_description
+stringid add aug
+stringid add left_headgear_nxra
+stringid add left_headgear_nxra_description
+stringid add nxra
+stringid add left_headgear_i
+stringid add left_headgear_i_description
+stringid add i
+stringid add mp_rookie
+stringid add mp_dutch
+stringid add mp_mickey
+stringid add mp_romeo
+stringid add mp_raven_1
+stringid add mp_raven_2
+stringid add mp_raven_3
+stringid add mp_raven_4
+stringid add mp_standard
+stringid add mp_dare
+stringid add mp_h3
+stringid add mp_h2a
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english helmet "Helmet"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name helmet
+savetagchanges
+moveblockelement Universal[0].CustomizableCharacters[0].Regions 4 0
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+	echo Helmets <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	
+
+echo dutch helmet
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_dutch "dutch"
+setstring english spartan_helmet_mp_dutch_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_dutch_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[2].name dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name dutch
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name dutch
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo reach helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_reach "reach"
+setstring english spartan_helmet_mp_reach_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_reach_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation reach
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[3].name reach
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name reach
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name reach
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+echo raven_1 helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_raven_1 "raven_1"
+setstring english spartan_helmet_mp_raven_1_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_1_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[4].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name raven_1
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name raven_1
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+echo raven_2 helmet
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_raven_2 "raven_2"
+setstring english spartan_helmet_mp_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[5].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name raven_2
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name raven_2
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo raven_3 helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_raven_3 "raven_3"
+setstring english spartan_helmet_mp_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[6].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name raven_3
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name raven_3
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+echo raven_4 helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_raven_4 "raven_4"
+setstring english spartan_helmet_mp_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[7].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name raven_4
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name raven_4
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+echo h2a helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_h2a "h2a"
+setstring english spartan_helmet_mp_h2a_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_h2a_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[8].name h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name h2a
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name h2a
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo dare helmet
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_helmet_mp_dare "dare"
+setstring english spartan_helmet_mp_dare_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name spartan_helmet_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description spartan_helmet_mp_dare_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation dare
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[10].permutations
+setfield regions[10].permutations[9].name dare
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[4].permutations
+setfield variants[0].regions[4].permutations[*].name dare
+setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 9
+setfield variants[0].regions[4].permutations[*].probability 0
+AddBlockElements CollisionRegions[10].Permutations 
+SetField CollisionRegions[10].Permutations[*].Name dare
+SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo right_headgear<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	echo renames
+	
+edittag *.mulg
+setfield Universal[0].CustomizableCharacters[0].Regions[1].name right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[0].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[1].Name mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Name sergeant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[4].Name raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[0].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[1].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Variant[0].Region right_headgear
+savetagchanges
+exit
+
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].regions[6].name right_headgear
+setfield CollisionRegions[9].name right_headgear
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield regions[9].name right_headgear
+savetagchanges
+exit
+
+
+echo raven_2 Right Headgear
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_right_headgear_mp_raven_2 "raven_2"
+setstring english spartan_right_headgear_mp_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Description spartan_right_headgear_mp_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[9].permutations
+setfield regions[9].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[6].permutations
+setfield variants[0].regions[6].permutations[*].name raven_2
+setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[6].permutations[*].probability 0
+AddBlockElements CollisionRegions[9].Permutations 
+SetField CollisionRegions[9].Permutations[*].Name raven_2
+SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+echo raven_3 Right Headgear
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_right_headgear_mp_raven_3 "raven_3"
+setstring english spartan_right_headgear_mp_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Description spartan_right_headgear_mp_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[9].permutations
+setfield regions[9].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[6].permutations
+setfield variants[0].regions[6].permutations[*].name raven_3
+setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[6].permutations[*].probability 0
+AddBlockElements CollisionRegions[9].Permutations 
+SetField CollisionRegions[9].Permutations[*].Name raven_3
+SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+echo raven_4 Right Headgear
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_right_headgear_mp_raven_4 "raven_4"
+setstring english spartan_right_headgear_mp_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Description spartan_right_headgear_mp_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[9].permutations
+setfield regions[9].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[6].permutations
+setfield variants[0].regions[6].permutations[*].name raven_4
+setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[6].permutations[*].probability 0
+AddBlockElements CollisionRegions[9].Permutations 
+SetField CollisionRegions[9].Permutations[*].Name raven_4
+SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+echo 1_hul Right Headgear
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_right_headgear_mp_1_hul "1_hul"
+setstring english spartan_right_headgear_mp_1_hul_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_1_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Description spartan_right_headgear_mp_1_hul_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation 1_hul
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[9].permutations
+setfield regions[9].permutations[*].name 1_hul
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[6].permutations
+setfield variants[0].regions[6].permutations[*].name 1_hul
+setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[6].permutations[*].probability 0
+AddBlockElements CollisionRegions[9].Permutations 
+SetField CollisionRegions[9].Permutations[*].Name 1_hul
+SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+echo hul Right Headgear
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_right_headgear_mp_hul "hul"
+setstring english spartan_right_headgear_mp_hul_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Name spartan_right_headgear_mp_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Description spartan_right_headgear_mp_hul_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation hul
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[9].permutations
+setfield regions[9].permutations[*].name hul
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[6].permutations
+setfield variants[0].regions[6].permutations[*].name hul
+setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 9
+setfield variants[0].regions[6].permutations[*].probability 0
+AddBlockElements CollisionRegions[9].Permutations 
+SetField CollisionRegions[9].Permutations[*].Name hul
+SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+edittag *.mulg
+removeblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations 2 1
+removeblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations 6 1
+savetagchanges
+exit
+
+
+
+
+
+
+
+	echo fix name
+
+edittag *.mulg
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[2].name raven_1 
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].name sergeant 
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[4].name raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[1].name right_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Variant[0].Region right_headgear
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+	echo chest<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	echo renames
+
+edittag *.mulg
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Name base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[0].Variant[0].Permutation base
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[1].Name broken
+savetagchanges
+exit
+
+echo dutch chest
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_dutch "dutch"
+setstring english spartan_headgear_mp_dutch_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_dutch_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name dutch
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name dutch
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+echo knife chest
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_knife "knife"
+setstring english spartan_headgear_mp_knife_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_knife
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_knife_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation knife
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name knife
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name knife
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name knife
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo dare chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_dare "dare"
+setstring english spartan_headgear_mp_dare_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_dare_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation dare
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name dare
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name dare
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name dare
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo raven_1 chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_1 "raven_1"
+setstring english spartan_headgear_mp_raven_1_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_1_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name raven_1
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name raven_1
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo raven_2 chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_2 "raven_2"
+setstring english spartan_headgear_mp_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name raven_2
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name raven_2
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+echo raven_3 chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_3 "raven_3"
+setstring english spartan_headgear_mp_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name raven_3
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name raven_3
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+echo raven_4 chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_4 "raven_4"
+setstring english spartan_headgear_mp_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name raven_4
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name raven_4
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+
+echo reach chest
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_reach "reach"
+setstring english spartan_headgear_mp_reach_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_reach_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation reach
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name reach
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name reach
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 9
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name reach
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo marine chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_marine "marine"
+setstring english spartan_headgear_mp_marine_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_marine_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation marine
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name marine
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name marine
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 10
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name marine
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+echo h2a chest
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_h2a "h2a"
+setstring english spartan_headgear_mp_h2a_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name spartan_headgear_mp_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Description spartan_headgear_mp_h2a_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Region chest
+setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Variant[0].Permutation h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[2].permutations
+setfield regions[2].permutations[*].name h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[1].permutations
+setfield variants[0].regions[1].permutations[*].name h2a
+setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 11
+setfield variants[0].regions[1].permutations[*].probability 0
+AddBlockElements CollisionRegions[2].Permutations 
+SetField CollisionRegions[2].Permutations[*].Name h2a
+SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	Echo Stomach
+	Echo Name changes
+	
+
+	
+edittag *.mulg
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Name stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[0].Variant[0].Permutation base
+
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Name off
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Variant[0].Permutation off
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield Regions[11].Name stomach
+setfield Regions[11].Permutations[0].Name base
+setfield Regions[11].Permutations[1].Name off
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].Regions[10].Name stomach
+setfield variants[0].Regions[10].permutations[0].Name base
+setfield variants[0].Regions[10].permutations[1].Name off
+
+setfield CollisionRegions[11].Name stomach
+setfield CollisionRegions[11].Permutations[0].Name base
+setfield CollisionRegions[11].Permutations[1].Name off
+savetagchanges
+exit
+
+
+echo dare stomach
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_dare "dare"
+setstring english spartan_headgear_mp_dare_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_dare
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_dare_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation dare
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[11].permutations
+setfield regions[11].permutations[*].name dare
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[10].permutations
+setfield variants[0].regions[10].permutations[*].name dare
+setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[10].permutations[*].probability 0
+AddBlockElements CollisionRegions[11].Permutations 
+SetField CollisionRegions[11].Permutations[*].Name dare
+SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+echo raven_1 stomach
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_1 "raven_1"
+setstring english spartan_headgear_mp_raven_1_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_1_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[11].permutations
+setfield regions[11].permutations[*].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[10].permutations
+setfield variants[0].regions[10].permutations[*].name raven_1
+setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[10].permutations[*].probability 0
+AddBlockElements CollisionRegions[11].Permutations 
+SetField CollisionRegions[11].Permutations[*].Name raven_1
+SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+echo raven_2 stomach
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_2 "raven_2"
+setstring english spartan_headgear_mp_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[11].permutations
+setfield regions[11].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[10].permutations
+setfield variants[0].regions[10].permutations[*].name raven_2
+setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[10].permutations[*].probability 0
+AddBlockElements CollisionRegions[11].Permutations 
+SetField CollisionRegions[11].Permutations[*].Name raven_2
+SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+echo raven_3 stomach
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_3 "raven_3"
+setstring english spartan_headgear_mp_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[11].permutations
+setfield regions[11].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[10].permutations
+setfield variants[0].regions[10].permutations[*].name raven_3
+setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[10].permutations[*].probability 0
+AddBlockElements CollisionRegions[11].Permutations 
+SetField CollisionRegions[11].Permutations[*].Name raven_3
+SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+echo raven_4 stomach
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english spartan_headgear_mp_raven_4 "raven_4"
+setstring english spartan_headgear_mp_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Name spartan_headgear_mp_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Description spartan_headgear_mp_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Region stomach
+setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[11].permutations
+setfield regions[11].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[10].permutations
+setfield variants[0].regions[10].permutations[*].name raven_4
+setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[10].permutations[*].probability 0
+AddBlockElements CollisionRegions[11].Permutations 
+SetField CollisionRegions[11].Permutations[*].Name raven_4
+SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo left shoulder
+	echo renames
+	
+
+edittag *.mulg
+removeblockelements Universal[0].CustomizableCharacters[0].Regions 4 1
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield regions[12].permutations[0].name base
+setfield regions[13].permutations[0].name base
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].regions[9].permutations[0].name base
+setfield variants[0].regions[7].permutations[0].name base
+setfield  CollisionRegions[12].Permutations[0].Name base
+setfield  CollisionRegions[13].Permutations[0].Name base
+savetagchanges
+exit
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder "Left Shoulder"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name l_shoulder
+savetagchanges
+exit
+
+
+	echo base left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_base "base"
+setstring english l_shoulder_base_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_base_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+
+	echo off left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_off "off"
+setstring english l_shoulder_off_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_off_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation off
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name off
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name off
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name off
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+	echo mickey left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_mickey "mickey"
+setstring english l_shoulder_mickey_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_mickey_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name mickey
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name mickey
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name mickey
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo romeo left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_romeo "romeo"
+setstring english l_shoulder_romeo_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_romeo_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name romeo
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name romeo
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name romeo
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_1 left shoulder
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_raven_1 "raven_1"
+setstring english l_shoulder_raven_1_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_1_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name raven_1
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name raven_1
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+	echo raven_2 left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_raven_2 "raven_2"
+setstring english l_shoulder_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name raven_2
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name raven_2
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_3 left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_raven_3 "raven_3"
+setstring english l_shoulder_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name raven_3
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name raven_3
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_4 left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_raven_4 "raven_4"
+setstring english l_shoulder_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name raven_4
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name raven_4
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo reach left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_reach "reach"
+setstring english l_shoulder_reach_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_reach_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation reach
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name reach
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name reach
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name reach
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo marine left shoulder
+	
+	
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_marine "marine"
+setstring english l_shoulder_marine_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_marine_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation marine
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name marine
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name marine
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 9
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name marine
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo h3 left shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_h3 "Halo 3"
+setstring english l_shoulder_h3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_h3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name h3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name h3
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 10
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name h3
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo h2a left shoulder
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english l_shoulder_h2a "h2a"
+setstring english l_shoulder_h2a_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name l_shoulder_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description l_shoulder_h2a_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region l_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[12].permutations
+setfield regions[12].permutations[*].name h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[9].permutations
+setfield variants[0].regions[9].permutations[*].name h2a
+setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 11
+setfield variants[0].regions[9].permutations[*].probability 0
+AddBlockElements CollisionRegions[12].Permutations 
+SetField CollisionRegions[12].Permutations[*].Name h2a
+SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+	echo right shoulder 
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder "Right Shoulder"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name r_shoulder
+savetagchanges
+exit
+
+
+
+	echo base right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_base "base"
+setstring english r_shoulder_base_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_base_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+
+	echo off right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_off "off"
+setstring english r_shoulder_off_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_off
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_off_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation off
+savetagchanges
+exit
+
+	echo mickey right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_mickey "mickey"
+setstring english r_shoulder_mickey_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_mickey_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name mickey
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name mickey
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name mickey
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo romeo right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_romeo "romeo"
+setstring english r_shoulder_romeo_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_romeo_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name romeo
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name romeo
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name romeo
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo raven_1 right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_raven_1 "raven_1"
+setstring english r_shoulder_raven_1_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_1
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_1_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name raven_1
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name raven_1
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_2 right shoulder
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_raven_2 "raven_2"
+setstring english r_shoulder_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name raven_2
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name raven_2
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+	echo raven_3 right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_raven_3 "raven_3"
+setstring english r_shoulder_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name raven_3
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name raven_3
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_4 right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_raven_4 "raven_4"
+setstring english r_shoulder_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name raven_4
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name raven_4
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo reach right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_reach "reach"
+setstring english r_shoulder_reach_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_reach
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_reach_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation reach
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name reach
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name reach
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name reach
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo marine right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_marine "marine"
+setstring english r_shoulder_marine_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_marine
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_marine_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation marine
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name marine
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name marine
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 9
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name marine
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo h3 right shoulder
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_h3 "halo 3"
+setstring english r_shoulder_h3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_h3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_h3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name h3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name h3
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 10
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name h3
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo h3 right shoulder
+	
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english r_shoulder_h2a "h2a"
+setstring english r_shoulder_h2a_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name r_shoulder_h2a
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description r_shoulder_h2a_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region r_shoulder
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[13].permutations
+setfield regions[13].permutations[*].name h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[7].permutations
+setfield variants[0].regions[7].permutations[*].name h2a
+setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 11
+setfield variants[0].regions[7].permutations[*].probability 0
+AddBlockElements CollisionRegions[13].Permutations 
+SetField CollisionRegions[13].Permutations[*].Name h2a
+SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+		Echo left_headgear
+		Echo Names
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear "left_headgear"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name left_headgear
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield Regions[6].Name left_headgear
+setfield Regions[6].Permutations[0].Name base
+removeblockelements Regions[6].Permutations 1 5
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].Regions[8].Name left_headgear
+setfield variants[0].Regions[8].permutations[0].Name base
+setfield variants[0].Regions[8].permutations[0].RenderModelPermutationIndex 0
+removeblockelements variants[0].Regions[8].permutations 1 5
+setfield CollisionRegions[6].Name left_headgear
+setfield CollisionRegions[6].Permutations[0].Name base
+removeblockelements CollisionRegions[6].Permutations 1 5
+savetagchanges
+exit
+
+
+	echo base left headgear
+	
+	
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear "left_headgear"
+setstring english left_headgear_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+
+	echo mickey left headgear
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_mickey "mickey"
+setstring english left_headgear_mickey_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_mickey
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_mickey_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name mickey
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name mickey
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name mickey
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo dutch left headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_dutch "dutch"
+setstring english left_headgear_dutch_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_dutch_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name dutch
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name dutch
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo sergeant left headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_sergeant "sergeant"
+setstring english left_headgear_sergeant_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_sergeant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_sergeant_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation sergeant
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name sergeant
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name sergeant
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name sergeant
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo raven_2 left headgear
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_raven_2 "raven_2"
+setstring english left_headgear_raven_2_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_raven_2
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_raven_2_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name raven_2
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name raven_2
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_3 left headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_raven_3 "raven_3"
+setstring english left_headgear_raven_3_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_raven_3
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_raven_3_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name raven_3
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name raven_3
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+	echo 1_hul left headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_1_hul "1_hul"
+setstring english left_headgear_1_hul_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_1_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_1_hul_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation 1_hul
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name 1_hul
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name 1_hul
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name 1_hul
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo hul left headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english left_headgear_hul "hul"
+setstring english left_headgear_hul_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name left_headgear_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description left_headgear_hul_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region left_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation hul
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[6].permutations
+setfield regions[6].permutations[*].name hul
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[8].permutations
+setfield variants[0].regions[8].permutations[*].name hul
+setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[8].permutations[*].probability 0
+AddBlockElements CollisionRegions[6].Permutations 
+SetField CollisionRegions[6].Permutations[*].Name hul
+SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+		Echo top_headgear
+		Echo Names
+		
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear "top_headgear"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name top_headgear
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield Regions[14].Name top_headgear
+setfield Regions[14].Permutations[0].Name base
+removeblockelements Regions[14].Permutations 1 1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].Regions[11].Name top_headgear
+setfield variants[0].Regions[11].permutations[0].Name base
+setfield variants[0].Regions[11].permutations[0].RenderModelPermutationIndex 0
+removeblockelements variants[0].Regions[11].permutations 1 1
+setfield CollisionRegions[14].Name top_headgear
+setfield CollisionRegions[14].Permutations[0].Name base
+removeblockelements CollisionRegions[14].Permutations 1 1
+savetagchanges
+exit
+
+
+	echo base top headgear
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear "top_headgear"
+setstring english top_headgear_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+
+	echo romeo top headgear
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_romeo "romeo"
+setstring english top_headgear_romeo_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_romeo
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_romeo_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name romeo
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name romeo
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name romeo
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo raven_4 top headgear
+	
+	
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_raven_4 "raven_4"
+setstring english top_headgear_raven_4_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_raven_4
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_raven_4_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name raven_4
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name raven_4
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo fc top headgear
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_fc "fc"
+setstring english top_headgear_fc_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_fc
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_fc_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation fc
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name fc
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name fc
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name fc
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+
+	echo aug top headgear
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_aug "aug"
+setstring english top_headgear_aug_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_aug
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_aug_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation aug
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name aug
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name aug
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name aug
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+
+
+
+	echo nxra top headgear
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_nxra "nxra"
+setstring english top_headgear_nxra_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_nxra
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_nxra_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation nxra
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name nxra
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name nxra
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name nxra
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	echo i top headgear
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_i "i"
+setstring english top_headgear_i_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_i
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_i_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation i
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name i
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name i
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name i
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+	echo hul
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english top_headgear_hul "hul"
+setstring english top_headgear_hul_description "."
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name top_headgear_hul
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description top_headgear_hul_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation hul
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[14].permutations
+setfield regions[14].permutations[*].name hul
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[11].permutations
+setfield variants[0].regions[11].permutations[*].name hul
+setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[11].permutations[*].probability 0
+AddBlockElements CollisionRegions[14].Permutations 
+SetField CollisionRegions[14].Permutations[*].Name hul
+SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
+SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
+savetagchanges
+exit
+
+
+	ECHO legs
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english legs "legs"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name legs
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield Regions[3].Name legs
+setfield Regions[3].Permutations[0].Name base
+setfield Geometry.Meshes[13].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].Regions[2].Name legs
+setfield variants[0].Regions[2].permutations[0].Name base
+setfield variants[0].Regions[2].permutations[0].RenderModelPermutationIndex 0
+setfield CollisionRegions[3].Name legs
+setfield CollisionRegions[3].Permutations[0].Name base
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+	echo rookie legs
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english rookie "rookie"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name rookie
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation rookie
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name rookie
+setfield Geometry.Meshes[18].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name rookie
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name rookie
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+	echo dutch legs
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english dutch "dutch"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name dutch
+setfield Geometry.Meshes[18].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name dutch
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name dutch
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+
+
+	echo mickey legs
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english mickey "mickey"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name mickey
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name mickey
+setfield Geometry.Meshes[18].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name mickey
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name mickey
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+	echo romeo legs
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english romeo "romeo"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name romeo
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation romeo
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name romeo
+setfield Geometry.Meshes[18].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name romeo
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name romeo
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+	echo raven_1 legs
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_1 "raven_1"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_1
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name raven_1
+setfield Geometry.Meshes[18].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name raven_1
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name raven_1
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+	echo raven_2 legs
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_2 "raven_2"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_2
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name raven_2
+setfield Geometry.Meshes[19].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name raven_2
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name raven_2
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+	echo raven_3 legs
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_3 "raven_3"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_3
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name raven_3
+setfield Geometry.Meshes[20].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name raven_3
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name raven_3
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+	echo raven_4 legs
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_4 "raven 4"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_4
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region legs
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[3].permutations
+setfield regions[3].permutations[*].name raven_4
+setfield Geometry.Meshes[20].Type Skinned
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[2].permutations
+setfield variants[0].regions[2].permutations[*].name raven_4
+setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[2].permutations[*].probability 0
+AddBlockElements CollisionRegions[3].Permutations 
+SetField CollisionRegions[3].Permutations[*].Name raven_4
+SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+
+	ECHO BACKPACKS
+
+
+edittag objects\characters\odst_recon\odst_recon.model
+removeblockelements variants[0].Regions[12].permutations 1 1
+savetagchanges
+exit
+
+
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english backpack "backpack"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name backpack
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Description base
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation base
+savetagchanges
+exit
+
+edittag objects\characters\odst\odst.render_model
+setfield Regions[15].Name backpack
+setfield Regions[15].Permutations[0].Name base
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+setfield variants[0].Regions[12].Name backpack
+setfield variants[0].Regions[12].permutations[0].Name base
+setfield variants[0].Regions[12].permutations[0].RenderModelPermutationIndex 0
+setfield CollisionRegions[15].Name backpack
+setfield CollisionRegions[15].Permutations[0].Name base
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+	echo standard
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english rookie "Rookie"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name rookie
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name standard
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name standard
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name standard
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+	echo dutch
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english dutch "dutch"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dutch
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dutch
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name dutch
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name dutch
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name dutch
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+
+
+
+	echo mickey
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english mickey "mickey"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name mickey
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation mickey
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name mickey
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name mickey
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 3
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name mickey
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+	echo dare
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english dare "dare"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name dare
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation dare
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name dare
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name dare
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 4
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name dare
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+
+	echo raven_1
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_1 "raven_1"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_1
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_1
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name raven_1
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name raven_1
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 5
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name raven_1
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+
+	echo raven_2
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_2 "raven_2"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_2
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name raven_2
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name raven_2
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 6
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name raven_2
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+	echo raven_3
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_3 "raven_3"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_3
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name raven_3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name raven_3
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 7
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name raven_3
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+	echo raven_4
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english raven_4 "raven_4"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name raven_4
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region backpack
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[15].permutations
+setfield regions[15].permutations[*].name raven_4
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[12].permutations
+setfield variants[0].regions[12].permutations[*].name raven_4
+setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 8
+setfield variants[0].regions[12].permutations[*].probability 0
+AddBlockElements CollisionRegions[15].Permutations 
+SetField CollisionRegions[15].Permutations[*].Name raven_4
+SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+	echo body
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english body "body"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name body
+savetagchanges
+exit
+
+	
+	
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english standard "standard"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name standard
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
+savetagchanges
+exit
+
+
+
+	
+	
+	echo h3
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english h3 "Halo 3"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h3
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[1].permutations
+setfield regions[1].permutations[*].name h3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[0].permutations
+setfield variants[0].regions[0].permutations[*].name h3
+setfield variants[0].regions[0].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[0].permutations[*].probability 0
+AddBlockElements CollisionRegions[1].Permutations 
+SetField CollisionRegions[1].Permutations[*].Name h3
+SetField CollisionRegions[1].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[1].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+	echo h2a
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english h2a "Halo 2 A"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h2a
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h2a
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[1].permutations
+setfield regions[1].permutations[*].name h2a
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[0].permutations
+setfield variants[0].regions[0].permutations[*].name h2a
+setfield variants[0].regions[0].permutations[*].rendermodelpermutationindex 2
+setfield variants[0].regions[0].permutations[*].probability 0
+AddBlockElements CollisionRegions[1].Permutations 
+SetField CollisionRegions[1].Permutations[*].Name h2a
+SetField CollisionRegions[1].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[1].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+
+	echo hands
+	
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english hands "hands"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions
+setfield Universal[0].CustomizableCharacters[0].Regions[*].name hands
+savetagchanges
+exit
+
+	
+	
+	
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english standard "standard"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name standard
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region hands
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation standard
+savetagchanges
+exit
+
+	
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions
+setfield Variants[0].Regions[*].Name hands
+addblockelements variants[0].regions[*].permutations
+setfield variants[0].regions[*].permutations[*].name standard
+setfield variants[0].regions[*].permutations[*].rendermodelpermutationindex 0
+setfield variants[0].regions[*].permutations[*].probability 0
+savetagchanges
+exit
+
+
+
+
+	echo h3
+
+
+
+
+edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
+setstring english h3 "Halo 3"
+savetagchanges
+exit
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name h3
+addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region hands
+setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+addblockelements regions[7].permutations
+setfield regions[7].permutations[*].name h3
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements variants[0].regions[*].permutations
+setfield Variants[0].Regions[*].RenderModelRegionIndex 7
+setfield variants[0].regions[*].permutations[*].name h3
+setfield variants[0].regions[*].permutations[*].rendermodelpermutationindex 1
+setfield variants[0].regions[*].permutations[*].probability 0
+AddBlockElements CollisionRegions[7].Permutations 
+SetField CollisionRegions[7].Permutations[*].Name h3
+SetField CollisionRegions[7].Permutations[*].CollisionPermutationIndex 0
+SetField CollisionRegions[7].Permutations[*].PhysicsPermutationIndex 0
+savetagchanges
+exit
+
+	echo porttags
+
+
+
+opencachefile "mcch3maps\sandbox.map"
+porttag objects\characters\masterchief\shaders\odst_raven_1.shader
+porttag objects\characters\masterchief\shaders\odst_raven_2.shader
+porttag objects\characters\masterchief\shaders\odst_raven_3.shader
+porttag objects\characters\masterchief\shaders\odst_raven_4.shader
+porttag objects\characters\masterchief\shaders\odst_raven_1_visor.shader
+porttag objects\characters\masterchief\shaders\odst_raven_2_visor.shader
+porttag objects\characters\masterchief\shaders\odst_raven_3_visor.shader
+porttag objects\characters\masterchief\shaders\odst_raven_4_visor.shader
+exit
+
+
+opencachefile "odstmaps\H100.map"
+porttag objects\characters\odst_oni_op\shaders\oni_op_gear.shader
+porttag objects\characters\odst_oni_op\shaders\dare_helmet.shader
+porttag objects\characters\odst_oni_op\shaders\dare_helmet_visor.shader
+porttag objects\characters\odst\shaders\gear_light.shader
+porttag replace objects\characters\odst_recon\shaders\odst_fp_arms.shader
+exit
+
+opencachefile "reachmaps\m60.map"
+porttag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
+porttag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+porttag objects\characters\marine\shaders\marine_odst_set_shoulders.shader
+porttag objects\characters\marine\shaders\marine_odst_set_chest.shader
+porttag objects\characters\marine\shaders\marine.shader
+porttag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+porttag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jai.shader
+porttag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
+porttag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
+exit
+
+
+openmodpackage "workingdir\ODSTcustomization\spartanshaders.pak"
+applymodpackage
+exitmodpackage
+
+	
+
+	echo Reach shoulders
+	
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\reach_shoulders
+savetagnames
+
+
+edittag objects\characters\masterchief\shaders\reach_shoulders.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\marine\bitmaps\marine_odst_shoulders_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\marine\bitmaps\marine_odst_shoulders_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\marine\bitmaps\marine_odst_shoulders_normal.bitmap
+savetagchanges
+exit
+
+	echo Reach Chest
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\reach_chest
+savetagnames
+
+
+edittag objects\characters\masterchief\shaders\reach_chest.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\marine\bitmaps\marine_odst_chest_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\marine\bitmaps\marine_odst_chest_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\marine\bitmaps\marine_odst_chest_normal.bitmap
+savetagchanges
+exit
+
+
+	echo marine Chest
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\marine_chest
+savetagnames
+
+
+edittag objects\characters\masterchief\shaders\marine_chest.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\marine\bitmaps\marine_torso_diffuse.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\marine\bitmaps\marine_torso_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\marine\bitmaps\marine_torso_zbump.bitmap
+savetagchanges
+exit
+
+
+	echo H3 shoulders
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\h3_shoulders
+savetagnames
+
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_diff.bitmap
+nametag * objects\characters\masterchief\shaders\h3_shoulders_d
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_cc.bitmap
+nametag * objects\characters\masterchief\shaders\h3_shoulders_cc
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_normal.bitmap
+nametag * objects\characters\masterchief\shaders\h3_shoulders_n
+savetagnames
+
+edittag objects\characters\masterchief\shaders\h3_shoulders_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\H3\odst_body_h3_diffuse.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h3_shoulders_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\H3\odst_body_h3_cc.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h3_shoulders_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\H3\odst_body_h3_normals.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h3_shoulders.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\h3_shoulders_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\h3_shoulders_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\h3_shoulders_n.bitmap
+savetagchanges
+exit
+
+	echo h2a
+
+duplicatetag objects\characters\odst\shaders\odst_helmet.shader
+nametag * objects\characters\masterchief\shaders\h2aodst_helm
+savetagnames
+
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief.bitmap
+nametag * objects\characters\masterchief\shaders\h2aodst_helm_d
+savetagnames
+	
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_new_bump.bitmap
+nametag * objects\characters\masterchief\shaders\h2aodst_helm_n
+savetagnames
+
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_cc.bitmap
+nametag * objects\characters\masterchief\shaders\h2aodst_helm_c
+savetagnames
+
+duplicatetag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+nametag * objects\characters\masterchief\shaders\h2aodst_helm_m
+savetagnames
+	
+edittag objects\characters\masterchief\shaders\h2aodst_helm_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\h2aodst_helmet_d.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2aodst_helm_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\h2aodst_helmet_n.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2aodst_helm_c.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\h2aodst_helmet_c.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2aodst_helm_m.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\h2aodst_helmet_m.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2aodst_helm.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\h2aodst_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\h2aodst_helm_c.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\h2aodst_helm_n.bitmap
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+edittag objects\characters\odst\shaders\odst_helmet.shader
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+
+	echo visor
+	
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\h2aodst_visor
+savetagnames
+
+edittag objects\characters\masterchief\shaders\h2aodst_visor.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\h2aodst_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\h2aodst_helm_n.bitmap
+setargument diffuse_coefficient 4
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+duplicatetag objects\characters\odst\bitmaps\odst_material.bitmap
+nametag * objects\characters\odst\bitmaps\odst_material_h2a
+
+edittag objects\characters\odst\bitmaps\odst_material_h2a.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\odst_material.dds
+exit
+
+
+	echo H2_body
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\h2_body
+savetagnames
+
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_diff.bitmap
+nametag * objects\characters\masterchief\shaders\h2_body_d
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_cc.bitmap
+nametag * objects\characters\masterchief\shaders\h2_body_cc
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_normal.bitmap
+nametag * objects\characters\masterchief\shaders\h2_body_n
+savetagnames
+
+edittag objects\characters\masterchief\shaders\h2_body_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2_body_d.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_body_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2_body_c.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_body_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2_body_n.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_body.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\h2_body_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\h2_body_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\h2_body_n.bitmap
+setargument booleans use_material_texture
+savetagchanges
+exit
+
+
+
+	echo H2_legs
+
+duplicatetag objects\characters\odst_recon\shaders\odst_armor.shader
+nametag * objects\characters\masterchief\shaders\h2_legs
+savetagnames
+
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_diff.bitmap
+nametag * objects\characters\masterchief\shaders\h2_legs_d
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_cc.bitmap
+nametag * objects\characters\masterchief\shaders\h2_legs_cc
+savetagnames
+
+duplicatetag objects\characters\marine\bitmaps\marine_odst_chest_normal.bitmap
+nametag * objects\characters\masterchief\shaders\h2_legs_n
+savetagnames
+
+edittag objects\characters\masterchief\shaders\h2_legs_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2a_legs_d.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_legs_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2a_legs_c.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_legs_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\h2aodst\body\h2a_legs_n.dds
+exit
+
+edittag objects\characters\masterchief\shaders\h2_legs.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\h2_legs_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\h2_legs_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\h2_legs_n.bitmap
+savetagchanges
+exit
+
+
+
+
+
+
+
+	echo raven_1 visor
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\raven_1_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\raven_1_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\bitmaps\odst_raven_1_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\bitmaps\odst_raven_1_zbump.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+	echo raven_2 visor
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\raven_2_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\raven_2_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\bitmaps\odst_raven_2_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\bitmaps\odst_raven_2_zbump.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+
+
+	echo raven_3 visor
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\raven_3_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\raven_3_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\bitmaps\odst_raven_3_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\bitmaps\odst_raven_3_zbump.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+
+
+	echo raven_4 visor
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\raven_4_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\raven_4_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\bitmaps\odst_raven_4_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\bitmaps\odst_raven_4_zbump.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+	echo reach visor
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\reach_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\reach_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\spartans\bitmaps\spartan_helmets\spartan_helmet_malcolm_diff.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\spartans\bitmaps\spartan_helmets\spartan_helmet_malcolm_normal.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+	echo odst visor default
+
+
+duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+nametag * objects\characters\masterchief\shaders\odst_visor_c
+savetagnames
+
+edittag objects\characters\masterchief\shaders\odst_visor_c.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\odst\bitmaps\odst_helmet_diffuse.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\odst\bitmaps\odst_helmet_zbump.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+	
+	echo fix arms
+	
+duplicatetag objects\characters\odst\shaders\odst_armor.shader
+nametag * objects\characters\odst\shaders\odst_fp_arms_fixed
+savetagnames
+
+edittag objects\characters\odst\shaders\odst_fp_arms_fixed.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_diffuse.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_cc.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_zbump.bitmap
+savetagchanges
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+replacerendergeometry "workingdir\ODSTcustomization\odst.dae"
+exit
+
+
+edittag objects\characters\odst\odst.render_model
+replacerendergeometry "workingdir\ODSTcustomization\odst.dae"
+exit
+
+
+
+edittag objects\characters\odst\odst.render_model
+SetField Materials[0].RenderMethod null
+SetField Materials[1].RenderMethod objects\characters\odst\shaders\odst_armor.shader
+SetField Materials[2].RenderMethod objects\characters\odst\shaders\odst_armor_steel.shader
+SetField Materials[3].RenderMethod objects\characters\odst\shaders\odst_fp_arms_fixed.shader
+SetField Materials[4].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
+SetField Materials[5].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
+SetField Materials[6].RenderMethod objects\characters\masterchief\shaders\h2_legs.shader
+SetField Materials[7].RenderMethod objects\characters\odst\shaders\broken_chest.shader
+SetField Materials[8].RenderMethod objects\characters\odst\shaders\odst_gear_standard.shader
+SetField Materials[9].RenderMethod objects\characters\odst_oni_op\shaders\oni_op_gear.shader
+SetField Materials[10].RenderMethod objects\characters\masterchief\shaders\odst_raven_1.shader
+SetField Materials[11].RenderMethod objects\characters\masterchief\shaders\odst_raven_2.shader
+SetField Materials[12].RenderMethod objects\characters\masterchief\shaders\odst_raven_3.shader
+SetField Materials[13].RenderMethod objects\characters\masterchief\shaders\odst_raven_4.shader
+SetField Materials[14].RenderMethod objects\characters\masterchief\shaders\reach_chest.shader
+SetField Materials[15].RenderMethod objects\characters\masterchief\shaders\marine_chest.shader
+SetField Materials[16].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
+SetField Materials[17].RenderMethod objects\characters\masterchief\shaders\h2_legs.shader
+SetField Materials[18].RenderMethod shaders\invalid.shader
+SetField Materials[19].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
+SetField Materials[20].RenderMethod objects\characters\odst\shaders\gear_light.shader
+SetField Materials[21].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
+SetField Materials[22].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_kat.shader
+SetField Materials[23].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
+SetField Materials[24].RenderMethod objects\characters\odst_recon\shaders\fp_skin.shader
+SetField Materials[25].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
+SetField Materials[26].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
+
+SetField Materials[27].RenderMethod shaders\invalid.shader
+SetField Materials[28].RenderMethod shaders\invalid.shader
+
+SetField Materials[29].RenderMethod objects\characters\odst\shaders\odst_helmet.shader
+SetField Materials[30].RenderMethod objects\characters\masterchief\shaders\odst_visor_c.shader
+SetField Materials[31].RenderMethod objects\characters\odst\shaders\dutch_emblems_dec.shader_decal
+SetField Materials[32].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
+SetField Materials[33].RenderMethod objects\characters\masterchief\shaders\reach_visor_c.shader
+SetField Materials[34].RenderMethod objects\characters\masterchief\shaders\raven_1_visor_c.shader
+SetField Materials[35].RenderMethod objects\characters\masterchief\shaders\raven_2_visor_c.shader
+SetField Materials[36].RenderMethod objects\characters\masterchief\shaders\raven_3_visor_c.shader
+SetField Materials[37].RenderMethod objects\characters\masterchief\shaders\raven_4_visor_c.shader
+SetField Materials[38].RenderMethod objects\characters\masterchief\shaders\h2aodst_helm.shader
+SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\h2aodst_visor.shader
+SetField Materials[40].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet.shader
+SetField Materials[41].RenderMethod objects\characters\odst_oni_op\shaders\dare_helmet_visor.shader
+SetField Materials[42].RenderMethod objects\characters\masterchief\shaders\reach_shoulders.shader
+SetField Materials[43].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jai.shader
+SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
+SetField Materials[46].RenderMethod objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
+SetField Materials[47].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
+SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
+SetField Materials[49].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+
+
+	echo fix leg perms
+
+
+
+edittag objects\characters\odst\odst.render_model
+setfield Geometry.Meshes[13].Type Skinned
+setfield Geometry.Meshes[14].Type Skinned
+setfield Geometry.Meshes[15].Type Skinned
+setfield Geometry.Meshes[16].Type Skinned
+setfield Geometry.Meshes[17].Type Skinned
+setfield Geometry.Meshes[18].Type Skinned
+setfield Geometry.Meshes[19].Type Skinned
+setfield Geometry.Meshes[20].Type Skinned
+setfield Geometry.Meshes[21].Type Skinned
+savetagchanges
+exit
+
+
+	echo raven colors
+	echo raven_1
+	
+	
+edittag objects\characters\masterchief\bitmaps\odst_raven_1_diff.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_1_diff.dds
+exit
+
+edittag objects\characters\masterchief\bitmaps\odst_raven_1_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_1_cc.dds
+exit
+
+edittag objects\characters\masterchief\shaders\odst_raven_1.shader
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+	echo raven_2
+	
+edittag objects\characters\masterchief\bitmaps\odst_raven_2_diff.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_2_diff.dds
+exit
+
+edittag objects\characters\masterchief\bitmaps\odst_raven_2_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_2_cc.dds
+exit
+
+
+edittag objects\characters\masterchief\shaders\odst_raven_2.shader
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+	echo raven_3
+
+edittag objects\characters\masterchief\bitmaps\odst_raven_3_diff.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_3_diff.dds
+exit
+
+edittag objects\characters\masterchief\bitmaps\odst_raven_3_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_3_cc.dds
+exit
+
+
+edittag objects\characters\masterchief\shaders\odst_raven_3.shader
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+	echo raven_4
+	
+edittag objects\characters\masterchief\bitmaps\odst_raven_4_diff.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_4_diff.dds
+exit
+
+edittag objects\characters\masterchief\bitmaps\odst_raven_4_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\FTR\odst_raven_4_cc.dds
+exit
+
+
+edittag objects\characters\masterchief\shaders\odst_raven_4.shader
+setargument specular_coefficient 0.1
+savetagchanges
+exit
+
+
+	echo cc bitmaps
+	
+edittag objects\characters\odst\bitmaps\odst_helmet_diffuse.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_helmet_diffuse.dds
+exit
+
+edittag objects\characters\odst\bitmaps\odst_helmet_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_helmet_cc.dds
+exit
+
+edittag objects\characters\odst\bitmaps\odst_body_diffuse.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_body_diffuse.dds
+exit
+
+edittag objects\characters\odst\bitmaps\odst_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_cc.dds
+exit
+
+
+edittag objects\characters\odst\shaders\odst_gear_standard.shader
+setargument specular_coefficient 0.3
+savetagchanges
+exit
+
+edittag objects\characters\odst\bitmaps\odst_gear_standard_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomizatio\bitmaps\base\odst_gear_standard_cc.dds
+exit
+
+edittag objects\characters\odst\bitmaps\odst_gear_standard.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_gear_standard.dds
+exit
+
+edittag objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\base\odst_fp_arms_cc.dds
+exit
+
+
+edittag objects\characters\marine\bitmaps\marine_odst_chest_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\marine_odst_spartan_chest_cc.dds
+exit
+
+edittag objects\characters\marine\bitmaps\marine_torso_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\marine_torso_cc.dds
+exit
+
+edittag objects\levels\atlas\beacons\bitmaps\dare_helmet_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\dare_helmet_cc.dds
+exit
+
+edittag objects\characters\marine\bitmaps\marine_odst_shoulders_cc.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\marine_odst_spartan_shoulders_cc.dds
+exit
+
+
+	echo Fix Visors
+
+edittag multiplayer\mod_globals.mod_globals
+setfield PlayerCharacterCustomizations[0].CharacterColors.ValidColorFlags PrimaryColor,SecondaryColor,TertiaryColor
+setfield PlayerCharacterCustomizations[0].CharacterColors.Colors[2].Name cef_color_visor
+setfield PlayerCharacterCustomizations[0].CharacterColors.Colors[2].Description cef_color_visor_desc
+setfield PlayerCharacterCustomizations[0].CharacterColors.Colors[2].Default 177 0 59 255
+savetagchanges
+exit
+
+
+
+
+
+
+
