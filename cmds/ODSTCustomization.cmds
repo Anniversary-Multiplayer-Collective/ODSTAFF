@@ -4382,6 +4382,55 @@ replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
 savetagchanges
 exit
 
+edittag objects\characters\odst_recon\fp_body\fp_body.render_model
+RemoveBlockElements Regions 0 *
+AddBlockElements Regions 5
+SetField Regions[0].Name body
+AddBlockElements Regions[0].Permutations 3
+SetField Regions[0].Permutations[0].Name standard
+SetField Regions[0].Permutations[1].Name h3
+SetField Regions[0].Permutations[2].Name h2a
+SetField Regions[1].Name d_waist
+AddBlockElements Regions[1].Permutations 1
+SetField Regions[1].Permutations[0].Name standard
+SetField Regions[2].Name gear
+AddBlockElements Regions[2].Permutations 5
+SetField Regions[2].Permutations[0].Name romeo
+SetField Regions[2].Permutations[1].Name standard
+SetField Regions[2].Permutations[2].Name mickey
+SetField Regions[2].Permutations[3].Name sergeant
+SetField Regions[2].Permutations[4].Name dutch
+SetField Regions[3].Name legs
+AddBlockElements Regions[3].Permutations 9
+SetField Regions[3].Permutations[0].Name mickey
+SetField Regions[3].Permutations[1].Name dutch
+SetField Regions[3].Permutations[2].Name rookie
+SetField Regions[3].Permutations[3].Name base
+SetField Regions[3].Permutations[4].Name raven_1
+SetField Regions[3].Permutations[5].Name raven_4
+SetField Regions[3].Permutations[6].Name raven_3
+SetField Regions[3].Permutations[7].Name raven_2
+SetField Regions[3].Permutations[8].Name romeo
+SetField Regions[4].Name chest
+AddBlockElements Regions[4].Permutations 1
+SetField Regions[4].Permutations[0].Name h2a
+
+RemoveBlockElements Materials 0 *
+AddBlockElements Materials 10
+SetField Materials[0].RenderMethod objects\characters\odst\shaders\odst_armor.shader
+SetField Materials[1].RenderMethod objects\characters\odst\shaders\odst_armor_steel.shader
+SetField Materials[2].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
+SetField Materials[3].RenderMethod objects\characters\masterchief\shaders\h2_legs.shader
+SetField Materials[4].RenderMethod objects\characters\odst_recon\shaders\odst_handwriting.shader_decal
+SetField Materials[5].RenderMethod objects\characters\odst\shaders\odst_gear_standard.shader
+SetField Materials[6].RenderMethod objects\characters\masterchief\shaders\odst_raven_1.shader
+SetField Materials[7].RenderMethod objects\characters\masterchief\shaders\odst_raven_3.shader
+SetField Materials[8].RenderMethod objects\characters\masterchief\shaders\odst_raven_4.shader
+SetField Materials[9].RenderMethod objects\characters\masterchief\shaders\odst_raven_2.shader
+replacerendergeometry "workingdir\ODSTcustomization\odst_fp_body.dae" TriangleStrip
+savetagchanges
+exit
+
 	echo raven colors
 	echo raven_1
 	
