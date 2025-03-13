@@ -207,28 +207,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[2].name dutch
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name dutch
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name dutch
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 
 echo reach helmet
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
@@ -240,23 +220,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[2].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[3].name reach
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name reach
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name reach
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
 
 echo raven_1 helmet
 
@@ -270,26 +233,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_1
 savetagchanges
 exit
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[4].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name raven_1
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name raven_1
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 
 
 echo raven_2 helmet
@@ -305,23 +248,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[5].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name raven_2
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name raven_2
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
 
 
 echo raven_3 helmet
@@ -338,26 +264,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[6].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name raven_3
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name raven_3
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 
 echo raven_4 helmet
 
@@ -372,27 +278,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation raven_4
 savetagchanges
 exit
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[7].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name raven_4
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name raven_4
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 
 
 echo h2a helmet
@@ -409,24 +294,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[8].name h2a
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name h2a
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name h2a
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 
 echo dare helmet
 
@@ -439,24 +306,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Descr
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation dare
-savetagchanges
-exit
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[10].permutations
-setfield regions[10].permutations[9].name dare
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[4].permutations
-setfield variants[0].regions[4].permutations[*].name dare
-setfield variants[0].regions[4].permutations[*].rendermodelpermutationindex 9
-setfield variants[0].regions[4].permutations[*].probability 0
-AddBlockElements CollisionRegions[10].Permutations 
-SetField CollisionRegions[10].Permutations[*].Name dare
-SetField CollisionRegions[10].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[10].Permutations[*].PhysicsPermutationIndex -1
 savetagchanges
 exit
 
@@ -479,18 +328,6 @@ savetagchanges
 exit
 
 
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].regions[6].name right_headgear
-setfield CollisionRegions[9].name right_headgear
-savetagchanges
-exit
-
-edittag objects\characters\odst\odst.render_model
-setfield regions[9].name right_headgear
-savetagchanges
-exit
-
-
 echo raven_2 Right Headgear
 
 
@@ -505,27 +342,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[9].permutations
-setfield regions[9].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[6].permutations
-setfield variants[0].regions[6].permutations[*].name raven_2
-setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[6].permutations[*].probability 0
-AddBlockElements CollisionRegions[9].Permutations 
-SetField CollisionRegions[9].Permutations[*].Name raven_2
-SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
 
 echo raven_3 Right Headgear
 
@@ -538,24 +354,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Descr
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Region right_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Variant[0].Permutation raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[9].permutations
-setfield regions[9].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[6].permutations
-setfield variants[0].regions[6].permutations[*].name raven_3
-setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[6].permutations[*].probability 0
-AddBlockElements CollisionRegions[9].Permutations 
-SetField CollisionRegions[9].Permutations[*].Name raven_3
-SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
 savetagchanges
 exit
 
@@ -573,28 +371,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[9].permutations
-setfield regions[9].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[6].permutations
-setfield variants[0].regions[6].permutations[*].name raven_4
-setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[6].permutations[*].probability 0
-AddBlockElements CollisionRegions[9].Permutations 
-SetField CollisionRegions[9].Permutations[*].Name raven_4
-SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 echo 1_hul Right Headgear
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -606,30 +383,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[9].permutations
-setfield regions[9].permutations[*].name 1_hul
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[6].permutations
-setfield variants[0].regions[6].permutations[*].name 1_hul
-setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[6].permutations[*].probability 0
-AddBlockElements CollisionRegions[9].Permutations 
-SetField CollisionRegions[9].Permutations[*].Name 1_hul
-SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 
 echo hul Right Headgear
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations
@@ -641,36 +396,11 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[9].permutations
-setfield regions[9].permutations[*].name hul
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[6].permutations
-setfield variants[0].regions[6].permutations[*].name hul
-setfield variants[0].regions[6].permutations[*].rendermodelpermutationindex 9
-setfield variants[0].regions[6].permutations[*].probability 0
-AddBlockElements CollisionRegions[9].Permutations 
-SetField CollisionRegions[9].Permutations[*].Name hul
-SetField CollisionRegions[9].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[9].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 edittag *.mulg
 removeblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations 2 1
 removeblockelements Universal[0].CustomizableCharacters[0].Regions[1].Permutations 6 1
 savetagchanges
 exit
-
-
-
-
-
-
 
 	echo fix name
 
@@ -696,13 +426,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[1].Permutations[3].Varia
 savetagchanges
 exit
 
-
-
-
-
-
-
-
 	echo chest<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 	echo renames
 
@@ -719,7 +442,6 @@ exit
 
 echo dutch chest
 
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Name custom_mp_sup
@@ -730,26 +452,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name dutch
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name dutch
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name dutch
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 echo knife chest
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -761,28 +464,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name knife
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name knife
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name knife
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 echo dare chest
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -794,28 +476,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name dare
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name dare
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name dare
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 echo raven_1 chest
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -827,27 +488,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name raven_1
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name raven_1
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 echo raven_2 chest
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -859,33 +500,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name raven_2
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name raven_2
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
-
-
-
 echo raven_3 chest
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -897,34 +512,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name raven_3
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name raven_3
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
-
-
-
 echo raven_4 chest
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -936,31 +524,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name raven_4
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name raven_4
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
-
 echo reach chest
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -972,28 +536,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name reach
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name reach
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 9
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name reach
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 echo marine chest
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -1005,29 +548,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name marine
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name marine
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 10
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name marine
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 echo h2a chest
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[2].Permutations
@@ -1039,29 +560,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[2].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[2].permutations
-setfield regions[2].permutations[*].name h2a
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[1].permutations
-setfield variants[0].regions[1].permutations[*].name h2a
-setfield variants[0].regions[1].permutations[*].rendermodelpermutationindex 11
-setfield variants[0].regions[1].permutations[*].probability 0
-AddBlockElements CollisionRegions[2].Permutations 
-SetField CollisionRegions[2].Permutations[*].Name h2a
-SetField CollisionRegions[2].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[2].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	Echo Stomach
 	Echo Name changes
-	
-
 	
 edittag *.mulg
 setfield Universal[0].CustomizableCharacters[0].Regions[3].Name stomach
@@ -1076,28 +576,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[1].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-setfield Regions[11].Name stomach
-setfield Regions[11].Permutations[0].Name base
-setfield Regions[11].Permutations[1].Name off
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].Regions[10].Name stomach
-setfield variants[0].Regions[10].permutations[0].Name base
-setfield variants[0].Regions[10].permutations[1].Name off
-
-setfield CollisionRegions[11].Name stomach
-setfield CollisionRegions[11].Permutations[0].Name base
-setfield CollisionRegions[11].Permutations[1].Name off
-savetagchanges
-exit
-
-
 echo dare stomach
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
@@ -1109,31 +588,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[11].permutations
-setfield regions[11].permutations[*].name dare
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[10].permutations
-setfield variants[0].regions[10].permutations[*].name dare
-setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[10].permutations[*].probability 0
-AddBlockElements CollisionRegions[11].Permutations 
-SetField CollisionRegions[11].Permutations[*].Name dare
-SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
 echo raven_1 stomach
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
@@ -1145,29 +600,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[11].permutations
-setfield regions[11].permutations[*].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[10].permutations
-setfield variants[0].regions[10].permutations[*].name raven_1
-setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[10].permutations[*].probability 0
-AddBlockElements CollisionRegions[11].Permutations 
-SetField CollisionRegions[11].Permutations[*].Name raven_1
-SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 echo raven_2 stomach
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
@@ -1179,31 +612,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[11].permutations
-setfield regions[11].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[10].permutations
-setfield variants[0].regions[10].permutations[*].name raven_2
-setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[10].permutations[*].probability 0
-AddBlockElements CollisionRegions[11].Permutations 
-SetField CollisionRegions[11].Permutations[*].Name raven_2
-SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
 echo raven_3 stomach
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
@@ -1215,27 +624,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[11].permutations
-setfield regions[11].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[10].permutations
-setfield variants[0].regions[10].permutations[*].name raven_3
-setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[10].permutations[*].probability 0
-AddBlockElements CollisionRegions[11].Permutations 
-SetField CollisionRegions[11].Permutations[*].Name raven_3
-SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 echo raven_4 stomach
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[3].Permutations
@@ -1247,45 +636,11 @@ setfield Universal[0].CustomizableCharacters[0].Regions[3].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[11].permutations
-setfield regions[11].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[10].permutations
-setfield variants[0].regions[10].permutations[*].name raven_4
-setfield variants[0].regions[10].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[10].permutations[*].probability 0
-AddBlockElements CollisionRegions[11].Permutations 
-SetField CollisionRegions[11].Permutations[*].Name raven_4
-SetField CollisionRegions[11].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[11].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo left shoulder
 	echo renames
 	
-
 edittag *.mulg
 removeblockelements Universal[0].CustomizableCharacters[0].Regions 4 1
-savetagchanges
-exit
-
-edittag objects\characters\odst\odst.render_model
-setfield regions[12].permutations[0].name base
-setfield regions[13].permutations[0].name base
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].regions[9].permutations[0].name base
-setfield variants[0].regions[7].permutations[0].name base
-setfield  CollisionRegions[12].Permutations[0].Name base
-setfield  CollisionRegions[13].Permutations[0].Name base
 savetagchanges
 exit
 
@@ -1296,11 +651,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].name l_shoulder
 savetagchanges
 exit
 
-
 	echo base left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
@@ -1311,11 +663,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
 	echo off left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
@@ -1326,31 +675,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name off
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name off
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name off
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 	echo mickey left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_mickey
@@ -1361,30 +687,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name mickey
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name mickey
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name mickey
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo romeo left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_romeo
@@ -1395,28 +699,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name romeo
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name romeo
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name romeo
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_1 left shoulder
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -1428,31 +711,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name raven_1
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name raven_1
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 	echo raven_2 left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_2
@@ -1463,30 +723,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name raven_2
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name raven_2
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_3 left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_3
@@ -1497,30 +735,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name raven_3
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name raven_3
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_4 left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_4
@@ -1530,31 +746,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_4
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name raven_4
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name raven_4
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo reach left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_reach
@@ -1564,30 +757,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation reach
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name reach
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name reach
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name reach
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo marine left shoulder
 	
-	
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_marine
@@ -1598,30 +769,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name marine
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name marine
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 9
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name marine
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo h3 left shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
@@ -1632,29 +781,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name h3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name h3
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 10
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name h3
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo h2a left shoulder
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -1666,30 +793,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[12].permutations
-setfield regions[12].permutations[*].name h2a
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[9].permutations
-setfield variants[0].regions[9].permutations[*].name h2a
-setfield variants[0].regions[9].permutations[*].rendermodelpermutationindex 11
-setfield variants[0].regions[9].permutations[*].probability 0
-AddBlockElements CollisionRegions[12].Permutations 
-SetField CollisionRegions[12].Permutations[*].Name h2a
-SetField CollisionRegions[12].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[12].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 	echo right shoulder 
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -1697,12 +801,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].name r_shoulder
 savetagchanges
 exit
 
-
-
 	echo base right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name base
@@ -1713,11 +813,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
 	echo off right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
@@ -1730,8 +827,6 @@ exit
 
 	echo mickey right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_mickey
@@ -1742,29 +837,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name mickey
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name mickey
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name mickey
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo romeo right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_romeo
@@ -1775,29 +849,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name romeo
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name romeo
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name romeo
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo raven_1 right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_raven_1
@@ -1808,29 +861,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name raven_1
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name raven_1
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_2 right shoulder
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -1841,27 +872,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation raven_2
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name raven_2
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name raven_2
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 
 	echo raven_3 right shoulder
 	
@@ -1877,26 +887,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name raven_3
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name raven_3
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_4 right shoulder
 	
 
@@ -1911,30 +901,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name raven_4
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name raven_4
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo reach right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_reach
@@ -1945,30 +913,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name reach
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name reach
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name reach
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo marine right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_marine
@@ -1979,29 +925,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name marine
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name marine
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 9
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name marine
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo h3 right shoulder
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h3
@@ -2012,28 +937,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name h3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name h3
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 10
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name h3
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo h2a right shoulder
 	
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_h2a
@@ -2044,29 +949,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[13].permutations
-setfield regions[13].permutations[*].name h2a
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[7].permutations
-setfield variants[0].regions[7].permutations[*].name h2a
-setfield variants[0].regions[7].permutations[*].rendermodelpermutationindex 11
-setfield variants[0].regions[7].permutations[*].probability 0
-AddBlockElements CollisionRegions[13].Permutations 
-SetField CollisionRegions[13].Permutations[*].Name h2a
-SetField CollisionRegions[13].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[13].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 		Echo left_headgear
 		Echo Names
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -2074,29 +958,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].name left_headgear
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-setfield Regions[6].Name left_headgear
-setfield Regions[6].Permutations[0].Name base
-removeblockelements Regions[6].Permutations 1 5
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].Regions[8].Name left_headgear
-setfield variants[0].Regions[8].permutations[0].Name base
-setfield variants[0].Regions[8].permutations[0].RenderModelPermutationIndex 0
-removeblockelements variants[0].Regions[8].permutations 1 5
-setfield CollisionRegions[6].Name left_headgear
-setfield CollisionRegions[6].Permutations[0].Name base
-removeblockelements CollisionRegions[6].Permutations 1 5
-savetagchanges
-exit
-
-
 	echo base left headgear
 	
-	
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
@@ -2107,10 +970,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
 	echo mickey left headgear
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2122,30 +982,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name mickey
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name mickey
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name mickey
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo dutch left headgear
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_cnm
@@ -2156,30 +994,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name dutch
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name dutch
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name dutch
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo sergeant left headgear
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_odstcnm
@@ -2190,27 +1006,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name sergeant
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name sergeant
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name sergeant
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 	echo raven_2 left headgear
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2222,29 +1018,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name raven_2
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name raven_2
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_3 left headgear
-	
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2256,30 +1030,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name raven_3
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name raven_3
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
 	echo 1_hul left headgear
 	
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2290,26 +1042,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation 1_hul
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name 1_hul
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name 1_hul
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name 1_hul
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
 
 	echo hul left headgear
 	
@@ -2325,60 +1057,17 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[6].permutations
-setfield regions[6].permutations[*].name hul
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[8].permutations
-setfield variants[0].regions[8].permutations[*].name hul
-setfield variants[0].regions[8].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[8].permutations[*].probability 0
-AddBlockElements CollisionRegions[6].Permutations 
-SetField CollisionRegions[6].Permutations[*].Name hul
-SetField CollisionRegions[6].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[6].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 		Echo top_headgear
 		Echo Names
 		
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name top_headgear
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-setfield Regions[14].Name top_headgear
-setfield Regions[14].Permutations[0].Name base
-removeblockelements Regions[14].Permutations 1 1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].Regions[11].Name top_headgear
-setfield variants[0].Regions[11].permutations[0].Name base
-setfield variants[0].Regions[11].permutations[0].RenderModelPermutationIndex 0
-removeblockelements variants[0].Regions[11].permutations 1 1
-setfield CollisionRegions[14].Name top_headgear
-setfield CollisionRegions[14].Permutations[0].Name base
-removeblockelements CollisionRegions[14].Permutations 1 1
-savetagchanges
-exit
-
-
 	echo base top headgear
 	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name off
@@ -2389,11 +1078,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
 	echo romeo top headgear
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2405,31 +1090,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name romeo
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name romeo
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name romeo
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo raven_4 top headgear
 	
-	
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typeo5
@@ -2440,32 +1102,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name raven_4
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name raven_4
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo fc top headgear
 	
-
-
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_ua
@@ -2475,30 +1113,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation fc
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name fc
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name fc
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name fc
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
 
 	echo aug top headgear
 	
@@ -2516,34 +1130,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name aug
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name aug
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name aug
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
-
-
-
 	echo nxra top headgear
 	
-
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_typeb1
@@ -2554,32 +1142,8 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name nxra
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name nxra
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name nxra
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	echo i top headgear
 	
-
-
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Name custom_mp_huli
@@ -2587,25 +1151,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Descr
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region top_headgear
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation i
-savetagchanges
-exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name i
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name i
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name i
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
 savetagchanges
 exit
 
@@ -2625,26 +1170,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[14].permutations
-setfield regions[14].permutations[*].name hul
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[11].permutations
-setfield variants[0].regions[11].permutations[*].name hul
-setfield variants[0].regions[11].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[11].permutations[*].probability 0
-AddBlockElements CollisionRegions[14].Permutations 
-SetField CollisionRegions[14].Permutations[*].Name hul
-SetField CollisionRegions[14].Permutations[*].CollisionPermutationIndex -1
-SetField CollisionRegions[14].Permutations[*].PhysicsPermutationIndex -1
-savetagchanges
-exit
-
-
 	ECHO legs
 	
 
@@ -2660,27 +1185,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-setfield Regions[3].Name legs
-setfield Regions[3].Permutations[0].Name base
-setfield Geometry.Meshes[13].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].Regions[2].Name legs
-setfield variants[0].Regions[2].permutations[0].Name base
-setfield variants[0].Regions[2].permutations[0].RenderModelPermutationIndex 0
-setfield CollisionRegions[3].Name legs
-setfield CollisionRegions[3].Permutations[0].Name base
-savetagchanges
-exit
-
-
-
 	echo rookie legs
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2691,29 +1196,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation rookie
 savetagchanges
 exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name rookie
-setfield Geometry.Meshes[18].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name rookie
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name rookie
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
 
 	echo dutch legs
 
@@ -2730,35 +1212,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name dutch
-setfield Geometry.Meshes[18].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name dutch
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name dutch
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
-
-
 	echo mickey legs
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2770,35 +1224,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name mickey
-setfield Geometry.Meshes[18].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name mickey
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name mickey
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
 	echo romeo legs
-
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2810,36 +1236,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name romeo
-setfield Geometry.Meshes[18].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name romeo
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name romeo
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
 	echo raven_1 legs
-
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2851,34 +1248,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name raven_1
-setfield Geometry.Meshes[18].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name raven_1
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name raven_1
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
 	echo raven_2 legs
-
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2890,35 +1260,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name raven_2
-setfield Geometry.Meshes[19].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name raven_2
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name raven_2
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
 	echo raven_3 legs
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2930,35 +1272,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name raven_3
-setfield Geometry.Meshes[20].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name raven_3
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name raven_3
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
 	echo raven_4 legs
-
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -2970,49 +1284,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[3].permutations
-setfield regions[3].permutations[*].name raven_4
-setfield Geometry.Meshes[20].Type Skinned
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[2].permutations
-setfield variants[0].regions[2].permutations[*].name raven_4
-setfield variants[0].regions[2].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[2].permutations[*].probability 0
-AddBlockElements CollisionRegions[3].Permutations 
-SetField CollisionRegions[3].Permutations[*].Name raven_4
-SetField CollisionRegions[3].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[3].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
-
-
-
-
-
 	ECHO BACKPACKS
-
-
-edittag objects\characters\odst_recon\odst_recon.model
-removeblockelements variants[0].Regions[12].permutations 1 1
-savetagchanges
-exit
-
-
-
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
@@ -3026,33 +1298,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-edittag objects\characters\odst\odst.render_model
-setfield Regions[15].Name backpack
-setfield Regions[15].Permutations[0].Name base
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-setfield variants[0].Regions[12].Name backpack
-setfield variants[0].Regions[12].permutations[0].Name base
-setfield variants[0].Regions[12].permutations[0].RenderModelPermutationIndex 0
-setfield CollisionRegions[15].Name backpack
-setfield CollisionRegions[15].Permutations[0].Name base
-savetagchanges
-exit
-
-
-
-
-
-
-
-
 	echo standard
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3064,37 +1310,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name standard
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name standard
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name standard
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
-
-
-
-
 	echo dutch
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3106,36 +1322,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name dutch
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name dutch
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name dutch
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
-
-
-
 	echo mickey
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3147,33 +1334,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name mickey
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name mickey
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 3
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name mickey
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
 	echo dare
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3185,32 +1346,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name dare
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name dare
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 4
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name dare
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
-
 	echo raven_1
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3222,31 +1358,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name raven_1
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name raven_1
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 5
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name raven_1
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
-
 	echo raven_2
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3258,30 +1370,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name raven_2
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name raven_2
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 6
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name raven_2
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
 	echo raven_3
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3293,31 +1382,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name raven_3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name raven_3
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 7
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name raven_3
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
 	echo raven_4
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3329,42 +1394,13 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[15].permutations
-setfield regions[15].permutations[*].name raven_4
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[12].permutations
-setfield variants[0].regions[12].permutations[*].name raven_4
-setfield variants[0].regions[12].permutations[*].rendermodelpermutationindex 8
-setfield variants[0].regions[12].permutations[*].probability 0
-AddBlockElements CollisionRegions[15].Permutations 
-SetField CollisionRegions[15].Permutations[*].Name raven_4
-SetField CollisionRegions[15].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[15].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
 	echo body
 	
-
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name body
 savetagchanges
 exit
-
-	
-	
-	
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3376,14 +1412,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-
-	
-	
 	echo h3
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3395,31 +1424,7 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[1].permutations
-setfield regions[1].permutations[*].name h3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[0].permutations
-setfield variants[0].regions[0].permutations[*].name h3
-setfield variants[0].regions[0].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[0].permutations[*].probability 0
-AddBlockElements CollisionRegions[1].Permutations 
-SetField CollisionRegions[1].Permutations[*].Name h3
-SetField CollisionRegions[1].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[1].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
 	echo h2a
-
-
-
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3431,41 +1436,13 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[1].permutations
-setfield regions[1].permutations[*].name h2a
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[0].permutations
-setfield variants[0].regions[0].permutations[*].name h2a
-setfield variants[0].regions[0].permutations[*].rendermodelpermutationindex 2
-setfield variants[0].regions[0].permutations[*].probability 0
-AddBlockElements CollisionRegions[1].Permutations 
-SetField CollisionRegions[1].Permutations[*].Name h2a
-SetField CollisionRegions[1].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[1].Permutations[*].PhysicsPermutationIndex 0
-savetagchanges
-exit
-
-
 	echo hands
 	
-
-
-
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions
 setfield Universal[0].CustomizableCharacters[0].Regions[*].name hands
 savetagchanges
 exit
-
-	
-	
-	
-
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations
@@ -3477,21 +1454,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
-	
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions
-setfield Variants[0].Regions[*].Name hands
-addblockelements variants[0].regions[*].permutations
-setfield variants[0].regions[*].permutations[*].name standard
-setfield variants[0].regions[*].permutations[*].rendermodelpermutationindex 0
-setfield variants[0].regions[*].permutations[*].probability 0
-savetagchanges
-exit
-
-
-
-
 	echo h3
 
 edittag *.mulg
@@ -3501,26 +1463,6 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Descr
 addblockelements Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Region hands
 setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Variant[0].Permutation h3
-savetagchanges
-exit
-
-
-edittag objects\characters\odst\odst.render_model
-addblockelements regions[7].permutations
-setfield regions[7].permutations[*].name h3
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\odst_recon.model
-addblockelements variants[0].regions[*].permutations
-setfield Variants[0].Regions[*].RenderModelRegionIndex 7
-setfield variants[0].regions[*].permutations[*].name h3
-setfield variants[0].regions[*].permutations[*].rendermodelpermutationindex 1
-setfield variants[0].regions[*].permutations[*].probability 0
-AddBlockElements CollisionRegions[7].Permutations 
-SetField CollisionRegions[7].Permutations[*].Name h3
-SetField CollisionRegions[7].Permutations[*].CollisionPermutationIndex 0
-SetField CollisionRegions[7].Permutations[*].PhysicsPermutationIndex 0
 savetagchanges
 exit
 
@@ -3921,6 +1863,7 @@ exit
 
 
 edittag objects\characters\odst\odst.render_model
+RemoveBlockElements Regions 0 *
 RemoveBlockElements Materials 0 *
 AddBlockElements Materials 45
 SetField Materials[0].RenderMethod objects\characters\odst\shaders\odst_badges.shader_decal
@@ -3988,6 +1931,11 @@ SetField Materials[9].RenderMethod objects\characters\masterchief\shaders\odst_r
 replacerendergeometry "workingdir\ODSTcustomization\odst_fp_body.dae" TriangleStrip
 savetagchanges
 exit
+
+EditTag objects\characters\odst_recon\odst_recon.model
+UpdateModelRegions 0
+SaveTagChanges
+Exit
 
 	echo raven colors
 	echo raven_1
