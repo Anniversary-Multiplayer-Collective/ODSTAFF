@@ -3037,6 +3037,12 @@ ExitModPackage
 ## Post mainmenu edits
 runcommands workingdir\cmds\Customization.cmds
 
+## Replace ODST logo
+edittag ui\halox\main_menu\halo3_logo_ui.bitmap
+importbitmap 0 workingdir\bitmaps\halo3_logo_ui.dds
+exit
+
+
 ## Flood bipeds!
 runcommands workingdir\cmds\FloodBipeds.cmds
 
