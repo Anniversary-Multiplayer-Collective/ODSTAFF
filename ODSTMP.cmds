@@ -1902,6 +1902,7 @@ setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 savetagchanges
 exit
 
@@ -1926,6 +1927,7 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
 savetagchanges
 exit
 
@@ -1974,6 +1976,7 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
 savetagchanges
 exit
 
@@ -1982,6 +1985,7 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
 savetagchanges
 exit
 
@@ -1998,6 +2002,7 @@ setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapon
 setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
 savetagchanges
 exit
 
@@ -2018,12 +2023,11 @@ setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons
 setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 #setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
 #setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
-#removeblockelements InheritanceList[0].NodeMap 0 *
-#removeblockelements InheritanceList[0].NodeMapFlags 0 *
 savetagchanges
 exit
 
@@ -2697,19 +2701,6 @@ setfield damageupperbound 55 55
 savetagchanges
 exit
 
-// prevent dual wield pickup
-
-edittag objects\weapons\rifle\smg\smg.weapon
-SetField WeaponFlags.NewFlags none 
-savetagchanges
-exit
-
-foreach weap named: smg_ setfield WeaponFlags.NewFlags LoopFPFiringAnimation
-foreach weap named: excavator_ setfield WeaponFlags.NewFlags None
-foreach weap named: plasma_pistol_ setfield WeaponFlags.NewFlags CannotFireAtMaximumAge
-foreach weap named: plasma_rifle setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation
-foreach weap named: magnum setfield WeaponFlags.NewFlags None
-
 // melee nerfs
 
 edittag objects\weapons\damage_effects\strike_melee.damage_effect
@@ -2767,17 +2758,38 @@ savetagchanges
 exit
 
 edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_magnum
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.7
+setfield Barrels[0].DualWeaponError.ErrorAngle 0.2 0.5
+setfield Barrels[0].DualWeaponError.MinimumError 0.05
 savetagchanges
 exit
 
 edittag objects\weapons\pistol\magnum\magnum.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_magnum
 savetagchanges
-
 exit
+
+edittag objects\weapons\pistol\magnum\magnum_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
 edittag objects\weapons\pistol\excavator\excavator.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_mauler
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\excavator_power\excavator_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 savetagchanges
 exit
 
@@ -2807,12 +2819,59 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\smg.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_accuracy.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_rof.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_smg
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_smg
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.9
+setfield Barrels[0].DualWeaponError.MinimumError 0.5
+setfield Barrels[0].DualWeaponError.RuntimeDecelerationRate 5
+setfield Barrels[0].DualWeaponError.RuntimeAccelerationRate 1
+setfield Barrels[0].DualWeaponError.AccelerationTime 1
+setfield Barrels[0].DualWeaponError.DecelerationTime 0.2
+setfield Barrels[0].DualWeaponError.ErrorAngle 1 2
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,CanBeDualWielded
+setfield WeaponTypeName offset_plasma_pistol
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,CanBeDualWielded
 savetagchanges
 exit
 
@@ -2822,6 +2881,7 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
 setfield WeaponTypeName offset_spiker
 savetagchanges
 exit
@@ -2832,12 +2892,19 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
 setfield WeaponTypeName offset_plasma_rife
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
 setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
 savetagchanges
 exit
 
