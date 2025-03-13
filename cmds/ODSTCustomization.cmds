@@ -4132,6 +4132,9 @@ setfield PlayerCharacterCustomizations[0].RegionCameraScripts[1].BipedRotation 5
 savetagchanges
 exit
 
-
-
-
+	echo Moved "Right Helmet Gear" next to the others in Customization	.
+edittag multiplayer\multiplayer_globals.multiplayer_globals
+moveblockelement Universal[0].CustomizableCharacters[0].Regions 6 2
+moveblockelement Universal[0].CustomizableCharacters[0].Regions 7 3
+savetagchanges
+exit
