@@ -1,17 +1,19 @@
-stringid add helmet
-stringid add chest
-stringid add l_shoulder
-stringid add r_shoulder
 stringid add stomach
 stringid add right_headgear
 stringid add left_headgear
 stringid add top_headgear
-stringid add legs
-stringid add backpack
-stringid add body
-stringid add hands
-stringid add base
-stringid add off
+stringid add reach
+stringid add raven_1
+stringid add raven_2
+stringid add raven_3
+stringid add raven_4
+stringid add h2a
+stringid add 1_hul
+stringid add hul
+stringid add h3
+stringid add aug
+stringid add nxra
+stringid add i
 stringid add off_description
 stringid add custom_base_description
 stringid add custom_mp_dutch
@@ -56,8 +58,6 @@ stringid add custom_mp_com
 stringid add custom_mp_com_description
 stringid add custom_mp_starlight
 stringid add custom_mp_starlight_description
-stringid add custom_mp_hul
-stringid add custom_mp_hul_description
 stringid add custom_mp_binoc
 stringid add custom_mp_binoc_description
 stringid add custom_mp_typeo5
@@ -235,8 +235,8 @@ addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_reach
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_reach_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation reach
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[2].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[2].Variant[0].Permutation reach
 savetagchanges
 exit
 
