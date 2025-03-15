@@ -3072,6 +3072,9 @@ setfield bloomintensity.strength 0.2
 savetagchanges
 exit
 
+// Forge Pallette
+RunCommands workingdir\cmds\ForgePallette.cmds
+
 // Podium and Prematch Cameras
 RunCommands workingdir\cmds\PodiumCameras.cmds
 
