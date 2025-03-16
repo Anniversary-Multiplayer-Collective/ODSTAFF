@@ -481,6 +481,8 @@ Exit
 
 EditTag levels\custom\lostplatoon\lostplatoon.scnr
 ImportMapVariant MapFile "workingdir\scenarios\map_variants\LostPlatoon_00\sandbox.map"
+# remove fighter drones in sky
+setfield MachinePalette[1].Object null
 # remove armory shelves
 setfield Scenery[35].PaletteIndex -1
 setfield Scenery[36].PaletteIndex -1
