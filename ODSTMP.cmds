@@ -1,10 +1,10 @@
-< ElDewrito maps folder >
-SetVariable h3maps < Halo 3 360 maps folder >
-SetVariable odstmaps < Halo 3 ODST 360 maps folder>
-SetVariable h3mccmaps < Halo 3 MCC maps folder >
-SetVariable reachmaps < Halo Reach 360 maps folder >
-SetVariable workingdir < Respository folder >
-SetVariable modsfolder < ElDewrito mods folder >
+"C:\Users\zekken\Desktop\ElDewrito 0.7 Official\maps"
+SetVariable h3maps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 Merged"
+SetVariable h3mccmaps "F:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable odstmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 ODST maps"
+SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
+SetVariable workingdir "C:\Users\zekken\Desktop\ODSTAMP"
+SetVariable modsfolder "C:\Users\zekken\Desktop\ElDewrito 0.7 Official\mods"
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -3089,7 +3089,7 @@ savetagchanges
 exit
 
 // Forge Pallette
-RunCommands workingdir\cmds\ForgePallette.cmds
+RunCommands workingdir\cmds\ForgePalette.cmds
 
 // Podium and Prematch Cameras
 RunCommands workingdir\cmds\PodiumCameras.cmds
