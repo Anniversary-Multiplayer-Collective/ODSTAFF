@@ -140,3 +140,16 @@ SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
 CompilePodiumScripts
 SaveTagChanges
 Exit
+
+EditTag levels\custom\coastalraceway\coastalraceway.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Position 594.147 9.808 27.300
+SetField CutsceneCameraPoints[0].Orientation 93.382 0.441 -7.419
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 1.195 293.720 24.529
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
