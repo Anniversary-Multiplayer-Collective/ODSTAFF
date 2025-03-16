@@ -1,0 +1,141 @@
+# echo ==Fix Ammo Pack Mopps...==
+
+#Pistol Ammo
+#DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\pistol_ammo\pistol_ammo
+
+EditTag objects\powerups\pistol_ammo\pistol_ammo.model
+SetField CollisionModel objects\powerups\pistol_ammo\pistol_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\pistol_ammo\pistol_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\pistol_ammo\pistol_ammo.model
+SaveTagChanges
+Exit
+
+#Needler Ammo
+DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\needler_ammo\needler_ammo
+
+EditTag objects\powerups\needler_ammo\needler_ammo.model
+SetField CollisionModel objects\powerups\needler_ammo\needler_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\needler_ammo\needler_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\needler_ammo\needler_ammo.model
+SaveTagChanges
+Exit
+
+#Battle Rifle Ammo
+DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\battle_rifle_ammo\br_ammo
+
+EditTag objects\powerups\battle_rifle_ammo\battle_rifle_ammo.model
+SetField CollisionModel objects\powerups\battle_rifle_ammo\br_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\battle_rifle_ammo\br_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\battle_rifle_ammo\battle_rifle_ammo.model
+SaveTagChanges
+Exit
+
+#SMG Ammo
+#DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\smg_ammo\smg_ammo
+
+EditTag objects\powerups\smg_ammo\smg_ammo.model
+SetField CollisionModel objects\powerups\smg_ammo\smg_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\smg_ammo\smg_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\smg_ammo\smg_ammo.model
+SaveTagChanges
+Exit
+
+#Assault Rifle Ammo
+#DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\assault_rifle_ammo\assault_rifle_ammo
+
+EditTag objects\powerups\assault_rifle_ammo\assault_rifle_ammo.model
+SetField CollisionModel objects\powerups\assault_rifle_ammo\assault_rifle_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\assault_rifle_ammo\assault_rifle_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\assault_rifle_ammo\assault_rifle_ammo.model
+SaveTagChanges
+Exit
+
+#Shotgun Ammo
+#DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\shotgun_ammo\shotgun_ammo
+
+EditTag objects\powerups\shotgun_ammo\shotgun_ammo.model
+SetField CollisionModel objects\powerups\shotgun_ammo\shotgun_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\shotgun_ammo\shotgun_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\shotgun_ammo\shotgun_ammo.model
+SaveTagChanges
+Exit
+
+#Sniper Rifle Ammo
+#DuplicateTag objects\ui\editor_gizmo\editor_gizmo.collision_model objects\powerups\sniper_rifle_ammo\sniper_rifle_ammo
+
+EditTag objects\powerups\sniper_rifle_ammo\sniper_rifle_ammo.model
+SetField CollisionModel objects\powerups\sniper_rifle_ammo\sniper_rifle_ammo.collision_model
+SetField PhysicsModel objects\vehicles\scorpion\garbage\duffle_bag\duffle_bag.physics_model
+AddBlockElements Materials
+SetField Materials[0].DamageSectionIndex -1
+SetField Materials[0].RuntimeDamagerMaterialIndex -1
+SetField CollisionRegions[0].CollisionRegionIndex 0
+SetField CollisionRegions[0].Permutations[0].CollisionPermutationIndex 0
+SaveTagChanges
+Exit
+
+EditTag objects\powerups\sniper_rifle_ammo\sniper_rifle_ammo.collision_model
+GenerateBspPhysics
+SetField Regions[0].Permutations[0].BspPhysics[0].GeometryShape.Model objects\powerups\sniper_rifle_ammo\sniper_rifle_ammo.model
+SaveTagChanges
+Exit

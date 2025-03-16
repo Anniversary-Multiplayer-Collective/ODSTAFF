@@ -3091,6 +3091,9 @@ exit
 // Forge Pallette
 RunCommands workingdir\cmds\ForgePalette.cmds
 
+// Generate Mopps
+RunCommands workingdir\cmds\GenerateMopps.cmds
+
 // Podium and Prematch Cameras
 RunCommands workingdir\cmds\PodiumCameras.cmds
 
