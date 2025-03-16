@@ -17,6 +17,7 @@ AddForgeItem "GRENADE CASE" 4 objects\gear\human\military\h_grenade_crate\h_gren
 AddForgeItem "ONI, CRATE, SP" 4 objects\gear\atlas\civilian\hu_space_crate\hu_space_crate.crate
 AddForgeItem "ONI, CRATE, DLC" 4 objects\levels\dlc\spacecamp\space_crate\space_crate.crate
 AddForgeItem "SUPPLY CASE, OPEN" 4 objects\gear\covenant\military\crate_space_a\crate_space_a.crate
+AddForgeItem "SUPPLY CASE, FULLY OPEN" 4 objects\gear\covenant\military\crate_space_b\crate_space_b.crate
 AddForgeItem "CRATE TECH, HEAVY" 4 objects\gear\human\industrial\crate_heavy_tech\crate_heavy_tech.crate
 AddForgeItem "WOODEN BOX, LARGE" 4 objects\gear\human\industrial\box_wooden_large_b\box_wooden_large_b.crate
 AddForgeItem "WOODEN BOX, SMALL" 4 objects\gear\human\industrial\box_wooden_small_b\box_wooden_small_b.crate
@@ -81,6 +82,7 @@ AddForgeItem "OFFRAMP LIGHT POST" 11 objects\levels\atlas\l300\offramp_light_pos
 AddForgeItem "SCARAB, CHEAP" 11 objects\giants\scarab_cheap\scarab_cheap.scenery
 AddForgeItem "CIVILIAN CAR, LITE" 11 objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.crate
 AddForgeItem "CIVILIAN BUS" 11 objects\vehicles\civilian\bus_new\bus_new.crate
+AddForgeItem "CIVILIAN BUS, DESTROYED" 11 objects\vehicles\civilian\bus_new_destroyed\bus_new_destroyed.crate
 AddForgeItem "TRUCK BED, LONG" 11 objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.crate
 AddForgeItem "FUEL TANK, LONG" 11 objects\vehicles\civilian\truck_cab_large\tanker_long\tanker_long.crate
 
@@ -108,7 +110,9 @@ AddForgeItem "AUTOMAG" 76 objects\weapons\pistol\automag\automag.weapon
 AddForgeItem "PLASMA Rifle, Brute" 78 objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
 AddForgeItem "SKULL, DLC" 78 objects\levels\dlc\shared\forge_ball\forge_ball.weapon
 
-#Make sure its done before adding the machines to the palette
+AddForgeItem "WATCH TOWER BASE, COVENANT, MACH" 82 objects\gear\covenant\military\cov_watchtower\cov_watchtower_base\cov_watchtower_base.device_machine
+
+#Make sure its done before adding the machines to the palette unless needed
 EditTag multiplayer\forge_globals.forge_globals_definition
 MaximizeBudget All
 SaveTagChanges
@@ -140,5 +144,4 @@ AddForgeItem "EVAC DOOR, FAST" 82 objects\levels\atlas\h100\evac_door\evac_door_
 AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_machine
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
-AddForgeItem "WATCH TOWER BASE, COVENANT, MACH" 82 objects\gear\covenant\military\cov_watchtower\cov_watchtower_base\cov_watchtower_base.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
