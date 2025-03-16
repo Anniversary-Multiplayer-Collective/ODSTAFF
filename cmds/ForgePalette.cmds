@@ -5,7 +5,7 @@ AddForgeItem "SANDBAGS, 45? CORNER, SP" 3 objects\gear\human\military\sandbag_wa
 AddForgeItem "SANDBAGS, ENDCAP, SP" 3 objects\gear\human\military\sandbag_wall_endcap\sandbag_wall_endcap.crate
 AddForgeItem "SANDBAGS, SP" 3 objects\gear\human\military\sandbag_wall\sandbag_wall.crate
 AddForgeItem "SANDBAGS, TURRET, SP" 3 objects\gear\human\military\sandbag_wall_turret\sandbag_wall_turret.crate
-AddForgeItem "COVENANT BARRIER" 3 objects\gear\covenant\military\cov_barrier\cov_barrier.crate
+AddForgeItem "BARRIER, COVENANT" 3 objects\gear\covenant\military\cov_barrier\cov_barrier.crate
 
 
 
@@ -132,6 +132,9 @@ AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\sc130\010_door
 AddForgeItem "CONDUIT GATE" 82 objects\levels\atlas\l200\conduit_gate\conduit_gate.device_machine
 AddForgeItem "ARCH GATE" 82 objects\levels\atlas\l200\arch_gate\arch_gate.device_machine
 AddForgeItem "FIGHTER DRONE" 82 objects\levels\atlas\beacons\drone_fighter\drone_fighter.device_machine
+AddForgeItem "CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_civ_car\hub_nav_civ_car.device_machine
+AddForgeItem "POLIVE CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_pol_car\hub_nav_pol_car.device_machine
+
 
 
 
@@ -162,3 +165,5 @@ AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_ma
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
+
+
