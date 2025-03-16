@@ -21,6 +21,20 @@ Mainmenu Multiplayer Character
 useaudiocache workingdir\caches\audiocache
 useshadercache workingdir\caches\shadercache
 
+OpenModPackage "workingdir\paks\CoastalRaceway.pak"
+ApplyModPackageTags
+.
+/
+\
++levels\custom\coastalraceway\coastalraceway.scenario
++objects\vehicles\civilian\car1.vehicle
++objects\vehicles\olifaunt\olifaunt.vehicle
++objects\vehicles\phantom\phantom.vehicle
+Done
+ExitModPackage
+UpdateMapFiles
+AddForgeItem "CIVILIAN CAR" VEHICLES objects\vehicles\civilian\car1.vehicle
+
 OpenCacheFile "h3maps\midship.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
