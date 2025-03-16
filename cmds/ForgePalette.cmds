@@ -122,6 +122,7 @@ AddForgeItem "SKULL, DLC" 78 objects\levels\dlc\shared\forge_ball\forge_ball.wea
 
 
 
+#DEVICES
 AddForgeItem "WATCH TOWER BASE, COVENANT, MACH" 82 objects\gear\covenant\military\cov_watchtower\cov_watchtower_base\cov_watchtower_base.device_machine
 AddForgeItem "ONI, DOOR, ROOF" 82 objects\levels\atlas\sc130\oni_elevator_roof_door\oni_elevator_roof_doors.device_machine
 AddForgeItem "ONI, DOOR, GLASS" 82 objects\levels\atlas\sc130\oni_glass_door\oni_glass_doors.device_machine
@@ -133,19 +134,13 @@ AddForgeItem "CONDUIT GATE" 82 objects\levels\atlas\l200\conduit_gate\conduit_ga
 AddForgeItem "ARCH GATE" 82 objects\levels\atlas\l200\arch_gate\arch_gate.device_machine
 AddForgeItem "FIGHTER DRONE" 82 objects\levels\atlas\beacons\drone_fighter\drone_fighter.device_machine
 AddForgeItem "CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_civ_car\hub_nav_civ_car.device_machine
-AddForgeItem "POLIVE CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_pol_car\hub_nav_pol_car.device_machine
+AddForgeItem "POLICE CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_pol_car\hub_nav_pol_car.device_machine
 
-
-
-
-
-#Make sure its done before adding the machines to the palette unless needed
 EditTag multiplayer\forge_globals.forge_globals_definition
 MaximizeBudget All
 SaveTagChanges
 Exit
 
-#DEVICES
 AddForgeItem "ONI, MAIN GATE" 82 objects\levels\atlas\sc130\oni_main_gate\oni_main_gate.device_machine
 AddForgeItem "FORERUNNER DOOR" 82 objects\levels\zedd\roundabout\forerunner_door_b40\forerunner_door_b40.device_machine
 AddForgeItem "MONITOR" 82 objects\levels\atlas\l200\monitor\monitor.device_machine
@@ -165,5 +160,3 @@ AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_ma
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
-
-
