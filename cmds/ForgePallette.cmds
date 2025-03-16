@@ -9,7 +9,10 @@ AddForgeItem "COVENANT BARRIER" 3 objects\gear\covenant\military\cov_barrier\cov
 
 #CRATES
 AddForgeItem "CRATE, SINGLE, LARGE, SP" 4 objects\gear\human\military\crate_packing_giant\crate_packing_giant.crate
+AddForgeItem "CRATE, SINGLE, SKINNY" 4 objects\gear\human\military\crate_packing_giant_skinny\crate_packing_giant_skinny.crate
 AddForgeItem "GUN CABINET, CLOSED" 4 objects\gear\human\military\crate_h_gun_rack_0\crate_h_gun_rack_0.crate
+AddForgeItem "GUN CABINET, HALF OPEN" 4 objects\gear\human\military\crate_h_gun_rack_1\crate_h_gun_rack_1.crate
+AddForgeItem "GUN CABINET, FULLY OPEN" 4 objects\gear\human\military\crate_h_gun_rack_2\crate_h_gun_rack_2.crate
 AddForgeItem "GRENADE CASE" 4 objects\gear\human\military\h_grenade_crate\h_grenade_crate.crate
 AddForgeItem "ONI, CRATE, SP" 4 objects\gear\atlas\civilian\hu_space_crate\hu_space_crate.crate
 AddForgeItem "ONI, CRATE, DLC" 4 objects\levels\dlc\spacecamp\space_crate\space_crate.crate
@@ -21,7 +24,6 @@ AddForgeItem "WOODEN BOX 2, SMALL" 4 objects\levels\dlc\shared\dlc_box_wooden_sm
 AddForgeItem "CRATE, COVENANT, SMALL" 4 objects\gear\covenant\military\crate_space_small\crate_space_small.crate
 
 #MISC
-AddForgeItem "HEALTHPACK MOUNT" 11 objects\gear\atlas\military\health_pack_mount\health_pack_mount.scenery
 AddForgeItem "SPACE TRASHCAN" 11 objects\gear\atlas\civilian\hu_space_trashcan\hu_space_trashcan.crate
 AddForgeItem "ARMORY SHELF, SMALL" 11 objects\levels\solo\020_base\armory_shelf_small\armory_shelf_small.scenery
 AddForgeItem "ARMORY SHELF" 11 objects\levels\solo\020_base\armory_shelf\armory_shelf.scenery
@@ -36,7 +38,9 @@ AddForgeItem "WATCH TOWER POD, COVENANT" 11 objects\gear\covenant\military\cov_w
 AddForgeItem "WATCH TOWER POD, TURRETS, COVENANT" 11 objects\gear\covenant\military\cov_watchtower\cov_watchtower_pod\cov_watchtower_pod_turrets.crate
 AddForgeItem "WARTHOG, DESTROYED" 11 objects\vehicles\warthog\warthog_disabled\warthog_disabled.crate
 AddForgeItem "WALL SIGN" 11 objects\levels\atlas\shared\signage\standing_wall_sign\standing_wall_sign.scenery
-AddForgeItem "MEDICAL KIOSK" 11 objects\levels\atlas\shared\medical_kiosk_wall\medical_kiosk_wall.scenery
+AddForgeItem "MEDICAL KIOSK, WALL" 11 objects\levels\atlas\shared\medical_kiosk_wall\medical_kiosk_wall.scenery
+AddForgeItem "MEDICAL KIOSK" 11 objects\levels\atlas\shared\medical_kiosk\medical_kiosk.scenery
+AddForgeItem "HEALTHPACK MOUNT" 11 objects\gear\atlas\military\health_pack_mount\health_pack_mount.scenery
 AddForgeItem "INFO KIOSK" 11 objects\gear\atlas\civilian\hu_civ_hub_info_kiosk\hu_civ_hub_info_kiosk.scenery
 AddForgeItem "SECURITY CAMERA, SMALL" 11 objects\levels\atlas\h100\security_mount_small\security_mount_small.scenery
 AddForgeItem "GHOST, DESTROYED" 11 objects\vehicles\ghost\ghost.scenery
@@ -54,8 +58,11 @@ AddForgeItem "TRASH BAG 4" 11 objects\levels\atlas\shared\trash_bag_i01\trash_ba
 AddForgeItem "TRASH PILE" 11 objects\levels\atlas\shared\trash_pile_large\trash_pile_large.scenery
 AddForgeItem "SECURITY CAMERA" 11 objects\levels\atlas\h100\security_mount\security_camera.vehicle
 AddForgeItem "TRUCK CAB, LARGE" 11 objects\vehicles\civilian\truck_cab_large\truck_cab_large.crate
-AddForgeItem "CAR, DISABLED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_disabled\hu_civ_car_disabled.crate
-AddForgeItem "CAR" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.crate
+AddForgeItem "CIVILIAN CAR, DISABLED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_disabled\hu_civ_car_disabled.crate
+AddForgeItem "WRAITH, DISABLED" 11 objects\vehicles\wraith\disabled\wraith_disabled.crate
+AddForgeItem "PHANTOM, DESTROYED" 11 objects\vehicles\phantom\phantom_damaged\phantom_damaged.crate
+AddForgeItem "SCORPION, DESTROYED" 11 objects\vehicles\scorpion\scorpion_destroyed\scorpion_destroyed.crate
+AddForgeItem "CIVILIAN CAR" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.crate
 AddForgeItem "SHIELD, GARBAGE" 11 objects\vehicles\warthog\turrets\chaingun\garbage\shield_garbage\shield_garbage.crate
 AddForgeItem "TURRET BARREL, GARBAGE" 11 objects\vehicles\warthog\turrets\chaingun\garbage\barrel_garbage\barrel_garbage.crate
 AddForgeItem "DRONE OPTICS" 11 objects\levels\atlas\beacons\drone_optics\drone_optics.scenery
@@ -69,6 +76,14 @@ AddForgeItem "CARGO TRUCK" 11 objects\vehicles\civilian\cargo_truck\cargo_truck.
 AddForgeItem "PELICAN, PARKED" 11 objects\vehicles\pelican\pelican_parked\pelican_parked.scenery
 AddForgeItem "MISSILE" 11 objects\gear\human\military\missle\missle.crate
 AddForgeItem "GENERATOR, LARGE" 11 objects\levels\solo\010_jungle\dam_generator_bulky\dam_generator_bulky.scenery
+AddForgeItem "OFFRAMP DOOR" 11 objects\levels\atlas\l300\offramp_door\offramp_door.scenery
+AddForgeItem "OFFRAMP LIGHT POST" 11 objects\levels\atlas\l300\offramp_light_post\offramp_light_post.scenery
+AddForgeItem "SCARAB, CHEAP" 11 objects\giants\scarab_cheap\scarab_cheap.scenery
+AddForgeItem "CIVILIAN CAR, LITE" 11 objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.crate
+AddForgeItem "CIVILIAN BUS" 11 objects\vehicles\civilian\bus_new\bus_new.crate
+AddForgeItem "TRUCK BED, LONG" 11 objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.crate
+AddForgeItem "FUEL TANK, LONG" 11 objects\vehicles\civilian\truck_cab_large\tanker_long\tanker_long.crate
+
 
 #POWERUPS
 AddForgeItem "ASSAULT RIFLE AMMO" 69 objects\powerups\assault_rifle_ammo\assault_rifle_ammo.equipment
@@ -125,3 +140,5 @@ AddForgeItem "EVAC DOOR, FAST" 82 objects\levels\atlas\h100\evac_door\evac_door_
 AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_machine
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
+AddForgeItem "WATCH TOWER BASE, COVENANT, MACH" 82 objects\gear\covenant\military\cov_watchtower\cov_watchtower_base\cov_watchtower_base.device_machine
+AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
