@@ -454,7 +454,7 @@ setfield scenery[17].paletteindex -1
 setfield scenery[18].paletteindex -1
 setfield scenery[97].paletteindex -1
 	# remove beacon switch
-setfield ControlPalette[1].Object -1
+setfield ControlPalette[1].Object null
 	# import basic spawns, oddball, koth
 importmapvariant MapFile "workingdir\scenarios\map_variants\nightstreets_0\sandbox.map"
 removeblockelements Terminals 0 *
