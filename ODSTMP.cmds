@@ -3144,6 +3144,9 @@ setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
 savetagchanges
 exit
 
+## echo Weapon Variants
+runcommands workingdir\cmds\WeaponVariants.cmds
+
 ## echo Flood bipeds!
 runcommands workingdir\cmds\FloodBipeds.cmds
 
