@@ -24,6 +24,7 @@ savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_damage\assault_rifle_damage.weapon
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_red.render_model
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 savetagchanges
 exit
 
@@ -105,6 +106,7 @@ NameTag * objects\weapons\rifle\assault_rifle\shaders\compass_green
 savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_accuracy\assault_rifle_accuracy.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_green.render_model
 savetagchanges
 exit
@@ -188,6 +190,7 @@ NameTag * objects\weapons\rifle\assault_rifle\bitmaps\display_yellow
 savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_rof\assault_rifle_rof.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_yellow.render_model
 savetagchanges
 exit
@@ -269,6 +272,7 @@ NameTag * objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_gold_materia
 savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_power\assault_rifle_power.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_gold.render_model
 savetagchanges
 exit
