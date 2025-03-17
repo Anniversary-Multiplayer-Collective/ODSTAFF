@@ -3118,19 +3118,29 @@ levels\ui\mainmenu\mainmenu.scenario
 Done
 ExitModPackage
 
-## Post mainmenu edits
+## echo Post mainmenu edits
 runcommands workingdir\cmds\Customization.cmds
 
-## Replace ODST logo
+## echo Replace ODST logo
 edittag ui\halox\main_menu\halo3_logo_ui.bitmap
 importbitmap 0 workingdir\bitmaps\halo3_logo_ui.dds
 exit
 
+## echo fix hud scaling complaints
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MessageScale 0.7
+savetagchanges
+exit
 
-## Flood bipeds!
+edittag ui\chud\automag.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+## echo Flood bipeds!
 runcommands workingdir\cmds\FloodBipeds.cmds
 
-// Automag font fix
+// echo Automag font fix
 runcommands workingdir\cmds\automagstrings.cmds
 
 ////////////////////////////////////////////////////////////////////////////////
