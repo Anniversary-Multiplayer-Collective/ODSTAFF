@@ -93,7 +93,7 @@ AddForgeItem "FUEL TANK, LONG" 11 objects\vehicles\civilian\truck_cab_large\tank
 AddForgeItem "WIRE SPOOL, SMALL" 11 objects\levels\dlc\warehouse\dlc_wh_wire_spool\dlc_wh_wire_spool.crate
 AddForgeItem "HARDHAT" 11 objects\levels\solo\040_voi\hardhat\hardhat.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
-
+AddForgeItem "FOOD RATIONS, COVENANT" 11 objects\gear\covenant\military\cov_food_rations\cov_food_rations.crate
 
 
 
@@ -119,6 +119,12 @@ AddForgeItem "AUTOMAG" 76 objects\weapons\pistol\automag\automag.weapon
 #POWER WEAPONS
 AddForgeItem "PLASMA Rifle, Brute" 78 objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
 AddForgeItem "SKULL, DLC" 78 objects\levels\dlc\shared\forge_ball\forge_ball.weapon
+
+#GADGETS
+AddForgeItem "SHIELD DOOR, ONE WAY, LONG" 9 objects\levels\atlas\sc130\oni_shield_door\oni_shield_door.crate
+AddForgeItem "SHIELD DOOR, ONE WAY, LARGE" 9 objects\levels\atlas\l200\shield_door_large\shield_door_large.crate
+AddForgeItem "SHIELD DOOR, ONE WAY, MEDIUM" 9 objects\levels\atlas\l200\shield_door_medium\shield_door_medium.crate
+AddForgeItem "SHIELD DOOR, ONE WAY, SMALL" 9 objects\levels\atlas\l200\shield_door_small\shield_door_small.crate
 
 
 
