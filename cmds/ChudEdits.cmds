@@ -1,0 +1,113 @@
+
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MessageScale 0.7
+savetagchanges
+exit
+
+edittag ui\chud\automag.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+savetagchanges
+exit
+
+edittag ui\chud\rocket.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\battle_rifle.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\smg.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+savetagchanges
+exit
+
+edittag ui\chud\carbine.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\excavator.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
+
+edittag ui\chud\magnum.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\plasma_pistol.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\needler.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\hammer.chud_definition
+setfield HudWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\fuel_rod_cannon.chud_definition
+setfield HudWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\sword.chud_definition
+setfield HudWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\plasma_rifle.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+savetagchanges
+exit
+
+edittag ui\chud\brute_shot.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\sentinel_beam.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\shotgun.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+savetagchanges
+exit
+
+edittag ui\chud\sniper_rifle.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\spartan_laser.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+setfield HudWidgets[1].BitmapWidgets[1].PlacementData[0].Scale 1.35 1.35
+setfield HudWidgets[1].BitmapWidgets[2].PlacementData[0].Scale 1.35 1.35
+setfield HudWidgets[1].BitmapWidgets[3].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\spike_rifle.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\beam_rifle.chud_definition
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
+savetagchanges
+exit
