@@ -453,6 +453,8 @@ setfield scenery[16].paletteindex -1
 setfield scenery[17].paletteindex -1
 setfield scenery[18].paletteindex -1
 setfield scenery[97].paletteindex -1
+	# remove beacon switch
+setfield ControlPalette[1].Object null
 	# import basic spawns, oddball, koth
 importmapvariant MapFile "workingdir\scenarios\map_variants\nightstreets_0\sandbox.map"
 removeblockelements Terminals 0 *
@@ -479,6 +481,8 @@ Exit
 
 EditTag levels\custom\lostplatoon\lostplatoon.scnr
 ImportMapVariant MapFile "workingdir\scenarios\map_variants\LostPlatoon_00\sandbox.map"
+# remove fighter drones in sky
+setfield MachinePalette[1].Object null
 # remove armory shelves
 setfield Scenery[35].PaletteIndex -1
 setfield Scenery[36].PaletteIndex -1
@@ -3087,7 +3091,10 @@ savetagchanges
 exit
 
 // Forge Pallette
-RunCommands workingdir\cmds\ForgePallette.cmds
+RunCommands workingdir\cmds\ForgePalette.cmds
+
+// Generate Mopps
+RunCommands workingdir\cmds\GenerateMopps.cmds
 
 // Podium and Prematch Cameras
 RunCommands workingdir\cmds\PodiumCameras.cmds
