@@ -247,7 +247,7 @@ edittag objects\weapons\rifle\assault_rifle\assault_rifle\assault_rifle_yellow.r
 setfield Materials[0].RenderMethod objects\weapons\rifle\assault_rifle\shaders\tens_yellow.shader
 setfield Materials[1].RenderMethod objects\weapons\rifle\assault_rifle\shaders\ones_yellow.shader
 setfield Materials[2].RenderMethod objects\weapons\rifle\assault_rifle\shaders\display_yellow.shader
-setfield Materials[3].RenderMethod objects\weapons\rifle\assault_rifle\shaders\display_yellow.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\assault_rifle\shaders\assault_rifle_yellow.shader
 setfield Materials[5].RenderMethod objects\weapons\rifle\assault_rifle\shaders\assault_rifle_yellow.shader
 savetagchanges
 exit
