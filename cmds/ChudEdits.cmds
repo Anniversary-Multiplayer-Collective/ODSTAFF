@@ -111,3 +111,44 @@ edittag ui\chud\beam_rifle.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.5 1.5
 savetagchanges
 exit
+
+edittag ui\chud\smg_silenced.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.35 1.35
+savetagchanges
+exit
+
+edittag ui\chud\machinegun_turret.chud_definition
+setfield HudWidgets[1].BitmapWidgets[0].PlacementData[0].Scale 1.05 1.05
+setfield HudWidgets[0].TextWidgets[0].PlacementData[0].Scale 0.6 0.6
+savetagchanges
+exit
+
+edittag ui\chud\flamethrower.chud_definition
+setfield HudWidgets[2].PlacementData[0].Offset 25 965
+savetagchanges
+exit
+
+edittag ui\chud\plasma_turret.chud_definition
+setfield HudWidgets[0].PlacementData[0].Offset 25 965
+savetagchanges
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+setfield HudWidgets[15].TextWidgets[4].PlacementData[0].Offset 0 155
+savetagchanges
+exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
