@@ -139,6 +139,7 @@ AddForgeItem "WATCH TOWER BASE, COVENANT, MACH" 82 objects\gear\covenant\militar
 AddForgeItem "ONI, DOOR, ROOF" 82 objects\levels\atlas\sc130\oni_elevator_roof_door\oni_elevator_roof_doors.device_machine
 AddForgeItem "ONI, DOOR, GLASS" 82 objects\levels\atlas\sc130\oni_glass_door\oni_glass_doors.device_machine
 AddForgeItem "ONI, ELEVATOR" 82 objects\levels\atlas\sc130\oni_elevator_device_machine\oni_elevator_device_machine.device_machine
+AddForgeItem "ONI, ELEVATOR DOOR" 82 objects\levels\atlas\sc130\oni_elevator_doors\oni_elevator_doors.device_machine
 AddForgeItem "DETONATION CHARGES" 82 objects\gear\atlas\military\detonation_charges_notrigger\detonation_charges_notrigger.device_machine
 AddForgeItem "ONI, DOOR, REVOLVING" 82 objects\levels\atlas\sc130\revolving_oni_doors\revolving_oni_doors_device_machine.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\sc130\010_door_entrance\010_door_entrance.device_machine
