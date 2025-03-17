@@ -110,8 +110,12 @@ AddForgeItem "HEALTH PACK, SMALL" 69 objects\powerups\health_pack\health_pack_sm
 AddForgeItem "HEALTH PACK, MEDIUM" 69 objects\powerups\health_pack\health_pack_medium.equipment
 AddForgeItem "HEALTH PACK, LARGE" 69 objects\powerups\health_pack\health_pack_large.equipment
 
+
+
 #SMGS
 AddForgeItem "SMG, SILENCED" 73 objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+
+
 
 #PISTOLS
 AddForgeItem "AUTOMAG" 76 objects\weapons\pistol\automag\automag.weapon
@@ -119,6 +123,8 @@ AddForgeItem "AUTOMAG" 76 objects\weapons\pistol\automag\automag.weapon
 #POWER WEAPONS
 AddForgeItem "PLASMA Rifle, Brute" 78 objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
 AddForgeItem "SKULL, DLC" 78 objects\levels\dlc\shared\forge_ball\forge_ball.weapon
+
+
 
 #GADGETS
 AddForgeItem "SHIELD DOOR, ONE WAY, LONG" 9 objects\levels\atlas\sc130\oni_shield_door\oni_shield_door.crate
@@ -141,12 +147,6 @@ AddForgeItem "ARCH GATE" 82 objects\levels\atlas\l200\arch_gate\arch_gate.device
 AddForgeItem "FIGHTER DRONE" 82 objects\levels\atlas\beacons\drone_fighter\drone_fighter.device_machine
 AddForgeItem "CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_civ_car\hub_nav_civ_car.device_machine
 AddForgeItem "POLICE CAR NAV" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_pol_car\hub_nav_pol_car.device_machine
-
-EditTag multiplayer\forge_globals.forge_globals_definition
-MaximizeBudget All
-SaveTagChanges
-Exit
-
 AddForgeItem "ONI, MAIN GATE" 82 objects\levels\atlas\sc130\oni_main_gate\oni_main_gate.device_machine
 AddForgeItem "FORERUNNER DOOR" 82 objects\levels\zedd\roundabout\forerunner_door_b40\forerunner_door_b40.device_machine
 AddForgeItem "MONITOR" 82 objects\levels\atlas\l200\monitor\monitor.device_machine
@@ -166,3 +166,10 @@ AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_ma
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
+
+
+
+EditTag multiplayer\forge_globals.forge_globals_definition
+MaximizeBudget All
+SaveTagChanges
+Exit
