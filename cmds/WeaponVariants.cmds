@@ -1127,3 +1127,190 @@ edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_gold.render_model
 setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_gold.shader
 savetagchanges
 exit
+
+echo ##carbine
+echo ##Red
+
+DuplicateTag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_red
+DuplicateTag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\covenant_carbine_red
+DuplicateTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+NameTag * objects\weapons\rifle\covenant_carbine\shaders\carbine_red
+savetagnames
+
+EditTag objects\weapons\rifle\covenant_carbine_damage\covenant_carbine_damage.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\covenant_carbine_damage\covenant_carbine_damage.model
+SetField RenderModel objects\weapons\rifle\covenant_carbine\covenant_carbine_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_red.shader
+setargument env_tint_color 0.5 0 0 1
+setargument normal_specular_tint 0.5 0 0 1
+setargument glancing_specular_tint 1 0 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_red.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_red.shader
+savetagchanges
+exit
+
+echo ##green
+
+DuplicateTag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_green
+DuplicateTag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\covenant_carbine_green
+DuplicateTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+NameTag * objects\weapons\rifle\covenant_carbine\shaders\carbine_green
+savetagnames
+
+EditTag objects\weapons\rifle\covenant_carbine_accuracy\covenant_carbine_accuracy.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_green.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\covenant_carbine_accuracy\covenant_carbine_accuracy.model
+SetField RenderModel objects\weapons\rifle\covenant_carbine\covenant_carbine_green.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_green.shader
+setargument env_tint_color 0 0.5 0 1
+setargument normal_specular_tint 0 0.5 0 1
+setargument glancing_specular_tint 0 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_green.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_green.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_green.shader
+savetagchanges
+exit
+
+echo ##blue
+
+DuplicateTag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_blue
+DuplicateTag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\covenant_carbine_blue
+DuplicateTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+NameTag * objects\weapons\rifle\covenant_carbine\shaders\carbine_blue
+savetagnames
+
+EditTag objects\weapons\rifle\covenant_carbine_ammo\covenant_carbine_ammo.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_blue.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\covenant_carbine_ammo\covenant_carbine_ammo.model
+SetField RenderModel objects\weapons\rifle\covenant_carbine\covenant_carbine_blue.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_blue.shader
+setargument env_tint_color 0 0 0.5 1
+setargument normal_specular_tint 0 0 0.5 1
+setargument glancing_specular_tint 0 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_blue.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_blue.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_blue.shader
+savetagchanges
+exit
+
+echo ##yellow
+
+DuplicateTag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_yellow
+DuplicateTag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\covenant_carbine_yellow
+DuplicateTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+NameTag * objects\weapons\rifle\covenant_carbine\shaders\carbine_yellow
+savetagnames
+
+EditTag objects\weapons\rifle\covenant_carbine_rof\covenant_carbine_rof.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_yellow.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\covenant_carbine_rof\covenant_carbine_rof.model
+SetField RenderModel objects\weapons\rifle\covenant_carbine\covenant_carbine_yellow.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_yellow.shader
+setargument env_tint_color 0.5 0.5 0 1
+setargument normal_specular_tint 0.5 0.5 0 1
+setargument glancing_specular_tint 1 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_yellow.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_yellow.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_yellow.shader
+savetagchanges
+exit
+
+echo ##purple
+
+DuplicateTag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_purple
+DuplicateTag objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+NameTag * objects\weapons\rifle\covenant_carbine\covenant_carbine_purple
+DuplicateTag objects\weapons\rifle\covenant_carbine\shaders\carbine.shader
+NameTag * objects\weapons\rifle\covenant_carbine\shaders\carbine_purple
+savetagnames
+
+EditTag objects\weapons\rifle\covenant_carbine_range\covenant_carbine_range.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_purple.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\covenant_carbine_range\covenant_carbine_range.model
+SetField RenderModel objects\weapons\rifle\covenant_carbine\covenant_carbine_purple.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\shaders\carbine_purple.shader
+setargument env_tint_color 0.5 0 0.5 1
+setargument normal_specular_tint 0.5 0 0.5 1
+setargument glancing_specular_tint 1 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine_purple.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_purple.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine_purple.render_model
+setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shaders\carbine_purple.shader
+savetagchanges
+exit
+
