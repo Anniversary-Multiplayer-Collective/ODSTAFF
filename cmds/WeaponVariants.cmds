@@ -965,22 +965,16 @@ echo ##gold
 
 DuplicateTag objects\weapons\rifle\smg\smg.render_model
 NameTag * objects\weapons\rifle\smg\smg_gold
-
 DuplicateTag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
 NameTag * objects\weapons\rifle\smg\fp_smg\fp_smg_gold
-
 DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
 NameTag * objects\weapons\rifle\smg\shaders\smg_metal_gold
-
 DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
 NameTag * objects\weapons\rifle\smg\bitmaps\smg_spec_gold
-
 DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
 NameTag * objects\weapons\rifle\smg\bitmaps\smg_color_mask_gold
-
 DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
 NameTag * objects\weapons\rifle\smg\bitmaps\smg_mat_gold
-
 savetagnames
 
 EditTag objects\weapons\rifle\smg\smg_power.weapon
@@ -1022,5 +1016,114 @@ exit
 
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_gold.render_model
 setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+savetagchanges
+exit
+
+echo ##Magnum
+echo ##Red
+
+DuplicateTag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.render_model
+NameTag * objects\weapons\pistol\magnum\fp_magnum\fp_magnum_red
+DuplicateTag objects\weapons\pistol\magnum\magnum.render_model
+NameTag * objects\weapons\pistol\magnum\magnum_red
+DuplicateTag objects\weapons\pistol\magnum\shaders\magnum.shader
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_red
+DuplicateTag objects\weapons\pistol\magnum\bitmaps\magnum.bitmap
+NameTag * objects\weapons\pistol\magnum\bitmaps\magnum_red
+DuplicateTag objects\weapons\pistol\magnum\shaders\magnum_luminous.shader
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_luminous_red
+savetagnames
+
+EditTag objects\weapons\pistol\magnum\magnum_damage.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\pistol\magnum\fp_magnum\fp_magnum_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\pistol\magnum_damage\magnum_damage.model
+SetField RenderModel objects\weapons\pistol\magnum\magnum_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\bitmaps\magnum_red.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\magnum_red.dds
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\pistol\magnum\bitmaps\magnum_red.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_luminous_red.shader
+setargument self_illum_color 2 0 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_red.shader
+setfield Materials[1].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_luminous_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_red.shader
+setfield Materials[2].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_luminous_red.shader
+savetagchanges
+exit
+
+echo ##Gold
+
+DuplicateTag objects\weapons\pistol\magnum\magnum.render_model
+NameTag * objects\weapons\pistol\magnum\magnum_gold
+DuplicateTag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.render_model
+NameTag * objects\weapons\pistol\magnum\fp_magnum\fp_magnum_gold
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_gold
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_gold_spec
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_gold_color_mask
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
+NameTag * objects\weapons\pistol\magnum\shaders\magnum_gold_material
+savetagnames
+
+EditTag objects\weapons\pistol\magnum\magnum_power.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\pistol\magnum\fp_magnum\fp_magnum_gold.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\pistol\magnum_power\magnum_power.model
+SetField RenderModel objects\weapons\pistol\magnum\magnum_gold.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_gold_spec.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\spec_pwr.dds
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_gold_color_mask.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\color_mask_pwr.dds
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_gold_material.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\material_pwr.dds
+exit
+
+edittag objects\weapons\pistol\magnum\shaders\magnum_gold.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\pistol\magnum\bitmaps\magnum.bitmap
+setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\pistol\magnum\shaders\magnum_gold_color_mask.bitmap
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\pistol\magnum\bitmaps\magnum_bump.bitmap
+setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\pistol\magnum\shaders\magnum_gold_spec.bitmap
+setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\pistol\magnum\shaders\magnum_gold_material.bitmap
+setargument albedo_color2 5 5 1 
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_gold.shader
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_gold.shader
 savetagchanges
 exit
