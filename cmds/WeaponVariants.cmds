@@ -24,7 +24,6 @@ savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_damage\assault_rifle_damage.weapon
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_red.render_model
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 savetagchanges
 exit
 
@@ -35,7 +34,7 @@ exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\display_red.shader
 setargument self_illum_color 2 0 0 1
-setargument self_illum_intensity 60
+setargument self_illum_intensity 20
 savetagchanges
 exit
 
@@ -51,6 +50,7 @@ exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\compass_red.shader
 setargument self_illum_color 2 0 0 1
+setargument self_illum_intensity 15
 savetagchanges
 exit
 
@@ -63,6 +63,7 @@ exit
 edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_red.bitmap
 importbitmap 0 workingdir\Bitmaps\WepVariants\AR\assault_rifle_dmg.dds
 exit
+
 
 edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_red.render_model
 setfield Materials[0].RenderMethod objects\weapons\rifle\assault_rifle\shaders\assault_rifle_red.shader
@@ -82,6 +83,7 @@ setfield Materials[3].RenderMethod objects\weapons\rifle\assault_rifle\shaders\a
 setfield Materials[5].RenderMethod objects\weapons\rifle\assault_rifle\shaders\assault_rifle_red.shader
 savetagchanges
 exit
+
 
 echo ##green
 
@@ -106,7 +108,6 @@ NameTag * objects\weapons\rifle\assault_rifle\shaders\compass_green
 savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_accuracy\assault_rifle_accuracy.weapon
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_green.render_model
 savetagchanges
 exit
@@ -185,12 +186,15 @@ DuplicateTag objects\weapons\rifle\assault_rifle\shaders\ones.shader
 NameTag * objects\weapons\rifle\assault_rifle\shaders\ones_yellow
 DuplicateTag objects\weapons\rifle\assault_rifle\shaders\compass.shader
 NameTag * objects\weapons\rifle\assault_rifle\shaders\compass_yellow
+DuplicateTag objects\weapons\rifle\assault_rifle\bitmaps\compass.bitmap
+NameTag * objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow
 DuplicateTag objects\weapons\rifle\assault_rifle\bitmaps\display.bitmap
 NameTag * objects\weapons\rifle\assault_rifle\bitmaps\display_yellow
 savetagnames
 
 EditTag objects\weapons\rifle\assault_rifle_rof\assault_rifle_rof.weapon
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_yellow.render_model
 savetagchanges
 exit
@@ -198,6 +202,30 @@ exit
 EditTag objects\weapons\rifle\assault_rifle_rof\assault_rifle_rof.model
 SetField RenderModel objects\weapons\rifle\assault_rifle\assault_rifle\assault_rifle_yellow.render_model
 savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\AR\compass\0.dds
+importbitmap 1 workingdir\Bitmaps\WepVariants\AR\compass\1.dds
+importbitmap 2 workingdir\Bitmaps\WepVariants\AR\compass\2.dds
+importbitmap 3 workingdir\Bitmaps\WepVariants\AR\compass\3.dds
+importbitmap 4 workingdir\Bitmaps\WepVariants\AR\compass\4.dds
+importbitmap 5 workingdir\Bitmaps\WepVariants\AR\compass\5.dds
+importbitmap 6 workingdir\Bitmaps\WepVariants\AR\compass\6.dds
+importbitmap 7 workingdir\Bitmaps\WepVariants\AR\compass\7.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\AR\numbers_plate\0.dds
+importbitmap 1 workingdir\Bitmaps\WepVariants\AR\numbers_plate\1.dds
+importbitmap 2 workingdir\Bitmaps\WepVariants\AR\numbers_plate\2.dds
+importbitmap 3 workingdir\Bitmaps\WepVariants\AR\numbers_plate\3.dds
+importbitmap 4 workingdir\Bitmaps\WepVariants\AR\numbers_plate\4.dds
+importbitmap 5 workingdir\Bitmaps\WepVariants\AR\numbers_plate\5.dds
+importbitmap 6 workingdir\Bitmaps\WepVariants\AR\numbers_plate\6.dds
+importbitmap 7 workingdir\Bitmaps\WepVariants\AR\numbers_plate\7.dds
+importbitmap 8 workingdir\Bitmaps\WepVariants\AR\numbers_plate\8.dds
+importbitmap 9 workingdir\Bitmaps\WepVariants\AR\numbers_plate\9.dds
 exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\display_yellow.shader
@@ -208,16 +236,19 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\tens_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow.bitmap
 setargument self_illum_color 2 2 0 1
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\ones_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow.bitmap
 setargument self_illum_color 2 2 0 1
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\assault_rifle\shaders\compass_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\compass_yellow.bitmap
 setargument self_illum_color 2 2 0 1
 savetagchanges
 exit
@@ -271,8 +302,8 @@ DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\mat
 NameTag * objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_gold_material
 savetagnames
 
+
 EditTag objects\weapons\rifle\assault_rifle_power\assault_rifle_power.weapon
-setfield FirstPerson[0].FirstPersonAnimations objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
 setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle_gold.render_model
 savetagchanges
 exit
@@ -300,6 +331,7 @@ setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\rifle\as
 setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.bitmap
 setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_gold_spec.bitmap
 setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_gold_material.bitmap
+setargument albedo_color2 40 40 1 
 savetagchanges
 exit
 
@@ -315,8 +347,479 @@ setfield Materials[2].RenderMethod objects\weapons\rifle\assault_rifle\shaders\a
 savetagchanges
 exit
 
+echo ##Battle Rifle
+echo ##Green
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_green
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_green
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_green
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_green
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_green
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_green
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_green
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_accuracy\battle_rifle_accuracy.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_green.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle_accuracy\battle_rifle_accuracy.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_green.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_green.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_green.bitmap
+setargument self_illum_color 0 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_green.shader
+setargument albedo_color 0 0.4 0 1
+setargument specular_tint 0 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_green.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_green.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_green.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_green.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_green.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_green.shader
+savetagchanges
+exit
+
+echo ##blue
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_blue
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_ammo\battle_rifle_ammo.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_ammo.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_blue.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_blue.bitmap
+setargument self_illum_color 0 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setargument albedo_color 0 0 0.4 1
+setargument specular_tint 0 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+savetagchanges
+exit
 
 
+echo ##purple
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_purple
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_purple
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_range\battle_rifle_range.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_purple.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_range.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_purple.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_purple.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_purple.bitmap
+setargument self_illum_color 1 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_purple.shader
+setargument albedo_color 2 0 0.4 1
+setargument specular_tint 2 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_purple.shader
+setargument self_illum_color 2 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_purple.shader
+setargument self_illum_color 2 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_purple.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_purple.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_purple.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_purple.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_purple.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_purple.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_purple.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_purple.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_purple.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_purple.shader
+savetagchanges
+exit
+
+echo ##yellow
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_yellow
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_yellow
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_rof\battle_rifle_rof.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_yellow.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_rof.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_yellow.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_yellow.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\BR\battle_rifle_yellow.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_yellow.bitmap
+setargument self_illum_color 1 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_yellow.bitmap
+setargument albedo_color 10 2 0 1
+setargument specular_tint 10 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow.bitmap
+setargument self_illum_color 2 2 0 1
+setargument self_illum_intensity 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\numbers_plate_yellow.bitmap
+setargument self_illum_color 2 2 0 1
+setargument self_illum_intensity 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_yellow.shader
+setargument self_illum_color 2 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_yellow.shader
+setargument self_illum_color 2 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_yellow.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_yellow.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_yellow.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_yellow.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_yellow.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_yellow.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_yellow.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_yellow.shader
+savetagchanges
+exit
+
+echo ##blue
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_blue
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_blue
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_ammo\battle_rifle_ammo.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_ammo.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_blue.render_model
+savetagchanges
+exit
 
 
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_blue.bitmap
+setargument self_illum_color 0 0 1 1
+savetagchanges
+exit
 
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setargument albedo_color 0 0 0.4 1
+setargument specular_tint 0 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens_blue.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_blue.shader
+savetagchanges
+exit
+
+echo ##red
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_red
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_red
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_red
+DuplicateTag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_red
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\ones.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\ones_red
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\tens.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\tens_red
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_damage\battle_rifle_damage.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_damage.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_red.bitmap
+setargument self_illum_color 1 0 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\tens_red.shader
+setargument self_illum_color 2 0 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\ones_red.shader
+setargument self_illum_color 2 0 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_red.render_model
+replacerendergeometry workingdir\models\br_red.fbx
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_red.render_model
+replacerendergeometry workingdir\models\br_red.fbx
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_red.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_red.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_red.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\battle_rifle\shaders\ones_red.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\battle_rifle\shaders\tens_red.shader
+savetagchanges
+exit
+
+echo ##gold
+
+DuplicateTag objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\battle_rifle_gold
+DuplicateTag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+NameTag * objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_gold
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
+NameTag * objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_gold
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_spec
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_color_mask
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
+NameTag * objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_material
+savetagnames
+
+EditTag objects\weapons\rifle\battle_rifle_power\battle_rifle_power.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_gold.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\battle_rifle\battle_rifle_power.model
+SetField RenderModel objects\weapons\rifle\battle_rifle\battle_rifle_gold.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_spec.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\BR\spec_pwr.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_color_mask.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\BR\color_mask_pwr.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_material.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\BR\material_pwr.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_gold.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_color_mask.bitmap
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitmap
+setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_spec.bitmap
+setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_gold_material.bitmap
+setargument albedo_color2 40 40 1 
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_gold.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_gold.shader
+savetagchanges
+exit
