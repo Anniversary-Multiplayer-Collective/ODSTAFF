@@ -823,3 +823,204 @@ edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle_gold.
 setfield Materials[0].RenderMethod objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_gold.shader
 savetagchanges
 exit
+
+
+
+
+echo ##smg
+echo ## green
+
+DuplicateTag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+NameTag * objects\weapons\rifle\smg\fp_smg\fp_smg_green
+DuplicateTag objects\weapons\rifle\smg\smg.render_model
+NameTag * objects\weapons\rifle\smg\smg_green
+DuplicateTag objects\weapons\rifle\smg\shaders\smg_metal.shader
+NameTag * objects\weapons\rifle\smg\shaders\smg_metal_green
+DuplicateTag objects\weapons\rifle\smg\bitmaps\smg.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_green
+savetagnames
+
+EditTag objects\weapons\rifle\smg\smg_accuracy.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\smg\fp_smg\fp_smg_green.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\smg_accuracy\smg_accuracy.model
+SetField RenderModel objects\weapons\rifle\smg\smg_green.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_green.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_green.dds
+exit
+
+edittag objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\smg\bitmaps\smg_green.bitmap
+setargument self_illum_color 0 2 0 1
+setargument self_illum_intensity 20
+savetagchanges
+exit
+
+
+edittag objects\weapons\rifle\smg\fp_smg\fp_smg_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+savetagchanges
+exit
+
+echo ## red
+
+DuplicateTag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+NameTag * objects\weapons\rifle\smg\fp_smg\fp_smg_red
+DuplicateTag objects\weapons\rifle\smg\smg.render_model
+NameTag * objects\weapons\rifle\smg\smg_red
+DuplicateTag objects\weapons\rifle\smg\shaders\smg_metal.shader
+NameTag * objects\weapons\rifle\smg\shaders\smg_metal_red
+DuplicateTag objects\weapons\rifle\smg\bitmaps\smg.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_red
+savetagnames
+
+EditTag objects\weapons\rifle\smg\smg_damage.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\smg\fp_smg\fp_smg_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\smg_damage\smg_damage.model
+SetField RenderModel objects\weapons\rifle\smg\smg_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_red.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_red.dds
+exit
+
+edittag objects\weapons\rifle\smg\shaders\smg_metal_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\smg\bitmaps\smg_red.bitmap
+setargument self_illum_color 2 0 0 1
+setargument self_illum_intensity 20
+savetagchanges
+exit
+
+
+edittag objects\weapons\rifle\smg\fp_smg\fp_smg_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_red.shader
+savetagchanges
+exit
+
+echo ## yellow
+
+DuplicateTag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+NameTag * objects\weapons\rifle\smg\fp_smg\fp_smg_yellow
+DuplicateTag objects\weapons\rifle\smg\smg.render_model
+NameTag * objects\weapons\rifle\smg\smg_yellow
+DuplicateTag objects\weapons\rifle\smg\shaders\smg_metal.shader
+NameTag * objects\weapons\rifle\smg\shaders\smg_metal_yellow
+DuplicateTag objects\weapons\rifle\smg\bitmaps\smg.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_yellow
+savetagnames
+
+EditTag objects\weapons\rifle\smg\smg_rof.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\smg\fp_smg\fp_smg_yellow.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\smg_rof\smg_rof.model
+SetField RenderModel objects\weapons\rifle\smg\smg_yellow.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_yellow.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_yellow.dds
+exit
+
+edittag objects\weapons\rifle\smg\shaders\smg_metal_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\smg\bitmaps\smg_yellow.bitmap
+setargument self_illum_color 2 2 0 1
+setargument self_illum_intensity 20
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\fp_smg\fp_smg_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_yellow.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_yellow.shader
+savetagchanges
+exit
+
+
+
+echo ##gold
+
+DuplicateTag objects\weapons\rifle\smg\smg.render_model
+NameTag * objects\weapons\rifle\smg\smg_gold
+
+DuplicateTag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+NameTag * objects\weapons\rifle\smg\fp_smg\fp_smg_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
+NameTag * objects\weapons\rifle\smg\shaders\smg_metal_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_spec_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_color_mask_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
+NameTag * objects\weapons\rifle\smg\bitmaps\smg_mat_gold
+
+savetagnames
+
+EditTag objects\weapons\rifle\smg\smg_power.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\smg\fp_smg\fp_smg_gold.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\smg_power\smg_power.model
+SetField RenderModel objects\weapons\rifle\smg\smg_gold.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_spec_gold.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\spec_pwr.dds
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_color_mask_gold.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\color_mask_pwr.dds
+exit
+
+edittag objects\weapons\rifle\smg\bitmaps\smg_mat_gold.bitmap
+importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\material_pwr.dds
+exit
+
+edittag objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\smg\bitmaps\smg.bitmap
+setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\rifle\smg\bitmaps\smg_color_mask_gold.bitmap
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\rifle\smg\bitmaps\smg_bump.bitmap
+setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\smg\bitmaps\smg_spec_gold.bitmap
+setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\smg\bitmaps\smg_mat_gold.bitmap
+setargument albedo_color2 40 40 1 
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\fp_smg\fp_smg_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+savetagchanges
+exit
