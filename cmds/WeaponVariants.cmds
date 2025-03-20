@@ -851,7 +851,7 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_green.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_green.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\smg_green.dds
 exit
 
 edittag objects\weapons\rifle\smg\shaders\smg_metal_green.shader
@@ -863,12 +863,18 @@ exit
 
 
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_green.render_model
-setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+replacerendergeometry workingdir\models\smg_scope.fbx
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_rubber.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\smg_silenced\shaders\smg_addon.shader
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\smg_green.render_model
-setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+replacerendergeometry workingdir\models\smg_scope.fbx
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_rubber.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\smg_silenced\shaders\smg_addon.shader
 savetagchanges
 exit
 
@@ -895,7 +901,7 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_red.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_red.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\smg_red.dds
 exit
 
 edittag objects\weapons\rifle\smg\shaders\smg_metal_red.shader
@@ -904,6 +910,7 @@ setargument self_illum_color 2 0 0 1
 setargument self_illum_intensity 20
 savetagchanges
 exit
+
 
 
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_red.render_model
@@ -939,7 +946,7 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_yellow.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\smg_yellow.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\smg_yellow.dds
 exit
 
 edittag objects\weapons\rifle\smg\shaders\smg_metal_yellow.shader
@@ -988,15 +995,15 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_spec_gold.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\spec_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\spec_pwr.dds
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_color_mask_gold.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\color_mask_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\color_mask_pwr.dds
 exit
 
 edittag objects\weapons\rifle\smg\bitmaps\smg_mat_gold.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\smg\material_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\smg\material_pwr.dds
 exit
 
 edittag objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
@@ -1010,12 +1017,18 @@ savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\smg_gold.render_model
-setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+replacerendergeometry workingdir\models\smg_scope.fbx
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_rubber.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\smg_silenced\shaders\smg_addon.shader
 savetagchanges
 exit
 
 edittag objects\weapons\rifle\smg\fp_smg\fp_smg_gold.render_model
-setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+replacerendergeometry workingdir\models\smg_scope.fbx
+setfield Materials[0].RenderMethod objects\weapons\rifle\smg\shaders\smg_rubber.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\smg\shaders\smg_metal_gold.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\smg_silenced\shaders\smg_addon.shader
 savetagchanges
 exit
 
@@ -1045,7 +1058,7 @@ savetagchanges
 exit
 
 edittag objects\weapons\pistol\magnum\bitmaps\magnum_red.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\magnum_red.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\magnum\magnum_red.dds
 exit
 
 edittag objects\weapons\pistol\magnum\shaders\magnum_red.shader
@@ -1097,15 +1110,15 @@ savetagchanges
 exit
 
 edittag objects\weapons\pistol\magnum\shaders\magnum_gold_spec.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\spec_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\magnum\spec_pwr.dds
 exit
 
 edittag objects\weapons\pistol\magnum\shaders\magnum_gold_color_mask.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\color_mask_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\magnum\color_mask_pwr.dds
 exit
 
 edittag objects\weapons\pistol\magnum\shaders\magnum_gold_material.bitmap
-importbitmap 0 workingdir\Bitmaps\WeaponVari\magnum\material_pwr.dds
+importbitmap 0 workingdir\bitmaps\WepVariants\magnum\material_pwr.dds
 exit
 
 edittag objects\weapons\pistol\magnum\shaders\magnum_gold.shader
