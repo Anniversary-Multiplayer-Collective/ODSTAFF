@@ -1329,7 +1329,7 @@ exit
 
 echo dmr
 
-opencachefile "E:\Halo Resources\HaloReach\20_sword_slayer.map"
+opencachefile reachmaps\20_sword_slayer.map
 porttag objects\weapons\rifle\dmr\shaders\dmr_composite.shader
 porttag objects\weapons\rifle\dmr\shaders\dmr_lens.shader
 porttag objects\weapons\rifle\dmr\shaders\dmr_metal.shader
@@ -1385,3 +1385,392 @@ savetagchanges
 exit
 
 
+echo ##red
+
+DuplicateTag objects\weapons\rifle\dmr\dmr.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_red
+DuplicateTag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_rubber_red
+DuplicateTag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red
+DuplicateTag objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\tens_dmr_red
+DuplicateTag objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\ones_dmr_red
+savetagnames
+
+
+EditTag objects\weapons\rifle\dmr_damage\dmr_damage.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_damage\dmr_damage.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_red.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_red.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_red.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\tens_dmr_red.shader
+setargument self_illum_color 2 0 0 1
+setargument self_illum_intensity 10
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\ones_dmr_red.shader
+setargument self_illum_color 2 0 0 1
+setargument self_illum_intensity 10
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+replacerendergeometry workingdir\models\dmr_red.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_red.render_model
+replacerendergeometry workingdir\models\dmr_red.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_red.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_red.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_red.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_red.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_red.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_red.shader
+savetagchanges
+exit
+
+echo green
+
+DuplicateTag objects\weapons\rifle\dmr\dmr.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_green
+DuplicateTag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_rubber_green
+DuplicateTag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_green
+DuplicateTag objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\ones_dmr_green
+DuplicateTag objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\tens_dmr_green
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_accuracy\dmr_accuracy.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_accuracy\dmr_accuracy.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_green.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_green.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_green.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
+setargument albedo_color 0 0.4 0 1
+setargument specular_tint 0 1 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\tens_dmr_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\ones_dmr_green.shader
+setargument self_illum_color 0 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_green.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_green.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_green.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_green.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_green.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_green.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_green.shader
+savetagchanges
+exit
+
+
+echo blue
+
+DuplicateTag objects\weapons\rifle\dmr\dmr.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_blue
+DuplicateTag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_rubber_blue
+DuplicateTag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue
+DuplicateTag objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\ones_dmr_blue
+DuplicateTag objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\tens_dmr_blue
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_ammo\dmr_ammo.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_ammo\dmr_ammo.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_blue.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_blue.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_blue.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+setargument albedo_color 0 0 0.4 1
+setargument specular_tint 0 0 1 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\tens_dmr_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\ones_dmr_blue.shader
+setargument self_illum_color 0 0 2 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_blue.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_blue.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_blue.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_blue.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_blue.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_blue.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_blue.shader
+savetagchanges
+exit
+
+
+echo yellow
+
+DuplicateTag objects\weapons\rifle\dmr\dmr.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_yellow
+DuplicateTag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow
+DuplicateTag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow
+DuplicateTag objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow
+DuplicateTag objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\ones_dmr_yellow
+DuplicateTag objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+NameTag * objects\weapons\rifle\dmr\shaders\tens_dmr_yellow
+savetagnames
+
+EditTag objects\weapons\rifle\dmr_rof\dmr_rof.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_rof\dmr_rof.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_yellow.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow.bitmap
+importbitmap 0 workingdir\bitmaps\WepVariants\DMR\dmr_yellow.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_yellow.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+setargument albedo_color 10 2 0 1
+setargument specular_tint 10 2 0 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\tens_dmr_yellow.shader
+setargument self_illum_color 55 3 0 1
+setargument self_illum_intensity 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\ones_dmr_yellow.shader
+setargument self_illum_color 55 3 0 1
+setargument self_illum_intensity 1
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_yellow.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_yellow.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_yellow.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr_yellow.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_yellow.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new_yellow.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr_yellow.shader
+savetagchanges
+exit
+
+echo ##Gold
+
+DuplicateTag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+NameTag * objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold
+
+DuplicateTag objects\weapons\rifle\dmr\dmr.render_model
+NameTag * objects\weapons\rifle\dmr\dmr_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1.shader
+NameTag * objects\weapons\rifle\dmr\shaders\dmr_rubber_gold
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\specular_mask_texture.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_gold_spec
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\color_mask_map.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_color_mask
+
+DuplicateTag objects\weapons\rifle\assault_rifle\assault_rifle_v6\material_1\material_texture.bitmap
+NameTag * objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_material
+
+savetagnames
+
+
+EditTag objects\weapons\rifle\dmr_power\dmr_power.weapon
+setfield FirstPerson[0].FirstPersonModel objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold.render_model
+savetagchanges
+exit
+
+EditTag objects\weapons\rifle\dmr_power\dmr_power.model
+SetField RenderModel objects\weapons\rifle\dmr\dmr_gold.render_model
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_gold_spec.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\DMR\spec_pwr.dds
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_color_mask.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\DMR\color_mask_pwr.dds
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_material.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\DMR\material_pwr.dds
+exit
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_rubber_gold.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_color_mask.bitmap
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_normal.bitmap
+setfield ShaderProperties[0].TextureConstants[5].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_gold_spec.bitmap
+setfield ShaderProperties[0].TextureConstants[6].Bitmap objects\weapons\rifle\dmr\bitmaps\dmr_diffuse_material.bitmap
+setargument albedo_color2 40 40 1 
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_gold.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr_gold.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber_gold.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+savetagchanges
+exit
