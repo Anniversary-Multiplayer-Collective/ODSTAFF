@@ -1327,3 +1327,61 @@ setfield Materials[3].RenderMethod objects\weapons\rifle\covenant_carbine\shader
 savetagchanges
 exit
 
+echo dmr
+
+opencachefile "E:\Halo Resources\HaloReach\20_sword_slayer.map"
+porttag objects\weapons\rifle\dmr\shaders\dmr_composite.shader
+porttag objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+porttag objects\weapons\rifle\dmr\shaders\dmr_metal.shader
+porttag objects\weapons\rifle\dmr\shaders\dmr_metal_shiny.shader
+porttag objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+porttag objects\weapons\rifle\dmr\shaders\dmr_lens_glass.shader
+porttag objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+porttag objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+exit
+
+DuplicateTag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_lens.shader
+nametag * objects\weapons\rifle\dmr\shaders\dmr_lens_new
+savetagnames
+
+edittag objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\bitmaps\dmr_diffuse.bitmap
+importbitmap 0 workingdir\Bitmaps\WepVariants\DMR\dmr.dds
+exit
+
+edittag objects\weapons\rifle\dmr\dmr.render_model
+replacerendergeometry workingdir\models\dmr.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+replacerendergeometry workingdir\models\dmr.fbx
+exit
+
+edittag objects\weapons\rifle\dmr\fp_dmr\fp_dmr.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\dmr\dmr.render_model
+setfield Materials[0].RenderMethod objects\weapons\rifle\dmr\shaders\tens_dmr.shader
+setfield Materials[1].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[2].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens.shader
+setfield Materials[3].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[4].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[5].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_rubber.shader
+setfield Materials[6].RenderMethod objects\weapons\rifle\dmr\shaders\dmr_lens_new.shader
+setfield Materials[7].RenderMethod objects\weapons\rifle\dmr\shaders\ones_dmr.shader
+savetagchanges
+exit
+
+
