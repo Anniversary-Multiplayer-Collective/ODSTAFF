@@ -84,6 +84,12 @@ stringid add custom_mp_backpack_comm
 stringid add custom_mp_backpack_comm_description
 stringid add custom_mp_hulrs
 stringid add custom_mp_hulrs_description
+stringid add custom_mp_firefall
+stringid add custom_mp_firefall_description
+stringid add custom_mp_helljumper
+stringid add custom_mp_helljumper_description
+stringid add firefall
+stringid add helljumper
 
 edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
 setstring english helmet "Helmet"
@@ -169,6 +175,10 @@ setstring english custom_mp_sup "ODST - Support"
 setstring english custom_mp_sup_description "Standard isse ODST chest piece with some extra carry weight to it."
 setstring english custom_mp_knife "ODST - Knife"
 setstring english custom_mp_knife_description "You call that a knife? This is a knife!"
+setstring english custom_mp_firefall "FireFall"
+setstring english custom_mp_firefall_description "Firefall is the first component of an ensemble that aims to eliminate the need for drop pods in orbital insertions."
+setstring english custom_mp_helljumper "Helljumper"
+setstring english custom_mp_helljumper_description "The armor is considered to be the pet project of Cascade Stronghold Technologies' current chief executive officer, a former Orbital Drop Shock Trooper."
 savetagchanges
 exit
 
@@ -309,6 +319,36 @@ setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Varia
 savetagchanges
 exit
 
+
+echo firefall helmet
+
+
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_firefall
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_firefall_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation firefall
+savetagchanges
+exit
+
+
+
+echo helljumper helmet
+
+
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name custom_mp_helljumper
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_mp_helljumper_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation helljumper
+savetagchanges
+exit
 
 	echo right_headgear<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 	echo renames
@@ -1748,8 +1788,101 @@ setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\maste
 savetagchanges
 exit
 
+	echo firefall
+
+duplicatetag objects\characters\spartans\shaders\spartan_armor.shader
+nametag * objects\characters\masterchief\shaders\firefall_helm
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief.bitmap
+nametag * objects\characters\masterchief\shaders\firefall_helm_d
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_new_bump.bitmap
+nametag * objects\characters\masterchief\shaders\firefall_helm_n
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_cc.bitmap
+nametag * objects\characters\masterchief\shaders\firefall_helm_c
+duplicatetag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+nametag * objects\characters\masterchief\shaders\firefall_helm_m
+savetagnames
+	
+edittag objects\characters\masterchief\shaders\firefall_helm_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\ff\firefall_helmet_d.dds
+exit
+
+edittag objects\characters\masterchief\shaders\firefall_helm_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\ff\firefall_helmet_n.dds
+exit
+
+edittag objects\characters\masterchief\shaders\firefall_helm_c.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\ff\firefall_helmet_c.dds
+exit
+
+edittag objects\characters\masterchief\shaders\firefall_helm_m.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\ff\firefall_helmet_m.dds
+exit
+
+edittag objects\characters\masterchief\shaders\firefall_helm.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\firefall_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\firefall_helm_c.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\firefall_helm_n.bitmap
+setfield shaderproperties[0].textureconstants[4].bitmap objects\characters\masterchief\shaders\firefall_helm_m.bitmap
+setargument booleans use_material_texture
+savetagchanges
+exit
 
 
+
+	echo helljumper
+	
+
+duplicatetag objects\characters\spartans\shaders\spartan_armor.shader
+nametag * objects\characters\masterchief\shaders\helljumper_helm
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief.bitmap
+nametag * objects\characters\masterchief\shaders\helljumper_helm_d
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_new_bump.bitmap
+nametag * objects\characters\masterchief\shaders\helljumper_helm_n
+duplicatetag objects\characters\masterchief\bitmaps\mp_masterchief_cc.bitmap
+nametag * objects\characters\masterchief\shaders\helljumper_helm_c
+duplicatetag shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+nametag * objects\characters\masterchief\shaders\helljumper_helm_m
+savetagnames
+	
+edittag objects\characters\masterchief\shaders\helljumper_helm_d.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\hj\helljumper_helmet_d.dds
+exit
+
+edittag objects\characters\masterchief\shaders\helljumper_helm_n.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\hj\helljumper_helmet_n.dds
+exit
+
+edittag objects\characters\masterchief\shaders\helljumper_helm_c.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\hj\helljumper_helmet_c.dds
+exit
+
+edittag objects\characters\masterchief\shaders\helljumper_helm_m.bitmap
+importbitmap 0 workingdir\ODSTcustomization\bitmaps\hj\helljumper_helmet_m.dds
+exit
+
+edittag objects\characters\masterchief\shaders\helljumper_helm.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\helljumper_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[2].bitmap objects\characters\masterchief\shaders\helljumper_helm_c.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\helljumper_helm_n.bitmap
+setfield shaderproperties[0].textureconstants[4].bitmap objects\characters\masterchief\shaders\helljumper_helm_m.bitmap
+setargument booleans use_material_texture
+savetagchanges
+exit
+
+
+	echo visor
+	
+duplicatetag objects\characters\masterchief\shaders\mp_visor.shader
+nametag * objects\characters\masterchief\shaders\helljumper_visor
+savetagnames
+
+edittag objects\characters\masterchief\shaders\helljumper_visor.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\helljumper_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\helljumper_helm_n.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
 
 
 
@@ -1847,6 +1980,38 @@ setargument specular_coefficient 0.5
 savetagchanges
 exit
 
+
+	echo firefall visor
+	
+duplicatetag objects\characters\masterchief\shaders\mp_visor.shader
+nametag * objects\characters\masterchief\shaders\firefall_visor
+savetagnames
+
+edittag objects\characters\masterchief\shaders\firefall_visor.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\firefall_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\firefall_helm_n.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+	echo helljumpber visor
+	
+duplicatetag objects\characters\masterchief\shaders\mp_visor.shader
+nametag * objects\characters\masterchief\shaders\helljumper_visor
+savetagnames
+
+edittag objects\characters\masterchief\shaders\helljumper_visor.shader
+setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\helljumper_helm_d.bitmap
+setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\helljumper_helm_n.bitmap
+setargument diffuse_coefficient 1
+setargument specular_coefficient 0.5
+savetagchanges
+exit
+
+
+
 	
 	echo fix arms
 	
@@ -1865,7 +2030,7 @@ exit
 edittag objects\characters\odst\odst.render_model
 RemoveBlockElements Regions 0 *
 RemoveBlockElements Materials 0 *
-AddBlockElements Materials 46
+AddBlockElements Materials 50
 SetField Materials[0].RenderMethod objects\characters\odst\shaders\odst_badges.shader_decal
 SetField Materials[1].RenderMethod objects\characters\odst\shaders\odst_armor.shader
 SetField Materials[2].RenderMethod objects\characters\odst\shaders\odst_armor_steel.shader
@@ -1905,15 +2070,22 @@ SetField Materials[35].RenderMethod objects\characters\spartans\shaders\spartan_
 SetField Materials[36].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
 SetField Materials[37].RenderMethod objects\characters\masterchief\shaders\mp_ninja.shader
 SetField Materials[38].RenderMethod objects\characters\masterchief\shaders\mp_ninja_visor.shader
-SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\reach_shoulders.shader
-SetField Materials[40].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
-SetField Materials[41].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
-SetField Materials[42].RenderMethod objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
-SetField Materials[43].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
-SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
-SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
+SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\firefall_helm.shader
+SetField Materials[40].RenderMethod objects\characters\masterchief\shaders\firefall_visor.shader
+SetField Materials[41].RenderMethod objects\characters\masterchief\shaders\helljumper_helm.shader
+SetField Materials[42].RenderMethod objects\characters\masterchief\shaders\helljumper_visor.shader
+SetField Materials[43].RenderMethod objects\characters\masterchief\shaders\reach_shoulders.shader
+SetField Materials[44].RenderMethod objects\characters\marine\shaders\marine_odst_set_shoulders.shader
+SetField Materials[45].RenderMethod objects\characters\marine\shaders\marine_odst_set_shoulders.shader
+SetField Materials[46].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
+SetField Materials[47].RenderMethod objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
+SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
+SetField Materials[49].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
 replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
-SetField Materials[43].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
+SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\firefall_helm.shader
+SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
 savetagchanges
 exit
 
