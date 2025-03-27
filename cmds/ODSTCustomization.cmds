@@ -2108,6 +2108,15 @@ exit
 
 EditTag objects\characters\odst_recon\odst_recon.model
 UpdateModelRegions 0
+setfield Variants[0].Regions[2].Permutations[1].Probability 0.1
+setfield Variants[0].Regions[2].Permutations[0].Probability 0
+setfield Variants[0].Regions[5].Permutations[0].Probability 0
+setfield Variants[0].Regions[5].Permutations[3].Probability 0.1
+setfield Variants[0].Regions[8].Permutations[8].Probability 0.1
+setfield Variants[0].Regions[8].Permutations[0].Probability 0
+setfield Variants[0].Regions[14].Permutations[0].Probability 0.1
+setfield Variants[0].Regions[15].Permutations[0].Probability 0
+setfield Variants[0].Regions[15].Permutations[2].Probability 0.1
 SaveTagChanges
 Exit
 

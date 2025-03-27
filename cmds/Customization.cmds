@@ -1,10 +1,13 @@
 ## scnr
 
 edittag levels\ui\mainmenu\mainmenu.scnr
-setfield BipedPalette[2].Object objects\characters\odst_recon\odst_recon.biped
+setfield BipedPalette[0].Object objects\characters\odst_recon\odst_recon.biped
 setfield WeaponPalette[0].Object objects\weapons\rifle\smg_silenced\smg_silenced.weapon
-setfield ObjectNames[24].Name "appearance_ssmg"
-setfield ObjectNames[33].Name "odst_appearance"
+setfield ObjectNames[7].Name "appearance_ar"
+setfield ObjectNames[3].Name "odst_appearance"
+setfield Bipeds[2].PaletteIndex 0
+setfield Bipeds[3].PaletteIndex 0
+setfield Bipeds[4].PaletteIndex 0
 compilescripts "workingdir\scenarios\scripts\mm_odst_10-21-22.hsc"
 savetagchanges
 exit
@@ -114,8 +117,8 @@ foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[0].Default
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[1].Default 0 20 20 20
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Name -1
 foreach PlayerCharacterCustomizations setfield CharacterColors.Colors[2].Description -1
-setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 33
-setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 28
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.BipedNameIndex 3
+setfield PlayerCharacterCustomizations[0].CharacterPositionData.SettingsCameraIndex 31
 savetagchanges
 exit
 
