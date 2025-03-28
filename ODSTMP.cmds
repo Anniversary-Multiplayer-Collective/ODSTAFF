@@ -3171,6 +3171,28 @@ compilescripts workingdir\scenarios\scripts\menuanimedit.hsc
 savetagchanges
 exit
 
+## echo random armors at customs
+
+edittag objects\characters\odst_recon\odst_recon.model
+addblockelements Variants 1
+setfield Variants[1].Name random
+updatemodelregions 1 random
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\mainmenu.scenario
+setfield Bipeds[2].Variant random
+setfield Bipeds[2].ActiveChangeColors Primary,Secondary,Tertiary
+setfield Bipeds[2].PrimaryColor 255 30 30 30
+setfield Bipeds[2].SecondaryColor 255 30 30 30
+setfield Bipeds[2].TertiaryColor 255 200 225 255
+setfield Bipeds[3].Variant random
+setfield Bipeds[3].ActiveChangeColors Primary,Secondary,Tertiary
+setfield Bipeds[3].PrimaryColor 255 30 30 30
+setfield Bipeds[3].SecondaryColor 255 30 30 30
+setfield Bipeds[3].TertiaryColor 255 200 225 255
+savetagchanges
+exit
 
 
 ////////////////////////////////////////////////////////////////////////////////
