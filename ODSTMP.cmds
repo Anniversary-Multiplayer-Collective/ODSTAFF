@@ -3145,6 +3145,34 @@ runcommands workingdir\cmds\automagstrings.cmds
 ## echo fix hud scaling
 runcommands workingdir\cmds\ChudEdits.cmds
 
+# echo Add AMP signature 
+edittag ui\halox\main_menu\bungielogo.bitmap
+importbitmap 0 workingdir\bitmaps\amp-sig.dds
+exit
+
+## echo MainMenu Music
+opencachefile odstmaps\mainmenu.map
+porttag sound\music\atlas\menu\track1\in.sound
+porttag sound\music\atlas\menu\track1\loop.sound
+exit
+
+edittag sound\game_sfx\ui\main_menu_music\main_menu_music.lsnd
+setfield LoopTypeHO  7396
+setfield Tracks[0].Gain -6
+setfield Tracks[0].In sound\music\atlas\menu\track1\in.sound
+setfield Tracks[0].Loop sound\music\atlas\menu\track1\loop.sound
+savetagchanges
+exit
+
+## echo Custom Games Anims.
+
+edittag levels\ui\mainmenu\mainmenu.scenario
+compilescripts workingdir\scenarios\scripts\menuanimedit.hsc
+savetagchanges
+exit
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
