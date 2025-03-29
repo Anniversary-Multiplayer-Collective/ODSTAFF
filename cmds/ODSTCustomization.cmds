@@ -2011,6 +2011,21 @@ savetagchanges
 exit
 
 
+	echo fix marine shader thingy
+	
+duplicatetag objects\characters\masterchief\shaders\mp_cobra.shader
+nametag * objects\characters\odst\shaders\marine_chest_fixed
+savetagnames
+
+edittag objects\characters\odst\shaders\marine_chest_fixed.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\characters\marine\bitmaps\marine_torso_diffuse.bitmap
+setfield ShaderProperties[0].TextureConstants[1].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\gun_detail.bitmap
+setfield ShaderProperties[0].TextureConstants[2].Bitmap objects\characters\marine\bitmaps\marine_torso_cc.bitmap
+setfield ShaderProperties[0].TextureConstants[3].Bitmap objects\characters\marine\bitmaps\marine_torso_zbump.bitmap
+setfield ShaderProperties[0].TextureConstants[4].Bitmap objects\characters\masterchief\fp\bitmaps\efp_metal_bump.bitmap
+setfield ShaderProperties[0].TextureConstants[5].Bitmap shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+savetagchanges
+exit
 
 	
 	echo fix arms
@@ -2046,7 +2061,7 @@ SetField Materials[11].RenderMethod objects\characters\masterchief\shaders\odst_
 SetField Materials[12].RenderMethod objects\characters\masterchief\shaders\odst_raven_1.shader
 SetField Materials[13].RenderMethod objects\characters\odst_oni_op\shaders\oni_op_gear.shader
 SetField Materials[14].RenderMethod objects\characters\masterchief\shaders\reach_chest.shader
-SetField Materials[15].RenderMethod objects\characters\marine\shaders\marine.shader
+SetField Materials[15].RenderMethod objects\characters\odst\shaders\marine_chest_fixed.shader
 SetField Materials[16].RenderMethod objects\characters\odst_recon\shaders\odst_handwriting.shader_decal
 SetField Materials[17].RenderMethod objects\characters\odst\shaders\mc_emblem.shader_decal
 SetField Materials[18].RenderMethod objects\characters\odst_recon\shaders\fp_skin.shader
@@ -2082,6 +2097,7 @@ SetField Materials[47].RenderMethod objects\characters\spartan_jorge\shaders\spa
 SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
 SetField Materials[49].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
 replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
+SetField Materials[15].RenderMethod objects\characters\odst\shaders\marine_chest_fixed.shader
 SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\firefall_helm.shader
 SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
 SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
@@ -2281,6 +2297,14 @@ exit
 edittag objects\characters\odst_oni_op\bitmaps\oni_op_gear_diffuse.bitmap
 importbitmap 0 workingdir\ODSTcustomization\bitmaps\oni_op_gear_diffuse.dds
 exit
+
+
+
+
+
+
+
+
 
 
 

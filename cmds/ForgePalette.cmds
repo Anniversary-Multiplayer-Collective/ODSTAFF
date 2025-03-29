@@ -168,6 +168,8 @@ AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
 
+#Vehicles
+AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
 
 
 EditTag multiplayer\forge_globals.forge_globals_definition
