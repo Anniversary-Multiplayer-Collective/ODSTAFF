@@ -3194,6 +3194,13 @@ setfield Bipeds[3].TertiaryColor 255 200 225 255
 savetagchanges
 exit
 
+## echo customization camera
+edittag levels\ui\mainmenu\mainmenu.scenario
+setfield CutsceneCameraPoints[31].Position 16.9981 13.4653 0.1986
+setfield CutsceneCameraPoints[31].Orientation -88.9096 -0.0022 0.1165
+savetagchanges
+exit
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
