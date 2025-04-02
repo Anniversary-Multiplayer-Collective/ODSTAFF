@@ -29,5 +29,9 @@ setfield DamageUpperBound 55 55
 savetagchanges
 exit
 
+edittag objects\weapons\rifle\sniper_rifle\damage_effects\sniper_rifle_bullet.damage_effect
+setfield DamageUpperBound 80 80
+savetagchanges
+exit
 
 
