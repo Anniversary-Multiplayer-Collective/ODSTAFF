@@ -3145,6 +3145,9 @@ runcommands workingdir\cmds\automagstrings.cmds
 ## echo fix hud scaling
 runcommands workingdir\cmds\ChudEdits.cmds
 
+## echo Gameplay Balance
+runcommands workingdir\cmds\GameplayBalance.cmds
+
 # echo Add AMP signature 
 edittag ui\halox\main_menu\bungielogo.bitmap
 importbitmap 0 workingdir\bitmaps\amp-sig.dds

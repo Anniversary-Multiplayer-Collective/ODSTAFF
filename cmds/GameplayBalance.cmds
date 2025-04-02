@@ -1,0 +1,33 @@
+
+## echo
+edittag objects\characters\odst_recon\odst_recon.model
+setfield NewDamageInfo[0].MaximumVitality 45
+setfield NewDamageInfo[0].MaxShieldVitality 70
+setfield NewDamageInfo[0].StunTime 10
+setfield NewDamageInfo[0].RechargeTime 5
+setfield NewDamageInfo[0].DamageSections[1].VitalityPercentage 0
+setfield NewDamageInfo[0].Flags TakesShieldDamageForChildren,TakesBodyDamageForChildren
+setfield NewDamageInfo[0].GlobalIndirectMaterialName hard_metal_thin_hum_masterchief
+setfield NewDamageInfo[0].GlobalShieldMaterialName energy_shield_thin_hum_masterchief
+setfield NewDamageInfo[0].ShieldDepletedEffect objects\characters\masterchief\fx\shield\shield_collapse.effect
+setfield NewDamageInfo[0].ShieldRechargingEffect objects\characters\masterchief\fx\shield\shield_recharge.effect
+setfield NewDamageInfo[0].GlobalShieldMaterialIndex 147
+setfield NewDamageInfo[0].GlobalIndirectMaterialIndex 56
+setfield NewDamageInfo[0].RuntimeShieldRechargeVelocity 0.5
+setfield NewDamageInfo[0].RuntimeHealthRechargeVelocity 0.2
+setfield Flags HasShieldImpactEffect
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\strike_melee.damage_effect
+setfield DamageUpperBound 55 55
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\smash_melee.damage_effect
+setfield DamageUpperBound 55 55
+savetagchanges
+exit
+
+
+
