@@ -139,8 +139,13 @@ savetagchanges
 exit
 
 
+echo ## Dual Wield hud fix
+echo SMG
 
-
+edittag ui\chud\smg_silenced.chud_definition
+setfield HudWidgets[5].PlacementData[0].Offset 93 946
+savetagchanges
+exit
 
 
 
