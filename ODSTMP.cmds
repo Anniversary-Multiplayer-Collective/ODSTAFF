@@ -3204,6 +3204,17 @@ setfield CutsceneCameraPoints[31].Orientation -88.9096 -0.0022 0.1165
 savetagchanges
 exit
 
+## echo ==Fall Damage setup==
+
+opencachefile odstmaps\sc100.map
+porttag replace globals\collision_damage\biped_player.collision_damage
+exit
+
+edittag globals\collision_damage\biped_player.collision_damage
+setfield AbsoluteDamageAccelerationBounds 7.5 15
+savetagchanges
+exit
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
