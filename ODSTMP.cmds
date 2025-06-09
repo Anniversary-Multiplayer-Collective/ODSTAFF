@@ -3100,14 +3100,14 @@ RunCommands workingdir\cmds\GenerateMopps.cmds
 RunCommands workingdir\cmds\PodiumCameras.cmds
 
 // MISC
-SaveModPackage "modsfolder\ODSTMP.pak"
+SaveModPackage "modsfolder\ODSTAMP.pak"
 ExitModPackage
 
 ////////////////////////////////////////////////////////////////////////////////
 // ADD MAIN MENU PAK AND OPTIMIZE
 ////////////////////////////////////////////////////////////////////////////////
 CreateModPackage 1 large
-ODSTAMP
+ODST Anniversary Multiplayer
 Shoot other ODSTs in various locales.
 Vegetal & AMP Collective
 0.1
@@ -3222,6 +3222,6 @@ exit
 
 AddModFiles "workingdir\assets"
 
-SaveModPackage "modsfolder\ODSTMP.pak"
+SaveModPackage "modsfolder\ODSTAMP.pak"
 
 DumpLog workingdir\logs\ODSTMP_LOG.cmds
