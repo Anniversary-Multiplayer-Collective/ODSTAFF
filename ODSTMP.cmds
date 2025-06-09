@@ -8,7 +8,7 @@ SetVariable modsfolder < ElDewrito mods folder >
 
 //Update at the end of the script
 CreateModPackage 1 Large
-ODSTAMP
+ODST Anniversary Multiplayer
 Shoot other ODSTs in various locales.
 Vegetal & AMP Collective
 0.1
