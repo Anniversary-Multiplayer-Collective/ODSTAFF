@@ -2122,6 +2122,16 @@ replacerendergeometry "workingdir\ODSTcustomization\odst_fp_body.dae" TriangleSt
 savetagchanges
 exit
 
+edittag objects\characters\odst_recon\fp\fp.render_model
+replacerendergeometry "workingdir\ODSTcustomization\odst_fp_arms.dae" TriangleStrip
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\fp.render_model
+setfield Materials[2].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
+savetagchanges
+exit
+
 EditTag objects\characters\odst_recon\odst_recon.model
 UpdateModelRegions 0
 setfield Variants[0].Regions[2].Permutations[1].Probability 0.1
