@@ -3119,7 +3119,7 @@ multiplayer\mod_globals.mod_globals
 Done
 ExitModPackage
 
-openmodpackage modsfolder\odstmp.pak
+openmodpackage modsfolder\odstamp.pak
 ApplyModPackageTags
 levels\ui\mainmenu\mainmenu.scenario
 Done
@@ -3224,4 +3224,4 @@ AddModFiles "workingdir\assets"
 
 SaveModPackage "modsfolder\ODSTAMP.pak"
 
-DumpLog workingdir\logs\ODSTMP_LOG.cmds
+DumpLog workingdir\logs\ODSTAMP_LOG.cmds

@@ -94,6 +94,7 @@ AddForgeItem "WIRE SPOOL, SMALL" 11 objects\levels\dlc\warehouse\dlc_wh_wire_spo
 AddForgeItem "HARDHAT" 11 objects\levels\solo\040_voi\hardhat\hardhat.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
 AddForgeItem "FOOD RATIONS, COVENANT" 11 objects\gear\covenant\military\cov_food_rations\cov_food_rations.crate
+AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
 
 
 
@@ -169,6 +170,7 @@ AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
 AddForgeItem "Glass Door" 86 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
 AddForgeItem "Oni Door" 86 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
+AddForgeItem "Evac Door" 86 objects\levels\atlas\h100\evac_door\evac_door.device_machine
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
