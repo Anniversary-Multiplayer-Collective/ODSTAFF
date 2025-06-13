@@ -1,0 +1,16 @@
+
+ODSTAMP To Do:
+
+Mod:
+Fix default view models
+dual weild hud pickups for all weapons
+Weapon marker on back
+no voip widget
+DMR pickup string
+Add a radar
+
+Map Variant:
+Add podium, Courtyard/rooftop 
+Add grenade pickups to all maps
+Chasm ten, Remove doors
+Steets. Remove doors
