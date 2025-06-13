@@ -171,6 +171,7 @@ AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_do
 AddForgeItem "Glass Door" 86 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
 AddForgeItem "Oni Door" 86 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "Evac Door" 86 objects\levels\atlas\h100\evac_door\evac_door.device_machine
+AddForgeItem "Forcefield Barrier, Covenant" 86 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle

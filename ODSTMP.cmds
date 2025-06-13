@@ -490,6 +490,40 @@ foreach Crates setfield PlacementFlags.Flags none
 SaveTagChanges
 Exit
 
+################################################################################
+		// SC140 NMPD HQ
+################################################################################
+
+opencachefile "odstmaps\sc140.map"
+DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_trim_b_yellowpaint
+DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_blue
+DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_red
+DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_b
+DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\spotlight\shaders\spotlight
+DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\mc_metal_floor_plate_d
+DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\glass_light_b_blue
+donotreplacegroups foot
+portmultiplayerscenario !Bipeds MPObject
+nmpdhq
+32271
+NMPD HQ
+Don't look down.
+1
+0
+1
+3
+
+Exit
+
+edittag levels\custom\nmpdhq\nmpdhq.scnr
+	# mid-range weapon start
+setfield PlayerStartingProfile[0].PrimaryWeapon objects\weapons\rifle\battle_rifle\battle_rifle.weap
+	# fix object spawning
+foreach Scenery setfield PlacementFlags.Flags none
+foreach Machines setfield PlacementFlags.Flags none
+foreach Crates setfield PlacementFlags.Flags none
+SaveTagChanges
+Exit
 
 
 ################################################################################
