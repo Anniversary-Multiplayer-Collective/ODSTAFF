@@ -2168,8 +2168,8 @@ savetagchanges
 exit
 
 edittag objects\characters\odst_recon\fp\fp.render_model
-setfield Materials[2].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
-setfield Materials[3].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
+setfield Materials[4].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
+setfield Materials[5].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
 savetagchanges
 exit
 
