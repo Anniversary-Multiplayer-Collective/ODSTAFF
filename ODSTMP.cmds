@@ -413,6 +413,8 @@ exit
 #SaveTagChanges
 #Exit
 
+
+
 ################################################################################
 		// H100 STREETS GENERAL
 ################################################################################
@@ -460,6 +462,35 @@ importmapvariant MapFile "workingdir\scenarios\map_variants\nightstreets_0\sandb
 removeblockelements Terminals 0 *
 savetagchanges
 exit
+
+################################################################################
+		// l300 DAY STREETS GENERAL
+################################################################################
+
+opencachefile "odstmaps\l300.map"
+donotreplacegroups foot
+portmultiplayerscenario !Bipeds MPObject
+streetsday
+32272
+Day Streets
+Day Life of a new variety.
+0
+1
+2
+
+Exit
+
+edittag levels\custom\streetsday\streetsday.scnr
+	# mid-range weapon start
+setfield PlayerStartingProfile[0].PrimaryWeapon objects\weapons\rifle\battle_rifle\battle_rifle.weap
+	# fix object spawning
+foreach Scenery setfield PlacementFlags.Flags none
+foreach Machines setfield PlacementFlags.Flags none
+foreach Crates setfield PlacementFlags.Flags none
+SaveTagChanges
+Exit
+
+
 
 ################################################################################
 		// Dust or other sc110
