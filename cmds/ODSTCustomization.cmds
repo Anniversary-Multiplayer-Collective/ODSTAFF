@@ -90,6 +90,8 @@ stringid add custom_mp_helljumper
 stringid add custom_mp_helljumper_description
 stringid add firefall
 stringid add helljumper
+stringid add female
+stringid add custom_mp_female_description
 
 edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
 setstring english helmet "Helmet"
@@ -179,6 +181,8 @@ setstring english custom_mp_firefall "FireFall"
 setstring english custom_mp_firefall_description "Firefall is the first component of an ensemble that aims to eliminate the need for drop pods in orbital insertions."
 setstring english custom_mp_helljumper "Helljumper"
 setstring english custom_mp_helljumper_description "The armor is considered to be the pet project of Cascade Stronghold Technologies' current chief executive officer, a former Orbital Drop Shock Trooper."
+setstring english custom_mp_female "Female"
+setstring english custom_mp_female_description "Take my advice Rookie, if you ever fall for a Woman. Make sure she's got balls"
 savetagchanges
 exit
 
@@ -1476,6 +1480,19 @@ setfield Universal[0].CustomizableCharacters[0].Regions[*].Permutations[*].Varia
 savetagchanges
 exit
 
+	echo female
+
+edittag *.mulg
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Name custom_mp_female
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Description custom_mp_female_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Permutation female
+savetagchanges
+exit
+
+
 	echo hands
 	
 edittag *.mulg
@@ -2102,6 +2119,11 @@ SetField Materials[39].RenderMethod objects\characters\masterchief\shaders\firef
 SetField Materials[44].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
 SetField Materials[45].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
 SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.model
+updatemodelregions 0
 savetagchanges
 exit
 
