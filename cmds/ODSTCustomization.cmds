@@ -11,6 +11,8 @@ stringid add h2a
 stringid add 1_hul
 stringid add hul
 stringid add h3
+stringid add h3_female
+stringid add h2a_female
 stringid add aug
 stringid add nxra
 stringid add i
@@ -90,8 +92,12 @@ stringid add custom_mp_helljumper
 stringid add custom_mp_helljumper_description
 stringid add firefall
 stringid add helljumper
-stringid add female
+stringid add custom_mp_female
+stringid add custom_mp_h2a_female
+stringid add custom_mp_h3_female
 stringid add custom_mp_female_description
+stringid add custom_mp_h2a_female_description
+stringid add custom_mp_h3_female_description
 
 edittag ui\halox\start_menu\panes\settings_appearance_model\strings.unic
 setstring english helmet "Helmet"
@@ -183,6 +189,10 @@ setstring english custom_mp_helljumper "Helljumper"
 setstring english custom_mp_helljumper_description "The armor is considered to be the pet project of Cascade Stronghold Technologies' current chief executive officer, a former Orbital Drop Shock Trooper."
 setstring english custom_mp_female "Female"
 setstring english custom_mp_female_description "Take my advice Rookie, if you ever fall for a Woman. Make sure she's got balls"
+setstring english custom_mp_h2a_female "ODST - BDU Female"
+setstring english custom_mp_h2a_female_description "The ODST BDU has been in use since the Insurrection, if not earlier, and remains unmatched in its ability to protect its wearer over other BDUs during the toughest operations."
+setstring english custom_mp_h3_female "ODST - Variant Female"
+setstring english custom_mp_h3_female_description "A variant of the standard issue ODST armor."
 savetagchanges
 exit
 
@@ -1489,6 +1499,20 @@ setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Desc
 addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Region body
 setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Permutation female
+
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Name custom_mp_h3_female
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Description custom_mp_h3_female_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Permutation h3_female
+
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Name custom_mp_h2a_female
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Description custom_mp_h2a_female_description
+addblockelements Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Region body
+setfield Universal[0].CustomizableCharacters[0].Regions[10].Permutations[*].Variant[0].Permutation h2a_female
 savetagchanges
 exit
 
@@ -2122,11 +2146,6 @@ SetField Materials[48].RenderMethod objects\characters\spartans\shaders\spartan_
 savetagchanges
 exit
 
-edittag objects\characters\odst_recon\odst_recon.model
-updatemodelregions 0
-savetagchanges
-exit
-
 edittag objects\characters\odst_recon\fp_body\fp_body.render_model
 RemoveBlockElements Materials 0 *
 AddBlockElements Materials 10
@@ -2157,15 +2176,21 @@ exit
 
 EditTag objects\characters\odst_recon\odst_recon.model
 UpdateModelRegions 0
-setfield Variants[0].Regions[2].Permutations[1].Probability 0.1
-setfield Variants[0].Regions[2].Permutations[0].Probability 0
-setfield Variants[0].Regions[5].Permutations[0].Probability 0
-setfield Variants[0].Regions[5].Permutations[3].Probability 0.1
-setfield Variants[0].Regions[8].Permutations[8].Probability 0.1
-setfield Variants[0].Regions[8].Permutations[0].Probability 0
-setfield Variants[0].Regions[14].Permutations[0].Probability 0.1
-setfield Variants[0].Regions[15].Permutations[0].Probability 0
-setfield Variants[0].Regions[15].Permutations[2].Probability 0.1
+SetField Variants[0].Regions[0].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[1].Permutations[1].Probability 0.1
+SetField Variants[0].Regions[2].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[3].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[4].Permutations[3].Probability 0.1
+SetField Variants[0].Regions[5].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[7].Permutations[4].Probability 0.1
+SetField Variants[0].Regions[8].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[9].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[10].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[11].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[12].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[13].Permutations[0].Probability 0.1
+SetField Variants[0].Regions[14].Permutations[2].Probability 0.1
+SetField Variants[0].Regions[15].Permutations[5].Probability 0.1
 SaveTagChanges
 Exit
 

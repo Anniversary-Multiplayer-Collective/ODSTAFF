@@ -4,13 +4,23 @@ ODSTAMP To Do:
 Mod:
 Fix default view models
 dual weild hud pickups for all weapons
-Weapon marker on back
 no voip widget
 DMR pickup string
 Add a radar
+
+Rebalance flood tank
+Add hud hit markers
+Add or replace emotes
+Add custom weapon markers for each backpack (it's going to look really cool ngl)
+Look into replacing Winning/Losing music with ODST music
+Look into making driveable versions of ODST civilian vehicles (Flog)
 
 Map Variant:
 Add podium, Courtyard/rooftop 
 Add grenade pickups to all maps
 Chasm ten, Remove doors
 Steets. Remove doors
+
+Other:
+Remove Herobrine
+Find Minelelol
