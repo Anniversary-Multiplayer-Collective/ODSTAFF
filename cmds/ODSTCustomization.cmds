@@ -2163,13 +2163,15 @@ savetagchanges
 exit
 
 edittag objects\characters\odst_recon\fp\fp.render_model
+AddBlockElements Materials 7
+SetField Materials[0].RenderMethod objects\characters\odst_recon\shaders\odst_armor.shader
+SetField Materials[1].RenderMethod objects\characters\odst_recon\shaders\odst_fp_arms.shader
+SetField Materials[2].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
+SetField Materials[3].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
+SetField Materials[4].RenderMethod objects\characters\odst_recon\shaders\fp_skin.shader
+SetField Materials[5].RenderMethod objects\characters\odst_recon\shaders\odst_armor_steel.shader
+SetField Materials[6].RenderMethod objects\characters\odst_recon\shaders\odst_armstripe.shader
 replacerendergeometry "workingdir\ODSTcustomization\odst_fp_arms.dae" TriangleStrip
-savetagchanges
-exit
-
-edittag objects\characters\odst_recon\fp\fp.render_model
-setfield Materials[4].RenderMethod objects\characters\masterchief\shaders\h2_body.shader
-setfield Materials[5].RenderMethod objects\characters\masterchief\shaders\h3_shoulders.shader
 savetagchanges
 exit
 
