@@ -177,3 +177,18 @@ SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
 CompilePodiumScripts
 SaveTagChanges
 Exit
+
+EditTag levels\custom\nmpdhq\nmpdhq.scenario
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Name "prematch_camera"
+SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
+SetField CutsceneCameraPoints[0].Position -36.344 -36.967 3.304
+SetField CutsceneCameraPoints[0].Orientation 36.615 -9.149 -6.739
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -8.980 -44.186 -3.135
+SetField CutsceneCameraPoints[1].Orientation 85.8 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
