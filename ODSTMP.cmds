@@ -490,6 +490,14 @@ foreach Crates setfield PlacementFlags.Flags none
 SaveTagChanges
 Exit
 
+echo Default variant
+
+Edittag levels\custom\streetsday\streetsday.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
+savetagchanges
+exit
+
+
 ################################################################################
 		// SC140 NMPD HQ
 ################################################################################
