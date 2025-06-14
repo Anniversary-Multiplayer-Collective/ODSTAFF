@@ -25,6 +25,8 @@ AddForgeItem "WOODEN BOX, LARGE" 4 objects\gear\human\industrial\box_wooden_larg
 AddForgeItem "WOODEN BOX, SMALL" 4 objects\gear\human\industrial\box_wooden_small_b\box_wooden_small_b.crate
 AddForgeItem "WOODEN BOX 2, SMALL" 4 objects\levels\dlc\shared\dlc_box_wooden_small\box_wooden_small.crate
 AddForgeItem "CRATE, COVENANT, SMALL" 4 objects\gear\covenant\military\crate_space_small\crate_space_small.crate
+AddForgeItem "SPACE CRATE, SMALL" 4 objects\gear\atlas\civilian\space_crate_small\space_crate_small.crate
+AddForgeItem "WATER BARREL PALLET" 4 objects\levels\dlc\shared\water_barrels\water_barrels.crate
 
 
 
@@ -95,8 +97,18 @@ AddForgeItem "HARDHAT" 11 objects\levels\solo\040_voi\hardhat\hardhat.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
 AddForgeItem "FOOD RATIONS, COVENANT" 11 objects\gear\covenant\military\cov_food_rations\cov_food_rations.crate
 AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
-AddForgeItem "Couch" 11 objects\levels\atlas\shared\hub_furniture\couch3\couch3.crate
-
+AddForgeItem "COUCH" 11 objects\levels\atlas\shared\hub_furniture\couch\couch.crate
+AddForgeItem "COUCH 2" 11 objects\levels\atlas\shared\hub_furniture\couch2\couch2.crate
+AddForgeItem "COUCH 3" 11 objects\levels\atlas\shared\hub_furniture\couch3\couch3.crate
+AddForgeItem "SPOTLIGHT" 11 objects\levels\atlas\sc140\spotlight\spotlight.crate
+AddForgeItem "WINDCUPS" 11 objects\levels\dlc\lockout\windcups\windcups.scenery
+AddForgeItem "WINDSOCK" 11 objects\levels\dlc\lockout\windsock\windsock.scenery
+AddForgeItem "WATER BARREL" 11 objects\levels\dlc\shared\water_barrel_single\water_barrel_single.crate
+AddForgeItem "MONITOR, POLICE" 11 objects\levels\atlas\sc140\monitor_sm_police\monitor_sm_police.scenery
+AddForgeItem "CHAIR" 11 objects\levels\atlas\shared\hub_furniture\chair_a\chair_a.crate
+AddForgeItem "CHAIR, FOLDING" 11 objects\gear\human\residential\h_chair_folding\h_chair_folding.crate
+AddForgeItem "RECEPTION DESK" 11 objects\levels\atlas\shared\hub_furniture\reception_desk_1\reception_desk_1.crate
+AddForgeItem "LAMP" 11 objects\gear\human\residential\h_lamp_torchiere\h_lamp_torchiere.crate
 
 
 #POWERUPS
