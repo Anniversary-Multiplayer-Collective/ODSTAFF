@@ -168,10 +168,10 @@ AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_ma
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
-AddForgeItem "Glass Door" 86 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
-AddForgeItem "Oni Door" 86 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
-AddForgeItem "Evac Door" 86 objects\levels\atlas\h100\evac_door\evac_door.device_machine
-AddForgeItem "Forcefield Barrier, Covenant" 86 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
+AddForgeItem "Glass Door" 82 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
+AddForgeItem "Oni Door" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
+AddForgeItem "Evac Door" 82 objects\levels\atlas\h100\evac_door\evac_door.device_machine
+AddForgeItem "Forcefield Barrier, Covenant" 82 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
