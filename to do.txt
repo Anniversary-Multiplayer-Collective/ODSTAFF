@@ -7,6 +7,7 @@ dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
 Add a radar
+Add sprint meter
 
 Rebalance flood tank
 Add hud hit markers

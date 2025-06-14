@@ -95,6 +95,7 @@ AddForgeItem "HARDHAT" 11 objects\levels\solo\040_voi\hardhat\hardhat.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
 AddForgeItem "FOOD RATIONS, COVENANT" 11 objects\gear\covenant\military\cov_food_rations\cov_food_rations.crate
 AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
+AddForgeItem "Couch" 11 objects\levels\atlas\shared\hub_furniture\couch3\couch3.crate
 
 
 
@@ -172,6 +173,9 @@ AddForgeItem "Glass Door" 82 objects\levels\atlas\h100\glass_door_split\glass_do
 AddForgeItem "Oni Door" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "Evac Door" 82 objects\levels\atlas\h100\evac_door\evac_door.device_machine
 AddForgeItem "Forcefield Barrier, Covenant" 82 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
+AddForgeItem "Door Ext" 82 objects\levels\atlas\sc140\door_ext_survival\door_ext_survival.device_machine
+
+
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
