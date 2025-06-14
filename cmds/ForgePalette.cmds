@@ -1,3 +1,6 @@
+#UNLISTED
+AddForgeItem "NUT" -1 objects\levels\atlas\sc110\large_nutblocker_for_sc110\large_nutblocker_for_sc110.scenery
+
 
 #COVER
 AddForgeItem "MILITARY BARRIER" 3 objects\gear\atlas\military\hu_mil_barrier\hu_mil_barrier.scenery
@@ -109,6 +112,18 @@ AddForgeItem "CHAIR" 11 objects\levels\atlas\shared\hub_furniture\chair_a\chair_
 AddForgeItem "CHAIR, FOLDING" 11 objects\gear\human\residential\h_chair_folding\h_chair_folding.crate
 AddForgeItem "RECEPTION DESK" 11 objects\levels\atlas\shared\hub_furniture\reception_desk_1\reception_desk_1.crate
 AddForgeItem "LAMP" 11 objects\gear\human\residential\h_lamp_torchiere\h_lamp_torchiere.crate
+AddForgeItem "COFFEE TABLE" 11 objects\levels\atlas\shared\hub_furniture\coffee_table_4\coffee_table_4.crate
+AddForgeItem "WALL ART" 11 objects\levels\atlas\shared\hub_furniture\wall_decor_picture\wall_decor_picture.scenery
+AddForgeItem "WALL ART 2" 11 objects\levels\atlas\shared\hub_furniture\wall_decor_squares\wall_decor_squares.scenery
+AddForgeItem "TRASH BIN" 11 objects\levels\atlas\shared\hub_furniture\trash_bin\trash_bin.crate
+AddForgeItem "WATCH TOWER, HUMAN" 11 objects\gear\human\military\hu_watchtower\hu_watchtower.scenery
+AddForgeItem "ONI BRIDGE" 11 objects\levels\atlas\sc130\oni_bridge\oni_bridge.scenery
+AddForgeItem "ARMORY SHELF, SMG" 11 objects\levels\solo\020_base\armory_shelf_small\armory_shelf_small.scenery
+AddForgeItem "POTTED PLANT" 11 objects\gear\atlas\civilian\potted_plants_hub\potted_plant_hub_02\potted_plant_hub_02.scenery
+DuplicateTag objects\levels\atlas\tether\tether_version_destroyed_oni\tether_version_destroyed_oni.scenery objects\levels\atlas\tether\tether_version_destroyed_oni_forge
+AddForgeItem "SPACE ELEVATOR, DESTROYED" 11 objects\levels\atlas\tether\tether_version_destroyed_oni_forge.scenery
+AddForgeItem "WEAPON BOX, FLAT" 11 objects\gear\human\military\weapon_box\weapon_box.scenery
+
 
 
 #POWERUPS
@@ -181,12 +196,12 @@ AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_ma
 AddForgeItem "SPACE DOOR, LARGE" 82 objects\levels\dlc\spacecamp\spacecamp_door_large\spacecamp_door_large.device_machine
 AddForgeItem "ONI, DOOR, GLASS, ENTRANCE" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
 AddForgeItem "HIGHWAY DOOR" 82 objects\levels\atlas\l300\highway_door\highway_door.device_machine
-AddForgeItem "Glass Door" 82 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
-AddForgeItem "Oni Door" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
-AddForgeItem "Evac Door" 82 objects\levels\atlas\h100\evac_door\evac_door.device_machine
-AddForgeItem "Forcefield Barrier, Covenant" 82 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
-AddForgeItem "Door Ext" 82 objects\levels\atlas\sc140\door_ext_survival\door_ext_survival.device_machine
-
+AddForgeItem "GLASS DOOR" 82 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
+AddForgeItem "ONI DOOR" 82 objects\levels\atlas\h100\h100_100_oni_door\h100_100_oni_door.device_machine
+AddForgeItem "EVAC DOOR" 82 objects\levels\atlas\h100\evac_door\evac_door.device_machine
+AddForgeItem "FORCEFIELD BARRIER, COVENANT" 82 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
+AddForgeItem "DOOR EXT" 82 objects\levels\atlas\sc140\door_ext_survival\door_ext_survival.device_machine
+AddForgeItem "DOOR EXT 2" 82 objects\levels\atlas\sc140\door_ext\door_ext.device_machine
 
 
 #Vehicles
