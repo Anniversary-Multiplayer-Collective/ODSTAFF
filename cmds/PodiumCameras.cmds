@@ -1,4 +1,4 @@
-EditTag levels\custom\alphasite\alphasite.scenario
+EditTag levels\custom\alphasite\alphasite.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -13,7 +13,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\dlc\midship\midship.scenario
+EditTag levels\dlc\midship\midship.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -28,7 +28,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\dlc\lockout\lockout.scenario
+EditTag levels\dlc\lockout\lockout.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -43,7 +43,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\dlc\spacecamp\spacecamp.scenario
+EditTag levels\dlc\spacecamp\spacecamp.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -58,7 +58,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\dlc\armory\armory.scenario
+EditTag levels\dlc\armory\armory.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -73,7 +73,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\zedd\roundabout\roundabout.scenario
+EditTag levels\zedd\roundabout\roundabout.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -88,7 +88,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\chasmten\chasmten.scenario
+EditTag levels\custom\chasmten\chasmten.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -103,7 +103,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\lostplatoon\lostplatoon.scenario
+EditTag levels\custom\lostplatoon\lostplatoon.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -118,7 +118,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\nightstreets\nightstreets.scenario
+EditTag levels\custom\nightstreets\nightstreets.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -133,7 +133,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\rallypointnight\rallypointnight.scenario
+EditTag levels\custom\rallypointnight\rallypointnight.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -148,7 +148,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\multi\shadow_bridge\mp_vadum.scenario
+EditTag levels\multi\shadow_bridge\mp_vadum.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -163,7 +163,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\coastalraceway\coastalraceway.scenario
+EditTag levels\custom\coastalraceway\coastalraceway.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -178,7 +178,7 @@ CompilePodiumScripts
 SaveTagChanges
 Exit
 
-EditTag levels\custom\nmpdhq\nmpdhq.scenario
+EditTag levels\custom\nmpdhq\nmpdhq.scnr
 AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[0].Name "prematch_camera"
 SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
@@ -188,6 +188,21 @@ AddBlockElements CutsceneCameraPoints
 SetField CutsceneCameraPoints[1].Name "podium_camera"
 SetField CutsceneCameraPoints[1].Position -8.980 -44.186 -3.135
 SetField CutsceneCameraPoints[1].Orientation 85.8 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit
+
+EditTag levels\custom\streetsday\streetsday.scnr
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Name "prematch_camera"
+SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
+SetField CutsceneCameraPoints[0].Position 91.793 212.059 9.260
+SetField CutsceneCameraPoints[0].Orientation 161.707 14.829 -4.836
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position 78.998 201.425 4.414
+SetField CutsceneCameraPoints[1].Orientation -90 0 0
 SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
 CompilePodiumScripts
 SaveTagChanges
