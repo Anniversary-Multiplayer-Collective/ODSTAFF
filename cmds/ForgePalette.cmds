@@ -1,5 +1,9 @@
 #UNLISTED
 AddForgeItem "NUT" -1 objects\levels\atlas\sc110\large_nutblocker_for_sc110\large_nutblocker_for_sc110.scenery
+AddForgeItem "NUT" -1 objects\levels\atlas\l200\nutblocker_for_l200_survival\nutblocker_for_l200_survival.scenery
+AddForgeItem "NUT" -1 objects\levels\atlas\sc110\nutblocker_for_sc110\nutblocker_for_sc110.scenery
+
+
 
 
 #COVER
@@ -30,6 +34,9 @@ AddForgeItem "WOODEN BOX 2, SMALL" 4 objects\levels\dlc\shared\dlc_box_wooden_sm
 AddForgeItem "CRATE, COVENANT, SMALL" 4 objects\gear\covenant\military\crate_space_small\crate_space_small.crate
 AddForgeItem "SPACE CRATE, SMALL" 4 objects\gear\atlas\civilian\space_crate_small\space_crate_small.crate
 AddForgeItem "WATER BARREL PALLET" 4 objects\levels\dlc\shared\water_barrels\water_barrels.crate
+AddForgeItem "CRATE, TECH" 4 objects\gear\human\industrial\crate_tech\crate_tech.crate
+AddForgeItem "CRATE, REFRIGERATOR" 4 objects\gear\human\industrial\refrigerator_crate\refrigerator_crate.crate
+
 
 
 
@@ -123,6 +130,15 @@ AddForgeItem "POTTED PLANT" 11 objects\gear\atlas\civilian\potted_plants_hub\pot
 DuplicateTag objects\levels\atlas\tether\tether_version_destroyed_oni\tether_version_destroyed_oni.scenery objects\levels\atlas\tether\tether_version_destroyed_oni_forge
 AddForgeItem "SPACE ELEVATOR, DESTROYED" 11 objects\levels\atlas\tether\tether_version_destroyed_oni_forge.scenery
 AddForgeItem "WEAPON BOX, FLAT" 11 objects\gear\human\military\weapon_box\weapon_box.scenery
+AddForgeItem "CELL TOWER" 11 objects\levels\dlc\lockout\celltower\celltower.scenery
+AddForgeItem "CORE SHELF" 11 objects\levels\dlc\lockout\core_shelf\core_shelf.scenery
+AddForgeItem "TOOLBOX, SMALL" 11 objects\gear\human\industrial\toolbox_small\toolbox_small.crate
+AddForgeItem "BARREL, RUSTY" 11 objects\gear\human\industrial\h_barrel_rusty\h_barrel_rusty.crate
+AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
+
+
+
+
 
 
 
@@ -202,6 +218,7 @@ AddForgeItem "EVAC DOOR" 82 objects\levels\atlas\h100\evac_door\evac_door.device
 AddForgeItem "FORCEFIELD BARRIER, COVENANT" 82 objects\gear\atlas\covenant\forcefield_barrier\forcefield_barrier.device_machine
 AddForgeItem "DOOR EXT" 82 objects\levels\atlas\sc140\door_ext_survival\door_ext_survival.device_machine
 AddForgeItem "DOOR EXT 2" 82 objects\levels\atlas\sc140\door_ext\door_ext.device_machine
+AddForgeItem "RADAR BAR" 82 objects\levels\dlc\lockout\radar_bar\radar_bar.device_machine
 
 
 #Vehicles
