@@ -562,6 +562,11 @@ Description for crater
 
 Exit
 
+EditTag levels\custom\crater\crater.scenario
+RemoveBlockElements ControlPalette 0 1
+SaveTagChanges
+Exit
+
 ################################################################################
 		// Dust or other sc110
 ################################################################################

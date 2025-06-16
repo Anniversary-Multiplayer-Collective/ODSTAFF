@@ -102,13 +102,16 @@ AddForgeItem "SCARAB, CHEAP" 11 objects\giants\scarab_cheap\scarab_cheap.scenery
 AddForgeItem "CIVILIAN CAR, LITE" 11 objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.crate
 AddForgeItem "CIVILIAN BUS" 11 objects\vehicles\civilian\bus_new\bus_new.crate
 AddForgeItem "CIVILIAN BUS, DESTROYED" 11 objects\vehicles\civilian\bus_new_destroyed\bus_new_destroyed.crate
+AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
+AddForgeItem "CARGO TRUCK, DESTROYED" 11 objects\vehicles\civilian\cargo_truck\cargo_truck_destroyed.scenery
+AddForgeItem "CIVILIAN CAR, DESTROYED 2" 11 objects\vehicles\civilian\cargo_truck\cargo_truck_destroyed.scenery
+AddForgeItem "CIVILIAN BUS, DESTROYED 2" 11 objects\vehicles\civilian\bus_new\bus_new_destroyed.scenery
 AddForgeItem "TRUCK BED, LONG" 11 objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.crate
 AddForgeItem "FUEL TANK, LONG" 11 objects\vehicles\civilian\truck_cab_large\tanker_long\tanker_long.crate
 AddForgeItem "WIRE SPOOL, SMALL" 11 objects\levels\dlc\warehouse\dlc_wh_wire_spool\dlc_wh_wire_spool.crate
 AddForgeItem "HARDHAT" 11 objects\levels\solo\040_voi\hardhat\hardhat.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
 AddForgeItem "FOOD RATIONS, COVENANT" 11 objects\gear\covenant\military\cov_food_rations\cov_food_rations.crate
-AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
 AddForgeItem "COUCH" 11 objects\levels\atlas\shared\hub_furniture\couch\couch.crate
 AddForgeItem "COUCH 2" 11 objects\levels\atlas\shared\hub_furniture\couch2\couch2.crate
 AddForgeItem "COUCH 3" 11 objects\levels\atlas\shared\hub_furniture\couch3\couch3.crate
@@ -137,9 +140,12 @@ AddForgeItem "CORE SHELF" 11 objects\levels\dlc\lockout\core_shelf\core_shelf.sc
 AddForgeItem "TOOLBOX, SMALL" 11 objects\gear\human\industrial\toolbox_small\toolbox_small.crate
 AddForgeItem "BARREL, RUSTY" 11 objects\gear\human\industrial\h_barrel_rusty\h_barrel_rusty.crate
 AddForgeItem "MOP BUCKET" 11 objects\gear\human\residential\mop_and_bucket\wooden_mop_bucket\wooden_mop_bucket.crate
-
-
-
+AddForgeItem "ENGINEER BACKPACK" 11 objects\characters\engineer\garlic\garlic\garlic.scenery
+AddForgeItem "DROP POD" 11 objects\vehicles\odst_pod\odst_pod.scenery
+AddForgeItem "PHONE BOOTH" 11 objects\gear\atlas\civilian\hu_civ_hub_phone_booth\hu_civ_hub_phone_booth.scenery
+AddForgeItem "CEILING LIGHT, FLICKER 1" 11 objects\levels\atlas\h100\interior_ceiling_light_flicker\interior_ceiling_light_flicker.scenery
+AddForgeItem "CEILING LIGHT, FLICKER 2" 11 objects\levels\atlas\h100\interior_ceiling_light_flickerb\interior_ceiling_light_flickerb.scenery
+AddForgeItem "CEILING LIGHT, FLICKER, SQUARE" 11 objects\levels\atlas\h100\interior_ceiling_light_square_flicker\interior_ceiling_light_square_flicker.scenery
 
 
 
@@ -221,6 +227,9 @@ AddForgeItem "FORCEFIELD BARRIER, COVENANT" 82 objects\gear\atlas\covenant\force
 AddForgeItem "DOOR EXT" 82 objects\levels\atlas\sc140\door_ext_survival\door_ext_survival.device_machine
 AddForgeItem "DOOR EXT 2" 82 objects\levels\atlas\sc140\door_ext\door_ext.device_machine
 AddForgeItem "RADAR BAR" 82 objects\levels\dlc\lockout\radar_bar\radar_bar.device_machine
+AddForgeItem "PLAZA GARAGE DOOR" 82 objects\levels\atlas\shared\survival_door_plaza\survival_door_plaza.device_machine
+
+
 
 
 #Vehicles
@@ -240,7 +249,7 @@ AddSkyBox "NMPD HQ" levels\custom\nmpdhq\nmpdhq
 AddSkyBox "ORBITAL" levels\dlc\spacecamp\spacecamp
 AddSkyBox "RALLY POINT" levels\custom\rallypointnight\rallypointnight
 AddSkyBox "RATS NEST" levels\dlc\armory\armory
-
+AddSkyBox "CRATER" levels\custom\crater\crater
 
 
 EditTag multiplayer\forge_globals.forge_globals_definition
