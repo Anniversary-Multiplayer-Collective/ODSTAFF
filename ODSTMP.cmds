@@ -35,6 +35,11 @@ ExitModPackage
 UpdateMapFiles
 AddForgeItem "CIVILIAN CAR" VEHICLES objects\vehicles\civilian\car1.vehicle
 
+## echo apply working shaders for sc100 and sc140
+openmodpackage "workingdir\paks\odstshaders.pak"
+ApplyModPackage
+exitmodpackage
+
 OpenCacheFile "h3maps\midship.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
@@ -496,13 +501,13 @@ Exit
 ################################################################################
 
 opencachefile "odstmaps\sc140.map"
-DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_trim_b_yellowpaint
-DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_blue
-DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_red
-DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_b
-DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\spotlight\shaders\spotlight
-DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\mc_metal_floor_plate_d
-DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\glass_light_b_blue
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_trim_b_yellowpaint
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_blue
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\glass_light_b_red
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh levels\atlas\sc140\shaders\mc_metal_floor_plate_b
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\spotlight\shaders\spotlight
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\mc_metal_floor_plate_d
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\sc140\shaders\glass_light_b_blue
 donotreplacegroups foot
 portmultiplayerscenario !Bipeds MPObject
 nmpdhq
