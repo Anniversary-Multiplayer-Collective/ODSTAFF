@@ -463,11 +463,6 @@ removeblockelements Terminals 0 *
 savetagchanges
 exit
 
-Edittag levels\custom\nightstreets\nightstreets.scnr
-ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
-savetagchanges
-exit
-
 ################################################################################
 		// l300 DAY STREETS GENERAL
 ################################################################################
@@ -494,13 +489,6 @@ foreach Machines setfield PlacementFlags.Flags none
 foreach Crates setfield PlacementFlags.Flags none
 SaveTagChanges
 Exit
-
-echo Default variant
-
-Edittag levels\custom\streetsday\streetsday.scnr
-ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
-savetagchanges
-exit
 
 
 ################################################################################
@@ -3292,6 +3280,20 @@ edittag globals\collision_damage\biped_player.collision_damage
 setfield AbsoluteDamageAccelerationBounds 7.5 15
 savetagchanges
 exit
+
+
+echo Default Map Variants
+
+Edittag levels\custom\streetsday\streetsday.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
+savetagchanges
+exit
+
+Edittag levels\custom\nightstreets\nightstreets.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
+savetagchanges
+exit
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
