@@ -52,6 +52,12 @@ edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
 setfield CenteredFirstPersonWeaponOffset 0.075 0 -0.025
 SaveTagChanges
 Exit
+## echo fix fp hand placement
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.render_model
+setfield MarkerGroups[4].Markers[0].Translation 0.02655599 0.004300643 -0.0528338
+setfield MarkerGroups[4].Markers[0].Rotation -0.6164592 0.195706 -0.4600866 0.6082742
+SaveTagChanges
+exit
 
 edittag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
 setfield CenteredFirstPersonWeaponOffset 0.025 0 -0.015
