@@ -463,6 +463,11 @@ removeblockelements Terminals 0 *
 savetagchanges
 exit
 
+Edittag levels\custom\nightstreets\nightstreets.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
+savetagchanges
+exit
+
 ################################################################################
 		// l300 DAY STREETS GENERAL
 ################################################################################
