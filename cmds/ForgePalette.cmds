@@ -1,3 +1,5 @@
+
+# MINELELOL LIED -1 DOESNT WORK
 ###UNLISTED
 ##AddForgeItem "NUT" -1 objects\levels\atlas\sc110\large_nutblocker_for_sc110\large_nutblocker_for_sc110.scenery
 ##AddForgeItem "NUT" -1 objects\levels\atlas\l200\nutblocker_for_l200_survival\nutblocker_for_l200_survival.scenery
@@ -223,6 +225,22 @@ AddForgeItem "RADAR BAR" 82 objects\levels\dlc\lockout\radar_bar\radar_bar.devic
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
+
+
+
+#Skyboxes
+AddSkyBox "ALPHA SITE" levels\custom\alphasite\alphasite
+AddSkyBox "BLACKOUT" levels\dlc\lockout\lockout
+AddSkyBox "COASTAL RACEWAY" levels\custom\coastalraceway\coastalraceway
+AddSkyBox "DAY STREETS" levels\custom\streetsday\streetsday
+AddSkyBox "NIGHT STREETS" levels\custom\nightstreets\nightstreets
+AddSkyBox "HERETIC" levels\dlc\midship\midship
+AddSkyBox "LOST PLATOON" levels\custom\lostplatoon\lostplatoon
+AddSkyBox "NMPD HQ" levels\custom\nmpdhq\nmpdhq
+AddSkyBox "ORBITAL" levels\dlc\spacecamp\spacecamp
+AddSkyBox "RALLY POINT" levels\custom\rallypointnight\rallypointnight
+AddSkyBox "RATS NEST" levels\dlc\armory\armory
+
 
 
 EditTag multiplayer\forge_globals.forge_globals_definition
