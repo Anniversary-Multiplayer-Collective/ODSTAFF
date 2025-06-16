@@ -2,7 +2,6 @@
 ODSTAMP To Do:
 
 Mod:
-Fix default view models
 dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
