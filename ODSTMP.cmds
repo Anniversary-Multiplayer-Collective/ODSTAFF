@@ -526,6 +526,16 @@ foreach Crates setfield PlacementFlags.Flags none
 SaveTagChanges
 Exit
 
+	#remove some doors
+EditTag levels\custom\nmpdhq\nmpdhq_bsp_0.scenario_structure_bsp
+SetField InstancedGeometryInstances[477].Flags NotForRender,NoPhysics
+SetField InstancedGeometryInstances[477].Matrix 0 0 0 0 0 0 0 0 0 0 0 0
+SetField InstancedGeometryInstances[478].Flags NotForRender,NoPhysics
+SetField InstancedGeometryInstances[478].Matrix 0 0 0 0 0 0 0 0 0 0 0 0
+SetField InstancedGeometryInstances[583].Flags NotForRender,NoPhysics
+SetField InstancedGeometryInstances[583].Matrix 0 0 0 0 0 0 0 0 0 0 0 0
+SaveTagChanges
+Exit
 
 ################################################################################
 		// Dust or other sc110
