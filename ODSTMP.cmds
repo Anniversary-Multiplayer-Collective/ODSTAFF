@@ -3292,7 +3292,7 @@ savetagchanges
 exit
 
 
-echo Default Map Variants
+## echo Default Map Variants
 
 Edittag levels\custom\streetsday\streetsday.scnr
 ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
@@ -3304,7 +3304,21 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
 savetagchanges
 exit
 
-
+## echo forge monitor VISR
+edittag objects\characters\monitor\monitor_editor.biped
+addblockelements Functions
+setfield Functions[3].ImportName integrated_light_power
+setfield Functions[3].ExportName flashlight_intensity
+setfield Functions[3].TurnOffWith alive
+setfield Functions[3].DefaultFunction.Data 08340000000000000000803F000000000000000000000000000000001400000001000000040000CDFFFF7F7F0000803F00000000
+addblockelements Attachments 2
+setfield Attachments[2].Type objects\characters\masterchief\flashlight_1p.light
+setfield Attachments[2].Marker fx_eye
+setfield Attachments[2].PrimaryScale integrated_light_power
+setfield Attachments[3].Type objects\characters\odst_recon\fx\vision_mode\vision_mode.effect
+setfield Attachments[3].AtlasFlags GameplayVisionMode
+savetagchanges
+exit
 
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
