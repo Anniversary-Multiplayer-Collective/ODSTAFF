@@ -543,6 +543,26 @@ SaveTagChanges
 Exit
 
 ################################################################################
+		// SC100 CRATER
+################################################################################
+
+
+opencachefile "odstmaps\sc100.map"
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\levels\atlas\tether\tether_version_undamaged_plaza\shaders\sc100_tether_buildings
+#DuplicateTag levels\shared\shaders\simple\grey.rmsh objects\vehicles\odst_pod\odst_pod_door_low\shaders\poddoor_main01
+donotreplacegroups foot
+portmultiplayerscenario !Bipeds MPObject
+crater
+32270
+Crater
+Description for crater
+4
+0
+3
+
+Exit
+
+################################################################################
 		// Dust or other sc110
 ################################################################################
 
