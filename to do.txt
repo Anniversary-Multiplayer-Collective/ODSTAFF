@@ -9,6 +9,7 @@ fix up radar (blip not showing???) (Radar doesn't change colors with hud colors)
 Add sprint meter
 Add Overshield colours for hud
 SMG and Energy Sword Schematics missing
+Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
 Rebalance flood tank
 Add or replace emotes
