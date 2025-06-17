@@ -3,10 +3,11 @@ ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimag
 
 ## Contributors & Credits:
 - Dank (Team Lead)
-- Zekken (Team Lead 2)
+- Zekken (Team Lead)
 - MtnDewIt (TagTool Maintainer & Bug Fixer)
 - TwistedFlog (Core Contributor, Modeler, Animator & Tagtool Maintainer)
 - Dirkkane (Minor Contributor)
+- IlikeMyName (Minor Contributor)
 - Newbie (Engine Knowledge)
 - Vegetal (Original ODSTMP Creator)
 - Lord Zedd (Cabin Fever Map)
@@ -15,3 +16,7 @@ ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimag
 
 ## v0.3 Changelog
 - Fixed Energy Sword HUD icon
+- Fixed some default map variants
+- Fixed HUD shake on certain widgets
+- Added sprint meter to HUD
+- Rebalanced ODST health
