@@ -2176,6 +2176,8 @@ savetagchanges
 exit
 
 EditTag objects\characters\odst_recon\odst_recon.model
+SetField Variants[0].Voice null
+SetField Variants[0].AiCharacter None
 UpdateModelRegions 0
 SetField Variants[0].Regions[0].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[1].Permutations[1].Probability 0.1
