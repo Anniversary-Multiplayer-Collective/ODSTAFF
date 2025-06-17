@@ -250,6 +250,7 @@ AddSkyBox "ORBITAL" levels\dlc\spacecamp\spacecamp
 AddSkyBox "RALLY POINT" levels\custom\rallypointnight\rallypointnight
 AddSkyBox "RATS NEST" levels\dlc\armory\armory
 AddSkyBox "CRATER" levels\custom\crater\crater
+AddSkyBox "HOMEFRONT" cone_collective\levels\multi\homefront\homefront
 
 
 EditTag multiplayer\forge_globals.forge_globals_definition

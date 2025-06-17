@@ -207,3 +207,18 @@ SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
 CompilePodiumScripts
 SaveTagChanges
 Exit
+
+EditTag cone_collective\levels\multi\homefront\homefront.scnr
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Name "prematch_camera"
+SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
+SetField CutsceneCameraPoints[0].Position -6.1850 -19.702 3.171
+SetField CutsceneCameraPoints[0].Orientation 38.005 -10.871 -8.383
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -19.870 0.070 1.117
+SetField CutsceneCameraPoints[1].Orientation 0 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit

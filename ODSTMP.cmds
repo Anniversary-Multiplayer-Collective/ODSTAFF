@@ -574,7 +574,7 @@ Exit
 ################################################################################
 
 OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
-DuplicateTag levels\shared\shaders\simple\grey.rmsh cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
 PortTag !UpdateMapFiles *.scnr
 exit
 
@@ -3166,12 +3166,12 @@ SetField PlayerInformation[0].FlashlightOff sound\game_sfx\ui\hud_ui\vision_off.
 #foreach playercontrol setfield sprintstartdelay 0
 #foreach playercontrol setfield sprintfullspeedtime 0
 #foreach playercontrol setfield sprintdecayrate 0
-#foreach playercontrol setfield sprintfullspeedmultiplier 0
+#foreach playercontrol setfield sprintfullspeedmultiplier 0.65
 # modify sprint values
 foreach playercontrol setfield sprintstartdelay 0
-foreach playercontrol setfield sprintfullspeedtime 0.5
+foreach playercontrol setfield sprintfullspeedtime 0.8
 foreach playercontrol setfield sprintdecayrate 0.5
-foreach playercontrol setfield sprintfullspeedmultiplier 0.2
+foreach playercontrol setfield sprintfullspeedmultiplier 0.65
 foreach playercontrol setfield SprintPeggedMagnitude 0.85
 foreach playercontrol setfield SprintPeggedAngularThreshold 30
 
