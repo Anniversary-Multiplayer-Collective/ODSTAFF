@@ -1653,6 +1653,20 @@ PasteBlockElements HudWidgets 37
 savetagchanges
 exit
 
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 21 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 38
+setfield HudWidgets[38].BitmapWidgets[2].PlacementData[0].Offset -110 -75
+setfield HudWidgets[38].BitmapWidgets[2].PlacementData[0].Scale 0.8 0.8
+setfield HudWidgets[38].ParallaxData null
+setfield HudWidgets[36].ParallaxData null
+setfield HudWidgets[34].ParallaxData null
+savetagchanges
+exit
+
 ////////////////////////////////////////////////////////////////////////////////
 // HUD SCOREBOARD
 ////////////////////////////////////////////////////////////////////////////////
