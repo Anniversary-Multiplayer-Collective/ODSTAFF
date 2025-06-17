@@ -8,6 +8,7 @@ DMR pickup string
 fix up radar (blip not showing???)
 Add sprint meter
 Add Overshield colours for hud
+SMG and Energy Sword Schematics missing
 
 Rebalance flood tank
 Add or replace emotes
