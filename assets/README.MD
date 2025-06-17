@@ -13,4 +13,4 @@ ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimag
 - Gamecheat13 (Vadum Map)
 
 
-## v0.2 Changelog
+## v0.3 Changelog
