@@ -1,10 +1,11 @@
-< ElDewrito maps folder >
-SetVariable h3maps < Halo 3 360 maps folder >
-SetVariable odstmaps < Halo 3 ODST 360 maps folder>
-SetVariable h3mccmaps < Halo 3 MCC maps folder >
-SetVariable reachmaps < Halo Reach 360 maps folder >
-SetVariable workingdir < Respository folder >
-SetVariable modsfolder < ElDewrito mods folder >
+E:\ElDewrito 0.7 Official\maps
+SetVariable h3maps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 Merged"
+SetVariable odstmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 ODST maps"
+SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
+SetVariable workingdir "C:\AMPProjects\ODSTAMP"
+SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
+SetVariable workshop "E:\SteamLibrary\steamapps\workshop\content\976730"
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -566,6 +567,21 @@ EditTag levels\custom\crater\crater.scenario
 RemoveBlockElements ControlPalette 0 1
 SaveTagChanges
 Exit
+
+
+
+################################################################################
+		// HOMEFRONT
+################################################################################
+
+# You will need to move the shared .map from the mods h3 folder to the maps folder
+opencachefile "workshop\2898979550\maps\homefront.map"
+DuplicateTag levels\shared\shaders\simple\grey.rmsh cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+PortTag !UpdateMapFiles *.scnr
+exit
+
+UpdateMapFiles "workshop\2898979550"
+
 
 ################################################################################
 		// Dust or other sc110
