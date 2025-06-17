@@ -7,7 +7,7 @@ no voip widget
 DMR pickup string
 fix up radar (blip not showing???) (Radar doesn't change colors with hud colors)
 Add Overshield colours for hud
-SMG and Energy Sword Schematics missing
+SMG Schematics missing
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
 Replace weapon variant crosshairs with classic H3 one
