@@ -83,6 +83,10 @@ Exit
 
 UpdateMapFiles "workingdir\CustomMaps\info"
 
+////////////////////////////////////////////////////////////////////////////////
+// Alpha Site
+////////////////////////////////////////////////////////////////////////////////
+
 opencachefile "odstmaps\sc130.map"
 donotreplacegroups foot
 portmultiplayerscenario !Bipeds MPObject
@@ -3406,6 +3410,27 @@ edittag levels\custom\nmpdhq\nmpdhq.scnr
 ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
 savetagchanges
 exit
+
+EditTag levels\custom\chasmten\chasmten.scnr
+importmapvariant MapFile "workingdir\scenarios\map_variants\ChasmtenTerries\sandbox.map"
+SaveTagChanges
+Exit
+
+EditTag levels\custom\rallypointnight\rallypointnight.scnr
+importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox.map"
+SaveTagChanges
+Exit
+
+EditTag levels\custom\alphasite\alphasite.scnr
+importmapvariant MapFile "workingdir\scenarios\map_variants\odst_alphasite\sandbox.map"
+SaveTagChanges
+Exit
+
+EditTag levels\custom\rallypointnight\rallypointnight.scnr
+importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox.map"
+SaveTagChanges
+Exit
+
 
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
