@@ -6,22 +6,28 @@ dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
 fix up radar (blip not showing???) (Radar doesn't change colors with hud colors)
+Add sprint meter
 Add Overshield colours for hud
-SMG Schematics missing
+SMG and Energy Sword Schematics missing
+Crater needs preview images
+Color Change for all vehicles
+Back Seats don't work in trooper warthog
+Nerf Sprint
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
-Replace weapon variant crosshairs with classic H3 one
 Rebalance flood tank
 Add or replace emotes
 Look into replacing Winning/Losing music with ODST music
 Look into making driveable versions of ODST civilian vehicles (Flog)
-Buff Shotgun
 
 Map Variant:
 Add podium, Courtyard/rooftop 
 Add grenade pickups to all maps
 Chasm ten, Remove doors
-Steets. Remove doors
+Day Streets fix podium
+Add Killfloor to NMPDHQ
+Scoring broken on Coastal Raceway
+Place doors on night streets
 
 Other:
 Remove Herobrine
