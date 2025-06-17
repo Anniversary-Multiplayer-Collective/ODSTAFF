@@ -3157,12 +3157,12 @@ SetField PlayerInformation[0].FlashlightOff sound\game_sfx\ui\hud_ui\vision_off.
 #foreach playercontrol setfield sprintstartdelay 0
 #foreach playercontrol setfield sprintfullspeedtime 0
 #foreach playercontrol setfield sprintdecayrate 0
-#foreach playercontrol setfield sprintfullspeedmultiplier 0
+#foreach playercontrol setfield sprintfullspeedmultiplier 0.65
 # modify sprint values
 foreach playercontrol setfield sprintstartdelay 0
 foreach playercontrol setfield sprintfullspeedtime 0.8
 foreach playercontrol setfield sprintdecayrate 0.5
-foreach playercontrol setfield sprintfullspeedmultiplier 0.2
+foreach playercontrol setfield sprintfullspeedmultiplier 0.65
 foreach playercontrol setfield SprintPeggedMagnitude 0.85
 foreach playercontrol setfield SprintPeggedAngularThreshold 30
 
