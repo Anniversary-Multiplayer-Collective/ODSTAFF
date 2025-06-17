@@ -2141,7 +2141,7 @@ SetField Materials[50].RenderMethod objects\characters\odst\shaders\marine_chest
 SetField Materials[51].RenderMethod objects\characters\masterchief\shaders\firefall_helm.shader
 SetField Materials[52].RenderMethod objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
 SetField Materials[53].RenderMethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
-replacerendergeometry "workingdir\ODSTcustomization\odst.dae" TriangleStrip
+replacerendergeometry "workingdir\ODSTcustomization\odst.fbx" Markers
 savetagchanges
 exit
 
