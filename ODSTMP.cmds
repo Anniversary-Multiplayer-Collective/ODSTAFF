@@ -1644,6 +1644,15 @@ setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 209 180 45
 savetagchanges
 exit
 
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 20 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 37
+savetagchanges
+exit
+
 ////////////////////////////////////////////////////////////////////////////////
 // HUD SCOREBOARD
 ////////////////////////////////////////////////////////////////////////////////

@@ -5,11 +5,11 @@ Mod:
 dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
+fix up radar (blip not showing???)
 Add sprint meter
 Add Overshield colours for hud
 
 Rebalance flood tank
-Add hud hit markers
 Add or replace emotes
 Look into replacing Winning/Losing music with ODST music
 Look into making driveable versions of ODST civilian vehicles (Flog)
