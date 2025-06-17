@@ -3334,6 +3334,11 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
 savetagchanges
 exit
 
+edittag levels\custom\nmpdhq\nmpdhq.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
+savetagchanges
+exit
+
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
 addblockelements Functions
