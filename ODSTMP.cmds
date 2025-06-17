@@ -1613,6 +1613,37 @@ setfield images[0].height 32
 savetagchanges
 exit
 
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 1 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 36
+
+setfield HudWidgets[4].PlacementData[0].Offset -45 150
+setfield HudWidgets[4].BitmapWidgets[0].PlacementData[0].Offset 35 -75
+setfield HudWidgets[4].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[4].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[5].PlacementData[0].Offset -45 150
+setfield HudWidgets[5].BitmapWidgets[0].PlacementData[0].Offset 28 -78
+setfield HudWidgets[5].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[5].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[6].PlacementData[0].Offset -45 150
+setfield HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset 29 -75
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[6].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[7].PlacementData[0].Offset -45 150
+setfield HudWidgets[7].BitmapWidgets[0].PlacementData[0].Offset 35 -75
+setfield HudWidgets[7].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[7].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 209 180 45
+savetagchanges
+exit
+
 ////////////////////////////////////////////////////////////////////////////////
 // HUD SCOREBOARD
 ////////////////////////////////////////////////////////////////////////////////
