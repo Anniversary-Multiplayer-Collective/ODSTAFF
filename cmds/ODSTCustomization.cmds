@@ -2194,6 +2194,8 @@ SetField Variants[0].Regions[12].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[13].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[14].Permutations[2].Probability 0.1
 SetField Variants[0].Regions[15].Permutations[5].Probability 0.1
+SetField NewDamageInfo[0].MaximumVitality 55
+SetField NewDamageInfo[0].MaxShieldVitality 60
 SaveTagChanges
 Exit
 
