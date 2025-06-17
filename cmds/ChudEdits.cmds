@@ -1,3 +1,7 @@
+opencachefile "h3mccmaps\sandbox.map"
+nameblamtag ui\chud\bitmaps\weapon_scematics.bitmap ui\chud\bitmaps\mcch3_weapon_scematics
+porttag ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+exit
 
 edittag ui\chud\globals.chud_globals_definition
 setfield HudGlobals[0].HudAttributes[0].MessageScale 0.7
@@ -65,7 +69,13 @@ savetagchanges
 exit
 
 edittag ui\chud\sword.chud_definition
+SetField HudWidgets[2].BitmapWidgets[1].PlacementData[0].Origin 1 -1
+SetField HudWidgets[2].BitmapWidgets[1].PlacementData[0].Offset -8 3
+SetField HudWidgets[2].BitmapWidgets[1].PlacementData[0].Scale 0.55 0.55
+SetField HudWidgets[4].BitmapWidgets[0].PlacementData[0].Scale 0.315 0.315
 setfield HudWidgets[3].BitmapWidgets[0].PlacementData[0].Scale 1.25 1.25
+SetField HudWidgets[2].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+SetField HudWidgets[4].BitmapWidgets[0].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
 savetagchanges
 exit
 

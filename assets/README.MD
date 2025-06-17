@@ -14,3 +14,4 @@ ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimag
 
 
 ## v0.3 Changelog
+- Fixed Energy Sword HUD icon
