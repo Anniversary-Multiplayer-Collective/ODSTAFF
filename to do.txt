@@ -5,7 +5,7 @@ Mod:
 dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
-fix up radar (blip not showing???)
+fix up radar (blip not showing???) (Radar doesn't change colors with hud colors)
 Add sprint meter
 Add Overshield colours for hud
 SMG and Energy Sword Schematics missing
