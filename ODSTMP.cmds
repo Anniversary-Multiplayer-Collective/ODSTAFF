@@ -5,7 +5,6 @@ SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Co
 SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
 SetVariable workingdir "C:\AMPProjects\ODSTAMP"
 SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
-SetVariable workshop "E:\SteamLibrary\steamapps\workshop\content\976730"
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -574,13 +573,12 @@ Exit
 		// HOMEFRONT
 ################################################################################
 
-# You will need to move the shared .map from the mods h3 folder to the maps folder
-opencachefile "workshop\2898979550\maps\homefront.map"
+OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
 DuplicateTag levels\shared\shaders\simple\grey.rmsh cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
 PortTag !UpdateMapFiles *.scnr
 exit
 
-UpdateMapFiles "workshop\2898979550"
+UpdateMapFiles "workingdir\CustomMaps\Homefront"
 
 
 ################################################################################
