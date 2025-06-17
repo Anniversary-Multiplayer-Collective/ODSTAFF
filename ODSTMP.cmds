@@ -574,7 +574,7 @@ Exit
 ################################################################################
 
 OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
-DuplicateTag levels\shared\shaders\simple\grey.rmsh cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader.rmsh cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
 PortTag !UpdateMapFiles *.scnr
 exit
 
