@@ -11,7 +11,6 @@ Add sprint meter
 Rebalance flood tank
 Add hud hit markers
 Add or replace emotes
-Add custom weapon markers for each backpack (it's going to look really cool ngl)
 Look into replacing Winning/Losing music with ODST music
 Look into making driveable versions of ODST civilian vehicles (Flog)
 
