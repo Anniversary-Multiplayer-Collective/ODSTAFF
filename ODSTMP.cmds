@@ -3411,21 +3411,6 @@ exit
 
 ## echo Default Map Variants
 
-Edittag levels\custom\streetsday\streetsday.scnr
-ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
-savetagchanges
-exit
-
-Edittag levels\custom\nightstreets\nightstreets.scnr
-ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
-savetagchanges
-exit
-
-edittag levels\custom\nmpdhq\nmpdhq.scnr
-ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
-savetagchanges
-exit
-
 EditTag levels\custom\rallypointnight\rallypointnight.scnr
 importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox.map"
 SaveTagChanges
@@ -3445,6 +3430,21 @@ EditTag levels\custom\chasmten\chasmten.scnr
 importmapvariant MapFile "workingdir\DefaultVariants\Chasmten\sandbox.map"
 SaveTagChanges
 Exit
+
+Edittag levels\custom\streetsday\streetsday.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Day Streets"
+savetagchanges
+exit
+
+Edittag levels\custom\nightstreets\nightstreets.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\Night Streets"
+savetagchanges
+exit
+
+edittag levels\custom\nmpdhq\nmpdhq.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
+savetagchanges
+exit
 
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
