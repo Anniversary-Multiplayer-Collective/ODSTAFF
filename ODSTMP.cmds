@@ -565,6 +565,13 @@ SetField Materials[4].RenderMethod levels\dlc\armory\shaders\metal_diamond_plate
 SaveTagChanges
 Exit
 
+EditTag levels\custom\nmpdhq\nmpdhq_bsp_1.scenario_structure_bsp
+SetField CollisionMaterials[5].RenderMethod levels\atlas\sc140\shaders\floor_terrain_1.shader_terrain
+SetField Materials[6].RenderMethod levels\dlc\armory\shaders\metal_diamond_plated.shader
+SaveTagChanges
+Exit
+
+
 ################################################################################
 		// SC100 CRATER
 ################################################################################
