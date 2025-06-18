@@ -12,7 +12,6 @@ SMG and Energy Sword Schematics missing
 Crater needs preview images
 Color Change for all vehicles
 Back Seats don't work in trooper warthog
-Nerf Sprint
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
 Rebalance flood tank
@@ -21,13 +20,9 @@ Look into replacing Winning/Losing music with ODST music
 Look into making driveable versions of ODST civilian vehicles (Flog)
 
 Map Variant:
-Add podium, Courtyard/rooftop 
 Add grenade pickups to all maps
-Chasm ten, Remove doors
 Day Streets fix podium
-Add Killfloor to NMPDHQ
 Scoring broken on Coastal Raceway
-Place doors on night streets
 
 Other:
 Remove Herobrine
