@@ -103,6 +103,7 @@ AddForgeItem "CIVILIAN CAR, LITE" 11 objects\gear\atlas\civilian\hu_civ_car_lite
 AddForgeItem "CIVILIAN BUS" 11 objects\vehicles\civilian\bus_new\bus_new.crate
 AddForgeItem "CIVILIAN BUS, DESTROYED" 11 objects\vehicles\civilian\bus_new_destroyed\bus_new_destroyed.crate
 AddForgeItem "CIVILIAN CAR DESTROYED" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_destroyed.scenery
+AddForgeItem "CIVILIAN CAR DESTROYED 3" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.scenery
 AddForgeItem "CARGO TRUCK, DESTROYED" 11 objects\vehicles\civilian\cargo_truck\cargo_truck_destroyed.scenery
 AddForgeItem "CIVILIAN CAR, DESTROYED 2" 11 objects\vehicles\civilian\cargo_truck\cargo_truck_destroyed.scenery
 AddForgeItem "CIVILIAN BUS, DESTROYED 2" 11 objects\vehicles\civilian\bus_new\bus_new_destroyed.scenery
@@ -159,7 +160,7 @@ AddForgeItem "DUMPSTER, FULL" 11 cone_collective\objects\levels\multi\homefront\
 AddForgeItem "DUMPSTER, CLOSED" 11 cone_collective\objects\levels\multi\homefront\dumpsters\dumpster_closed\dumpster_closed.crate
 AddForgeItem "OFFICE TABLE" 11 objects\gear\human\residential\office_table\office_table.crate
 AddForgeItem "55GAL DRUM" 11 objects\gear\human\military\drum_55gal\drum_55gal.crate
-
+AddForgeItem "STREETLIGHT, DESTRUCTABLE" 11 objects\levels\atlas\h100\hub_streetlight\hub_streetlight.scenery
 
 
 
@@ -228,8 +229,10 @@ AddForgeItem "ROLL DOOR 3" 82 objects\levels\atlas\sc110\roll_door04\roll_door04
 AddForgeItem "PHONE BOOTH" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_phone_booth\hub_nav_phone_booth.device_machine
 AddForgeItem "PHONE BOOTH, RINGING" 82 objects\levels\atlas\shared\hub_navigation_machines\hu_nav_phone_booth_ringing\hub_nav_phone_booth_ringing.device_machine
 AddForgeItem "GLASS DOOR SPLIT" 82 objects\levels\atlas\h100\glass_door_split\glass_door_split.device_machine
+AddForgeItem "GLASS DOOR SPLIT, FF" 82 objects\levels\atlas\h100\glass_door_split\glass_door_split_firefight.device_machine
 AddForgeItem "JERSEY BARRIER" 82 objects\levels\atlas\shared\hub_navigation_machines\hub_nav_jersey_barrier\hub_nav_jersey_barrier.device_machine
 AddForgeItem "SECURITY GATE, SMALL" 82 objects\levels\atlas\gate_security\gate_security_small\gate_security_small.device_machine
+AddForgeItem "SECURITY GATE, SMALL" 82 objects\levels\atlas\gate_security\gate_security_small\gate_security_small_no_switch.device_machine
 AddForgeItem "EVAC DOOR" 82 objects\levels\atlas\h100\evac_door\evac_door.device_machine
 AddForgeItem "EVAC DOOR, FAST" 82 objects\levels\atlas\h100\evac_door\evac_door_fast.device_machine
 AddForgeItem "HUB DOOR" 82 objects\levels\atlas\h100\hub_door\hub_door.device_machine
@@ -245,8 +248,7 @@ AddForgeItem "DOOR EXT 2" 82 objects\levels\atlas\sc140\door_ext\door_ext.device
 AddForgeItem "RADAR BAR" 82 objects\levels\dlc\lockout\radar_bar\radar_bar.device_machine
 AddForgeItem "PLAZA GARAGE DOOR" 82 objects\levels\atlas\shared\survival_door_plaza\survival_door_plaza.device_machine
 
-
-
+objects\levels\atlas\gate_security\gate_security_small\gate_security_small_no_switch.device_machine
 
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle

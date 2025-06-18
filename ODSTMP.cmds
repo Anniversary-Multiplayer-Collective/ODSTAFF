@@ -559,6 +559,12 @@ SetField InstancedGeometryInstances[583].Matrix 0 0 0 0 0 0 0 0 0 0 0 0
 SaveTagChanges
 Exit
 
+EditTag levels\custom\nmpdhq\nmpdhq_bsp_0.scenario_structure_bsp
+SetField CollisionMaterials[3].RenderMethod levels\atlas\sc140\shaders\floor_terrain_1.shader_terrain
+SetField Materials[4].RenderMethod levels\dlc\armory\shaders\metal_diamond_plated.shader
+SaveTagChanges
+Exit
+
 ################################################################################
 		// SC100 CRATER
 ################################################################################
