@@ -222,3 +222,18 @@ SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
 CompilePodiumScripts
 SaveTagChanges
 Exit
+
+EditTag levels\custom\crater\crater.scnr
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[0].Name "prematch_camera"
+SetField CutsceneCameraPoints[0].Flags PrematchCameraHack
+SetField CutsceneCameraPoints[0].Position -27.864 -15.393 5.230
+SetField CutsceneCameraPoints[0].Orientation 0.835 -16.915 -0.243
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[1].Name "podium_camera"
+SetField CutsceneCameraPoints[1].Position -22.790 -15.323 1.692
+SetField CutsceneCameraPoints[1].Orientation 180 0 0
+SetField CutsceneCameraPoints[1].Flags PodiumCameraHack
+CompilePodiumScripts
+SaveTagChanges
+Exit

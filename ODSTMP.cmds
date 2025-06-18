@@ -3449,15 +3449,6 @@ setfield Attachments[3].AtlasFlags GameplayVisionMode
 savetagchanges
 exit
 
-## echo run this here after the objects are in the cache for homefront
-EditTag cone_collective\levels\multi\homefront\homefront.scenario
-SetField CratePalette[1].Object objects\vehicles\civilian\truck_cab_large\truck_cab_large.crate
-SetField CratePalette[5].Object objects\gear\human\residential\office_table\office_table.crate
-SetField CratePalette[6].Object objects\gear\human\residential\office_chair\office_chair.crate
-SetField CratePalette[7].Object objects\gear\human\military\hu_mil_radio_big\hu_mil_radio_big_sound.crate
-SaveTagChanges
-Exit
-
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 
