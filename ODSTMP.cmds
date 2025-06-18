@@ -1,10 +1,10 @@
-D:\eldewrito\eldewrito 0.7\ElDewrito\maps
-SetVariable h3maps ""
-SetVariable odstmaps ""
-SetVariable h3mccmaps ""
-SetVariable reachmaps ""
-SetVariable workingdir ""
-SetVariable modsfolder ""
+E:\ElDewrito 0.7 Official\maps
+SetVariable h3maps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 Merged"
+SetVariable odstmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 ODST maps"
+SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
+SetVariable workingdir "C:\AMPProjects\ODSTAMP"
+SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -80,6 +80,18 @@ ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
+
+
+################################################################################
+		// HOMEFRONT
+################################################################################
+
+OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
+DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
+PortTag !UpdateMapFiles *.scnr
+Exit
+
+#UpdateMapFiles "workingdir\CustomMaps\Homefront"
 
 UpdateMapFiles "workingdir\CustomMaps\info"
 
@@ -572,17 +584,6 @@ SaveTagChanges
 Exit
 
 
-
-################################################################################
-		// HOMEFRONT
-################################################################################
-
-OpenCacheFile "workingdir\CustomMaps\Homefront\homefront.map"
-DuplicateTag objects\vehicles\phantom\shaders\dull_metal.shader cone_collective\objects\levels\multi\homefront\homefront_phantom\shaders\dull_metal.shader
-PortTag !UpdateMapFiles *.scnr
-exit
-
-UpdateMapFiles "workingdir\CustomMaps\Homefront"
 
 
 ################################################################################
