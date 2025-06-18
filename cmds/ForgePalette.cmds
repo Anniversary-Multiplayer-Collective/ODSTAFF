@@ -208,7 +208,7 @@ AddForgeItem "ONI, MAIN GATE" 82 objects\levels\atlas\sc130\oni_main_gate\oni_ma
 AddForgeItem "FORERUNNER DOOR" 82 objects\levels\zedd\roundabout\forerunner_door_b40\forerunner_door_b40.device_machine
 AddForgeItem "MONITOR" 82 objects\levels\atlas\l200\monitor\monitor.device_machine
 AddForgeItem "TUNNEL DOOR, SMALL" 82 objects\levels\atlas\l200\small_tunnel_door\small_tunnel_door.device_machine
-DuplicateTag objects\levels\atlas\l200\lift_nest\lift_nest_forge.device_machine objects\levels\atlas\l200\lift_nest\lift_nest_forge_forge
+DuplicateTag objects\levels\atlas\l200\lift_nest\lift_nest_forge.device_machine objects\levels\atlas\l200\lift_nest\lift_nest_forge
 AddForgeItem "NEST LIFT" 82 objects\levels\atlas\l200\lift_nest\lift_nest_forge.device_machine
 AddForgeItem "ROLL DOOR 1" 82 objects\levels\atlas\sc110\roll_door01\roll_door01.device_machine
 AddForgeItem "ROLL DOOR 2" 82 objects\levels\atlas\sc110\roll_door03\roll_door03.device_machine
