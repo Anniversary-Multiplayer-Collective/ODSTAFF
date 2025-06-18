@@ -3431,6 +3431,10 @@ importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox
 SaveTagChanges
 Exit
 
+EditTag levels\custom\chasmten\chasmten.scnr
+importmapvariant MapFile "workingdir\scenarios\map_variants\Chasmten\sandbox.map"
+SaveTagChanges
+Exit
 
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
