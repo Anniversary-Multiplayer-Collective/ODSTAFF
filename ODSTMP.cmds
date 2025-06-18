@@ -3413,11 +3413,6 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
 savetagchanges
 exit
 
-EditTag levels\custom\chasmten\chasmten.scnr
-importmapvariant MapFile "workingdir\scenarios\map_variants\ChasmtenTerries\sandbox.map"
-SaveTagChanges
-Exit
-
 EditTag levels\custom\rallypointnight\rallypointnight.scnr
 importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox.map"
 SaveTagChanges
@@ -3434,7 +3429,7 @@ SaveTagChanges
 Exit
 
 EditTag levels\custom\chasmten\chasmten.scnr
-importmapvariant MapFile "workingdir\scenarios\map_variants\Chasmten\sandbox.map"
+importmapvariant MapFile "workingdir\DefaultVariants\Chasmten\sandbox.map"
 SaveTagChanges
 Exit
 
