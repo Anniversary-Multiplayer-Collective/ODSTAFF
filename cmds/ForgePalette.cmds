@@ -150,6 +150,18 @@ DuplicateTag objects\levels\atlas\sc130\oni_building\oni_building.scenery object
 AddForgeItem "ONI BUILDING" 11 objects\levels\atlas\sc130\oni_building\oni_building_forge.scenery
 DuplicateTag objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed.scenery objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed_forge
 AddForgeItem "ONI BUILDING DESTROYED" 11 objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed_forge.scenery
+AddForgeItem "POLICE CAR, FLASHING" 11 objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.crate
+AddForgeItem "UNSC KIOSK" 11 objects\levels\atlas\shared\unsc_kiosk\unsc_kiosk.scenery
+AddForgeItem "WRAITH, DESTROYED" 11 objects\vehicles\wraith\wraith_destroyed.scenery
+AddForgeItem "STREET CONE 2" 11 cone_collective\objects\levels\shared\cone\cone.crate
+AddForgeItem "DROP POD DOOR" 11 objects\vehicles\odst_pod\odst_pod_door_low\odst_pod_door_low_shadows.scenery
+AddForgeItem "DUMPSTER, FULL" 11 cone_collective\objects\levels\multi\homefront\dumpsters\dumpster_full\dumpster_full.crate
+AddForgeItem "DUMPSTER, CLOSED" 11 cone_collective\objects\levels\multi\homefront\dumpsters\dumpster_closed\dumpster_closed.crate
+AddForgeItem "OFFICE TABLE" 11 objects\gear\human\residential\office_table\office_table.crate
+AddForgeItem "55GAL DRUM" 11 objects\gear\human\military\drum_55gal\drum_55gal.crate
+
+
+
 
 
 
