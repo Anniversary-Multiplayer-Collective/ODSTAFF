@@ -147,6 +147,10 @@ AddForgeItem "CEILING LIGHT, FLICKER 1" 11 objects\levels\atlas\h100\interior_ce
 AddForgeItem "CEILING LIGHT, FLICKER 2" 11 objects\levels\atlas\h100\interior_ceiling_light_flickerb\interior_ceiling_light_flickerb.scenery
 AddForgeItem "CEILING LIGHT, FLICKER, SQUARE" 11 objects\levels\atlas\h100\interior_ceiling_light_square_flicker\interior_ceiling_light_square_flicker.scenery
 
+DuplicateTag objects\levels\atlas\sc130\oni_building\oni_building.scenery objects\levels\atlas\sc130\oni_building\oni_building_forge
+AddForgeItem "ONI BUILDING" 11 objects\levels\atlas\sc130\oni_building\oni_building_forge.scenery
+DuplicateTag objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed.scenery objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed_forge
+AddForgeItem "ONI BUILDING DESTROYED" 11 objects\levels\atlas\l300\oni_building_destroyed\oni_building_destroyed_forge.scenery
 
 
 
