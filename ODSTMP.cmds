@@ -1683,8 +1683,23 @@ setfield HudWidgets[38].BitmapWidgets[2].PlacementData[0].Scale 0.8 0.8
 setfield HudWidgets[38].ParallaxData null
 setfield HudWidgets[36].ParallaxData null
 setfield HudWidgets[34].ParallaxData null
+setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[1].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[2].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[3].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[4].RenderData[0].LocalColorA 0 0 0 0
 savetagchanges
 exit
+
+edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 122 996
+SetField HudGlobals[0].HudAttributes[0].MotionSensorRadius 90
+SetField HudGlobals[0].HudAttributes[0].BlipRadius 6
+SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameHorizontal 1
+SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameVertical 1
+SetField HudGlobals[0].HudAttributes[0].ResolutionFlags _720pFullscreen,_480iFullscreen
+SaveTagChanges
+Exit
 
 ////////////////////////////////////////////////////////////////////////////////
 // HUD SCOREBOARD
