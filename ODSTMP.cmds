@@ -3461,6 +3461,11 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
 savetagchanges
 exit
 
+EditTag levels\custom\crater\crater.scenario
+ImportMapVariant mapfile "workingdir\DefaultVariants\Crater"
+savetagchanges
+exit
+
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
 addblockelements Functions
