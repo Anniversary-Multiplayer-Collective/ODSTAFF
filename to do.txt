@@ -8,9 +8,7 @@ DMR pickup string
 Add sprint meter
 Add Overshield colours for hud
 SMG and Energy Sword Schematics missing
-Crater needs preview images
 Color Change for all vehicles
-Back Seats don't work in trooper warthog
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
 Rebalance flood tank

@@ -3489,6 +3489,22 @@ setfield Attachments[3].AtlasFlags GameplayVisionMode
 savetagchanges
 exit
 
+
+## echo fix troop warthog seats
+EditTag objects\vehicles\warthog\turrets\troop\troop.vehicle
+SetField Seats[0].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[1].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[2].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[0].EnterSeatString warthog_enter_passenger
+SetField Seats[1].EnterSeatString warthog_enter_passenger
+SetField Seats[2].EnterSeatString warthog_enter_passenger
+SetField Seats[0].YawMinimum 0
+SetField Seats[0].YawMaximum 180
+SetField Seats[1].YawMinimum -180
+SetField Seats[1].YawMaximum 360
+SaveTagChanges
+Exit
+
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 
