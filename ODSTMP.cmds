@@ -3566,6 +3566,11 @@ SetField Variants[0].Objects[1].ChildObject objects\powerups\health_pack\health_
 SaveTagChanges
 Exit
 
+EditTag objects\gear\atlas\military\health_pack_mount\health_pack_mount.model
+SetField Variants[0].Objects[0].ChildObject objects\powerups\health_pack\health_pack_large.equipment
+SaveTagChanges
+Exit
+
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 
