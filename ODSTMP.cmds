@@ -3505,6 +3505,60 @@ SetField Seats[1].YawMaximum 360
 SaveTagChanges
 Exit
 
+
+## echo ADD String IDS for cars and set the messages
+EditTag ui\hud\hud_messages.unic
+SetString english car_board "\uE461\uE45F to board enemy Car"
+SetString english car_enter_driver "\uE461\uE45F to drive Car"
+SetString english car_enter_passenger "\uE461\uE45F to ride in Car"
+SetString english car_flip "\uE461\uE45F to flip Car"
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
+SetField Seats[0].EnterSeatString car_enter_driver
+SetField Seats[1].EnterSeatString car_enter_passenger
+SetField Seats[2].EnterSeatString car_board
+SetField Seats[3].EnterSeatString car_board
+SetField Seats[4].EnterSeatString car_board
+SetField Seats[5].EnterSeatString car_board
+SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
+SetField Seats[0].EnterSeatString car_enter_driver
+SetField Seats[1].EnterSeatString car_enter_passenger
+SetField Seats[2].EnterSeatString car_board
+SetField Seats[3].EnterSeatString car_board
+SetField Seats[4].EnterSeatString car_board
+SetField Seats[5].EnterSeatString car_board
+SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
+SetField Seats[0].EnterSeatString car_enter_driver
+SetField Seats[1].EnterSeatString car_enter_passenger
+SetField Seats[2].EnterSeatString car_board
+SetField Seats[3].EnterSeatString car_board
+SetField Seats[4].EnterSeatString car_board
+SetField Seats[5].EnterSeatString car_board
+SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
+
+EditTag objects\vehicles\civilian\car1.vehicle
+SetField Seats[0].EnterSeatString car_enter_driver
+SetField Seats[1].EnterSeatString car_enter_passenger
+SetField Seats[2].EnterSeatString car_board
+SetField Seats[3].EnterSeatString car_board
+SetField Seats[4].EnterSeatString car_board
+SetField Seats[5].EnterSeatString car_board
+SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
+
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 
