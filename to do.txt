@@ -5,7 +5,6 @@ Mod:
 dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
-Add sprint meter
 Add Overshield colours for hud
 SMG and Energy Sword Schematics missing
 Color Change for all vehicles
