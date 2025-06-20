@@ -14,7 +14,6 @@ Hud wiggle when swapping between first and third person (likely to do with HUD w
 Rebalance flood tank
 Add or replace emotes
 Look into replacing Winning/Losing music with ODST music
-Look into making driveable versions of ODST civilian vehicles (Flog)
 
 Map Variant:
 Add grenade pickups to all maps
