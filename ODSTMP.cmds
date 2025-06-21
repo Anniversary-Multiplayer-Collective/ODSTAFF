@@ -1,10 +1,10 @@
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
-SetVariable h3maps ""
-SetVariable odstmaps ""
-SetVariable h3mccmaps ""
-SetVariable reachmaps ""
-SetVariable workingdir ""
-SetVariable modsfolder ""
+SetVariable h3maps "E:\Halo Resources\Halo3"
+SetVariable odstmaps "E:\Halo Resources\Halo3odst"
+SetVariable h3mccmaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable reachmaps "E:\Halo Resources\HaloReach"
+SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\ODSTAMP"
+SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -3469,8 +3469,13 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\NMPDHQ"
 savetagchanges
 exit
 
-EditTag levels\custom\crater\crater.scenario
+EditTag levels\custom\crater\crater.scnr
 ImportMapVariant mapfile "workingdir\DefaultVariants\Crater"
+savetagchanges
+exit
+
+EditTag levels\custom\lostplatoon\lostplatoon.scnr
+ImportMapVariant mapfile "workingdir\DefaultVariants\LostPlatoon"
 savetagchanges
 exit
 
