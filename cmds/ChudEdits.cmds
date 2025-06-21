@@ -30,6 +30,8 @@ exit
 
 edittag ui\chud\smg.chud_definition
 setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 1.45 1.45
+SetField HudWidgets[5].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Scale 0.5 0.5
 savetagchanges
 exit
 
