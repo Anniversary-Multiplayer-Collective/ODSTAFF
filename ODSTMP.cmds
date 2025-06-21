@@ -1,4 +1,4 @@
-E:\ElDewrito 0.7 Official\maps
+D:\eldewrito\eldewrito 0.7\ElDewrito\maps
 SetVariable h3maps ""
 SetVariable odstmaps ""
 SetVariable h3mccmaps ""
@@ -1705,6 +1705,7 @@ SetField HudGlobals[0].HudAttributes[0].BlipRadius 6
 SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameHorizontal 1
 SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameVertical 1
 SetField HudGlobals[0].HudAttributes[0].ResolutionFlags _720pFullscreen,_480iFullscreen
+SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0.3 0.847
 SaveTagChanges
 Exit
 
