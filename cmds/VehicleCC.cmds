@@ -1,0 +1,147 @@
+
+#banshee
+edittag objects\vehicles\banshee\banshee.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+edittag objects\vehicles\banshee\shaders\banshee.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+setargument diffuse_coefficient 10
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+
+edittag objects\vehicles\banshee\shaders\banshee_glass.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+setargument diffuse_coefficient 10
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+edittag objects\vehicles\banshee\shaders\banshee_metal.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+setargument diffuse_coefficient 10
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+#Ghost
+edittag objects\vehicles\ghost\ghost.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+edittag objects\vehicles\ghost\shaders\ghost_shell.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+setargument diffuse_coefficient 1
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+#Mongoose
+edittag objects\vehicles\mongoose\mongoose.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+edittag objects\vehicles\mongoose\shaders\mongoose_hull.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+#scorpion
+
+edittag objects\vehicles\scorpion\shaders\scorpion_hull.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+edittag objects\vehicles\scorpion\turrets\cannon\shaders\turret_cannon.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+savetagchanges
+exit
+
+edittag objects\vehicles\scorpion\turrets\cannon\shaders\turret_cannon.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+savetagchanges
+exit
+
+#Warthog
+edittag objects\vehicles\warthog\warthog.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+edittag objects\vehicles\warthog\shaders\exterior.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+#Wraith
+edittag objects\vehicles\wraith\wraith.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+#Wraith
+edittag objects\vehicles\wraith\turrets\mortar\mortar.vehicle
+addblockelements ChangeColors
+addblockelements ChangeColors[0].InitialPermutations
+setfield ChangeColors[0].InitialPermutations[0].ColorLowerBound 0.12941177 0.12941177 0.12941177
+setfield ChangeColors[0].InitialPermutations[0].ColorUpperBound 0.12941177 0.12941177 0.12941177
+savetagchanges
+exit
+
+edittag objects\vehicles\wraith\shaders\wraith.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+edittag objects\vehicles\wraith\shaders\mortar.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit

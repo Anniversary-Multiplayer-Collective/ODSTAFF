@@ -3572,6 +3572,9 @@ SetField Variants[0].Objects[0].ChildObject objects\powerups\health_pack\health_
 SaveTagChanges
 Exit
 
+## echo Vehicle CC
+runcommands workingdir\cmds\VehicleCC.cmds
+
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 

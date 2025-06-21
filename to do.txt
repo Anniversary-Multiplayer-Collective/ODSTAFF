@@ -2,12 +2,9 @@
 ODSTAMP To Do:
 
 Mod:
-dual weild hud pickups for all weapons
 no voip widget
 DMR pickup string
 Add Overshield colours for hud
-SMG and Energy Sword Schematics missing
-Color Change for all vehicles
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 
 Rebalance flood tank
