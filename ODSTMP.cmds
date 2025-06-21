@@ -3578,6 +3578,14 @@ runcommands workingdir\cmds\VehicleCC.cmds
 ## echo fix weapon viewmodels
 runcommands workingdir\cmds\Viewmodels.cmds
 
+## echo decal fix
+generatebitmap decal\dank\with\tits\fix workingdir\bitmaps\decal_fix.dds
+
+edittag levels\atlas\shared\decals\panels\panel_slot_huge.decal_system
+setfield Decal[0].RenderMethod.ShaderProperties[0].TextureConstants[0].Bitmap decal\dank\with\tits\fix.bitmap
+savetagchanges
+exit
+
 ////////////////////////////////////////////////////////////////////////////////
 // SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
