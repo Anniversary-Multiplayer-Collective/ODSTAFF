@@ -1671,6 +1671,21 @@ setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 209 180 45
 savetagchanges
 exit
 
+edittag ui\chud\scoreboard.chud_definition
+copyblockelements HudWidgets 7 1
+exit
+
+edittag ui\chud\survival_scoreboard.chud_definition
+pasteblockelements HudWidgets 17
+setfield HudWidgets[17].BitmapWidgets[0].RuntimeWidgetIndex 182
+setfield HudWidgets[17].BitmapWidgets[1].RuntimeWidgetIndex 183
+setfield HudWidgets[17].BitmapWidgets[2].RuntimeWidgetIndex 184
+setfield HudWidgets[17].BitmapWidgets[3].RuntimeWidgetIndex 185
+setfield HudWidgets[17].PlacementData[0].Offset -5 -775
+savetagchanges
+exit
+
+
 edittag ui\chud\spartan.chud_definition
 copyblockelements HudWidgets 20 1
 exit
