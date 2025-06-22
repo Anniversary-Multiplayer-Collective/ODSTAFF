@@ -3528,12 +3528,17 @@ SaveTagChanges
 Exit
 
 
-## echo ADD String IDS for cars and set the messages
+## echo ADD String IDS and set the messages
 EditTag ui\hud\hud_messages.unic
 SetString english car_board "\uE461\uE45F to board enemy Car"
 SetString english car_enter_driver "\uE461\uE45F to drive Car"
 SetString english car_enter_passenger "\uE461\uE45F to ride in Car"
 SetString english car_flip "\uE461\uE45F to flip Car"
+
+SetString english motogoose_board "\uE461\uE45F to board enemy Coyote"
+SetString english motogoose_enter_driver "\uE461\uE45F to drive Coyote"
+SetString english motogoose_enter_passenger "\uE461\uE45F to ride in Coyote"
+SetString english motogoose_flip "\uE461\uE45F to flip Coyote"
 SaveTagChanges
 Exit
 
@@ -3578,6 +3583,13 @@ SetField Seats[3].EnterSeatString car_board
 SetField Seats[4].EnterSeatString car_board
 SetField Seats[5].EnterSeatString car_board
 SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
+
+EditTag objects\vehicles\mongoose\motogoose\motogoose.vehicle
+SetField Seats[0].EnterSeatString motogoose_enter_driver
+SetField Seats[1].EnterSeatString motogoose_enter_passenger
+SetField FlipOverMessageNew motogoose_flip
 SaveTagChanges
 Exit
 
