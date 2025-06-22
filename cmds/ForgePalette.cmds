@@ -161,6 +161,7 @@ AddForgeItem "DUMPSTER, CLOSED" 11 cone_collective\objects\levels\multi\homefron
 AddForgeItem "OFFICE TABLE" 11 objects\gear\human\residential\office_table\office_table.crate
 AddForgeItem "55GAL DRUM" 11 objects\gear\human\military\drum_55gal\drum_55gal.crate
 AddForgeItem "STREETLIGHT, DESTRUCTABLE" 11 objects\levels\atlas\h100\hub_streetlight\hub_streetlight.scenery
+AddForgeItem "BOULDER BLOCKER" 11 objects\levels\atlas\sc110\boulder_blocker\boulder_blocker.scenery
 
 
 
