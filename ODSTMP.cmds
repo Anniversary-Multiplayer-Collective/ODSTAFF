@@ -41,6 +41,7 @@ ExitModPackage
 AddForgeItem "CAR, CIVILIAN" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
 AddForgeItem "CAR, POLICE" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
 AddForgeItem "CAR, POLICE LIT" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
+AddForgeItem "COYOTE MOTORBIKE" VEHICLES objects\vehicles\mongoose\motogoose\motogoose.vehicle
 
 ## echo apply working shaders for sc100 and sc140
 openmodpackage "workingdir\paks\odstshaders.pak"
