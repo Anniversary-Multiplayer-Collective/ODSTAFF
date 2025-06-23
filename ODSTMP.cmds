@@ -3617,7 +3617,7 @@ SetField Seats[13].EnterSeatString bus_enter_passenger
 SetField Seats[14].EnterSeatString bus_enter_passenger
 SetField Seats[15].EnterSeatString bus_enter_passenger
 SetField Seats[16].EnterSeatString bus_enter_passenger
-SetField FlipOverMessageNew Bus_flip
+SetField FlipOverMessageNew bus_flip
 SaveTagChanges
 Exit
 
