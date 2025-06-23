@@ -3540,6 +3540,11 @@ SetString english motogoose_board "\uE461\uE45F to board enemy Coyote"
 SetString english motogoose_enter_driver "\uE461\uE45F to drive Coyote"
 SetString english motogoose_enter_passenger "\uE461\uE45F to ride in Coyote"
 SetString english motogoose_flip "\uE461\uE45F to flip Coyote"
+
+SetString english bus_board "\uE461\uE45F to board enemy Bus"
+SetString english bus_enter_driver "\uE461\uE45F to drive Bus"
+SetString english bus_enter_passenger "\uE461\uE45F to ride in Bus"
+SetString english bus_flip "\uE461\uE45F to flip Bus"
 SaveTagChanges
 Exit
 
@@ -3593,6 +3598,29 @@ SetField Seats[1].EnterSeatString motogoose_enter_passenger
 SetField FlipOverMessageNew motogoose_flip
 SaveTagChanges
 Exit
+
+EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
+SetField Seats[0].EnterSeatString bus_enter_driver
+SetField Seats[1].EnterSeatString bus_enter_passenger
+SetField Seats[2].EnterSeatString bus_enter_passenger
+SetField Seats[3].EnterSeatString bus_enter_passenger
+SetField Seats[4].EnterSeatString bus_enter_passenger
+SetField Seats[5].EnterSeatString bus_enter_passenger
+SetField Seats[6].EnterSeatString bus_enter_passenger
+SetField Seats[7].EnterSeatString bus_enter_passenger
+SetField Seats[8].EnterSeatString bus_enter_passenger
+SetField Seats[9].EnterSeatString bus_enter_passenger
+SetField Seats[10].EnterSeatString bus_enter_passenger
+SetField Seats[11].EnterSeatString bus_enter_passenger
+SetField Seats[12].EnterSeatString bus_enter_passenger
+SetField Seats[13].EnterSeatString bus_enter_passenger
+SetField Seats[14].EnterSeatString bus_enter_passenger
+SetField Seats[15].EnterSeatString bus_enter_passenger
+SetField Seats[16].EnterSeatString bus_enter_passenger
+SetField FlipOverMessageNew Bus_flip
+SaveTagChanges
+Exit
+
 
 ## echo add the correct health packs to the wall mounted medical kiosk
 EditTag objects\levels\atlas\shared\medical_kiosk_wall\medical_kiosk_wall.model
