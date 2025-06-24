@@ -3643,6 +3643,9 @@ runcommands workingdir\cmds\Viewmodels.cmds
 ## echo decal fix
 generatebitmap decal\dank\with\tits\fix workingdir\bitmaps\decal_fix.dds
 
+## echo HD weapon skins
+runcommands workingdir\cmds\HDWeapons.cmds
+
 edittag levels\atlas\shared\decals\panels\panel_slot_huge.decal_system
 setfield Decal[0].RenderMethod.ShaderProperties[0].TextureConstants[0].Bitmap decal\dank\with\tits\fix.bitmap
 savetagchanges

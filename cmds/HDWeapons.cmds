@@ -1,0 +1,86 @@
+
+echo smg
+
+edittag objects\weapons\rifle\smg\bitmaps\smg.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\smg\smg_pbr_diffuse.dds
+exit
+
+echo assault rifle
+
+edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\AR\assault_rifle_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\rifle\assault_rifle\bitmaps\assault_rifle_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\AR\assault_rifle_pbr_zbump.dds
+exit
+
+echo battle rifle
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\BR\battle_rifle_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\BR\battle_rifle_pbr_zbump.dds
+exit
+
+echo sniper
+
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\sniper\sniper_rifle_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\sniper\sniper_rifle_pbr_zbump.dds
+exit
+
+echo magnum
+
+edittag objects\weapons\pistol\magnum\bitmaps\magnum.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\magnum\magnum_pbr_diffuse.dds
+exit
+
+echo shotgun
+
+edittag objects\weapons\rifle\shotgun\bitmaps\shotgun.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\shotgun\shotgun_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\rifle\shotgun\bitmaps\shotgun_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\shotgun\shotgun_pbr_zbump.dds
+exit
+
+edittag objects\weapons\rifle\shotgun\bitmaps\shell_eject.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\shotgun\shell_eject_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\rifle\shotgun\bitmaps\shell_eject_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\shotgun\shell_eject_pbr_zbump.dds
+exit
+
+echo rocket
+
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\rocket\rocket_launcher_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\rocket\rocket_launcher_pbr_zbump.dds
+exit
+
+echo rocket
+
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\rocket\rocket_launcher_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\bitmaps\rocket_launcher_bump.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\rocket\rocket_launcher_pbr_zbump.dds
+exit
+
+echo flame
+
+edittag objects\weapons\turret\flamethrower\bitmaps\flamethrower_diffuse.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\flame\flamethrower_pbr_diffuse.dds
+exit
