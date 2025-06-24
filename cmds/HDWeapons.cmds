@@ -25,6 +25,32 @@ edittag objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle_bump.bitmap
 importbitmap 0 workingdir\bitmaps\weapons\BR\battle_rifle_pbr_zbump.dds
 exit
 
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_blue.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_green.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_purple.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_red.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\shaders\battle_rifle_metal_yellow.shader
+setfield ShaderProperties[0].TextureConstants[0].Bitmap objects\weapons\rifle\battle_rifle\bitmaps\battle_rifle.bitmap
+savetagchanges
+exit
+
+
 echo sniper
 
 edittag objects\weapons\rifle\sniper_rifle\bitmaps\sniper_rifle.bitmap
@@ -39,6 +65,22 @@ echo magnum
 
 edittag objects\weapons\pistol\magnum\bitmaps\magnum.bitmap
 importbitmap 0 workingdir\bitmaps\weapons\magnum\magnum_pbr_diffuse.dds
+exit
+
+echo automag
+
+edittag objects\weapons\pistol\automag\bitmaps\automag.bitmap
+importbitmap 0 workingdir\bitmaps\weapons\magnum\automag_pbr_diffuse.dds
+exit
+
+edittag objects\weapons\pistol\automag\fp_automag\fp_automag.render_model
+setfield Materials[3].RenderMethod objects\weapons\pistol\magnum\shaders\magnum_dull.shader
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\shaders\automag.shader
+setargument specular_coefficient 0.25
+savetagchanges
 exit
 
 echo shotgun
