@@ -163,7 +163,22 @@ AddForgeItem "55GAL DRUM" 11 objects\gear\human\military\drum_55gal\drum_55gal.c
 AddForgeItem "STREETLIGHT, DESTRUCTABLE" 11 objects\levels\atlas\h100\hub_streetlight\hub_streetlight.scenery
 AddForgeItem "BOULDER BLOCKER" 11 objects\levels\atlas\sc110\boulder_blocker\boulder_blocker.scenery
 
+#CASTLE WARS!
+EditTag levels\custom\coastalraceway\coastalraceway.scenario
+ConvertInstancedGeometry 0 246 shared\odstamp\highway_lane_straight\highway_lane_straight
+ConvertInstancedGeometry 0 248 shared\odstamp\highway_lane_curved\highway_lane_curved
+ConvertInstancedGeometry 0 0 shared\odstamp\highway_lane_sloped\highway_lane_sloped
+ConvertInstancedGeometry 1 1 shared\odstamp\highway_lane_curved_alboreto\highway_lane_curved_alboreto
+ConvertInstancedGeometry 0 807 shared\odstamp\highway_lane_merged\highway_lane_merged
+ConvertInstancedGeometry 0 767 shared\odstamp\highway_lane_tunnel\highway_lane_tunnel
+exit
 
+AddForgeItem "HIGHWAY LANE, STRAIGHT" 11 shared\odstamp\highway_lane_straight\highway_lane_straight.scenery
+AddForgeItem "HIGHWAY LANE, SLOPED" 11 shared\odstamp\highway_lane_sloped\highway_lane_sloped.scenery
+AddForgeItem "HIGHWAY LANE, TUNNEL SLOPED" 11 shared\odstamp\highway_lane_merged\highway_lane_merged.scenery
+AddForgeItem "HIGHWAY LANE, TUNNEL UNDERGROUND" 11 shared\odstamp\highway_lane_tunnel\highway_lane_tunnel.scenery
+AddForgeItem "HIGHWAY LANE, CURVED" 11 shared\odstamp\highway_lane_curved\highway_lane_curved.scenery
+AddForgeItem "HIGHWAY LANE, CURVED, ALBORETO" 11 shared\odstamp\highway_lane_curved_alboreto\highway_lane_curved_alboreto.scenery
 
 
 
