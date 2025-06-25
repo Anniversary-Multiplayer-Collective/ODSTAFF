@@ -1,10 +1,10 @@
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
-SetVariable h3maps "E:\Halo Resources\Halo3"
-SetVariable odstmaps "E:\Halo Resources\Halo3odst"
-SetVariable h3mccmaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
-SetVariable reachmaps "E:\Halo Resources\HaloReach"
-SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\ODSTAMP"
-SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
+SetVariable h3maps ""
+SetVariable odstmaps ""
+SetVariable h3mccmaps ""
+SetVariable reachmaps ""
+SetVariable workingdir ""
+SetVariable modsfolder ""
 
 //Update at the end of the script
 CreateModPackage 1 Large
@@ -142,7 +142,6 @@ setfield Scenery[25].PaletteIndex -1
 setfield Scenery[26].PaletteIndex -1
 setfield Scenery[43].PaletteIndex -1
 setfield Scenery[44].PaletteIndex -1
-importmapvariant MapFile "workingdir\scenarios\map_variants\odst_alphasite\sandbox.map"
 SaveTagChanges
 Exit
 
@@ -181,7 +180,6 @@ set_survival
 Exit
 
 EditTag levels\custom\chasmten\chasmten.scnr
-importmapvariant MapFile "workingdir\scenarios\map_variants\chasmten00\sandbox.map"
 SetField Machines[6].MachineFlags None
 SetField Machines[7].MachineFlags None
 SetField Machines[8].MachineFlags None
@@ -294,7 +292,6 @@ SetField CratePalette[18].Object null
 setfield Scenery[29].PaletteIndex -1
 setfield Scenery[30].PaletteIndex -1
 setfield Scenery[31].PaletteIndex -1
-importmapvariant MapFile "workingdir\scenarios\map_variants\ChasmtenTerries\sandbox.map"
 SaveTagChanges
 Exit
 
@@ -347,7 +344,6 @@ set_survival_b
 Exit
 
 EditTag levels\custom\rallypointnight\rallypointnight.scnr
-importmapvariant MapFile "workingdir\scenarios\map_variants\rallypoint00\sandbox.map"
 # remove wall weapons
 setfield Scenery[46].PaletteIndex -1
 setfield Scenery[47].PaletteIndex -1
@@ -364,7 +360,6 @@ setfield Crates[6].PaletteIndex -1
 removeblockelements scenariokilltriggers 0 *
 # disable front soft barrier
 setfield SoftCeilings[2].Flags IgnoreBipeds,IgnoreVehicles,IgnoreCamera
-importmapvariant MapFile "workingdir\scenarios\map_variants\Plaza_Terr_01\sandbox.map"
 # remove armory shelves
 setfield Scenery[15].PaletteIndex -1
 setfield Scenery[16].PaletteIndex -1
@@ -440,7 +435,6 @@ exit
 #SetField Machines[35].Rotation 0 0 0
 #SetField Machines[36].PaletteIndex -1
 #SetField Machines[37].PaletteIndex -1
-#ImportMapVariant MapFile "workingdir\scenarios\map_variants\CoastalIntro_00\sandbox.map"
 #SaveTagChanges
 #Exit
 
@@ -489,7 +483,6 @@ setfield scenery[97].paletteindex -1
 	# remove beacon switch
 setfield ControlPalette[1].Object null
 	# import basic spawns, oddball, koth
-importmapvariant MapFile "workingdir\scenarios\map_variants\nightstreets_0\sandbox.map"
 removeblockelements Terminals 0 *
 savetagchanges
 exit
@@ -628,7 +621,6 @@ Fight in the dead center of the park. 6-16 players
 Exit
 
 EditTag levels\custom\lostplatoon\lostplatoon.scnr
-ImportMapVariant MapFile "workingdir\scenarios\map_variants\LostPlatoon_00\sandbox.map"
 # remove fighter drones in sky
 setfield MachinePalette[1].Object null
 # remove armory shelves
@@ -3259,58 +3251,6 @@ setfield DefaultShieldImpact null
 savetagchanges
 exit
 
-//####################### MAP MODIFICATIONS
-
-#// rain sounds
-#createtag snd! sound\sfx\ambience\rain
-#edittag sound\sfx\ambience\rain.sound
-#importsound "C:\Users\squir\Desktop\0.7 Testing\maps\workingdir\sound\rain_stereo_3m.mp3"
-#savetagchanges
-#exit
-#
-#duplicatetag sound\levels\gaurdian\gaurdian\gaurdian.lsnd sound\sfx\ambience\rain
-#edittag sound\sfx\ambience\rain.lsnd
-#removeblockelements DetailSounds 0 *
-#foreach Tracks setfield Flags FadeInAtStart,FadeOutAtStop,MasterSurroundSoundTrack
-#foreach Tracks setfield FadeInDuration 1.5
-#foreach Tracks setfield FadeOutDuration 1.5
-#foreach Tracks setfield OutputEffect OutputFrontSpeakers
-#setfield Tracks[0].Gain 0.75
-#setfield Tracks[0].Loop sound\sfx\ambience\rain.sound
-#removeblockelements tracks 1 1
-#savetagchanges
-#exit
-
-// map variants etc
-
-#edittag levels\multi\deadlock\deadlock.scenario
-#addblockelements ScenarioResources[0].ScriptSource
-#setfield ScenarioResources[0].ScriptSource[0].Instance sound\sfx\ambience\rain.lsnd
-#CompileScripts "C:\Users\squir\Desktop\0.7 Testing\maps\workingdir\scripts\odst_rain.hsc"
-#importmapvariant mapfile "C:\Users\squir\Desktop\0.7 Testing\mods\maps\ODST_Ground\sandbox.map"
-#savetagchanges
-#exit
-#
-#edittag levels\multi\s3d_turf\s3d_turf.scenario
-#importmapvariant mapfile "C:\Users\squir\Desktop\0.7 Testing\mods\maps\ODST_Icebox\sandbox.map"
-#setfield ScenarioResources[0].ScriptSource[0].Instance sound\sfx\ambience\rain.lsnd
-#CompileScripts "C:\Users\squir\Desktop\0.7 Testing\maps\workingdir\scripts\odst_rain.hsc"
-#savetagchanges
-#exit
-#
-#edittag levels\multi\zanzibar\zanzibar.scenario
-#importmapvariant mapfile "C:\Users\squir\Desktop\0.7 Testing\mods\maps\ODST_Resort\sandbox.map"
-#setfield ScenarioResources[0].ScriptSource[0].Instance sound\sfx\ambience\rain.lsnd
-#CompileScripts "C:\Users\squir\Desktop\0.7 Testing\maps\workingdir\scripts\odst_rain.hsc"
-#savetagchanges
-#exit
-#
-#edittag levels\multi\s3d_reactor\s3d_reactor.scenario
-#importmapvariant mapfile "C:\Users\squir\Desktop\0.7 Testing\mods\maps\ODST_Reactor\sandbox.map"
-#setfield ScenarioResources[0].ScriptSource[0].Instance sound\sfx\ambience\rain.lsnd
-#CompileScripts "C:\Users\squir\Desktop\0.7 Testing\maps\workingdir\scripts\odst_rain.hsc"
-#savetagchanges
-#exit
 
 // NIGHTTIME BLOOM Fix
 edittag levels\atlas\h100\sky\h100_sky.camera_fx_settings
