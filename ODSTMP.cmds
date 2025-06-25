@@ -3532,13 +3532,6 @@ SetField FlipOverMessageNew car_flip
 SaveTagChanges
 Exit
 
-EditTag objects\vehicles\mongoose\motogoose\motogoose.vehicle
-SetField Seats[0].EnterSeatString motogoose_enter_driver
-SetField Seats[1].EnterSeatString motogoose_enter_passenger
-SetField FlipOverMessageNew motogoose_flip
-SaveTagChanges
-Exit
-
 EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
 SetField Seats[0].EnterSeatString bus_enter_driver
 SetField Seats[1].EnterSeatString bus_enter_passenger
