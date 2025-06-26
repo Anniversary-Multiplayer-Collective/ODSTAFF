@@ -2362,7 +2362,12 @@ importbitmap 0 workingdir\ODSTcustomization\bitmaps\oni_op_gear_diffuse.dds
 exit
 
 
+echo broken chest piece fix
 
+edittag objects\characters\odst\shaders\broken_chest.shader
+setargument specular_coefficient 0.25
+savetagchanges
+exit
 
 
 
