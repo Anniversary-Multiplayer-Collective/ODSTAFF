@@ -2320,7 +2320,7 @@ ImportBitmap 0 "workingdir\bitmaps\flag_odst_cc_mip.dds"
 savetagchanges
 exit
 edittag objects\weapons\multiplayer\flag\bitmaps\flag_test_bump.bitmap
-ImportBitmap 0 "workingdir\bitmaps\flag_odst_bump_mip.dds"
+ImportBitmap 0 "workingdir\bitmaps\flag_odst_bump.dds"
 savetagchanges
 exit
 
