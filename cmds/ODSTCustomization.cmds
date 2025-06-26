@@ -208,11 +208,11 @@ exit
 
 edittag *.mulg
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name base
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Name standard
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Description custom_base_description
 addblockelements Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant
 setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Region helmet
-setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation base
+setfield Universal[0].CustomizableCharacters[0].Regions[0].Permutations[*].Variant[0].Permutation standard
 savetagchanges
 exit
 
