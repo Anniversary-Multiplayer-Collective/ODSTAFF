@@ -1,4 +1,6 @@
 edittag ui\hud\hud_messages.multilingual_unicode_string_list
+stringid add ssmg_dual
+stringid add ssmg_dual_swap
 stringid add amag_pickup
 stringid add amag_picked_up
 stringid add amag_swap
@@ -6,6 +8,10 @@ stringid add amag_swap_ai
 stringid add amag_switch_to
 stringid add amag_dual
 stringid add amag_dual_swap
+
+setstring english ssmg_dual "\uE461 \uE45E to dual-wield|r|n\uFB05"
+setstring english ssmg_dual_swap "\uE461 \uE45E to swap for|r|n\uFB05"
+
 setstring english amag_pickup "\uE461\uE45F to pick up|r|n\uFB04"
 setstring english amag_picked_up "Picked up an Automag"
 setstring english amag_swap "\uE461\uE45F to swap for|r|n\uFB04"
@@ -14,6 +20,12 @@ setstring english amag_switch_to  "Out of ammo|nPress \uE446 to switch to |r\uFB
 setstring english amag_dual "\uE461 \uE45E to dual-wield|r|n\uFB06"
 setstring english amag_dual_swap "\uE461 \uE45E to swap for|r|n\uFB06"
 SaveTagChanges
+Exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield PickupOrDualWieldMessage ssmg_dual
+setfield SwapOrDualWieldMessage ssmg_dual_swap
+savetagchanges
 Exit
 
 edittag objects\weapons\pistol\automag\automag.weapon

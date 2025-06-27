@@ -3312,8 +3312,8 @@ runcommands workingdir\cmds\WeaponVariants.cmds
 ## echo Flood bipeds!
 runcommands workingdir\cmds\FloodBipeds.cmds
 
-// echo Automag font fix
-runcommands workingdir\cmds\automagstrings.cmds
+// echo Automag & Silenced SMG font fix
+runcommands workingdir\cmds\odstweapstrings.cmds
 
 ## echo fix hud scaling
 runcommands workingdir\cmds\ChudEdits.cmds
