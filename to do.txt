@@ -3,6 +3,7 @@ ODSTAMP To Do:
 
 Mod:
 DMR pickup string
+DMR HUD (including variants)
 Add Overshield colours for hud
 Hud wiggle when swapping between first and third person (likely to do with HUD warp settings, ask dirk to look into it)
 Rebalance flood tank
