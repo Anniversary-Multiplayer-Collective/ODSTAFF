@@ -981,7 +981,7 @@ importbitmap 0 "workingdir\bitmaps\odst_fp_arms_cc.dds"
 savetagchanges
 exit
 
-extracttag objects\characters\odst_recon\shaders\odst_armor.shader "workingdir\tags\odst_armor_cc.rmsh"
+#extracttag objects\characters\odst_recon\shaders\odst_armor.shader "workingdir\tags\odst_armor_cc.rmsh"
 importtag objects\characters\odst_recon\shaders\odst_fp_arms.shader "workingdir\tags\odst_armor_cc.rmsh"
 edittag objects\characters\odst_recon\shaders\odst_fp_arms.shader
 setbitmap base_map objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_diffuse.bitmap
