@@ -3487,10 +3487,10 @@ SetString english bus_enter_driver "\uE461\uE45F to drive Bus"
 SetString english bus_enter_passenger "\uE461\uE45F to ride in Bus"
 SetString english bus_flip "\uE461\uE45F to flip Bus"
 
-SetString english mlx_board "\uE461\uE45F to board enemy Mlx"
-SetString english mlx_enter_driver "\uE461\uE45F to drive Mlx"
-SetString english mlx_enter_passenger "\uE461\uE45F to ride in Mlx"
-SetString english mlx_flip "\uE461\uE45F to flip Mlx"
+SetString english mlx_board "\uE461\uE45F to board enemy MLX"
+SetString english mlx_enter_driver "\uE461\uE45F to drive MLX"
+SetString english mlx_enter_passenger "\uE461\uE45F to ride in MLX"
+SetString english mlx_flip "\uE461\uE45F to flip MLX"
 SaveTagChanges
 Exit
 
