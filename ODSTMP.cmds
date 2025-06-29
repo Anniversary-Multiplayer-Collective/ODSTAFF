@@ -45,6 +45,38 @@ AddForgeItem "CAR, POLICE LIT" VEHICLES objects\gear\atlas\civilian\hu_civ_car\h
 AddForgeItem "BUS, CIVILIAN" VEHICLES objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
 AddForgeItem "COYOTE MOTORBIKE" VEHICLES objects\vehicles\mongoose\motogoose\motogoose.vehicle
 
+#Vehicle speed and other values, up to change!
+EditTag flog\vehicles\mlx\mlx.vehicle
+SetField VehicleFlags CanTriggerAutomaticOpeningDoors,AiDriverEnable,EnableWheeliePoppingHack
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 16
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 3500
+SaveTagChanges
+Exit
+
+EditTag objects\vehicles\mongoose\motogoose\motogoose.vehicle
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 14
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+SaveTagChanges
+Exit
+
 ## echo apply working shaders for sc100 and sc140
 openmodpackage "workingdir\paks\odstshaders.pak"
 ApplyModPackage
