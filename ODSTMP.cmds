@@ -33,11 +33,12 @@ ApplyModPackageTags
 Done
 ExitModPackage
 UpdateMapFiles
-AddForgeItem "CIVILIAN CAR" VEHICLES objects\vehicles\civilian\car1.vehicle
+AddForgeItem "CAR, UBERCHASIS" VEHICLES objects\vehicles\civilian\car1.vehicle
 
 OpenModPackage "workingdir\paks\civcar.pak"
 ApplyModPackage
 ExitModPackage
+AddForgeItem "CAR, MLX" VEHICLES flog\vehicles\mlx\mlx.vehicle
 AddForgeItem "CAR, CIVILIAN" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
 AddForgeItem "CAR, POLICE" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
 AddForgeItem "CAR, POLICE LIT" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
@@ -3485,6 +3486,11 @@ SetString english bus_board "\uE461\uE45F to board enemy Bus"
 SetString english bus_enter_driver "\uE461\uE45F to drive Bus"
 SetString english bus_enter_passenger "\uE461\uE45F to ride in Bus"
 SetString english bus_flip "\uE461\uE45F to flip Bus"
+
+SetString english mlx_board "\uE461\uE45F to board enemy Mlx"
+SetString english mlx_enter_driver "\uE461\uE45F to drive Mlx"
+SetString english mlx_enter_passenger "\uE461\uE45F to ride in Mlx"
+SetString english mlx_flip "\uE461\uE45F to flip Mlx"
 SaveTagChanges
 Exit
 
