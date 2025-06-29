@@ -1,0 +1,113 @@
+
+echo smg
+
+edittag ui\chud\smg.chud_definition
+setfield HudWidgets[3].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+setfield HudWidgets[3].BitmapWidgets[1].BitmapSequenceIndex 12
+setfield HudWidgets[3].BitmapWidgets[1].PlacementData[0].Scale -0.5 0.5
+setfield HudWidgets[3].PlacementData[0].Offset -18 50
+savetagchanges
+exit
+
+echo magnum
+
+edittag ui\chud\magnum.chud_definition
+setfield HudWidgets[5].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+setfield HudWidgets[5].BitmapWidgets[1].BitmapSequenceIndex 5
+setfield HudWidgets[5].BitmapWidgets[1].PlacementData[0].Scale 0.5 0.5
+setfield HudWidgets[3].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+setfield HudWidgets[3].BitmapWidgets[1].BitmapSequenceIndex 5
+setfield HudWidgets[3].BitmapWidgets[1].PlacementData[0].Scale -0.5 0.5
+setfield HudWidgets[3].PlacementData[0].Offset -18 50
+savetagchanges
+exit
+
+echo ssmg
+
+edittag ui\chud\smg.chud_definition
+copyblockelements HudWidgets 3 1
+exit
+
+edittag ui\chud\smg_silenced.chud_definition
+pasteblockelements HudWidgets 7
+setfield HudWidgets[7].BitmapWidgets[1].Bitmap ui\chud\bitmaps\weapon_scematics.bitmap
+setfield HudWidgets[7].BitmapWidgets[1].BitmapSequenceIndex 24
+setfield HudWidgets[7].BitmapWidgets[1].PlacementData[0].Scale -1 1
+savetagchanges
+exit
+
+echo automag
+
+edittag ui\chud\magnum.chud_definition
+copyblockelements HudWidgets 3 1
+exit
+
+edittag ui\chud\automag.chud_definition
+pasteblockelements HudWidgets 6
+setfield HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\weapon_scematics.bitmap
+setfield HudWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 5
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -1 1
+savetagchanges
+exit
+
+echo mauler
+
+edittag ui\chud\smg.chud_definition
+copyblockelements HudWidgets 3 1
+exit
+
+edittag ui\chud\excavator.chud_definition
+pasteblockelements HudWidgets 6
+setfield HudWidgets[6].BitmapWidgets[0].Bitmap ui\chud\bitmaps\ballistic_meters.bitmap
+setfield HudWidgets[6].BitmapWidgets[0].BitmapSequenceIndex 13
+setfield HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+setfield HudWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 18
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -0.5 0.5
+savetagchanges
+exit
+
+echo spiker
+
+edittag ui\chud\smg.chud_definition
+copyblockelements HudWidgets 3 1
+exit
+
+edittag ui\chud\spike_rifle.chud_definition
+pasteblockelements HudWidgets 6
+setfield HudWidgets[6].BitmapWidgets[0].Bitmap ui\chud\bitmaps\ballistic_meters.bitmap
+setfield HudWidgets[6].BitmapWidgets[0].BitmapSequenceIndex 9
+setfield HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\mcch3_weapon_scematics.bitmap
+setfield HudWidgets[6].BitmapWidgets[1].BitmapSequenceIndex 15
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -0.5 0.5
+savetagchanges
+exit
+
+
+echo plasma pisol
+
+edittag ui\chud\plasma_pistol.chud_definition
+copyblockelements HudWidgets 3 1
+pasteblockelements HudWidgets 6
+SetField HudWidgets[6].StateData[0].UnitArmedState DualWielding
+SetField HudWidgets[6].StateData[0].WeaponArmedStateHO LeftHand
+setfield HudWidgets[6].Name ammo_area_left
+setfield HudWidgets[6].PlacementData[0].Offset -1685 -1015
+SetField HudWidgets[6].BitmapWidgets[1].PlacementData[0].Scale -1 1
+SetField HudWidgets[6].BitmapWidgets[1].PlacementData[0].Offset -125 3
+savetagchanges
+exit
+
+echo plasma rifle
+
+edittag ui\chud\plasma_rifle.chud_definition
+copyblockelements HudWidgets 3 1
+pasteblockelements HudWidgets 5
+SetField HudWidgets[5].StateData[0].UnitArmedState DualWielding
+SetField HudWidgets[5].StateData[0].WeaponArmedStateHO LeftHand
+setfield HudWidgets[5].Name ammo_area_left
+setfield HudWidgets[5].PlacementData[0].Offset -1685 -1015
+SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Scale -1 1
+SetField HudWidgets[5].BitmapWidgets[1].PlacementData[0].Offset -125 3
+savetagchanges
+exit
+
