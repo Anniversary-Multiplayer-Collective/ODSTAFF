@@ -40,6 +40,7 @@ ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimag
 - Added a ton of new Forge items
 - Updated default map variants
 - Updated map images
+- ODST-ified podium UI
 - Misc shader fixes
 - Nerfed sprint
 - Rebalanced ODST health
