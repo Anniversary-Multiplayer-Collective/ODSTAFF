@@ -1741,6 +1741,7 @@ savetagchanges
 exit
 
 edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 1
 SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 122 996
 SetField HudGlobals[0].HudAttributes[0].MotionSensorRadius 90
 SetField HudGlobals[0].HudAttributes[0].BlipRadius 6
