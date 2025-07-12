@@ -21,6 +21,9 @@ Mainmenu Multiplayer Character
 useaudiocache workingdir\caches\audiocache
 useshadercache workingdir\caches\shadercache
 
+// Add Enash's Car Hog
+RunCommands workingdir\cmds\CarHog.cmds
+
 ################################################################################
 		// COASTAL RACEWAY
 ################################################################################
@@ -3589,16 +3592,16 @@ SetField FlipOverMessageNew car_flip
 SaveTagChanges
 Exit
 
-######EditTag objects\vehicles\civilian\car1.vehicle
-######SetField Seats[0].EnterSeatString car_enter_driver
-######SetField Seats[1].EnterSeatString car_enter_passenger
-######SetField Seats[2].EnterSeatString car_board
-######SetField Seats[3].EnterSeatString car_board
-######SetField Seats[4].EnterSeatString car_board
-######SetField Seats[5].EnterSeatString car_board
-######SetField FlipOverMessageNew car_flip
-######SaveTagChanges
-######Exit
+EditTag objects\vehicles\civilian\car1.vehicle
+SetField Seats[0].EnterSeatString car_enter_driver
+SetField Seats[1].EnterSeatString car_enter_passenger
+SetField Seats[2].EnterSeatString car_board
+SetField Seats[3].EnterSeatString car_board
+SetField Seats[4].EnterSeatString car_board
+SetField Seats[5].EnterSeatString car_board
+SetField FlipOverMessageNew car_flip
+SaveTagChanges
+Exit
 
 EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
 SetField Seats[0].EnterSeatString bus_enter_driver
