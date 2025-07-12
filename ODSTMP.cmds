@@ -1628,19 +1628,19 @@ setfield HudWidgets[10].BitmapWidgets[15].AnimationData[0].Initializing.Animatio
 setfield HudWidgets[10].BitmapWidgets[15].PlacementData[0].Scale 127.5 5
 
 // fix widget indices
-setfield HudWidgets[15].TextWidgets[1].WidgetIndex 500
-setfield HudWidgets[15].TextWidgets[1].WidgetIndex 501
-setfield HudWidgets[15].TextWidgets[2].WidgetIndex 502
-setfield HudWidgets[15].TextWidgets[3].WidgetIndex 503
-setfield HudWidgets[15].TextWidgets[4].WidgetIndex 504
-setfield HudWidgets[15].TextWidgets[5].WidgetIndex 505
-setfield HudWidgets[15].TextWidgets[6].WidgetIndex 506
-setfield HudWidgets[15].TextWidgets[7].WidgetIndex 507
+setfield HudWidgets[15].TextWidgets[1].RuntimeWidgetIndex 500
+setfield HudWidgets[15].TextWidgets[1].RuntimeWidgetIndex 501
+setfield HudWidgets[15].TextWidgets[2].RuntimeWidgetIndex 502
+setfield HudWidgets[15].TextWidgets[3].RuntimeWidgetIndex 503
+setfield HudWidgets[15].TextWidgets[4].RuntimeWidgetIndex 504
+setfield HudWidgets[15].TextWidgets[5].RuntimeWidgetIndex 505
+setfield HudWidgets[15].TextWidgets[6].RuntimeWidgetIndex 506
+setfield HudWidgets[15].TextWidgets[7].RuntimeWidgetIndex 507
 
 
-setfield HudWidgets[15].TextWidgets[8].WidgetIndex 508
-setfield HudWidgets[15].TextWidgets[9].WidgetIndex 509
-#setfield HudWidgets[15].TextWidgets[10].WidgetIndex 510
+setfield HudWidgets[15].TextWidgets[8].RuntimeWidgetIndex 508
+setfield HudWidgets[15].TextWidgets[9].RuntimeWidgetIndex 509
+#setfield HudWidgets[15].TextWidgets[10].RuntimeWidgetIndex 510
 
 
 
@@ -1787,7 +1787,7 @@ SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorF LocalA
 SetField HudWidgets[1].TextWidgets[0].Name friendly_score
 SetField HudWidgets[1].TextWidgets[0].SortLayer Inherited
 SetField HudWidgets[1].TextWidgets[0].RenderData[0].ExternalInput FriendlyScore
-SetField HudWidgets[1].TextWidgets[0].WidgetIndex 6
+SetField HudWidgets[1].TextWidgets[0].RuntimeWidgetIndex 6
 SetField HudWidgets[1].TextWidgets[0].TextFlags StringIsANumber
 SetField HudWidgets[1].TextWidgets[0].InputString chud_out_b
 	# p1_bar -> convert to friendly background
@@ -1812,7 +1812,7 @@ SetField HudWidgets[2].BitmapWidgets[1].Bitmap null
 SetField HudWidgets[2].TextWidgets[0].Name enemy_score
 SetField HudWidgets[2].TextWidgets[0].SortLayer Inherited
 SetField HudWidgets[2].TextWidgets[0].RenderData[0].ExternalInput EnemyScore
-SetField HudWidgets[2].TextWidgets[0].WidgetIndex 7
+SetField HudWidgets[2].TextWidgets[0].RuntimeWidgetIndex 7
 SetField HudWidgets[2].TextWidgets[0].TextFlags StringIsANumber
 SetField HudWidgets[2].TextWidgets[0].InputString chud_out_b
 	# p2_bar -> convert to enemy background
@@ -1882,16 +1882,16 @@ edittag ui\chud\sandbox.chud_definition
 removeblockelements hudwidgets 4 1
 pasteblockelements hudwidgets
 #setfield HudWidgets[0].BitmapWidgets[0].StateData[0].EditorFlags DefaultCrosshair,ActiveCrosshair
-setfield HudWidgets[4].TextWidgets[0].WidgetIndex 8
-setfield HudWidgets[4].TextWidgets[1].WidgetIndex 9
-setfield HudWidgets[4].TextWidgets[2].WidgetIndex 10
-setfield HudWidgets[4].TextWidgets[3].WidgetIndex 11
+setfield HudWidgets[4].TextWidgets[0].RuntimeWidgetIndex 8
+setfield HudWidgets[4].TextWidgets[1].RuntimeWidgetIndex 9
+setfield HudWidgets[4].TextWidgets[2].RuntimeWidgetIndex 10
+setfield HudWidgets[4].TextWidgets[3].RuntimeWidgetIndex 11
 setfield HudWidgets[5].BitmapWidgets[0].RuntimeWidgetIndex 12
 setfield HudWidgets[5].BitmapWidgets[1].RuntimeWidgetIndex 13
 setfield HudWidgets[5].BitmapWidgets[2].RuntimeWidgetIndex 14
 setfield HudWidgets[5].BitmapWidgets[3].RuntimeWidgetIndex 15
 setfield HudWidgets[5].BitmapWidgets[4].RuntimeWidgetIndex 16
-setfield HudWidgets[5].TextWidgets[0].WidgetIndex 17
+setfield HudWidgets[5].TextWidgets[0].RuntimeWidgetIndex 17
 # set budget title
 setfield HudWidgets[4].TextWidgets[3].InputString budget
 # set budget value

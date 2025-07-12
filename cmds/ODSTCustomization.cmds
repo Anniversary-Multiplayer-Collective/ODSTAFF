@@ -2180,12 +2180,12 @@ SetField Variants[0].Voice null
 SetField Variants[0].AiCharacter None
 UpdateModelRegions 0
 SetField Variants[0].Regions[0].Permutations[0].Probability 0.1
-SetField Variants[0].Regions[1].Permutations[1].Probability 0.1
+SetField Variants[0].Regions[1].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[2].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[3].Permutations[0].Probability 0.1
-SetField Variants[0].Regions[4].Permutations[3].Probability 0.1
+SetField Variants[0].Regions[4].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[5].Permutations[0].Probability 0.1
-SetField Variants[0].Regions[7].Permutations[4].Probability 0.1
+SetField Variants[0].Regions[7].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[8].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[9].Permutations[0].Probability 0.1
 SetField Variants[0].Regions[10].Permutations[0].Probability 0.1

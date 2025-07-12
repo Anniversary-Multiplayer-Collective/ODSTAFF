@@ -264,8 +264,6 @@ AddForgeItem "DOOR EXT 2" 82 objects\levels\atlas\sc140\door_ext\door_ext.device
 AddForgeItem "RADAR BAR" 82 objects\levels\dlc\lockout\radar_bar\radar_bar.device_machine
 AddForgeItem "PLAZA GARAGE DOOR" 82 objects\levels\atlas\shared\survival_door_plaza\survival_door_plaza.device_machine
 
-objects\levels\atlas\gate_security\gate_security_small\gate_security_small_no_switch.device_machine
-
 #Vehicles
 AddForgeItem "Olifaunt" 79 objects\vehicles\olifaunt\olifaunt.vehicle
 
