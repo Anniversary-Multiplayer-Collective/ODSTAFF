@@ -21,19 +21,48 @@ Mainmenu Multiplayer Character
 useaudiocache workingdir\caches\audiocache
 useshadercache workingdir\caches\shadercache
 
-OpenModPackage "workingdir\paks\CoastalRaceway.pak"
-ApplyModPackageTags
-.
-/
-\
-+levels\custom\coastalraceway\coastalraceway.scenario
-+objects\vehicles\civilian\car1.vehicle
-+objects\vehicles\olifaunt\olifaunt.vehicle
-+objects\vehicles\phantom\phantom.vehicle
-Done
-ExitModPackage
-UpdateMapFiles
-AddForgeItem "CAR, UBERCHASIS" VEHICLES objects\vehicles\civilian\car1.vehicle
+################################################################################
+		// COASTAL RACEWAY
+################################################################################
+
+opencachefile "odstmaps\l300.map"
+portmultiplayerscenario objects deviceobjects
+coastalraceway
+7050
+Coastal Raceway
+coastal raceway
+2
+
+
+exit
+
+edittag levels\custom\coastalraceway\coastalraceway.scenario
+foreach structurebsps setfield design null
+removeblockelements vehicles * *
+removeblockelements equipment * *
+removeblockelements weapons * *
+setfield machines[8].paletteindex -1
+setfield machines[9].paletteindex -1
+setfield machines[10].paletteindex -1
+setfield machines[11].paletteindex -1
+setfield machines[12].paletteindex -1
+setfield machines[13].paletteindex -1
+setfield machines[14].paletteindex -1
+setfield machines[15].paletteindex -1
+setfield machines[16].paletteindex -1
+setfield machines[17].paletteindex -1
+setfield machines[18].paletteindex -1
+setfield machines[19].paletteindex -1
+setfield machines[20].paletteindex -1
+setfield machines[21].paletteindex -1
+setfield machines[22].paletteindex -1
+setfield machines[23].paletteindex -1
+setfield machines[24].paletteindex -1
+setfield machines[25].paletteindex -1
+setfield machines[27].paletteindex -1
+setfield machines[28].paletteindex -1
+savetagchanges
+exit
 
 OpenModPackage "workingdir\paks\civcar.pak"
 ApplyModPackage
@@ -3560,16 +3589,16 @@ SetField FlipOverMessageNew car_flip
 SaveTagChanges
 Exit
 
-EditTag objects\vehicles\civilian\car1.vehicle
-SetField Seats[0].EnterSeatString car_enter_driver
-SetField Seats[1].EnterSeatString car_enter_passenger
-SetField Seats[2].EnterSeatString car_board
-SetField Seats[3].EnterSeatString car_board
-SetField Seats[4].EnterSeatString car_board
-SetField Seats[5].EnterSeatString car_board
-SetField FlipOverMessageNew car_flip
-SaveTagChanges
-Exit
+######EditTag objects\vehicles\civilian\car1.vehicle
+######SetField Seats[0].EnterSeatString car_enter_driver
+######SetField Seats[1].EnterSeatString car_enter_passenger
+######SetField Seats[2].EnterSeatString car_board
+######SetField Seats[3].EnterSeatString car_board
+######SetField Seats[4].EnterSeatString car_board
+######SetField Seats[5].EnterSeatString car_board
+######SetField FlipOverMessageNew car_flip
+######SaveTagChanges
+######Exit
 
 EditTag objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
 SetField Seats[0].EnterSeatString bus_enter_driver

@@ -149,23 +149,3 @@ edittag ui\chud\odst_recon.chud_definition
 setfield HudWidgets[15].TextWidgets[4].PlacementData[0].Offset 0 155
 savetagchanges
 exit
-
-
-echo ## Dual Wield hud fix
-echo SMG
-
-edittag ui\chud\smg_silenced.chud_definition
-setfield HudWidgets[5].PlacementData[0].Offset 93 946
-savetagchanges
-exit
-
-
-
-
-
-
-
-
-
-
-
