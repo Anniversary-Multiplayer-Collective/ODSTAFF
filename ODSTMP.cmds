@@ -109,11 +109,6 @@ SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
 SaveTagChanges
 Exit
 
-## echo apply working shaders for sc100 and sc140
-openmodpackage "workingdir\paks\odstshaders.pak"
-ApplyModPackage
-exitmodpackage
-
 OpenCacheFile "h3maps\midship.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot

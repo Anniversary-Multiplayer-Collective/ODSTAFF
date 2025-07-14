@@ -1586,12 +1586,170 @@ porttag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_ad
 porttag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
 exit
 
+opencachefile odstmaps\h100.map
+PortTag objects\characters\odst\shaders\odst_gear_standard.shader
+exit
 
-openmodpackage "workingdir\ODSTcustomization\spartanshaders.pak"
-applymodpackage
-exitmodpackage
+opencachefile reachmaps\m45.map
+PortTag objects\characters\spartan_jorge\shaders\spartan_jorge_gear.shader
+exit
 
-	
+opencachefile reachmaps\m50.map
+PortTag objects\props\human\unsc\bitmaps\re_entry_pack.shader
+PortTag objects\props\human\unsc\bitmaps\re_entry_pack_decals.shader_decal
+exit
+
+opencachefile reachmaps\m60.map
+PortTag objects\cinematics\package\shaders\package.shader
+PortTag objects\cinematics\package\shaders\package_glass.shader
+PortTag objects\characters\marine\shaders\marine_badlands_set.shader
+PortTag objects\characters\marine\shaders\marine_trooper_set.shader
+exit
+
+opencachefile reachmaps\forge_halo.map
+PortTag levels\shared\shaders\simple\black.shader
+PortTag objects\bitmaps\decals\shaders\bullet_burn_decal.shader_decal
+PortTag objects\bitmaps\decals\shaders\unsc_decals.shader_decal
+PortTag objects\characters\marine\shaders\marine_packs.shader
+PortTag objects\characters\spartan_jorge\shaders\spartan_jorge_gauntlets.shader
+PortTag objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
+PortTag objects\characters\spartans\fp\shaders\spartan_fp_armor.shader
+PortTag objects\characters\spartans\fp\shaders\spartan_fp_glove.shader
+PortTag objects\characters\spartans\fp\shaders\spartan_rubber_suit.shader
+PortTag objects\characters\spartans\shaders\emblem_patch.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_armor.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_backpack_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_carter_chesttech.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_ammopack.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_anton.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_fred_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_grenade_belt_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_grenades_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_harness_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_jai.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_joshua.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_kelly.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_knife.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_kurt_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_malcolm.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_chest_nicole.shader
+PortTag objects\characters\spartans\shaders\spartan_chest\spartan_neck_joshua.shader
+PortTag objects\characters\spartans\shaders\spartan_forearm\spartan_forearm_kelly.shader
+PortTag objects\characters\spartans\shaders\spartan_forearm\spartan_forearm_shotgun_reloader_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_forearm\spartan_forearm_tracker_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_forearm\spartan_forearm_tricorder.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_isaac.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jai.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_vinh.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_kat.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_adrianna.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_adrianna_aug.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_adrianna_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_bungie_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_default_aug.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_flare_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_interior.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_interior_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_isaac.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_jai.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_jai_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_john117.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_john117_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_kat_base.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_kat_rubber.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_kat_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_kelly.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_kurt.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_linda.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_linda_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_nicole.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_rosenda.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_rubberr_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_sam.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_sam_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull_armor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull_rubber.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_skull_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_vinh.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_visor_nicole.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_will.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_will_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_joshua_visor.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_default.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_isaac.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_kelly.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_kurt.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_li.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_rosenda.shader
+PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_visor_vinh.shader
+PortTag objects\characters\spartans\shaders\spartan_paint\spartan_paint_carter.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_paint\spartan_paint_emile.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_paint\spartan_paint_jun.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_rubber_suit.shader
+PortTag objects\characters\spartans\shaders\spartan_shield_display.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_anton_shoulders.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_big_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_fred_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_jai.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_joshua.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_kat.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_kelly.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_knife_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_kurt.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_large.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_malcolm.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_nicole_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_sam_flair.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_small.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_small_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_sniper_jun.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_sniper_li.shader
+PortTag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_will.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_backpack_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_carter_paintwear.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_emile_knife_scratch_decal.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_jun_hood.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_paintwear.shader_decal
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_chrome.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_elbow_bit.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_elbow_bit_inside.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_elbow_piston.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_elbow_piston_base.shader
+PortTag objects\characters\spartans\shaders\spartan_story\spartan_kat_robotarm_elbow_screw.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_knee_adrianna.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_knee_carter.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_knee_joshua.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_thigh_adrianna.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_thigh_joshua.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_thigh_medpack.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_thigh_pouch_emile.shader
+PortTag objects\characters\spartans\shaders\spartan_thigh\spartan_thigh_toolbox_kat.shader
+PortTag objects\equipment\jet_pack\shaders\jet_pack_unsc.shader
+PortTag objects\weapons\multiplayer\skull\shaders\skull_main.shader
+PortTag objects\weapons\multiplayer\skull\shaders\skull_port.shader
+PortTag objects\weapons\multiplayer\skull\shaders\skull_teeth.shader
+exit
 
 	echo Reach shoulders
 	
