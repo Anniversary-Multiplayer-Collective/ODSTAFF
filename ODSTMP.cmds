@@ -3470,6 +3470,11 @@ ImportMapVariant mapfile "workingdir\DefaultVariants\LostPlatoon"
 savetagchanges
 exit
 
+EditTag levels\custom\rallypointnight\rallypointnight.scnr
+importmapvariant MapFile "orkingdir\DefaultVariants\rallypoint\sandbox.map"
+SaveTagChanges
+Exit
+
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
 addblockelements Functions
