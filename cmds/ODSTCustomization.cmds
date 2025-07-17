@@ -1746,12 +1746,10 @@ exit
 	echo visor
 
 
-// TODO: Manually recreate shader to fix color change issues
 EditTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
 AddBlockElements ShaderProperties[0].Functions
 SetField ShaderProperties[0].Functions[0].Type ChangeColorTertiary
 SetField ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-SetArgument change_color_map transform 1 1 1 1
 SaveTagChanges
 Exit
 	
