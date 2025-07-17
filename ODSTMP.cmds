@@ -3471,7 +3471,7 @@ savetagchanges
 exit
 
 EditTag levels\custom\rallypointnight\rallypointnight.scnr
-importmapvariant MapFile "orkingdir\DefaultVariants\rallypoint\sandbox.map"
+importmapvariant MapFile "workingdir\DefaultVariants\rallypoint\sandbox.map"
 SaveTagChanges
 Exit
 
