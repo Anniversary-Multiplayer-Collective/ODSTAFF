@@ -67,7 +67,6 @@ setbitmap bump_detail_map objects\weapons\pistol\magnum\magnum_v6\material_2\bum
 setbitmap self_illum_map objects\vehicles\civilian\bitmaps\car1_interior_illum.bitm
 setargument base_map 1 1 0 0
 setargument detail_map 20 20 0 0
-setargument change_color_map 1 1 0 0
 setargument bump_map 1 1 0 0
 setargument bump_detail_map 20 20 0 0
 setargument bump_detail_coefficient 0.5 0.5 0.5 0.5
@@ -105,7 +104,6 @@ setbitmap bump_map objects\vehicles\civilian\bitmaps\car1_interior_bump.bitm
 setbitmap bump_detail_map objects\weapons\pistol\magnum\magnum_v6\material_2\bump_detail_map.bitm
 setargument base_map 1 1 0 0
 setargument detail_map 20 20 0 0
-setargument change_color_map 1 1 0 0
 setargument bump_map 1 1 0 0
 setargument bump_detail_map 20 20 0 0
 setargument bump_detail_coefficient 0.5 0.5 0.5 0.5
@@ -140,7 +138,6 @@ setbitmap bump_map objects\vehicles\civilian\bitmaps\car1_interior_bump.bitm
 setbitmap bump_detail_map objects\weapons\pistol\magnum\magnum_v6\material_2\bump_detail_map.bitm
 setargument base_map 1 1 0 0
 setargument detail_map 20 20 0 0
-setargument change_color_map 1 1 0 0
 setargument bump_map 1 1 0 0
 setargument bump_detail_map 20 20 0 0
 setargument bump_detail_coefficient 0.5 0.5 0.5 0.5
@@ -165,9 +162,6 @@ setargument rim_fresnel_power 2 2 2 2
 setargument rim_fresnel_albedo_blend 0 0 0 0
 setargument env_tint_color 1 1 1 1
 setargument env_roughness_scale 1 1 1 1
-setargument self_illum_map 1 1 1 1
-setargument self_illum_color 1 1 1 1
-setargument self_illum_intensity 1 1 1 1
 savetagchanges
 exit
 
@@ -178,7 +172,6 @@ setbitmap bump_map objects\vehicles\civilian\bitmaps\car1_interior_bump.bitm
 setbitmap bump_detail_map objects\weapons\pistol\magnum\magnum_v6\material_2\bump_detail_map.bitm
 setargument base_map 1 1 0 0
 setargument detail_map 20 20 0 0
-setargument change_color_map 1 1 0 0
 setargument bump_map 1 1 0 0
 setargument bump_detail_map 20 20 0 0
 setargument bump_detail_coefficient 0.5 0.5 0.5 0.5
@@ -203,9 +196,6 @@ setargument rim_fresnel_power 2 2 2 2
 setargument rim_fresnel_albedo_blend 0 0 0 0
 setargument env_tint_color 1 1 1 1
 setargument env_roughness_scale 1 1 1 1
-setargument self_illum_map 1 1 1 1
-setargument self_illum_color 1 1 1 1
-setargument self_illum_intensity 1 1 1 1
 savetagchanges
 exit
 
