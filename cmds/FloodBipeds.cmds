@@ -30,7 +30,6 @@ setfield events[0].parts[0].type sound\dialog\combat\flood_tank\charge.snd!
 savetagchanges
 exit
 
-DuplicateTag globals\default_vision_mode.vision_mode globals\flood_vision.vision_mode
 EditTag globals\flood_vision.vision_mode
 SetField WeaponPingColor.DefaultIntensity 0
 SetField WeaponPingColor.PingIntensity 0
@@ -140,11 +139,6 @@ foreach geometry.meshes[2].parts setfield materialindex 0
 savetagchanges
 exit
 
-DuplicateTag objects\weapons\melee\energy_blade\energy_blade.weap objects\weapons\melee\flood_arm\flood_arm
-DuplicateTag objects\weapons\melee\energy_blade\energy_blade.hlmt objects\weapons\melee\flood_arm\flood_arm
-DuplicateTag objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode objects\weapons\melee\flood_arm\flood_arm
-DuplicateTag objects\characters\masterchief\fp\weapons\melee\fp_energy_blade\fp_energy_blade.jmad objects\weapons\melee\flood_arm\flood_arm
-
 #DuplicateTag ui\chud\sword.chud_definition ui\chud\flood_arm
 #EditTag ui\chud\flood_arm.chdt
 #Removeblockelements HudWidgets 4 2
@@ -179,6 +173,7 @@ SetField WeaponFlags.NewFlags DetonatesWhenDropped,CannotFireAtMaximumAge,UsesEm
 SetField ClangEffect null
 SetField AgedWeapon objects\weapons\melee\flood_arm\flood_arm.weap
 #SetField HudInterface ui\chud\flood_arm.chdt
+SetField CenteredFirstPersonWeaponOffset 0 0 -0.01
 SaveTagChanges
 Exit
 
@@ -200,6 +195,7 @@ Exit
 duplicatetag objects\weapons\damage_effects\dash_melee.jpt! objects\weapons\damage_effects\flood_tank_arm
 edittag objects\weapons\damage_effects\flood_tank_arm.jpt!
 setfield InstantaneousAcceleration 4.5
+setfield PlayerResponses[0].ScreenFlash.Color 0.75 1 0 0.00784314
 savetagchanges
 exit
 
@@ -930,7 +926,6 @@ edittag ui\chud\parallax\flood.cprl
 savetagchanges
 exit
 
-DuplicateTag ui\chud\scoreboard.chud_definition ui\chud\scoreboard_flood
 EditTag ui\chud\scoreboard_flood.chud_definition
 SetField HudWidgets[0].StateData[0].SkinState None
 SetField HudWidgets[0].ParallaxData null
@@ -973,7 +968,6 @@ SetField HudWidgets[8].ParallaxData null
 SaveTagChanges
 Exit
 
-DuplicateTag ui\chud\globals.chud_globals_definition ui\chud\flood_globals
 EditTag ui\chud\flood_globals.chud_globals_definition
 RemoveBlockElements HudGlobals 1 2
 Setfield HudGlobals[0].ScoreboardHud ui\chud\scoreboard_flood.chdt

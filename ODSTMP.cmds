@@ -730,6 +730,16 @@ Exit
 #savetagchanges
 #exit
 
+// Pre Flood Biped Setup
+DuplicateTag globals\default_vision_mode.vision_mode globals\flood_vision
+DuplicateTag ui\chud\scoreboard.chud_definition ui\chud\scoreboard_flood
+DuplicateTag ui\chud\globals.chud_globals_definition ui\chud\flood_globals
+DuplicateTag objects\weapons\melee\energy_blade\energy_blade.weap objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\weapons\melee\energy_blade\energy_blade.hlmt objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\characters\masterchief\fp\weapons\melee\fp_energy_blade\fp_energy_blade.jmad objects\weapons\melee\flood_arm\flood_arm
+SaveTagNames
+
 /////////////////////////////////////////////////
 // H3 Porting
 /////////////////////////////////////////////////
