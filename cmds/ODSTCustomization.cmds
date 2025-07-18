@@ -1586,7 +1586,6 @@ porttag objects\characters\marine\bitmaps\marine_torso_cc.bitmap
 porttag objects\characters\marine\bitmaps\marine_torso_zbump.bitmap
 porttag objects\characters\marine\shaders\marine_odst_set_shoulders.shader
 porttag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm.shader
-porttag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
 porttag objects\characters\spartans\shaders\spartan_shoulder\spartan_shoulder_adrianna.shader
 porttag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_jai.shader
 porttag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_adrianna.shader
@@ -1599,7 +1598,6 @@ exit
 
 opencachefile reachmaps\forge_halo.map
 PortTag objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
-PortTag objects\characters\spartans\shaders\spartan_armor.shader
 PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
 PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
 PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_kat.shader
@@ -1745,11 +1743,116 @@ exit
 
 	echo visor
 
+generaterendermethod objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0
 
 EditTag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
-AddBlockElements ShaderProperties[0].Functions
+SetField BaseRenderMethod shaders\shader.render_method_definition
+SetField Options[1].OptionIndex 1
+SetField Options[3].OptionIndex 1
+SetField Options[4].OptionIndex 1
+SetField Options[5].OptionIndex 2
+SetField Options[9].OptionIndex 1
+SetField ShaderProperties[0].Template shaders\shader_templates\_0_1_0_1_1_2_0_0_0_1_0_0.render_method_template
+SetBitmap base_map objects\characters\spartans\bitmaps\spartan_helmets\spartan_helmet_malcolm_diff.bitmap
+SetBitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
+SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
+SetBitmap bump_map objects\characters\spartans\bitmaps\spartan_helmets\spartan_helmet_malcolm_normal.bitmap
+SetField ShaderProperties[0].TextureConstants[2].TextureTransformConstantIndex 3
+SetBitmap material_texture shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+SetField ShaderProperties[0].TextureConstants[3].TextureTransformConstantIndex 15
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 3 3 0 0
+SetArgument albedo_color 1 1 1 1
+SetArgument bump_map 1 1 0 0
+SetArgument diffuse_coefficient 1 1 1 1
+SetArgument specular_coefficient 1 1 1 1
+SetArgument specular_tint 1 1 1 0
+SetArgument fresnel_color 0.5019608 0.5019608 0.5019608 0.003921569
+SetArgument use_fresnel_color_environment 0 0 0 0
+SetArgument fresnel_color_environment 0.5019608 0.5019608 0.5019608 0
+SetArgument fresnel_power 1 1 1 1
+SetArgument roughness 0.04 0.04 0.04 0.04
+SetArgument area_specular_contribution 0.2 0.2 0.2 0.2
+SetArgument analytical_specular_contribution 0.3 0.3 0.3 0.3
+SetArgument environment_map_specular_contribution 1.25 1.25 1.25 1.25
+SetArgument order3_area_specular 1 1 0 0
+SetArgument use_material_texture 0 0 0 0
+SetArgument material_texture 0.3 0.3 0.3 0.3
+SetArgument no_dynamic_lights 0 0 0 0
+SetArgument albedo_blend_with_specular_tint 0 0 0 0
+SetArgument albedo_blend 1 1 1 0
+SetArgument analytical_anti_shadow_control 2 2 2 2
+SetArgument rim_fresnel_coefficient 0 0 0 0
+SetArgument rim_fresnel_color 0.9803922 0.9568628 0.7843138 1
+SetArgument rim_fresnel_power 1 1 1 1
+SetField ShaderProperties[0].BooleanConstants 1
+AddBlockElements ShaderProperties[0].EntryPoints 20
+SetField ShaderProperties[0].EntryPoints[1].Integer 1024
+SetField ShaderProperties[0].EntryPoints[3].Integer 1025
+SetField ShaderProperties[0].EntryPoints[4].Integer 1026
+SetField ShaderProperties[0].EntryPoints[5].Integer 1027
+SetField ShaderProperties[0].EntryPoints[6].Integer 1028
+SetField ShaderProperties[0].EntryPoints[7].Integer 1029
+SetField ShaderProperties[0].EntryPoints[8].Integer 1030
+SetField ShaderProperties[0].EntryPoints[9].Integer 1031
+SetField ShaderProperties[0].EntryPoints[10].Integer 1032
+SetField ShaderProperties[0].EntryPoints[12].Integer 1033
+SetField ShaderProperties[0].EntryPoints[13].Integer 1034
+SetField ShaderProperties[0].EntryPoints[14].Integer 1035
+SetField ShaderProperties[0].EntryPoints[17].Integer 1036
+SetField ShaderProperties[0].EntryPoints[19].Integer 1037
+AddBlockElements ShaderProperties[0].Passes 14
+SetField ShaderProperties[0].Passes[0].RealPixel.Integer 1024
+SetField ShaderProperties[0].Passes[1].RealPixel.Integer 2049
+SetField ShaderProperties[0].Passes[2].RealPixel.Integer 2051
+SetField ShaderProperties[0].Passes[3].RealPixel.Integer 2053
+SetField ShaderProperties[0].Passes[4].RealPixel.Integer 2055
+SetField ShaderProperties[0].Passes[5].RealPixel.Integer 2057
+SetField ShaderProperties[0].Passes[6].RealPixel.Integer 2059
+SetField ShaderProperties[0].Passes[7].RealPixel.Integer 1037
+SetField ShaderProperties[0].Passes[11].RealPixel.Integer 1038
+SetField ShaderProperties[0].Passes[12].RealPixel.Integer 1039
+AddBlockElements ShaderProperties[0].RoutingInfo 16
+SetField ShaderProperties[0].RoutingInfo[0].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[0].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[1].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[1].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[2].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[2].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[3].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[3].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[4].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[4].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[5].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[5].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[6].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[6].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[7].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[7].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[8].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[8].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[9].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[9].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[10].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[10].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[11].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[11].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[12].RegisterIndex 82
+SetField ShaderProperties[0].RoutingInfo[12].SourceIndex 23
+SetField ShaderProperties[0].RoutingInfo[13].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[13].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[14].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[14].SourceIndex 2
+SetField ShaderProperties[0].RoutingInfo[15].RegisterIndex 58
+SetField ShaderProperties[0].RoutingInfo[15].SourceIndex 2
+AddBlockElements ShaderProperties[0].Functions 2
 SetField ShaderProperties[0].Functions[0].Type ChangeColorTertiary
+SetField ShaderProperties[0].Functions[0].TimePeriod 1
 SetField ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+SetField ShaderProperties[0].QueryableProperties 0 0 0 0 0 0 0 0
+SetField SortLayer Normal
+SetField Version 9
+SetField PredictionAtomIndex -1
 SaveTagChanges
 Exit
 	
@@ -1852,6 +1955,70 @@ setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\maste
 savetagchanges
 exit
 
+generateshader shader 3 1 0 1 1 2 0 0 0 1 0 0
+
+generaterendermethod objects\characters\spartans\shaders\spartan_armor shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0
+
+EditTag objects\characters\spartans\shaders\spartan_armor.shader
+SetField BaseRenderMethod shaders\shader.render_method_definition
+SetField Options[0].OptionIndex 3
+SetField Options[1].OptionIndex 1
+SetField Options[3].OptionIndex 1
+SetField Options[4].OptionIndex 1
+SetField Options[5].OptionIndex 2
+SetField Options[9].OptionIndex 1
+SetField ShaderProperties[0].Template shaders\shader_templates\_3_1_0_1_1_2_0_0_0_1_0_0.render_method_template
+SetBitmap base_map objects\characters\spartans\bitmaps\spartan_armor_diff.bitmap
+SetField ShaderProperties[0].TextureConstants[0].FilterMode Anisotropic2Expensive
+SetBitmap detail_map objects\characters\spartans\bitmaps\spartan_detail_maps\spartan_metal_detail.bitmap
+SetField ShaderProperties[0].TextureConstants[1].FilterMode Anisotropic2Expensive
+SetField ShaderProperties[0].TextureConstants[1].TextureTransformConstantIndex 1
+SetBitmap change_color_map objects\characters\spartans\bitmaps\spartan_armor_cc.bitmap
+SetField ShaderProperties[0].TextureConstants[2].TextureTransformConstantIndex 2
+SetBitmap bump_map objects\characters\spartans\bitmaps\spartan_armor_normal.bitmap
+SetField ShaderProperties[0].TextureConstants[3].FilterMode Anisotropic2Expensive
+SetField ShaderProperties[0].TextureConstants[3].TextureTransformConstantIndex 3
+SetBitmap material_texture shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+SetField ShaderProperties[0].TextureConstants[4].TextureTransformConstantIndex 15
+SetArgument base_map 1 1 0 0
+SetArgument detail_map 15 15 0 0
+SetArgument change_color_map 1 1 0 0
+SetArgument bump_map 1 1 0 0
+SetArgument diffuse_coefficient 0.9 0.9 0.9 0.9
+SetArgument specular_coefficient 1 1 1 1
+SetArgument specular_tint 0.7019608 0.7019608 0.7019608 1
+SetArgument fresnel_color 0 0 0 1
+SetArgument use_fresnel_color_environment 0 0 0 0
+SetArgument fresnel_color_environment 0.5019608 0.5019608 0.5019608 0
+SetArgument fresnel_power 1 1 1 1
+SetArgument roughness 0.3 0.3 0.3 0.3
+SetArgument area_specular_contribution 0.29999998 0.29999998 0.29999998 0.29999998
+SetArgument analytical_specular_contribution 0.5 0.5 0.5 0.5
+SetArgument environment_map_specular_contribution 0 0 0 0
+SetArgument material_texture 1 1 0 0
+SetArgument albedo_blend_with_specular_tint 0 0 0 0
+SetArgument albedo_blend 0.9 0.9 0.9 0.9
+SetArgument analytical_anti_shadow_control 0 0 0 0
+SetArgument rim_fresnel_coefficient 0 0 0 0
+SetArgument rim_fresnel_color 1 1 1 0
+SetArgument rim_fresnel_power 2 2 2 2
+SetArgument rim_fresnel_albedo_blend 0 0 0 0
+SetArgument env_tint_color 0.63529414 0.63529414 0.63529414 1
+SetArgument env_roughness_scale 1 1 1 1
+SetField ShaderProperties[0].BooleanConstants 1
+AddBlockElements ShaderProperties[0].EntryPoints 20
+AddBlockElements ShaderProperties[0].Passes 12
+AddBlockElements ShaderProperties[0].Functions 1
+SetField ShaderProperties[0].Functions[0].Type Color
+SetField ShaderProperties[0].Functions[0].TimePeriod 1
+SetField ShaderProperties[0].Functions[0].Function.Data 09240200B3B3B3FF0000000000000000000000FF00000000000000000C000000000000000000803F00000040000000000000803F00000040000000003F80000040A00000CD0000040000000000000000
+SetField ShaderProperties[0].QueryableProperties 0 0 0 0 0 0 0 0
+SetField SortLayer Normal
+SetField Version 9
+SetField PredictionAtomIndex -1
+SaveTagChanges
+Exit
+
 	echo firefall
 
 duplicatetag objects\characters\spartans\shaders\spartan_armor.shader
@@ -1934,23 +2101,6 @@ savetagchanges
 exit
 
 
-	echo visor
-	
-duplicatetag objects\characters\masterchief\shaders\mp_visor.shader
-nametag * objects\characters\masterchief\shaders\helljumper_visor
-savetagnames
-
-edittag objects\characters\masterchief\shaders\helljumper_visor.shader
-setfield shaderproperties[0].textureconstants[0].bitmap objects\characters\masterchief\shaders\helljumper_helm_d.bitmap
-setfield shaderproperties[0].textureconstants[3].bitmap objects\characters\masterchief\shaders\helljumper_helm_n.bitmap
-setargument diffuse_coefficient 1
-setargument specular_coefficient 0.5
-savetagchanges
-exit
-
-
-
-
 	echo raven_1 visor
 
 duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
@@ -1981,8 +2131,6 @@ savetagchanges
 exit
 
 
-
-
 	echo raven_3 visor
 
 duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
@@ -1996,8 +2144,6 @@ setargument diffuse_coefficient 1
 setargument specular_coefficient 0.5
 savetagchanges
 exit
-
-
 
 
 	echo raven_4 visor
@@ -2029,8 +2175,8 @@ setargument specular_coefficient 0.5
 savetagchanges
 exit
 
-	echo odst visor default
 
+	echo odst visor default
 
 duplicatetag objects\characters\spartans\shaders\spartan_helmets\spartan_helmet_malcolm_visor.shader
 nametag * objects\characters\masterchief\shaders\odst_visor_c
@@ -2060,7 +2206,7 @@ savetagchanges
 exit
 
 
-	echo helljumpber visor
+	echo helljumper visor
 	
 duplicatetag objects\characters\masterchief\shaders\mp_visor.shader
 nametag * objects\characters\masterchief\shaders\helljumper_visor
