@@ -1597,6 +1597,9 @@ PortTag objects\characters\odst\shaders\odst_gear_standard.shader
 exit
 
 opencachefile reachmaps\forge_halo.map
+PortTag objects\characters\spartans\bitmaps\spartan_armor_diff.bitmap
+PortTag objects\characters\spartans\bitmaps\spartan_armor_cc.bitmap
+PortTag objects\characters\spartans\bitmaps\spartan_armor_normal.bitmap
 PortTag objects\characters\spartan_jorge\shaders\spartan_jorge_helmet.shader
 PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_aug_nicole.shader
 PortTag objects\characters\spartans\shaders\spartan_helmets\spartan_ear_piece_carter.shader
