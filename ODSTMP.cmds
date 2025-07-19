@@ -1,12 +1,13 @@
 D:\eldewrito\eldewrito 0.7\ElDewrito\maps
 SetVariable h3maps ""
+SetVariable h3mythicmaps ""
 SetVariable odstmaps ""
 SetVariable h3mccmaps ""
 SetVariable reachmaps ""
 SetVariable workingdir ""
 SetVariable modsfolder ""
 
-//Update at the end of the script
+// Update at the end of the script
 CreateModPackage 1 Large
 ODST Anniversary Multiplayer
 ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
@@ -21,19 +22,51 @@ Mainmenu Multiplayer Character
 useaudiocache workingdir\caches\audiocache
 useshadercache workingdir\caches\shadercache
 
-OpenModPackage "workingdir\paks\CoastalRaceway.pak"
-ApplyModPackageTags
-.
-/
-\
-+levels\custom\coastalraceway\coastalraceway.scenario
-+objects\vehicles\civilian\car1.vehicle
-+objects\vehicles\olifaunt\olifaunt.vehicle
-+objects\vehicles\phantom\phantom.vehicle
-Done
-ExitModPackage
-UpdateMapFiles
-AddForgeItem "CAR, UBERCHASIS" VEHICLES objects\vehicles\civilian\car1.vehicle
+// Add Enash's Car Hog
+RunCommands workingdir\cmds\CarHog.cmds
+
+################################################################################
+		// COASTAL RACEWAY
+################################################################################
+
+opencachefile "odstmaps\l300.map"
+portmultiplayerscenario objects deviceobjects
+coastalraceway
+7050
+Coastal Raceway
+coastal raceway
+2
+
+
+exit
+
+edittag levels\custom\coastalraceway\coastalraceway.scenario
+foreach structurebsps setfield design null
+removeblockelements vehicles * *
+removeblockelements equipment * *
+removeblockelements weapons * *
+setfield machines[8].paletteindex -1
+setfield machines[9].paletteindex -1
+setfield machines[10].paletteindex -1
+setfield machines[11].paletteindex -1
+setfield machines[12].paletteindex -1
+setfield machines[13].paletteindex -1
+setfield machines[14].paletteindex -1
+setfield machines[15].paletteindex -1
+setfield machines[16].paletteindex -1
+setfield machines[17].paletteindex -1
+setfield machines[18].paletteindex -1
+setfield machines[19].paletteindex -1
+setfield machines[20].paletteindex -1
+setfield machines[21].paletteindex -1
+setfield machines[22].paletteindex -1
+setfield machines[23].paletteindex -1
+setfield machines[24].paletteindex -1
+setfield machines[25].paletteindex -1
+setfield machines[27].paletteindex -1
+setfield machines[28].paletteindex -1
+savetagchanges
+exit
 
 OpenModPackage "workingdir\paks\civcar.pak"
 ApplyModPackage
@@ -77,30 +110,25 @@ SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
 SaveTagChanges
 Exit
 
-## echo apply working shaders for sc100 and sc140
-openmodpackage "workingdir\paks\odstshaders.pak"
-ApplyModPackage
-exitmodpackage
-
-OpenCacheFile "h3maps\midship.map"
+OpenCacheFile "h3mythicmaps\midship.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
-OpenCacheFile "h3maps\lockout.map"
+OpenCacheFile "h3mythicmaps\lockout.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
-OpenCacheFile "h3maps\armory.map"
+OpenCacheFile "h3mythicmaps\armory.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
 Exit
 
-OpenCacheFile "h3maps\spacecamp.map"
+OpenCacheFile "h3mythicmaps\spacecamp.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
 donotreplacegroups foot
 PortTag !UpdateMapFiles !Elites *.scnr
@@ -702,11 +730,21 @@ Exit
 #savetagchanges
 #exit
 
+// Pre Flood Biped Setup
+DuplicateTag globals\default_vision_mode.vision_mode globals\flood_vision
+DuplicateTag ui\chud\scoreboard.chud_definition ui\chud\scoreboard_flood
+DuplicateTag ui\chud\globals.chud_globals_definition ui\chud\flood_globals
+DuplicateTag objects\weapons\melee\energy_blade\energy_blade.weap objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\weapons\melee\energy_blade\energy_blade.hlmt objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.mode objects\weapons\melee\flood_arm\flood_arm
+DuplicateTag objects\characters\masterchief\fp\weapons\melee\fp_energy_blade\fp_energy_blade.jmad objects\weapons\melee\flood_arm\flood_arm
+SaveTagNames
+
 /////////////////////////////////////////////////
 // H3 Porting
 /////////////////////////////////////////////////
 
-OpenCacheFile "h3maps\sandbox.map"
+OpenCacheFile "h3mythicmaps\sandbox.map"
 donotreplacegroups foot
 ignoreblamtag objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
 ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
@@ -3306,31 +3344,1161 @@ RunCommands workingdir\cmds\GenerateMopps.cmds
 // Podium and Prematch Cameras
 RunCommands workingdir\cmds\PodiumCameras.cmds
 
-// MISC
-SaveModPackage "modsfolder\ODSTAMP.pak"
-ExitModPackage
-
 ////////////////////////////////////////////////////////////////////////////////
-// ADD MAIN MENU PAK AND OPTIMIZE
+// ADD MAIN MENU
 ////////////////////////////////////////////////////////////////////////////////
-CreateModPackage 1 large
-ODST Anniversary Multiplayer
-ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
-Vegetal & AMP Collective
-0.3
-MainMenu Multiplayer Character
 
-OpenModPackage "workingdir\paks\Halo3ODSTMenu v1_0 Patched.pak"
-ApplyModPackageTags
-multiplayer\mod_globals.mod_globals
-Done
-ExitModPackage
+opencachefile odstmaps\mainmenu.map
+porttag objects\weapons\pistol\automag\automag.scen
+porttag objects\characters\odst_recon\cinematics\main_menu\main_menu.jmad
+porttag objects\vehicles\odst_pod\cinematics\main_menu\main_menu.jmad
+exit
 
-openmodpackage modsfolder\odstamp.pak
-ApplyModPackageTags
-levels\ui\mainmenu\mainmenu.scenario
-Done
-ExitModPackage
+nametag levels\ui\mainmenu\sky\menu.skya levels\atlas\c100\sky\c1
+opencachefile odstmaps\c100.map
+donotreplacegroups bitm
+porttag replace levels\ui\mainmenu\sky\ui.sefc
+porttag replace objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.scen
+porttag replace objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.scen
+porttag replace objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.scen
+porttag objects\levels\atlas\beacons\odst_helmet_beacon\odst_helmet_beacon.scen
+porttag objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.scen
+porttag replace objects\vehicles\odst_pod\odst_pod.scen
+porttag replace objects\cinematics\c100sky_reentry_debris\reentry_debris.scen
+porttag replace objects\cinematics\c100sky_reentry_streaks\reentry_streaks.scen
+porttag replace objects\levels\atlas\tether\tether_version_undamaged_c100_sky_drop\tether_version_undamaged_c100_sky_drop.scen
+porttag replace objects\levels\atlas\c100\lowpoly_city\lowpoly_city.scen
+porttag replace objects\levels\atlas\c100\lowpoly_city_top\lowpoly_city_top.scen
+porttag replace objects\levels\atlas\tether\tether_strand_c100\tether_strand_c100.scen
+porttag replace objects\levels\atlas\c100\lowpoly_arcology\lowpoly_arcology.scen
+porttag replace objects\levels\atlas\c100\odst_pod_clamp\odst_pod_clamp.scen
+porttag replace objects\levels\atlas\c100\hologram_table\hologram_table.scen
+porttag replace objects\levels\atlas\c100\hologram_table02\hologram_table02.scen
+porttag replace levels\atlas\c100\sky\c1.skya
+porttag replace levels\atlas\c100\sky\c1_sky.scen
+porttag replace levels\atlas\c100\sky\c2_sky.scen
+porttag replace levels\atlas\c100\c100_faux_lightmap.scenario_lightmap
+porttag levels\atlas\c100\c100_c100_cubemaps.bitm
+porttag replace levels\atlas\c100\c100.sbsp
+porttag replace levels\atlas\c100\c100b.sbsp
+exit
+
+nametag levels\atlas\c100\c100.sbsp levels\ui\mainmenu\bsp_menu
+nametag levels\atlas\c100\c100b.sbsp levels\ui\mainmenu\bsp_lobbies
+nametag levels\atlas\c100\sky\c1.skya levels\ui\mainmenu\sky\menu
+nametag levels\atlas\c100\c100_faux_lightmap.scenario_lightmap levels\ui\mainmenu\mainmenu_faux_lightmap
+nametag levels\ui\mainmenu\mainmenu.scnr levels\ui\mainmenu\mainmenu_ho
+savetagnames
+
+OpenCacheFile "h3mythicmaps\mainmenu.map"
+porttag replace ui\halox\main_menu\bottom_gradient_ui.bitm
+porttag replace ui\halox\main_menu\bungielogo.bitm
+porttag replace ui\halox\main_menu\mainmenu_bkd.bitm
+porttag replace ui\halox\start_menu\panes\settings\settings_ui.bitm
+porttag replace ui\halox\start_menu\start_menu_background.bitm
+porttag replace objects\characters\elite\elite.jmad
+porttag replace objects\characters\dervish\dervish.jmad
+porttag !updatemapfiles *.scnr
+exit
+
+Edittag ui\halox\main_menu\main_menu.scn3
+SetField ScriptIndex 7
+savetagchanges
+exit
+
+Edittag ui\halox\pregame_lobby\pregame_lobby_mapeditor.scn3
+SetField ScriptIndex 11
+savetagchanges
+exit
+
+Edittag ui\halox\pregame_lobby\pregame_lobby_matchmaking.scn3
+SetField ScriptIndex -1
+savetagchanges
+exit
+
+Edittag ui\halox\pregame_lobby\pregame_lobby_multiplayer.scn3
+SetField ScriptIndex 10
+savetagchanges
+exit
+Edittag ui\halox\pregame_lobby\pregame_lobby_campaign.scn3
+SetField ScriptIndex 8
+savetagchanges
+exit
+
+Edittag ui\halox\pregame_lobby\pregame_lobby_survival.scn3
+SetField ScriptIndex 9
+savetagchanges
+exit
+
+duplicatetag objects\vehicles\odst_pod\odst_pod.hlmt
+nametag * objects\vehicles\odst_pod\odst_pod_cinematic
+duplicatetag objects\vehicles\odst_pod\odst_pod.scen
+nametag * objects\vehicles\odst_pod\odst_pod_cinematic
+edittag objects\vehicles\odst_pod\odst_pod_cinematic.scen
+SetField model objects\vehicles\odst_pod\odst_pod_cinematic.hlmt
+savetagchanges
+exit
+
+edittag objects\vehicles\odst_pod\odst_pod_cinematic.hlmt
+SetField animation objects\vehicles\odst_pod\cinematics\main_menu\main_menu.jmad
+savetagchanges
+exit
+
+edittag objects\vehicles\odst_pod\cinematics\main_menu\main_menu.jmad
+SetField animations[0].name any:any:any:idle
+addblockelements modes
+addblockelements modes[0].weaponclass
+addblockelements modes[0].weaponclass[0].weapontype
+addblockelements modes[0].weaponclass[0].weapontype[0].set.actions
+SetField modes[0].name any
+SetField modes[0].weaponclass[0].label any
+SetField modes[0].weaponclass[0].weapontype[0].label any
+SetField modes[0].weaponclass[0].weapontype[0].set.actions[0].label idle
+SetField modes[0].weaponclass[0].weapontype[0].set.actions[0].graphindex -1
+SetField modes[0].weaponclass[0].weapontype[0].set.actions[0].animation 0
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\mainmenu.scnr
+addblockelements skyreferences
+addblockelements ZoneSetPvs 1 0
+addblockelements ZoneSetPvs[0].BspChecksums
+addblockelements ZoneSetPvs[0].StructureBspPvs
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvs
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvs[0].ClusterPvsBitVectors
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvs[0].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvsDoorsClosed
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvsDoorsClosed[0].ClusterPvsBitVectors
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterPvsDoorsClosed[0].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].AttachedSkyIndices
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].VisibleSkyIndices
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].MutipleSkiesVisibleBitvector
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterAudioBitvector
+addblockelements ZoneSetPvs[0].StructureBspPvs[0].ClusterMappings
+addblockelements ZoneSetPvs[0].PortaldeviceMapping 2
+removeblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs 0 11
+removeblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed 0 11
+removeblockelements ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices 0 11
+removeblockelements ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices 0 11
+removeblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterMappings 0 11
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs 4
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[3].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[3].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[3].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[4].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[4].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[4].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[5].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[5].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[5].ClusterPvsBitVectors[1].biTS
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[6].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[6].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[6].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed 4
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[3].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[3].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[3].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[4].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[4].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[4].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[5].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[5].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[5].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[6].ClusterPvsBitVectors 2
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[6].ClusterPvsBitVectors[0].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[6].ClusterPvsBitVectors[1].Bits
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices 4
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices 4
+addblockelements ZoneSetPvs[1].StructureBspPvs[0].ClusterMappings 4
+removeblockelements ZoneSetPvs[1].StructureBspPvs[1].ClusterPvs 0 1
+removeblockelements ZoneSetPvs[1].StructureBspPvs[1].ClusterPvsDoorsClosed 0 1
+removeblockelements ZoneSetPvs[1].StructureBspPvs[1].AttachedSkyIndices 0 1
+removeblockelements ZoneSetPvs[1].StructureBspPvs[1].VisibleSkyIndices 0 1
+addblockelements ZoneSetPvs[1].StructureBspPvs[1].MutipleSkiesVisibleBitvector
+removeblockelements ZoneSetPvs[1].StructureBspPvs[1].ClusterMappings 0 1
+removeblockelements ZoneSetAudibility[0].AiDeafeningPas 0 3
+removeblockelements ZoneSetAudibility[0].RoomDistances 0 92
+removeblockelements ZoneSetAudibility[0].BspClusterToRoomIndices 0 8
+removeblockelements ScenarioClusterData[0].BackgroundSoundEnvironments 0 7
+removeblockelements ScenarioClusterData[0].Unknown 0 7
+removeblockelements ScenarioClusterData[0].Unknown2 0 7
+removeblockelements ScenarioClusterData[0].ClusterCentroids 0 13
+removeblockelements ScenarioClusterData[0].WeatherProperties 0 7
+removeblockelements ScenarioClusterData[0].Fog 0 7
+removeblockelements ScenarioClusterData[0].CameraEffects 0 7
+removeblockelements Scenery 0 5
+removeblockelements SceneryPalette 0 4
+addblockelements Scenery 29
+addblockelements SceneryPalette 19
+copyblockelements LightVolumes 5 1
+pasteblockelements LightVolumes
+pasteblockelements LightVolumes
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\mainmenu.scnr
+SetField maptype MainMenu
+SetField structurebsps[0].StructureBsp levels\ui\mainmenu\bsp_menu.sbsp
+SetField structurebsps[0].Design null
+SetField structurebsps[0].Flags None
+SetField structurebsps[0].DefaultSkyIndex 0
+SetField structurebsps[0].Cubemap levels\atlas\c100\c100_c100_cubemaps.bitm
+SetField structurebsps[0].Wind null
+SetField skyreferences[0].SkyObject levels\atlas\c100\sky\c1_sky.scen
+SetField skyreferences[0].NameIndex 16
+SetField skyreferences[0].ActiveBsps Bsp0
+SetField skyreferences[1].SkyObject levels\atlas\c100\sky\c2_sky.scen
+SetField skyreferences[1].NameIndex 16
+SetField skyreferences[1].ActiveBsps Bsp1
+SetField ZoneSetPvs[0].StructureBspMask Bsp1
+SetField ZoneSetPvs[0].Version 9
+SetField ZoneSetPvs[0].Flags None
+SetField ZoneSetPvs[0].BspChecksums[0].Checksum 504042268
+SetField ZoneSetPvs[0].StructureBspPvs[0].ClusterPvs[0].ClusterPvsBitVectors[0].Bits[0].Bits Bit0
+SetField ZoneSetPvs[0].StructureBspPvs[0].ClusterPvsDoorsClosed[0].ClusterPvsBitVectors[0].Bits[0].Bits Bit0
+SetField ZoneSetPvs[0].StructureBspPvs[0].AttachedSkyIndices[0].SkyIndex 1
+SetField ZoneSetPvs[0].StructureBspPvs[0].VisibleSkyIndices[0].SkyIndex 1
+SetField ZoneSetPvs[1].StructureBspMask Bsp0,Bsp1
+SetField ZoneSetPvs[1].Version 9
+SetField ZoneSetPvs[1].Flags None
+SetField ZoneSetPvs[1].BspChecksums[0].Checksum 471138577
+SetField ZoneSetPvs[1].BspChecksums[1].Checksum 504042268
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[0].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[1].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit3,Bit4,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[2].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[3].ClusterPvsBitVectors[0].Bits[0].Bits Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[4].ClusterPvsBitVectors[0].Bits[0].Bits Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[5].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvs[6].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[0].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[1].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit3,Bit4,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[2].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[3].ClusterPvsBitVectors[0].Bits[0].Bits Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[4].ClusterPvsBitVectors[0].Bits[0].Bits Bit1,Bit2,Bit3,Bit4
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[5].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].ClusterPvsDoorsClosed[6].ClusterPvsBitVectors[0].Bits[0].Bits Bit0,Bit1,Bit5,Bit6
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[0].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[1].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[2].SkyIndex -1
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[3].SkyIndex -1
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[4].SkyIndex -1
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[5].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].AttachedSkyIndices[6].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[0].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[1].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[2].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[3].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[4].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[5].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[0].VisibleSkyIndices[6].SkyIndex 0
+SetField ZoneSetPvs[1].StructureBspPvs[1].ClusterPvs[0].ClusterPvsBitVectors[1].Bits[0].Bits Bit0
+SetField ZoneSetPvs[1].StructureBspPvs[1].ClusterPvsDoorsClosed[0].ClusterPvsBitVectors[1].Bits[0].Bits Bit0
+SetField ZoneSetPvs[1].StructureBspPvs[1].AttachedSkyIndices[0].SkyIndex 1
+SetField ZoneSetPvs[1].StructureBspPvs[1].VisibleSkyIndices[0].SkyIndex 1
+SetField ZoneSetAudibility[0].RoomCount 8
+SetField ZoneSetAudibility[0].RoomDistanceBounds 0.6126021 42.15147
+SetField ZoneSetAudibility[0].AiDeafeningPas[0].EncodedData 220336192
+SetField ZoneSetAudibility[0].RoomDistances[0].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[1].EncodedData 1
+SetField ZoneSetAudibility[0].RoomDistances[2].EncodedData 58
+SetField ZoneSetAudibility[0].RoomDistances[3].EncodedData 48
+SetField ZoneSetAudibility[0].RoomDistances[4].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[5].EncodedData 22
+SetField ZoneSetAudibility[0].RoomDistances[6].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[7].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[8].EncodedData 50
+SetField ZoneSetAudibility[0].RoomDistances[9].EncodedData 40
+SetField ZoneSetAudibility[0].RoomDistances[10].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[11].EncodedData 13
+SetField ZoneSetAudibility[0].RoomDistances[12].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[13].EncodedData 7
+SetField ZoneSetAudibility[0].RoomDistances[14].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[15].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[16].EncodedData -64
+SetField ZoneSetAudibility[0].RoomDistances[17].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[18].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[19].EncodedData 59
+SetField ZoneSetAudibility[0].RoomDistances[20].EncodedData -2
+SetField ZoneSetAudibility[0].RoomDistances[21].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[22].EncodedData 49
+SetField ZoneSetAudibility[0].RoomDistances[23].EncodedData -11
+SetField ZoneSetAudibility[0].RoomDistances[24].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[25].EncodedData 0
+SetField ZoneSetAudibility[0].RoomDistances[26].EncodedData -1
+SetField ZoneSetAudibility[0].RoomDistances[27].EncodedData -1
+SetField ZoneSetAudibility[0].BspClusterToRoomBoundsMappings[0].RoomIndexCount 7
+SetField ZoneSetAudibility[0].BspClusterToRoomBoundsMappings[1].FirstRoomIndex 7
+SetField ZoneSetAudibility[0].BspClusterToRoomBoundsMappings[1].RoomIndexCount 1
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[0].RoomIndex 0
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[1].RoomIndex 1
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[2].RoomIndex 2
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[3].RoomIndex 3
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[4].RoomIndex 4
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[5].RoomIndex 5
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[6].RoomIndex 6
+SetField ZoneSetAudibility[0].BspClusterToRoomIndices[7].RoomIndex 7
+SetField ZoneSets[0].Name main_menu
+SetField ZoneSets[0].PvsIndex 1
+SetField ScenarioClusterData[0].BspChecksum 438046733
+SetField ScenarioClusterData[0].WeatherProperties[0].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[1].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[2].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[3].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[4].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[5].Unknown -1
+SetField ScenarioClusterData[0].WeatherProperties[6].Unknown -1
+SetField ScenarioClusterData[0].Fog[0].Unknown 1
+SetField ScenarioClusterData[0].Fog[1].Unknown -1
+SetField ScenarioClusterData[0].Fog[2].Unknown -1
+SetField ScenarioClusterData[0].Fog[3].Unknown -1
+SetField ScenarioClusterData[0].Fog[4].Unknown -1
+SetField ScenarioClusterData[0].Fog[5].Unknown -1
+SetField ScenarioClusterData[0].Fog[6].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[0].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[1].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[2].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[3].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[4].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[5].Unknown -1
+SetField ScenarioClusterData[0].CameraEffects[6].Unknown -1
+SetField ObjectNames[2].Name elite_appearance
+SetField ObjectNames[3].Name spartan_appearance
+SetField ObjectNames[8].Name appearance_pr
+SetField scenerypalette[0].Object objects\vehicles\odst_pod\odst_pod_cinematic.scen
+SetField scenerypalette[1].Object objects\vehicles\odst_pod\odst_pod.scen
+SetField scenerypalette[2].Object levels\ui\mainmenu\objects\monitor_cheap\monitor_cheap.scen
+SetField scenerypalette[3].Object objects\cinematics\c100sky_reentry_streaks\reentry_streaks.scen
+SetField scenerypalette[4].Object objects\levels\atlas\tether\tether_version_undamaged_c100_sky_drop\tether_version_undamaged_c100_sky_drop.scen
+SetField scenerypalette[5].Object objects\levels\atlas\c100\lowpoly_city\lowpoly_city.scen
+SetField scenerypalette[6].Object objects\levels\atlas\c100\lowpoly_city_top\lowpoly_city_top.scen
+SetField scenerypalette[7].Object objects\levels\atlas\tether\tether_strand_c100\tether_strand_c100.scen
+SetField scenerypalette[8].Object objects\levels\atlas\c100\lowpoly_arcology\lowpoly_arcology.scen
+SetField scenerypalette[9].Object objects\levels\atlas\c100\odst_pod_clamp\odst_pod_clamp.scen
+SetField scenerypalette[10].Object objects\levels\atlas\c100\hologram_table\hologram_table.scen
+SetField scenerypalette[11].Object objects\levels\atlas\c100\hologram_table02\hologram_table02.scen
+SetField scenerypalette[12].Object objects\cinematics\c100sky_reentry_debris\reentry_debris.scen
+SetField scenerypalette[13].Object objects\weapons\rifle\smg_silenced\fp_smg_silenced\fp_smg_silenced.scen
+SetField scenerypalette[14].Object objects\weapons\pistol\automag\automag.scen
+SetField scenerypalette[15].Object objects\levels\atlas\beacons\odst_helmet_beacon\odst_helmet_beacon.scen
+SetField scenerypalette[16].Object objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.scen
+SetField scenerypalette[17].Object objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.scen
+SetField scenerypalette[18].Object objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.scen
+
+SetField Scenery[0].PaletteIndex 0
+SetField Scenery[0].NameIndex -1
+SetField Scenery[0].Position 18.95 3.45 0.52
+SetField Scenery[0].Rotation 0 0 0
+SetField Scenery[0].ObjectId.UniqueId 21284 1
+SetField Scenery[0].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[0].ObjectId.Source Editor
+SetField Scenery[0].BspPolicy Default
+SetField Scenery[0].EditingBoundToBsp -1
+SetField Scenery[0].EditorFolder -1
+SetField Scenery[0].ParentId.NameIndex -1
+SetField Scenery[0].CanAttachToBspFlags 1
+SetField Scenery[0].AiSpawningSquad -1
+SetField Scenery[0].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[1].PaletteIndex 1
+SetField Scenery[1].NameIndex -1
+SetField Scenery[1].Position 20.70669 1.1 -0.2271113
+SetField Scenery[1].Rotation 90 0 0
+SetField Scenery[1].ObjectId.UniqueId 21284 0
+SetField Scenery[1].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[1].ObjectId.Source Editor
+SetField Scenery[1].BspPolicy Default
+SetField Scenery[1].EditingBoundToBsp -1
+SetField Scenery[1].EditorFolder -1
+SetField Scenery[1].ParentId.NameIndex -1
+SetField Scenery[1].CanAttachToBspFlags 1
+SetField Scenery[1].AiSpawningSquad -1
+SetField Scenery[1].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[2].PaletteIndex 1
+SetField Scenery[2].NameIndex -1
+SetField Scenery[2].Position 16.4168 1.199101 -0.1888138
+SetField Scenery[2].Rotation 90 0 0
+SetField Scenery[2].ObjectId.UniqueId 21284 3
+SetField Scenery[2].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[2].ObjectId.Source Editor
+SetField Scenery[2].BspPolicy Default
+SetField Scenery[2].EditingBoundToBsp -1
+SetField Scenery[2].EditorFolder -1
+SetField Scenery[2].ParentId.NameIndex -1
+SetField Scenery[2].CanAttachToBspFlags 1
+SetField Scenery[2].AiSpawningSquad -1
+SetField Scenery[2].Multiplayer.MapVariantParent.NameIndex -1
+
+
+echo monitor
+SetField Scenery[3].PaletteIndex 2
+SetField Scenery[3].NameIndex 1
+SetField Scenery[3].Position 19.485 5.866 0.9
+SetField Scenery[3].Rotation 200 0 0
+SetField Scenery[3].ObjectId.UniqueId 35572 88
+SetField Scenery[3].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[3].ObjectId.Source Editor
+SetField Scenery[3].BspPolicy Default
+SetField Scenery[3].EditingBoundToBsp -1
+SetField Scenery[3].EditorFolder -1
+SetField Scenery[3].ParentId.NameIndex -1
+SetField Scenery[3].CanAttachToBspFlags 1
+SetField Scenery[3].AiSpawningSquad -1
+SetField Scenery[3].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[4].PaletteIndex 1
+SetField Scenery[4].NameIndex -1
+SetField Scenery[4].Position 14.49001 1.191096 -0.2090547
+SetField Scenery[4].Rotation 90 0 0
+SetField Scenery[4].ObjectId.UniqueId 21284 4
+SetField Scenery[4].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[4].ObjectId.Source Editor
+SetField Scenery[4].BspPolicy Default
+SetField Scenery[4].EditingBoundToBsp -1
+SetField Scenery[4].EditorFolder -1
+SetField Scenery[4].ParentId.NameIndex -1
+SetField Scenery[4].CanAttachToBspFlags 1
+SetField Scenery[4].AiSpawningSquad -1
+SetField Scenery[4].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[5].PaletteIndex 1
+SetField Scenery[5].NameIndex -1
+SetField Scenery[5].Position 13.29094 1.208725 -0.2141891
+SetField Scenery[5].Rotation 90 0 0
+SetField Scenery[5].ObjectId.UniqueId 21284 5
+SetField Scenery[5].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[5].ObjectId.Source Editor
+SetField Scenery[5].BspPolicy Default
+SetField Scenery[5].EditingBoundToBsp -1
+SetField Scenery[5].EditorFolder -1
+SetField Scenery[5].ParentId.NameIndex -1
+SetField Scenery[5].CanAttachToBspFlags 1
+SetField Scenery[5].AiSpawningSquad -1
+SetField Scenery[5].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[6].PaletteIndex 15
+SetField Scenery[6].NameIndex -1
+SetField Scenery[6].PlacementFlags.Flags "NotAutomatically"
+SetField Scenery[6].Position 0 0 0
+SetField Scenery[6].Rotation 0 0 0
+SetField Scenery[6].ObjectId.UniqueId 44536 14
+SetField Scenery[6].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[6].ObjectId.Source Editor
+SetField Scenery[6].BspPolicy Default
+SetField Scenery[6].EditingBoundToBsp -1
+SetField Scenery[6].EditorFolder -1
+SetField Scenery[6].ParentId.NameIndex -1
+SetField Scenery[6].CanAttachToBspFlags 3
+SetField Scenery[6].AiSpawningSquad -1
+SetField Scenery[6].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[7].PaletteIndex 3
+SetField Scenery[7].NameIndex -1
+SetField Scenery[7].PlacementFlags.Flags "NotAutomatically"
+SetField Scenery[7].Position 0 0 0
+SetField Scenery[7].Rotation 0 0 0
+SetField Scenery[7].ObjectId.UniqueId 48508 15
+SetField Scenery[7].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[7].ObjectId.Source Editor
+SetField Scenery[7].BspPolicy Default
+SetField Scenery[7].EditingBoundToBsp -1
+SetField Scenery[7].EditorFolder -1
+SetField Scenery[7].ParentId.NameIndex -1
+SetField Scenery[7].CanAttachToBspFlags 3
+SetField Scenery[7].AiSpawningSquad -1
+SetField Scenery[7].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[8].PaletteIndex 5
+SetField Scenery[8].NameIndex -1
+SetField Scenery[8].Position 611.9208 -1371.3 -790.6237
+SetField Scenery[8].Rotation -127.616 0 0
+SetField Scenery[8].Scale 0.45
+SetField Scenery[8].ObjectId.UniqueId 55760 18
+SetField Scenery[8].ObjectId.OriginBspIndex -1
+SetField Scenery[8].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[8].ObjectId.Source Editor
+SetField Scenery[8].BspPolicy ManualBspIndex
+SetField Scenery[8].EditingBoundToBsp -1
+SetField Scenery[8].EditorFolder -1
+SetField Scenery[8].CanAttachToBspFlags 3
+SetField Scenery[8].AiSpawningSquad -1
+SetField Scenery[8].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[9].PaletteIndex 7
+SetField Scenery[9].NameIndex -1
+SetField Scenery[9].Position 611.9208 -1371.3 -790.6237
+SetField Scenery[9].Rotation -127.6159 0 0
+SetField Scenery[9].Scale 0.45
+SetField Scenery[9].ObjectId.UniqueId 32360 22
+SetField Scenery[9].ObjectId.OriginBspIndex -1
+SetField Scenery[9].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[9].ObjectId.Source Editor
+SetField Scenery[9].BspPolicy ManualBspIndex
+SetField Scenery[9].EditingBoundToBsp 0
+SetField Scenery[9].EditorFolder 0
+SetField Scenery[9].CanAttachToBspFlags 3
+SetField Scenery[9].AiSpawningSquad -1
+SetField Scenery[9].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[10].PaletteIndex 5
+SetField Scenery[10].NameIndex -1
+SetField Scenery[10].Position 600.4767 -872.8498 -833.8475
+SetField Scenery[10].Rotation -128.557 0 0
+SetField Scenery[10].Scale 0.4
+SetField Scenery[10].ObjectId.UniqueId 18920 20
+SetField Scenery[10].ObjectId.OriginBspIndex -1
+SetField Scenery[10].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[10].ObjectId.Source Editor
+SetField Scenery[10].BspPolicy ManualBspIndex
+SetField Scenery[10].EditingBoundToBsp -1
+SetField Scenery[10].EditorFolder -1
+SetField Scenery[10].CanAttachToBspFlags 2
+SetField Scenery[10].AiSpawningSquad -1
+SetField Scenery[10].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[11].PaletteIndex 6
+SetField Scenery[11].NameIndex -1
+SetField Scenery[11].Position 600.4767 -872.8498 -833.8475
+SetField Scenery[11].Rotation -128.557 0 0
+SetField Scenery[11].Scale 0.4
+SetField Scenery[11].ObjectId.UniqueId 28352 21
+SetField Scenery[11].ObjectId.OriginBspIndex -1
+SetField Scenery[11].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[11].ObjectId.Source Editor
+SetField Scenery[11].BspPolicy ManualBspIndex
+SetField Scenery[11].EditingBoundToBsp -1
+SetField Scenery[11].EditorFolder -1
+SetField Scenery[11].CanAttachToBspFlags 2
+SetField Scenery[11].AiSpawningSquad -1
+SetField Scenery[11].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[12].PaletteIndex 6
+SetField Scenery[12].NameIndex -1
+SetField Scenery[12].Position 600.4767 -872.8498 -833.8475
+SetField Scenery[12].Rotation -128.557 0 0
+SetField Scenery[12].Scale 0.4
+SetField Scenery[12].ObjectId.UniqueId 36328 23
+SetField Scenery[12].ObjectId.OriginBspIndex -1
+SetField Scenery[12].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[12].ObjectId.Source Editor
+SetField Scenery[12].BspPolicy ManualBspIndex
+SetField Scenery[12].EditingBoundToBsp -1
+SetField Scenery[12].EditorFolder -1
+SetField Scenery[12].CanAttachToBspFlags 2
+SetField Scenery[12].AiSpawningSquad -1
+SetField Scenery[12].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[13].PaletteIndex 10
+SetField Scenery[13].NameIndex -1
+SetField Scenery[13].Position 17.0005 5.00204 0.4703382
+SetField Scenery[13].Rotation 180 0 0
+SetField Scenery[13].ObjectId.UniqueId 30128 24
+SetField Scenery[13].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[13].ObjectId.Source Editor
+SetField Scenery[13].BspPolicy Default
+SetField Scenery[13].EditingBoundToBsp -1
+SetField Scenery[13].EditorFolder -1
+SetField Scenery[13].ParentId.NameIndex -1
+SetField Scenery[13].CanAttachToBspFlags 1
+SetField Scenery[13].AiSpawningSquad -1
+SetField Scenery[13].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[14].PaletteIndex 11
+SetField Scenery[14].NameIndex -1
+SetField Scenery[14].Position 17.0005 5.002038 0.4703382
+SetField Scenery[14].Rotation 180 0 0
+SetField Scenery[14].ObjectId.UniqueId 30128 25
+SetField Scenery[14].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[14].ObjectId.Source Editor
+SetField Scenery[14].BspPolicy Default
+SetField Scenery[14].EditingBoundToBsp -1
+SetField Scenery[14].EditorFolder -1
+SetField Scenery[14].ParentId.NameIndex -1
+SetField Scenery[14].CanAttachToBspFlags 1
+SetField Scenery[14].AiSpawningSquad -1
+SetField Scenery[14].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[2].PaletteIndex 1
+SetField Scenery[2].NameIndex -1
+SetField Scenery[2].Position 17.58835 1.218337 -0.2271113
+SetField Scenery[2].Rotation 90 0 0
+SetField Scenery[2].ObjectId.UniqueId 21284 2
+SetField Scenery[2].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[2].ObjectId.Source Editor
+SetField Scenery[2].BspPolicy Default
+SetField Scenery[2].EditingBoundToBsp -1
+SetField Scenery[2].EditorFolder -1
+SetField Scenery[2].ParentId.NameIndex -1
+SetField Scenery[2].CanAttachToBspFlags 1
+SetField Scenery[2].AiSpawningSquad -1
+SetField Scenery[2].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[16].PaletteIndex 13
+SetField Scenery[16].NameIndex -1
+SetField Scenery[16].Position 20.47025 4.7 0.63
+SetField Scenery[16].Rotation 90 180 45
+SetField Scenery[16].ObjectId.UniqueId 35572 89
+SetField Scenery[16].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[16].ObjectId.Source Editor
+SetField Scenery[16].BspPolicy Default
+SetField Scenery[16].EditingBoundToBsp 0
+SetField Scenery[16].EditorFolder -1
+SetField Scenery[16].ParentId.NameIndex -1
+SetField Scenery[16].CanAttachToBspFlags 1
+SetField Scenery[16].AiSpawningSquad -1
+SetField Scenery[16].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[17].PaletteIndex 13
+SetField Scenery[17].NameIndex -1
+SetField Scenery[17].Position 20.3845 4.7 0.63
+SetField Scenery[17].Rotation 90 180 45
+SetField Scenery[17].ObjectId.UniqueId 35572 90
+SetField Scenery[17].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[17].ObjectId.Source Editor
+SetField Scenery[17].BspPolicy Default
+SetField Scenery[17].EditingBoundToBsp 0
+SetField Scenery[17].EditorFolder -1
+SetField Scenery[17].ParentId.NameIndex -1
+SetField Scenery[17].CanAttachToBspFlags 1
+SetField Scenery[17].AiSpawningSquad -1
+SetField Scenery[17].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[18].PaletteIndex 13
+SetField Scenery[18].NameIndex -1
+SetField Scenery[18].Position 20.29875 4.7 0.63
+SetField Scenery[18].Rotation 90 180 45
+SetField Scenery[18].ObjectId.UniqueId 35572 91
+SetField Scenery[18].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[18].ObjectId.Source Editor
+SetField Scenery[18].BspPolicy Default
+SetField Scenery[18].EditingBoundToBsp 0
+SetField Scenery[18].EditorFolder -1
+SetField Scenery[18].ParentId.NameIndex -1
+SetField Scenery[18].CanAttachToBspFlags 1
+SetField Scenery[18].AiSpawningSquad -1
+SetField Scenery[18].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[19].PaletteIndex 13
+SetField Scenery[19].NameIndex -1
+SetField Scenery[19].Position 20.213 4.7 0.63
+SetField Scenery[19].Rotation 90 180 45
+SetField Scenery[19].ObjectId.UniqueId 35572 92
+SetField Scenery[19].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[19].ObjectId.Source Editor
+SetField Scenery[19].BspPolicy Default
+SetField Scenery[19].EditingBoundToBsp 0
+SetField Scenery[19].EditorFolder -1
+SetField Scenery[19].ParentId.NameIndex -1
+SetField Scenery[19].CanAttachToBspFlags 1
+SetField Scenery[19].AiSpawningSquad -1
+SetField Scenery[19].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[20].PaletteIndex 13
+SetField Scenery[20].NameIndex -1
+SetField Scenery[20].Position 19.791 4.7 0.63
+SetField Scenery[20].Rotation 90 180 45
+SetField Scenery[20].ObjectId.UniqueId 35572 93
+SetField Scenery[20].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[20].ObjectId.Source Editor
+SetField Scenery[20].BspPolicy Default
+SetField Scenery[20].EditingBoundToBsp 0
+SetField Scenery[20].EditorFolder -1
+SetField Scenery[20].ParentId.NameIndex -1
+SetField Scenery[20].CanAttachToBspFlags 1
+SetField Scenery[20].AiSpawningSquad -1
+SetField Scenery[20].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[21].PaletteIndex 13
+SetField Scenery[21].NameIndex -1
+SetField Scenery[21].Position 19.70525 4.7 0.63
+SetField Scenery[21].Rotation 90 180 45
+SetField Scenery[21].ObjectId.UniqueId 35572 94
+SetField Scenery[21].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[21].ObjectId.Source Editor
+SetField Scenery[21].BspPolicy Default
+SetField Scenery[21].EditingBoundToBsp 0
+SetField Scenery[21].EditorFolder -1
+SetField Scenery[21].ParentId.NameIndex -1
+SetField Scenery[21].CanAttachToBspFlags 1
+SetField Scenery[21].AiSpawningSquad -1
+SetField Scenery[21].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[22].PaletteIndex 13
+SetField Scenery[22].NameIndex -1
+SetField Scenery[22].Position 19.6195 4.7 0.63
+SetField Scenery[22].Rotation 90 180 45
+SetField Scenery[22].ObjectId.UniqueId 35572 95
+SetField Scenery[22].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[22].ObjectId.Source Editor
+SetField Scenery[22].BspPolicy Default
+SetField Scenery[22].EditingBoundToBsp 0
+SetField Scenery[22].EditorFolder -1
+SetField Scenery[22].ParentId.NameIndex -1
+SetField Scenery[22].CanAttachToBspFlags 1
+SetField Scenery[22].AiSpawningSquad -1
+SetField Scenery[22].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[23].PaletteIndex 13
+SetField Scenery[23].NameIndex -1
+SetField Scenery[23].Position 19.53375 4.7 0.63
+SetField Scenery[23].Rotation 90 180 45
+SetField Scenery[23].ObjectId.UniqueId 35572 96
+SetField Scenery[23].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[23].ObjectId.Source Editor
+SetField Scenery[23].BspPolicy Default
+SetField Scenery[23].EditingBoundToBsp 0
+SetField Scenery[23].EditorFolder -1
+SetField Scenery[23].ParentId.NameIndex -1
+SetField Scenery[23].CanAttachToBspFlags 1
+SetField Scenery[23].AiSpawningSquad -1
+SetField Scenery[23].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[24].PaletteIndex 14
+SetField Scenery[24].NameIndex -1
+SetField Scenery[24].Position 19.891 4.575 0.51
+SetField Scenery[24].Rotation 0 20 90
+SetField Scenery[24].ObjectId.UniqueId 35572 97
+SetField Scenery[24].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[24].ObjectId.Source Editor
+SetField Scenery[24].BspPolicy Default
+SetField Scenery[24].EditingBoundToBsp 0
+SetField Scenery[24].EditorFolder -1
+SetField Scenery[24].ParentId.NameIndex -1
+SetField Scenery[24].CanAttachToBspFlags 1
+SetField Scenery[24].AiSpawningSquad -1
+SetField Scenery[24].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[25].PaletteIndex 15
+SetField Scenery[25].NameIndex -1
+SetField Scenery[25].Position 19.919 4.572 0.51
+SetField Scenery[25].Rotation -130 -20 -20
+SetField Scenery[25].ObjectId.UniqueId 35572 98
+SetField Scenery[25].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[25].ObjectId.Source Editor
+SetField Scenery[25].BspPolicy Default
+SetField Scenery[25].EditingBoundToBsp 0
+SetField Scenery[25].EditorFolder -1
+SetField Scenery[25].ParentId.NameIndex -1
+SetField Scenery[25].CanAttachToBspFlags 1
+SetField Scenery[25].AiSpawningSquad -1
+SetField Scenery[25].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[26].PaletteIndex 16
+SetField Scenery[26].NameIndex -1
+SetField Scenery[26].Position 20.1025 4.75 0.74
+SetField Scenery[26].Rotation -90 0 -90
+SetField Scenery[26].ObjectId.UniqueId 35572 99
+SetField Scenery[26].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[26].ObjectId.Source Editor
+SetField Scenery[26].BspPolicy Default
+SetField Scenery[26].EditingBoundToBsp 0
+SetField Scenery[26].EditorFolder -1
+SetField Scenery[26].ParentId.NameIndex -1
+SetField Scenery[26].CanAttachToBspFlags 1
+SetField Scenery[26].AiSpawningSquad -1
+SetField Scenery[26].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[27].PaletteIndex 17
+SetField Scenery[27].NameIndex -1
+SetField Scenery[27].Position 20 4.76 0.62
+SetField Scenery[27].Rotation -90 0 -90
+SetField Scenery[27].ObjectId.UniqueId 35572 100
+SetField Scenery[27].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[27].ObjectId.Source Editor
+SetField Scenery[27].BspPolicy Default
+SetField Scenery[27].EditingBoundToBsp 0
+SetField Scenery[27].EditorFolder -1
+SetField Scenery[27].ParentId.NameIndex -1
+SetField Scenery[27].CanAttachToBspFlags 1
+SetField Scenery[27].AiSpawningSquad -1
+SetField Scenery[27].Multiplayer.MapVariantParent.NameIndex -1
+
+
+SetField Scenery[28].PaletteIndex 18
+SetField Scenery[28].NameIndex -1
+SetField Scenery[28].Position 19.905 4.8 0.61
+SetField Scenery[28].Rotation -90 0 -90
+SetField Scenery[28].ObjectId.UniqueId 35572 101
+SetField Scenery[28].ObjectId.Type.Halo3ODST Scenery
+SetField Scenery[28].ObjectId.Source Editor
+SetField Scenery[28].BspPolicy Default
+SetField Scenery[28].EditingBoundToBsp 0
+SetField Scenery[28].EditorFolder -1
+SetField Scenery[28].ParentId.NameIndex -1
+SetField Scenery[28].CanAttachToBspFlags 1
+SetField Scenery[28].AiSpawningSquad -1
+SetField Scenery[28].Multiplayer.MapVariantParent.NameIndex -1
+
+SetField Bipeds[2].Position 17.45 2.5 0.1
+SetField Bipeds[2].Rotation 90 0 0
+SetField Bipeds[3].Position 16.95 2.5 0.1
+SetField Bipeds[3].PlacementFlags.Flags None
+SetField Bipeds[3].Rotation 90 0 0
+
+SetField CutsceneCameraPoints[0].Position 13.225 2.928 0.283
+SetField CutsceneCameraPoints[0].Orientation 318.29 7.38 0
+SetField CutsceneCameraPoints[1].Position 17 1.9 0.174
+SetField CutsceneCameraPoints[1].Orientation 52.62 15.83 0
+SetField CutsceneCameraPoints[2].Position 17.160 5.153 0.808
+SetField CutsceneCameraPoints[2].Orientation 122.97 -1.25 0
+SetField CutsceneCameraPoints[3].Position 13.594 8.370 1.261
+SetField CutsceneCameraPoints[3].Orientation 308.12 -4.78 0
+SetField CutsceneCameraPoints[4].Position 13.836 5.052 0.885
+SetField CutsceneCameraPoints[4].Orientation 267.35 -0.90 0
+
+SetField CutsceneCameraPoints[5].Position 17.3 3.2 1.1
+SetField CutsceneCameraPoints[5].Orientation 102.8 0 -25
+SetField CutsceneCameraPoints[6].Position 17.28 3.8 1.1
+SetField CutsceneCameraPoints[6].Orientation 102.8 0 -25
+SetField CutsceneCameraPoints[7].Position 17.28 3.8 1.1
+SetField CutsceneCameraPoints[7].Orientation 102.8 0 -25
+SetField CutsceneCameraPoints[8].Position 17.28 3.8 1.1
+SetField CutsceneCameraPoints[8].Orientation 102.8 0 -25
+SetField CutsceneCameraPoints[9].Position 17.28 3.8 1.1
+SetField CutsceneCameraPoints[9].Orientation 102.8 0 -25
+
+SetField CutsceneCameraPoints[10].Position 16.45 12 0.3
+SetField CutsceneCameraPoints[10].Orientation 90 0 0
+SetField CutsceneCameraPoints[11].Position 16.45 11 0.3
+SetField CutsceneCameraPoints[11].Orientation 90 0 0
+SetField CutsceneCameraPoints[12].Position 16.45 12 0.3
+SetField CutsceneCameraPoints[12].Orientation 90 0 0
+SetField CutsceneCameraPoints[13].Position 16.45 12 0.3
+SetField CutsceneCameraPoints[13].Orientation 90 0 0
+SetField CutsceneCameraPoints[14].Position 16.45 12 0.3
+SetField CutsceneCameraPoints[14].Orientation 90 0 0
+
+SetField CutsceneCameraPoints[15].Position 18.046 4.074 0.225
+SetField CutsceneCameraPoints[15].Orientation 250 0 -12
+SetField CutsceneCameraPoints[16].Position 17.846 3.973 0.259
+SetField CutsceneCameraPoints[16].Orientation 260 0 -12
+SetField CutsceneCameraPoints[17].Position 17.846 3.973 0.259
+SetField CutsceneCameraPoints[17].Orientation 260 0 -12
+SetField CutsceneCameraPoints[18].Position 17.846 3.973 0.259
+SetField CutsceneCameraPoints[18].Orientation 260 0 -12
+SetField CutsceneCameraPoints[19].Position 17.846 3.973 0.259
+SetField CutsceneCameraPoints[19].Orientation 260 0 -12
+
+SetField CutsceneCameraPoints[20].Position 17.8 4.760 0.836
+SetField CutsceneCameraPoints[20].Orientation 45 0 0
+SetField CutsceneCameraPoints[21].Position 18.086 4.449 0.836
+SetField CutsceneCameraPoints[21].Orientation 57.18 0 0
+SetField CutsceneCameraPoints[22].Position 18.086 4.449 0.836
+SetField CutsceneCameraPoints[22].Orientation 57.18 0 0
+SetField CutsceneCameraPoints[23].Position 18.086 4.449 0.836
+SetField CutsceneCameraPoints[23].Orientation 57.18 0 0 
+SetField CutsceneCameraPoints[24].Position 18.086 4.449 0.836
+SetField CutsceneCameraPoints[24].Orientation 57.18 0 0 
+
+SetField CutsceneCameraPoints[25].Position 19.126 3.693 0.663
+SetField CutsceneCameraPoints[25].Orientation 72.16 0 0
+SetField CutsceneCameraPoints[26].Position 19.419 3.989 0.665
+SetField CutsceneCameraPoints[26].Orientation 76.64 0 0
+SetField CutsceneCameraPoints[27].Position 19.419 3.989 0.665
+SetField CutsceneCameraPoints[27].Orientation 76.64 0 0
+SetField CutsceneCameraPoints[28].Position 19.419 3.989 0.665
+SetField CutsceneCameraPoints[28].Orientation 76.64 0 0
+SetField CutsceneCameraPoints[29].Position 19.419 3.989 0.665
+SetField CutsceneCameraPoints[29].Orientation 76.64 0 0
+
+SetField LightVolumes[6].Position 20 4.56 1
+SetField LightVolumes[6].Rotation 0 180 0
+SetField LightVolumes[7].NameIndex 5
+SetField LightVolumes[7].Position 17.3 2.48 2
+SetField LightVolumes[7].Rotation 0 180 0
+SetField LightVolumePalette[4].Object objects\characters\masterchief\flashlight_3p.ligh
+
+SetField DefaultScreenFx levels\ui\mainmenu\sky\ui.sefc
+SetField SkyParameters levels\ui\mainmenu\sky\menu.skya
+SetField Lightmap levels\ui\mainmenu\mainmenu_faux_lightmap.scenario_lightmap
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\sky\ui.sefc
+SetField ScreenEffects[0].MaximumDistance 10000000000000000000
+SetField ScreenEffects[0].Lifetime 10000000000000000000
+SetField ScreenEffects[0].ExposureBoost 0
+SetField ScreenEffects[0].HueRight 0
+SetField ScreenEffects[0].Saturation 1
+SetField ScreenEffects[0].Desaturation 0
+SetField ScreenEffects[0].ContrastEnhance 0.05
+SetField ScreenEffects[0].GammaEnhance 0.225
+SetField ScreenEffects[0].GammaReduce  0
+SetField ScreenEffects[0].ColorFilter 1 1 1
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\objects\monitor_cheap\monitor_cheap.mode
+SetField Materials[0].RenderMethod objects\characters\monitor\shaders\monitor_base.rmsh
+SetField Materials[1].RenderMethod objects\characters\monitor\shaders\monitor_eye.rmsh
+savetagchanges
+exit
+
+edittag levels\ui\mainmenu\bsp_menu.sbsp
+SetField Materials[22].RenderMethod null
+SetField Materials[23].RenderMethod null
+SetField Materials[24].RenderMethod null
+SetField Materials[25].RenderMethod null
+savetagchanges
+exit
+
+stringid add top_under_line
+stringid add key_over_line
+stringid add key_under_line
+edittag ui\halox\main_menu\main_menu.scn3
+addblockelements groupwidgets[0].definition.bitmapwidgets 4
+SetField GroupWidgets[0].Definition.ListWidgets[0].Definition.Items[0].GuiRenderBlock.Bounds720p -40 0 0 0
+SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 477 102 780 411
+SetField groupwidgets[0].definition.bitmapwidgets[0].definition.blendmethod AlphaBlend
+SetField GroupWidgets[0].Definition.BitmapWidgets[1].Definition.GuiRenderBlock.Bounds720p 780 102 840 411
+SetField groupwidgets[0].definition.bitmapwidgets[1].definition.blendmethod AlphaBlend
+SetField GroupWidgets[0].Definition.BitmapWidgets[2].Definition.GuiRenderBlock.Bounds720p 477 102 840 411
+
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.flags 9
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.guirenderblock.name top_line
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.guirenderblock.RenderDepthBias -10
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.guirenderblock.Bounds720p 476 102 477 411
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\mainmenu_slide_up.wacd
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField groupwidgets[0].definition.bitmapwidgets[4].definition.blendmethod AlphaBlend
+
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.flags 9
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.guirenderblock.name top_under_line
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.guirenderblock.RenderDepthBias -10
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.guirenderblock.Bounds720p 525 102 526 411
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\mainmenu_slide_up.wacd
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField groupwidgets[0].definition.bitmapwidgets[5].definition.blendmethod AlphaBlend
+
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.flags 9
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.guirenderblock.name key_over_line
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.guirenderblock.RenderDepthBias -10
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.guirenderblock.Bounds720p 720 102 721 411
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\mainmenu_slide_up.wacd
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField groupwidgets[0].definition.bitmapwidgets[6].definition.blendmethod AlphaBlend
+
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.flags 9
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.guirenderblock.name key_under_line
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.guirenderblock.RenderDepthBias -10
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.guirenderblock.Bounds720p 780 102 781 411
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\mainmenu_slide_up.wacd
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField groupwidgets[0].definition.bitmapwidgets[7].definition.blendmethod AlphaBlend
+savetagchanges
+exit
+edittag ui\halox\main_menu\main_menu_list.skn3
+SetField BitmapWidgets[0].Definition.GuiRenderBlock.Bounds720p 1 -9 31 300
+savetagchanges
+exit
+
+edittag ui\halox\main_menu\bottom_gradient_ui.bitm
+importbitmap 0 "workingdir\bitmaps\bottom_gradient_ui.dds"
+savetagchanges
+exit
+
+edittag ui\halox\main_menu\mainmenu_bkd.bitm
+importbitmap 0 "workingdir\bitmaps\mainmenu_bkd.dds"
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\channel_campaign_ui_custom.bitm
+importbitmap 0 "workingdir\bitmaps\channel_campaign_ui_custom.dds"
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\channel_campaign_ui.bitm
+importbitmap 0 "workingdir\bitmaps\channel_campaign_ui.dds"
+savetagchanges
+exit
+
+edittag ui\halox\common\common_bitmaps\selection_bkd.bitm
+importbitmap 0 "workingdir\bitmaps\selection_bkd.dds"
+savetagchanges
+exit
+
+stringid add settings_spectator
+edittag ui\halox\pregame_lobby\pregame_lobby_template.grup
+addblockelements bitmapwidgets 6
+SetField bitmapwidgets[4].definition.flags 9
+SetField bitmapwidgets[4].definition.guirenderblock.name title_underline
+SetField bitmapwidgets[4].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[4].definition.guirenderblock.Bounds720p 107 103 108 711
+SetField bitmapwidgets[4].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[4].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[4].definition.blendmethod AlphaBlend
+
+SetField bitmapwidgets[5].definition.flags 9
+SetField bitmapwidgets[5].definition.guirenderblock.name start_overline
+SetField bitmapwidgets[5].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[5].definition.guirenderblock.Bounds720p 178 103 179 711
+SetField bitmapwidgets[5].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[5].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[5].definition.blendmethod AlphaBlend
+
+SetField bitmapwidgets[6].definition.flags 9
+SetField bitmapwidgets[6].definition.guirenderblock.name start_underline
+SetField bitmapwidgets[6].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[6].definition.guirenderblock.Bounds720p 291 103 292 711
+SetField bitmapwidgets[6].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[6].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[6].definition.blendmethod AlphaBlend
+
+SetField bitmapwidgets[7].definition.flags 9
+SetField bitmapwidgets[7].definition.guirenderblock.name key_overline
+SetField bitmapwidgets[7].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[7].definition.guirenderblock.Bounds720p 717 103 718 711
+SetField bitmapwidgets[7].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[7].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[7].definition.blendmethod AlphaBlend
+
+SetField bitmapwidgets[8].definition.flags 9
+SetField bitmapwidgets[8].definition.guirenderblock.name key_underline
+SetField bitmapwidgets[8].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[8].definition.guirenderblock.Bounds720p 790 103 791 711
+SetField bitmapwidgets[8].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[8].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[8].definition.blendmethod AlphaBlend
+
+SetField bitmapwidgets[9].definition.flags 9
+SetField bitmapwidgets[9].definition.guirenderblock.name settings_spectator
+SetField bitmapwidgets[9].definition.guirenderblock.RenderDepthBias -10
+SetField bitmapwidgets[9].definition.guirenderblock.Bounds720p 330 103 331 711
+SetField bitmapwidgets[9].definition.guirenderblock.AnimationCollection ui\halox\main_menu\animations\lobby_slide.wacd
+SetField bitmapwidgets[9].definition.bitmap ui\halox\main_menu\white_gradient_bar.bitm
+SetField bitmapwidgets[9].definition.blendmethod AlphaBlend
+savetagchanges
+exit
+
+edittag ui\halox\main_menu\main_menu.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[2].Definition.Flags 25
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\selection\campaign_select_skulls.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.RenderDepthBias -10
+savetagchanges
+exit
+edittag ui\halox\pregame_lobby\selection\survival_select_skulls.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.RenderDepthBias -10
+savetagchanges
+exit
+
+edittag ui\halox\game_options\game_options_screen.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[1].Definition.GuiRenderBlock.RenderDepthBias -12
+SetField GroupWidgets[0].Definition.BitmapWidgets[5].Definition.GuiRenderBlock.RenderDepthBias -11
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\selection\pregame_selection.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[1].Definition.GuiRenderBlock.RenderDepthBias -12
+SetField GroupWidgets[0].Definition.BitmapWidgets[3].Definition.GuiRenderBlock.RenderDepthBias -11
+SetField GroupWidgets[1].Definition.ListWidgets[0].Definition.Items[8].GuiRenderBlock.Bounds720p 272 0 0 0
+SetField GroupWidgets[1].Definition.ListWidgets[0].Definition.Items[9].GuiRenderBlock.Bounds720p 306 0 0 0
+SetField GroupWidgets[1].Definition.ListWidgets[0].Definition.Items[10].GuiRenderBlock.Bounds720p 340 0 0 0
+SetField GroupWidgets[1].Definition.ListWidgets[0].Definition.Items[11].GuiRenderBlock.Bounds720p 374 0 0 0
+SetField GroupWidgets[1].Definition.ListWidgets[0].Definition.Items[12].GuiRenderBlock.Bounds720p 408 0 0 0
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template.grup
+SetField BitmapWidgets[2].Definition.Flags 25
+SetField BitmapWidgets[2].Definition.GuiRenderBlock.Bounds720p -5 103 845 711
+SetField Flags 33
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\pregame_lobby_template_campaign.grup
+SetField BitmapWidgets[2].Definition.GuiRenderBlock.Bounds720p -5 103 845 711
+savetagchanges
+exit
+
+edittag ui\halox\campaign\campaign_select_level.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.RenderDepthBias -18
+SetField GroupWidgets[0].Definition.BitmapWidgets[5].Definition.GuiRenderBlock.RenderDepthBias -19
+savetagchanges
+exit
+
+edittag ui\halox\pregame_lobby\selection\pregame_survival_level_selection.scn3
+SetField GroupWidgets[0].Definition.BitmapWidgets[0].Definition.GuiRenderBlock.RenderDepthBias -18
+SetField GroupWidgets[0].Definition.BitmapWidgets[5].Definition.GuiRenderBlock.RenderDepthBias -19
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\game_campaign\start_menu_game_campaign.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\game_multiplayer\start_menu_game_multiplayer.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\settings\start_menu_settings.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\hq\start_menu_headquarters.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+SetField groupwidgets[8].Definition.BitmapWidgets[1].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\game_editor\start_menu_game_editor.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+edittag ui\halox\start_menu\panes\game_saved_film\start_menu_game_saved_films.scn3
+SetField groupwidgets[1].Definition.BitmapWidgets[4].Definition.GuiRenderBlock.Bounds720p 91 423 612 1048
+savetagchanges
+exit
+
+Edittag levels\ui\mainmenu\mainmenu.scnr
+AddBlockElements CutsceneCameraPoints
+SetField CutsceneCameraPoints[10].Position 17 12 0.3
+SetField CutsceneCameraPoints[11].Position 17 11 0.3
+SetField CutsceneCameraPoints[12].Position 17 12 0.3
+SetField CutsceneCameraPoints[13].Position 17 12 0.3
+SetField CutsceneCameraPoints[14].Position 17 12 0.3
+SetField CutsceneCameraPoints[*].Name settings_cam
+SetField CutsceneCameraPoints[*].Position 17.1176 10.2102 0.185
+SetField CutsceneCameraPoints[*].Orientation 132.8348 0.6105 -0.6585
+savetagchanges
+exit
+
+Edittag levels\ui\mainmenu\mainmenu.scnr
+CompileScripts "workingdir\scenarios\scripts\menu.hsc"
+savetagchanges
+exit
 
 ## echo Replace ODST logo
 edittag ui\halox\main_menu\halo3_logo_ui.bitmap
@@ -3635,10 +4803,24 @@ edittag levels\atlas\shared\decals\graffiti\bitmaps\graffiti_glassthis.bitmap
 importbitmap 0 workingdir\bitmaps\graffiti_glassthis.dds
 exit
 
+////////////////////////////////////////////////////////////////////////////////
+// CLEANSE, SAVE AND QUIT
+////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////
-// SAVE AND QUIT
-////////////////////////////////////////////////////////////////////////////////
+SaveModPackage "modsfolder\ODSTAMP.pak"
+ExitModPackage
+
+CreateModPackage 1 large
+ODST Anniversary Multiplayer
+ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
+Vegetal & AMP Collective
+0.3
+MainMenu Multiplayer Character
+
+openmodpackage modsfolder\ODSTAMP.pak
+ApplyModPackageTags
+Done
+ExitModPackage
 
 AddModFiles "workingdir\assets"
 

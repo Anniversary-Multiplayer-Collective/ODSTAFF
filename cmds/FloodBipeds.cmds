@@ -1,6 +1,1287 @@
-OpenModPackage "workingdir\paks\FloodCombatBipeds.pak"
-applymodpackage
-exitmodpackage
+opencachefile h3maps\110_hc.map
+porttag objects\characters\floodcombat_human\floodcombat_human.biped
+porttag objects\characters\flood_tank\flood_tank.biped
+porttag objects\characters\floodcombat_elite\floodcombat_elite.biped
+porttag objects\characters\floodcombat_brute\floodcombat_brute.biped
+porttag sound\dialog\combat\flood_tank.dialogue
+exit
+
+duplicatetag sound\weapons\needler\dryfire.effe objects\characters\floodcombat\screech_general
+edittag objects\characters\floodcombat\screech_general.effe
+setfield events[0].parts[0].type sound\dialog\combat\flood_gm2\floodcombat\charge.snd!
+setfield events[0].durationbounds 5 5
+copyblockelements events
+pasteblockelements events
+setfield Events[1].Name event_1
+setfield events[1].parts[0].type sound\default_silent.snd!
+setfield LoopStartEvent 1
+savetagchanges
+exit
+
+duplicatetag objects\characters\floodcombat\screech_general.effe objects\characters\floodcombat_brute\floodcombat_brute_screech
+duplicatetag objects\characters\floodcombat\screech_general.effe objects\characters\flood_tank\screech_tank
+
+edittag objects\characters\floodcombat_brute\floodcombat_brute_screech.effe
+setfield events[0].parts[0].type sound\dialog\combat\flood_gm1\floodcombat_brute\charge.snd!
+savetagchanges
+exit
+edittag objects\characters\flood_tank\screech_tank.effe
+setfield events[0].parts[0].type sound\dialog\combat\flood_tank\charge.snd!
+savetagchanges
+exit
+
+EditTag globals\flood_vision.vision_mode
+SetField WeaponPingColor.DefaultIntensity 0
+SetField WeaponPingColor.PingIntensity 0
+SetField EnvironmentPingColor.DefaultColourFunction.Data 01340100091B180000000000000000000E0E0E00000000000000000000000000
+SetField EnvironmentPingColor.DefaultIntensity 0.6
+SetField EnvironmentPingColor.PingIntensity 2
+SetField MaskBitmap ui\halox\common\common_bitmaps\white.bitmap
+SaveTagChanges
+Exit
+
+DuplicateTag fx\screen_fx\vision_mode.area_screen_effect objects\characters\flood\vision
+EditTag objects\characters\flood\vision.area_screen_effect
+RemoveBlockElements ScreenEffects * 2
+SetField ScreenEffects[0].Lifetime 0
+SetField ScreenEffects[0].ExposureBoost 0 
+SetField ScreenEffects[0].Desaturation 0
+SetField ScreenEffects[0].ContrastEnhance 0
+SetField ScreenEffects[0].GammaEnhance 0
+SetField ScreenEffects[0].ColorFilter 1 1 1
+SetField ScreenEffects[0].VisionMode 1
+SetField ScreenEffects[0].VisionNoise 0
+SetField ScreenEffects[0].ScreenShader null
+SaveTagChanges
+Exit
+
+DuplicateTag objects\equipment\vision_equipment\fx\activate.effect objects\characters\flood\vision
+EditTag objects\characters\flood\vision.effect
+SetField Flags None
+SetField LoopStartEvent 0
+SetField Locations[0].MarkerName root
+SetField Events[0].Name event_0
+SetField Events[0].Flags None
+SetField Events[0].DurationBounds 1 1
+SetField Events[0].Parts[0].RuntimeBaseGroupTag sefc
+SetField Events[0].Parts[0].Type objects\characters\flood\vision.area_screen_effect
+SaveTagChanges
+Exit
+
+EditTag objects\characters\floodcombat_base\ai\floodcombat_base.character
+SetField MovementProperties[0].FlagsODST DisallowCrouch,CureIsolationJump
+SaveTagChanges
+Exit
+
+duplicatetag objects\characters\masterchief\mp_masterchief\fp\fp.render_model objects\characters\floodcombat_human\fp
+edittag objects\characters\floodcombat_human\fp.render_model
+replacerendergeometry "workingdir\models\flood_human_arms.dae" TriangleList
+setfield materials[0].rendermethod objects\characters\floodcombat_human\shaders\floodcombat_human.shader
+savetagchanges
+exit
+
+duplicatetag objects\characters\floodcombat_human\floodcombat_human.mode objects\characters\floodcombat_human\fp_body
+edittag objects\characters\floodcombat_human\fp_body.mode
+setfield materials[0].rendermethod fx\null_object\shaders\invisible.shader
+foreach geometry.meshes[0].parts setfield materialindex 0
+foreach geometry.meshes[5].parts setfield materialindex 0
+foreach geometry.meshes[3].parts setfield materialindex 0
+foreach geometry.meshes[7].parts setfield materialindex 0
+foreach geometry.meshes[4].parts setfield materialindex 0
+foreach geometry.meshes[8].parts setfield materialindex 0
+savetagchanges
+exit
+
+duplicatetag objects\characters\floodcombat_elite\floodcombat_elite.mode objects\characters\floodcombat_elite\fp_body
+edittag objects\characters\floodcombat_elite\fp_body.mode
+replacerendergeometry "workingdir\models\flood_elite_legs.dae" TriangleList
+setfield materials[0].rendermethod fx\null_object\shaders\invisible.shader
+setfield materials[1].rendermethod objects\characters\floodcombat_elite\shaders\floodcombat_elite.shader
+setfield materials[2].rendermethod objects\characters\floodcombat_elite\shaders\floodcombat_elite_armour.shader
+foreach geometry.meshes[0].parts setfield materialindex 0
+foreach geometry.meshes[1].parts setfield materialindex 0
+foreach geometry.meshes[2].parts setfield materialindex 0
+foreach geometry.meshes[3].parts setfield materialindex 0
+foreach geometry.meshes[5].parts setfield materialindex 0
+foreach geometry.meshes[6].parts setfield materialindex 0
+foreach geometry.meshes[7].parts setfield materialindex 0
+foreach geometry.meshes[8].parts setfield materialindex 0
+savetagchanges
+exit
+		
+duplicatetag objects\characters\floodcombat_brute\floodcombat_brute.mode objects\characters\floodcombat_brute\fp_body
+edittag objects\characters\floodcombat_brute\fp_body.mode
+setfield materials[0].rendermethod fx\null_object\shaders\invisible.shader
+foreach geometry.meshes[3].parts setfield materialindex 0
+foreach geometry.meshes[6].parts setfield materialindex 0
+foreach geometry.meshes[0].parts setfield materialindex 0
+foreach geometry.meshes[4].parts setfield materialindex 0
+foreach geometry.meshes[2].parts setfield materialindex 0
+foreach geometry.meshes[5].parts setfield materialindex 0
+savetagchanges
+exit
+
+duplicatetag objects\characters\masterchief\mp_masterchief\fp\fp.mode objects\characters\flood_tank\fp
+edittag objects\characters\flood_tank\fp.mode
+replacerendergeometry "workingdir\models\flood_tank_arms.dae" TriangleList
+setfield materials[0].rendermethod objects\characters\flood_tank\shaders\flood_tank.shader
+savetagchanges
+exit
+
+duplicatetag objects\characters\flood_tank\flood_tank.mode objects\characters\flood_tank\fp_body
+edittag objects\characters\flood_tank\fp_body.mode
+replacerendergeometry "workingdir\models\flood_tank_body.dae" TriangleList
+setfield materials[0].rendermethod fx\null_object\shaders\invisible.shader
+setfield materials[1].rendermethod objects\characters\flood_tank\shaders\flood_tank.shader
+foreach geometry.meshes[0].parts setfield materialindex 1
+foreach geometry.meshes[1].parts setfield materialindex 0
+foreach geometry.meshes[2].parts setfield materialindex 0
+savetagchanges
+exit
+
+#DuplicateTag ui\chud\sword.chud_definition ui\chud\flood_arm
+#EditTag ui\chud\flood_arm.chdt
+#Removeblockelements HudWidgets 4 2
+#Removeblockelements HudWidgets 0 3
+##SetField HudWidgets[0].BitmapWidgets[0].StateData[0].WeaponTargetFlags EnemyTarget
+#SetField HudWidgets[0].BitmapWidgets[0].Bitmap ui\chud\flood_arm\reticle.bitmap
+#SetField HudWidgets[0].BitmapWidgets[0].BitmapSequenceIndex 0
+#savetagchanges
+#exit
+
+foreach mode named: flood_arm Foreach Materials SetField RenderMethod null
+foreach hlmt named: flood_arm SetField RenderModel objects\weapons\melee\flood_arm\flood_arm.mode
+
+EditTag objects\weapons\melee\flood_arm\flood_arm.weap
+SetField Model objects\weapons\melee\flood_arm\flood_arm.hlmt
+SetField MaterialEffects fx\material_effects\objects\characters\flood_combatform.foot
+RemoveBlockElements Functions 0 *
+RemoveBlockElements Attachments 0 *
+SetField FirstPerson[0].FirstPersonModel objects\weapons\melee\flood_arm\flood_arm.render_model
+SetField FirstPerson[0].FirstPersonAnimations objects\weapons\melee\flood_arm\flood_arm.jmad
+SetField HudInterface null
+SetField PickupMessage null
+SetField SwapMessage null
+SetField PickedUpMessage null
+SetField SwitchToMessage null
+SetField DetonationDelay 0.01 0.02
+SetField DetonatingEffect fx\decals\blood_splats\decal_spawn_effects\flood_medium.effect
+#SetField WeaponFlags.NewFlags DetonatesWhenDropped,MeleeOnly,AllowsUnaimedLunge
+SetField WeaponFlags.NewFlags DetonatesWhenDropped,CannotFireAtMaximumAge,UsesEmptyMeleeOnEmpty,MeleeOnly,AllowsUnaimedLunge
+#setfield MeleeDamageParameters.FirstHitMeleeDamage objects\weapons\damage_effects\flood_arm.jpt!
+#setfield MeleeDamageParameters.LungeMeleeDamage objects\weapons\damage_effects\flood_arm.jpt!
+SetField ClangEffect null
+SetField AgedWeapon objects\weapons\melee\flood_arm\flood_arm.weap
+#SetField HudInterface ui\chud\flood_arm.chdt
+SetField CenteredFirstPersonWeaponOffset 0 0 -0.01
+SaveTagChanges
+Exit
+
+EditTag objects\weapons\melee\flood_arm\flood_arm.jmad
+SetField SoundReferences[0].Reference null 
+SetField SoundReferences[1].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField SoundReferences[2].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField SoundReferences[3].Reference null
+SetField SoundReferences[4].Reference null
+SetField SoundReferences[5].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField SoundReferences[6].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField SoundReferences[7].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField SoundReferences[8].Reference sound\dialog\combat\flood_gm2\floodcombat\melee.snd!
+SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[12].Animation 12
+SetField Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[13].Animation 12
+SaveTagChanges
+Exit
+
+duplicatetag objects\weapons\damage_effects\dash_melee.jpt! objects\weapons\damage_effects\flood_tank_arm
+edittag objects\weapons\damage_effects\flood_tank_arm.jpt!
+setfield InstantaneousAcceleration 4.5
+setfield PlayerResponses[0].ScreenFlash.Color 0.75 1 0 0.00784314
+savetagchanges
+exit
+
+duplicatetag objects\weapons\melee\flood_arm\flood_arm.weap objects\weapons\melee\flood_tank_arm\flood_tank_arm
+edittag objects\weapons\melee\flood_tank_arm\flood_tank_arm.weap
+SetField AgedWeapon objects\weapons\melee\flood_arm\flood_arm.weap
+setfield MeleeDamageParameters.FirstHitMeleeDamage objects\weapons\damage_effects\flood_tank_arm.jpt!
+setfield MeleeDamageParameters.LungeMeleeDamage objects\weapons\damage_effects\flood_tank_arm.jpt!
+Savetagchanges
+exit
+
+edittag objects\characters\flood_tank\flood_tank.model
+setfield Materials[1].GlobalMaterialName hard_floodflesh_pureform
+setfield Materials[1].GlobalMaterialIndex 88
+Savetagchanges
+exit
+
+GenerateBitmap ui\chud\bitmaps\flood_fp_mask "workingdir\bitmaps\floodscreen_color.dds"
+
+duplicatetag ui\chud\bitmaps\gravemind_tile.bitmap ui\chud\bitmaps\flood_damage_mask
+edittag ui\chud\bitmaps\flood_damage_mask.bitm
+ImportBitmap 0 "workingdir\bitmaps\floodscreen_bw.dds"
+SaveTagChanges
+Exit
+
+DuplicateTag ui\chud\animations\vox1.chad ui\chud\animations\flood_fp
+EditTag ui\chud\animations\flood_fp.chad
+AddBlockElements Position 1
+AddBlockElements Position[0].Keyframes 5
+SetField Position[0].Keyframes[0].TimeOffset 0
+SetField Position[0].Keyframes[0].Position 0 0 0
+SetField Position[0].Keyframes[1].TimeOffset 14
+SetField Position[0].Keyframes[1].Position 0 0 4
+SetField Position[0].Keyframes[2].TimeOffset 700
+SetField Position[0].Keyframes[2].Position 0 0 0
+SetField Position[0].Keyframes[3].TimeOffset 720
+SetField Position[0].Keyframes[3].Position 5 5 0
+SetField Position[0].Keyframes[4].TimeOffset 740
+SetField Position[0].Keyframes[4].Position 0 0 -3
+SetField Position[0].Function.Data 02340000000000000000803F000000000000000000000000000000000C00000000000000000000000000803F
+AddBlockElements Scale[0].Keyframes 3
+SetField Scale[0].Keyframes[0].TimeOffset 0
+SetField Scale[0].Keyframes[0].Scale 0.97 0.97
+SetField Scale[0].Keyframes[1].TimeOffset 1000
+SetField Scale[0].Keyframes[1].Scale 1 1
+SetField Scale[0].Keyframes[2].TimeOffset 1300
+SetField Scale[0].Keyframes[2].Scale 0.98 0.98
+SetField Scale[0].Keyframes[3].TimeOffset 1800
+SetField Scale[0].Keyframes[3].Scale 1.03 1.03
+SetField Scale[0].Keyframes[4].TimeOffset 2500
+SetField Scale[0].Keyframes[4].Scale 0.97 0.97
+SetField Alpha[0].Keyframes[1].ScalarValue 1
+SetField Alpha[0].Keyframes[2].ScalarValue 1
+SetField RuntimePeriodMsec 2500
+SaveTagChanges
+Exit
+
+duplicatetag ui\chud\elite.chdt ui\chud\flood_combat
+EditTag ui\chud\flood_combat.chdt
+Foreach HudWidgets SetField ParallaxData null
+RemoveBlockElements HudWidgets * 1
+RemoveBlockElements HudWidgets[16].bitmapwidgets 0 *
+RemoveBlockElements HudWidgets[16].textwidgets 0 *
+AddBlockElements HudWidgets[0].BitmapWidgets 4
+AddBlockElements HudWidgets[0].BitmapWidgets[6].AnimationData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[6].PlacementData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[6].RenderData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[6].StateData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[7].AnimationData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[7].PlacementData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[7].RenderData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[7].StateData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[8].AnimationData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[8].PlacementData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[8].RenderData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[8].StateData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[9].AnimationData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[9].PlacementData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[9].RenderData 1
+AddBlockElements HudWidgets[0].BitmapWidgets[9].StateData 1
+SetField HudWidgets[0].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\flood_fp.chad
+SetField HudWidgets[0].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[0].Bitmap ui\chud\bitmaps\flood_fp_mask.bitm
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 0
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.3 1.5
+SetField HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
+SetField HudWidgets[0].BitmapWidgets[0].RenderData[0].ShaderType DirectionalDamageApply
+SetField HudWidgets[0].BitmapWidgets[0].StateData[0].WindowState _720pFullscreen
+SetField HudWidgets[0].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[1].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[1].Flags MirrorHorizontally
+SetField HudWidgets[0].BitmapWidgets[1].PlacementData[0].Origin -2.8 0
+SetField HudWidgets[0].BitmapWidgets[1].StateData[0].WindowState _720pFullscreen
+SetField HudWidgets[0].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[2].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[2].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[2].Flags MirrorHorizontally,MirrorVertically
+SetField HudWidgets[0].BitmapWidgets[2].PlacementData[0].Origin 1.0104 5.69
+SetField HudWidgets[0].BitmapWidgets[2].StateData[0].WindowState _720pFullscreen
+SetField HudWidgets[0].BitmapWidgets[3].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[3].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[3].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[3].Flags MirrorVertically
+SetField HudWidgets[0].BitmapWidgets[3].Name upper_right_corner_480
+SetField HudWidgets[0].BitmapWidgets[3].PlacementData[0].Offset 0 102
+SetField HudWidgets[0].BitmapWidgets[3].PlacementData[0].Origin 0 -2.7
+SetField HudWidgets[0].BitmapWidgets[3].PlacementData[0].Scale 1.215 -1.2
+SetField HudWidgets[0].BitmapWidgets[3].RuntimeWidgetIndex 3
+SetField HudWidgets[0].BitmapWidgets[3].StateData[0].WindowState _480iFullscreen
+SetField HudWidgets[0].BitmapWidgets[4].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[4].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[4].Bitmap ui\chud\bitmaps\elite_480_middle.bitm
+SetField HudWidgets[0].BitmapWidgets[4].Flags MirrorHorizontally
+SetField HudWidgets[0].BitmapWidgets[4].Name center_480
+SetField HudWidgets[0].BitmapWidgets[4].PlacementData[0].Anchor Parent
+SetField HudWidgets[0].BitmapWidgets[4].PlacementData[0].Offset 0 -10
+SetField HudWidgets[0].BitmapWidgets[4].PlacementData[0].Origin 1.0155 16.01
+SetField HudWidgets[0].BitmapWidgets[4].PlacementData[0].Scale -1.46 -1.12
+SetField HudWidgets[0].BitmapWidgets[4].RuntimeWidgetIndex 4
+SetField HudWidgets[0].BitmapWidgets[4].StateData[0].WindowState _480iFullscreen
+SetField HudWidgets[0].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[5].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[5].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[5].Name lower_corners_480
+SetField HudWidgets[0].BitmapWidgets[5].PlacementData[0].Offset 0 100
+SetField HudWidgets[0].BitmapWidgets[5].PlacementData[0].Origin -3.2 0.8
+SetField HudWidgets[0].BitmapWidgets[5].PlacementData[0].Scale 1.4 1.4
+SetField HudWidgets[0].BitmapWidgets[5].RuntimeWidgetIndex 5
+SetField HudWidgets[0].BitmapWidgets[5].StateData[0].WindowState _480iFullscreen
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Active.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Active.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Active.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Flashing.Animation null
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Flashing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Flashing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Flashing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Impulse.Animation null
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Impulse.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Impulse.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Impulse.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Initializing.Animation ui\chud\animations\center_dimming.chad
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Initializing.Animation ui\chud\animations\center_dimming.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Initializing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Initializing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Initializing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Readying.Animation null
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Readying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Readying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Readying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Unreadying.Animation null
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Unreadying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Unreadying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[6].AnimationData[0].Unreadying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[6].BaseFlags None
+SetField HudWidgets[0].BitmapWidgets[6].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[6].BitmapSequenceIndex 0
+SetField HudWidgets[0].BitmapWidgets[6].Flags MirrorHorizontally
+SetField HudWidgets[0].BitmapWidgets[6].Name center_480
+SetField HudWidgets[0].BitmapWidgets[6].PlacementData[0].Anchor Center
+SetField HudWidgets[0].BitmapWidgets[6].PlacementData[0].AnchorFlags 0
+SetField HudWidgets[0].BitmapWidgets[6].PlacementData[0].Offset -3 0
+SetField HudWidgets[0].BitmapWidgets[6].PlacementData[0].Origin 1.0155 4.58
+SetField HudWidgets[0].BitmapWidgets[6].PlacementData[0].Scale 2 2.75
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].BlendModeHO AlphaBlend
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].ExternalInput Zero
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalColorA 0 255 255 255
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalColorB 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalColorC 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalColorD 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalScalarA 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalScalarB 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalScalarC 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].LocalScalarD 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputColorF LocalA
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarA Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarB Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarC Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarD Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarE Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].OutputScalarF Input
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].RangeInput Zero
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].ScissorRect 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[6].RenderData[0].ShaderType ReallySimple
+SetField HudWidgets[0].BitmapWidgets[6].RuntimeWidgetIndex 6
+SetField HudWidgets[0].BitmapWidgets[6].ScriptingClass UseParent
+SetField HudWidgets[0].BitmapWidgets[6].SortLayer Inherited
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].ConsumableState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].DifficultyState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].EnergyMeterState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].GameEngineStateHO None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].GameState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].GameTeam None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].HiddenState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].HindsightState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].MiscState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].NonWeaponFlashHO None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].NotHiddenState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SandboxState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SkinState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SkullState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SurvivalLivesState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SurvivalRoundState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].SurvivalWaveState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitArmedState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitImpulseStateHO None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitMiscState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnitZoomState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponArmedStateHO None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponCrosshairState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponFlash None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponImpulseState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WeaponMiscState None
+SetField HudWidgets[0].BitmapWidgets[6].StateData[0].WindowState _480iFullscreen
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Active.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Active.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Active.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Flashing.Animation null
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Flashing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Flashing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Flashing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Impulse.Animation null
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Impulse.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Impulse.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Impulse.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Initializing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Initializing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Initializing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Readying.Animation null
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Readying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Readying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Readying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Unreadying.Animation null
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Unreadying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Unreadying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[7].AnimationData[0].Unreadying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[7].BaseFlags None
+SetField HudWidgets[0].BitmapWidgets[7].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[7].BitmapSequenceIndex 0
+SetField HudWidgets[0].BitmapWidgets[7].Flags MirrorHorizontally
+SetField HudWidgets[0].BitmapWidgets[7].Name upper_corners_480_wide
+SetField HudWidgets[0].BitmapWidgets[7].PlacementData[0].Anchor Parent
+SetField HudWidgets[0].BitmapWidgets[7].PlacementData[0].AnchorFlags 0
+SetField HudWidgets[0].BitmapWidgets[7].PlacementData[0].Offset 0 109.5
+SetField HudWidgets[0].BitmapWidgets[7].PlacementData[0].Origin -2.4 0
+SetField HudWidgets[0].BitmapWidgets[7].PlacementData[0].Scale 1.8000001 -1.8000001
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].BlendModeHO AlphaBlend
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].ExternalInput Zero
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalColorA 0 255 255 255
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalColorB 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalColorC 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalColorD 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalScalarA 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalScalarB 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalScalarC 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].LocalScalarD 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputColorF LocalA
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarA Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarB Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarC Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarD Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarE Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].OutputScalarF Input
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].RangeInput Zero
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].ScissorRect 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[7].RenderData[0].ShaderType ReallySimple
+SetField HudWidgets[0].BitmapWidgets[7].RuntimeWidgetIndex 7
+SetField HudWidgets[0].BitmapWidgets[7].ScriptingClass UseParent
+SetField HudWidgets[0].BitmapWidgets[7].SortLayer Inherited
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].ConsumableState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].DifficultyState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].EnergyMeterState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].GameEngineStateHO None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].GameState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].GameTeam None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].HiddenState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].HindsightState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].MiscState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].NonWeaponFlashHO None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].NotHiddenState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SandboxState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SkinState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SkullState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SurvivalLivesState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SurvivalRoundState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].SurvivalWaveState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitArmedState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitImpulseStateHO None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitMiscState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnitZoomState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponArmedStateHO None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponCrosshairState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponFlash None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponImpulseState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WeaponMiscState None
+SetField HudWidgets[0].BitmapWidgets[7].StateData[0].WindowState _480pFullscreen
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Active.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Active.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Active.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Flashing.Animation null
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Flashing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Flashing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Flashing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Impulse.Animation null
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Impulse.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Impulse.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Impulse.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Initializing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Initializing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Initializing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Readying.Animation null
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Readying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Readying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Readying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Unreadying.Animation null
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Unreadying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Unreadying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[8].AnimationData[0].Unreadying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[8].BaseFlags None
+SetField HudWidgets[0].BitmapWidgets[8].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[8].BitmapSequenceIndex 0
+SetField HudWidgets[0].BitmapWidgets[8].Flags MirrorHorizontally,MirrorVertically
+SetField HudWidgets[0].BitmapWidgets[8].Name center_480_wide
+SetField HudWidgets[0].BitmapWidgets[8].PlacementData[0].Anchor Center
+SetField HudWidgets[0].BitmapWidgets[8].PlacementData[0].AnchorFlags 0
+SetField HudWidgets[0].BitmapWidgets[8].PlacementData[0].Offset 0 0
+SetField HudWidgets[0].BitmapWidgets[8].PlacementData[0].Origin 1.01 9
+SetField HudWidgets[0].BitmapWidgets[8].PlacementData[0].Scale 1.3050001 0.90000004
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].BlendModeHO AlphaBlend
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].ExternalInput Zero
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalColorA 0 255 255 255
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalColorB 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalColorC 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalColorD 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalScalarA 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalScalarB 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalScalarC 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].LocalScalarD 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputColorF LocalA
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarA Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarB Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarC Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarD Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarE Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].OutputScalarF Input
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].RangeInput Zero
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].ScissorRect 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[8].RenderData[0].ShaderType ReallySimple
+SetField HudWidgets[0].BitmapWidgets[8].RuntimeWidgetIndex 8
+SetField HudWidgets[0].BitmapWidgets[8].ScriptingClass UseParent
+SetField HudWidgets[0].BitmapWidgets[8].SortLayer Inherited
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].ConsumableState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].DifficultyState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].EnergyMeterState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].GameEngineStateHO None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].GameState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].GameTeam None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].HiddenState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].HindsightState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].MiscState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].NonWeaponFlashHO None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].NotHiddenState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SandboxState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SkinState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SkullState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SurvivalLivesState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SurvivalRoundState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].SurvivalWaveState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitArmedState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitImpulseStateHO None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitMiscState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnitZoomState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponArmedStateHO None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponCrosshairState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponFlash None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponImpulseState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WeaponMiscState None
+SetField HudWidgets[0].BitmapWidgets[8].StateData[0].WindowState _480pFullscreen
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Active.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Active.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Active.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Flashing.Animation null
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Flashing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Flashing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Flashing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Impulse.Animation null
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Impulse.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Impulse.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Impulse.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chad
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Initializing.Animation ui\chud\animations\dimming.chud_animation_definition
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Initializing.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Initializing.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Initializing.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Readying.Animation null
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Readying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Readying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Readying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Unreadying.Animation null
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Unreadying.Flags 0
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Unreadying.InputType Time
+SetField HudWidgets[0].BitmapWidgets[9].AnimationData[0].Unreadying.StateUnknown 0
+SetField HudWidgets[0].BitmapWidgets[9].BaseFlags None
+SetField HudWidgets[0].BitmapWidgets[9].Bitmap null
+SetField HudWidgets[0].BitmapWidgets[9].BitmapSequenceIndex 0
+SetField HudWidgets[0].BitmapWidgets[9].Flags MirrorHorizontally
+SetField HudWidgets[0].BitmapWidgets[9].Name lower_corners_480_wide
+SetField HudWidgets[0].BitmapWidgets[9].PlacementData[0].Anchor BottomCenter
+SetField HudWidgets[0].BitmapWidgets[9].PlacementData[0].AnchorFlags 0
+SetField HudWidgets[0].BitmapWidgets[9].PlacementData[0].Offset 0 0
+SetField HudWidgets[0].BitmapWidgets[9].PlacementData[0].Origin -2.4 0
+SetField HudWidgets[0].BitmapWidgets[9].PlacementData[0].Scale 1.8000001 1.8000001
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].BlendModeHO AlphaBlend
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].ExternalInput Zero
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalColorA 0 255 255 255
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalColorB 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalColorC 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalColorD 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalScalarA 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalScalarB 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalScalarC 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].LocalScalarD 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputColorF LocalA
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarA Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarB Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarC Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarD Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarE Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].OutputScalarF Input
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].RangeInput Zero
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].ScissorRect 0 0 0 0
+SetField HudWidgets[0].BitmapWidgets[9].RenderData[0].ShaderType ReallySimple
+SetField HudWidgets[0].BitmapWidgets[9].RuntimeWidgetIndex 9
+SetField HudWidgets[0].BitmapWidgets[9].ScriptingClass UseParent
+SetField HudWidgets[0].BitmapWidgets[9].SortLayer Inherited
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].ConsumableState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].DifficultyState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].EnergyMeterState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].GameEngineStateHO None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].GameState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].GameTeam None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].HiddenState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].HindsightState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].MiscState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].NonWeaponFlashHO None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].NotHiddenState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SandboxState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SkinState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SkullState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SurvivalLivesState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SurvivalRoundState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].SurvivalWaveState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitArmedState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitImpulseStateHO None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitMiscState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnitZoomState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].UnknownState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponArmedStateHO None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponCrosshairState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponFlash None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponImpulseState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WeaponMiscState None
+SetField HudWidgets[0].BitmapWidgets[9].StateData[0].WindowState _480pFullscreen
+SetField HudWidgets[10].BitmapWidgets[0].Bitmap ui\chud\bitmaps\scopes\elite_binocs.bitm
+SetField HudWidgets[10].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\clockwise.chad
+SetField HudWidgets[10].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\elite_compass.bitm
+SetField HudWidgets[10].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\counterclockwise.chad
+SetField HudWidgets[10].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\elite_pitch.bitm
+SetField HudWidgets[10].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\box_tiny.bitm
+SetField HudWidgets[10].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[10].PlacementData[0].Offset 0 -180
+SetField HudWidgets[11].BitmapWidgets[0].Bitmap ui\chud\bitmaps\flood_fp_mask.bitm
+SetField HudWidgets[11].BitmapWidgets[0].PlacementData[0].Origin 0 0
+SetField HudWidgets[11].BitmapWidgets[0].RenderData[0].LocalColorA 0 5 5 0
+SetField HudWidgets[11].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\clockwise.chad
+SetField HudWidgets[11].BitmapWidgets[1].Bitmap ui\chud\bitmaps\flood_fp_mask.bitm
+SetField HudWidgets[11].BitmapWidgets[1].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[11].BitmapWidgets[1].PlacementData[0].Offset 0 -200
+SetField HudWidgets[11].BitmapWidgets[1].PlacementData[0].Scale 2.22 2.22
+SetField HudWidgets[11].BitmapWidgets[1].RenderData[0].LocalColorA 0 5 0 0
+SetField HudWidgets[11].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\counterclockwise.chad
+SetField HudWidgets[11].BitmapWidgets[2].Bitmap ui\chud\bitmaps\flood_fp_mask.bitm
+SetField HudWidgets[11].BitmapWidgets[2].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[11].BitmapWidgets[2].PlacementData[0].Offset 0 -200
+SetField HudWidgets[11].BitmapWidgets[2].PlacementData[0].Scale 2.22 2.22
+SetField HudWidgets[11].BitmapWidgets[2].RenderData[0].LocalColorA 0 0 5 0
+SetField HudWidgets[11].BitmapWidgets[3].Bitmap fx\particles\flare\_bitmaps\glow_soft.bitm
+SetField HudWidgets[11].BitmapWidgets[3].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[11].BitmapWidgets[3].PlacementData[0].Offset 0 -200
+SetField HudWidgets[11].BitmapWidgets[3].PlacementData[0].Scale 16 9
+SetField HudWidgets[11].BitmapWidgets[3].RenderData[0].ShaderType DistortionAndBlur
+SetField HudWidgets[11].PlacementData[0].Anchor Crosshair
+SetField HudWidgets[11].PlacementData[0].Scale 1 1
+SetField HudWidgets[12].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify.chad
+SetField HudWidgets[12].BitmapWidgets[0].Bitmap ui\chud\bitmaps\variant_items\jug_icon.bitm
+SetField HudWidgets[12].BitmapWidgets[0].PlacementData[0].Offset 0 -45
+SetField HudWidgets[12].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SetField HudWidgets[12].TextWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify_text.chad
+SetField HudWidgets[12].TextWidgets[0].PlacementData[0].Offset 0 15
+SetField HudWidgets[13].BitmapWidgets[0].Bitmap ui\chud\bitmaps\help.bitm
+SetField HudWidgets[14].BitmapWidgets[0].Bitmap ui\chud\bitmaps\scopes\elite_binocs.bitm
+SetField HudWidgets[14].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\clockwise.chad
+SetField HudWidgets[14].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\elite_compass.bitm
+SetField HudWidgets[14].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\counterclockwise.chad
+SetField HudWidgets[14].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\elite_pitch.bitm
+SetField HudWidgets[14].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\box_tiny.bitm
+SetField HudWidgets[15].BitmapWidgets[0].Bitmap ui\chud\bitmaps\scopes\elite_binocs.bitm
+SetField HudWidgets[15].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\clockwise.chad
+SetField HudWidgets[15].BitmapWidgets[1].Bitmap ui\chud\bitmaps\scopes\elite_compass.bitm
+SetField HudWidgets[15].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\counterclockwise.chad
+SetField HudWidgets[15].BitmapWidgets[2].Bitmap ui\chud\bitmaps\scopes\elite_pitch.bitm
+SetField HudWidgets[15].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scopes\box_tiny.bitm
+SetField HudWidgets[17].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify.chad
+SetField HudWidgets[17].BitmapWidgets[0].Bitmap ui\chud\bitmaps\variant_items\infection_icon.bitm
+SetField HudWidgets[17].BitmapWidgets[0].PlacementData[0].Offset 0 -45
+SetField HudWidgets[17].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SetField HudWidgets[17].TextWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify_text.chad
+SetField HudWidgets[17].TextWidgets[0].PlacementData[0].Offset 0 15
+SetField HudWidgets[18].AnimationData[0].Readying.Animation ui\chud\animations\fade_in_slow.chad
+SetField HudWidgets[18].AnimationData[0].Unreadying.Animation ui\chud\animations\fade_out_slow.chad
+SetField HudWidgets[18].BitmapWidgets[0].AnimationData[0].Readying.Animation ui\chud\animations\fade_in_slow.chad
+SetField HudWidgets[18].BitmapWidgets[0].AnimationData[0].Unreadying.Animation ui\chud\animations\fade_out_slow.chad
+SetField HudWidgets[18].BitmapWidgets[0].Bitmap ui\chud\bitmaps\objectives.bitm
+SetField HudWidgets[18].TextWidgets[0].AnimationData[0].Readying.Animation ui\chud\animations\fade_in_slow.chad
+SetField HudWidgets[18].TextWidgets[0].AnimationData[0].Unreadying.Animation ui\chud\animations\fade_out_slow.chad
+SetField HudWidgets[19].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\equipment_kablam.chad
+SetField HudWidgets[19].BitmapWidgets[0].Bitmap ui\chud\bitmaps\consumable_scematics.bitm
+SetField HudWidgets[19].BitmapWidgets[1].Bitmap ui\chud\bitmaps\consumable_activation.bitm
+SetField HudWidgets[19].PlacementData[0].Offset -11 -60
+SetField HudWidgets[1].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[1].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[0].Bitmap ui\chud\bitmaps\elite_shield_flash_bleed.bitm
+SetField HudWidgets[1].BitmapWidgets[0].Flags MirrorHorizontally
+SetField HudWidgets[1].BitmapWidgets[0].PlacementData[0].Origin 1.02081 -1
+SetField HudWidgets[1].BitmapWidgets[10].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[10].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[10].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[10].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[11].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[11].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[11].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[11].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[1].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[1].Bitmap ui\chud\bitmaps\elite_shield_border.bitm
+SetField HudWidgets[1].BitmapWidgets[1].Flags None
+SetField HudWidgets[1].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[2].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[2].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[2].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[2].Flags None
+SetField HudWidgets[1].BitmapWidgets[3].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[3].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[3].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[3].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[3].Flags None
+SetField HudWidgets[1].BitmapWidgets[4].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[4].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[4].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[4].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[4].Flags None
+SetField HudWidgets[1].BitmapWidgets[5].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[5].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[5].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[5].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[5].Flags None
+SetField HudWidgets[1].BitmapWidgets[6].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[6].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[6].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[6].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[1].BitmapWidgets[7].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[7].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[7].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[7].Bitmap ui\chud\bitmaps\elite_shield_border.bitm
+SetField HudWidgets[1].BitmapWidgets[8].AnimationData[0].Active.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[1].BitmapWidgets[8].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[8].Bitmap ui\chud\bitmaps\elite_shield_flash_bleed.bitm
+SetField HudWidgets[1].BitmapWidgets[9].AnimationData[0].Active.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[9].AnimationData[0].Flashing.Animation ui\chud\animations\shields_out.chad
+SetField HudWidgets[1].BitmapWidgets[9].AnimationData[0].Initializing.Animation ui\chud\animations\shield_dimming.chad
+SetField HudWidgets[1].BitmapWidgets[9].Bitmap ui\chud\bitmaps\elite_shield_meter.bitm
+SetField HudWidgets[20].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[20].BitmapWidgets[0].AnimationData[0].Impulse.Animation ui\chud\animations\hit_marker1.chad
+SetField HudWidgets[20].BitmapWidgets[0].Bitmap ui\chud\bitmaps\hit_marker.bitm
+SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SetField HudWidgets[20].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[20].BitmapWidgets[1].AnimationData[0].Impulse.Animation ui\chud\animations\hit_marker2.chad
+SetField HudWidgets[20].BitmapWidgets[1].Bitmap ui\chud\bitmaps\hit_marker.bitm
+SetField HudWidgets[20].BitmapWidgets[1].PlacementData[0].Origin -6.5 0
+SetField HudWidgets[20].BitmapWidgets[1].PlacementData[0].Scale 1 1
+SetField HudWidgets[20].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[20].BitmapWidgets[2].AnimationData[0].Impulse.Animation ui\chud\animations\hit_marker2.chad
+SetField HudWidgets[20].BitmapWidgets[2].Bitmap ui\chud\bitmaps\hit_marker.bitm
+SetField HudWidgets[20].BitmapWidgets[2].PlacementData[0].Scale 1 1
+SetField HudWidgets[21].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\stamina2.chad
+SetField HudWidgets[21].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chad
+SetField HudWidgets[21].BitmapWidgets[0].Bitmap null
+SetField HudWidgets[21].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chad
+SetField HudWidgets[21].BitmapWidgets[1].Bitmap null
+SetField HudWidgets[21].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[21].BitmapWidgets[2].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chad
+SetField HudWidgets[21].BitmapWidgets[2].Bitmap null
+SetField HudWidgets[21].BitmapWidgets[2].PlacementData[0].Offset -110 -90
+SetField HudWidgets[2].BitmapWidgets[0].Bitmap null
+SetField HudWidgets[2].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\motion_tracker_ping.chad
+SetField HudWidgets[2].BitmapWidgets[1].Bitmap null
+SetField HudWidgets[2].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\vox1.chad
+SetField HudWidgets[2].BitmapWidgets[2].Bitmap ui\chud\bitmaps\vox.bitm
+SetField HudWidgets[2].BitmapWidgets[2].PlacementData[0].Offset 50 -62
+SetField HudWidgets[2].BitmapWidgets[3].AnimationData[0].Active.Animation ui\chud\animations\vox2.chad
+SetField HudWidgets[2].BitmapWidgets[3].Bitmap ui\chud\bitmaps\vox.bitm
+SetField HudWidgets[2].BitmapWidgets[3].PlacementData[0].Offset 50 -62
+SetField HudWidgets[2].BitmapWidgets[4].Bitmap null
+SetField HudWidgets[2].BitmapWidgets[5].Bitmap null
+SetField HudWidgets[2].BitmapWidgets[6].Bitmap null
+SetField HudWidgets[2].BitmapWidgets[7].Bitmap null
+SetField HudWidgets[3].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[3].BitmapWidgets[0].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[3].BitmapWidgets[1].AnimationData[0].Flashing.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[3].BitmapWidgets[1].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[3].PlacementData[0].Offset -18 -12
+SetField HudWidgets[3].TextWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[3].TextWidgets[1].AnimationData[0].Impulse.Animation ui\chud\animations\kudos.chad
+SetField HudWidgets[4].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[4].BitmapWidgets[0].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[4].BitmapWidgets[1].AnimationData[0].Flashing.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[4].BitmapWidgets[1].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[4].PlacementData[0].Offset -18 -12
+SetField HudWidgets[4].TextWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[4].TextWidgets[1].AnimationData[0].Impulse.Animation ui\chud\animations\kudos.chad
+SetField HudWidgets[5].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[5].BitmapWidgets[0].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[5].BitmapWidgets[1].AnimationData[0].Flashing.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[5].BitmapWidgets[1].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[5].PlacementData[0].Offset -18 -12
+SetField HudWidgets[5].TextWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[5].TextWidgets[1].AnimationData[0].Impulse.Animation ui\chud\animations\kudos.chad
+SetField HudWidgets[6].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[6].BitmapWidgets[0].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[6].BitmapWidgets[1].AnimationData[0].Flashing.Animation ui\chud\animations\invisible.chad
+SetField HudWidgets[6].BitmapWidgets[1].Bitmap ui\chud\bitmaps\grenade_scematics.bitm
+SetField HudWidgets[6].PlacementData[0].Offset -18 -12
+SetField HudWidgets[6].TextWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\dim_lines.chad
+SetField HudWidgets[6].TextWidgets[1].AnimationData[0].Impulse.Animation ui\chud\animations\kudos.chad
+SetField HudWidgets[7].BitmapWidgets[0].Bitmap ui\chud\bitmaps\hud_reticles.bitm
+SetField HudWidgets[7].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SetField HudWidgets[8].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\init_wipe_vertical.chad
+SetField HudWidgets[8].BitmapWidgets[0].Bitmap ui\chud\bitmaps\elite_wipe.bitm
+SetField HudWidgets[8].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\init_wipe_vertical.chad
+SetField HudWidgets[8].BitmapWidgets[1].Bitmap ui\chud\bitmaps\init_lines.bitm
+SetField HudWidgets[8].BitmapWidgets[2].AnimationData[0].Initializing.Animation ui\chud\animations\init_wipe_vertical.chad
+SetField HudWidgets[8].BitmapWidgets[2].Bitmap ui\chud\bitmaps\init_lines.bitm
+SetField HudWidgets[9].BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify.chad
+SetField HudWidgets[9].BitmapWidgets[0].Bitmap ui\chud\bitmaps\variant_items\vip_icon.bitm
+SetField HudWidgets[9].BitmapWidgets[0].PlacementData[0].Offset 0 -45
+SetField HudWidgets[9].BitmapWidgets[0].PlacementData[0].Scale 1 1
+SetField HudWidgets[9].BitmapWidgets[1].AnimationData[0].Active.Animation ui\chud\animations\vip_aura_pulsate.chad
+SetField HudWidgets[9].BitmapWidgets[1].Bitmap ui\chud\bitmaps\variant_items\vip_icon.bitm
+SetField HudWidgets[9].BitmapWidgets[2].AnimationData[0].Active.Animation ui\chud\animations\vip_aura_center.chad
+SetField HudWidgets[9].BitmapWidgets[2].Bitmap ui\chud\bitmaps\variant_items\vip_icon.bitm
+SetField HudWidgets[9].TextWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\vip_notify_text.chad
+SetField HudWidgets[9].TextWidgets[0].PlacementData[0].Offset 0 0
+setfield HudWidgets[0].BitmapWidgets[0].Flags Stretch
+setfield HudWidgets[11].BitmapWidgets[0].Flags Stretch
+setfield HudWidgets[11].BitmapWidgets[0].PlacementData[0].Scale 2.22 2
+setfield HudWidgets[1].BitmapWidgets[2].RenderData[0].OutputColorB LocalA
+setfield HudWidgets[20].PlacementData[0].Scale 0 0
+setfield HudWidgets[2].BitmapWidgets[2].Bitmap null
+setfield HudWidgets[2].BitmapWidgets[3].Bitmap null
+setfield HudWidgets[7].BitmapWidgets[0].Bitmap ui\chud\bitmaps\hud_reticles.bitmap
+setfield HudWidgets[7].BitmapWidgets[0].BitmapSequenceIndex 29
+setfield HudWidgets[7].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
+setfield HudWidgets[7].BitmapWidgets[0].RenderData[0].OutputColorA PrimaryBackground
+setfield HudWidgets[7].ParallaxData ui\chud\parallax\vehicles.cprl
+setfield hudwidgets[0].bitmapwidgets[0].SortLayer Foreground
+setfield hudwidgets[0].bitmapwidgets[0].placementdata[0].anchor Center
+setfield hudwidgets[0].bitmapwidgets[0].placementdata[0].offset 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 7 6 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC LocalA
+setfield hudwidgets[11].bitmapwidgets[0].placementdata[0].anchor Center
+setfield hudwidgets[11].bitmapwidgets[0].placementdata[0].offset 0 0
+setfield hudwidgets[3].placementdata[0].scale 0 0
+setfield hudwidgets[4].placementdata[0].scale 0 0
+setfield hudwidgets[5].placementdata[0].scale 0 0
+setfield hudwidgets[6].placementdata[0].scale 0 0
+savetagchanges
+exit
+
+duplicatetag ui\chud\parallax\spartan.cprl ui\chud\parallax\flood
+edittag ui\chud\parallax\flood.cprl
+savetagchanges
+exit
+
+EditTag ui\chud\scoreboard_flood.chud_definition
+SetField HudWidgets[0].StateData[0].SkinState None
+SetField HudWidgets[0].ParallaxData null
+SetField HudWidgets[0].TextWidgets[0].RenderData[0].OutputColorA HighlightForeground
+SetField HudWidgets[1].StateData[0].SkinState None
+SetField HudWidgets[1].ParallaxData null
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalColorA 0 15 15 2
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorB LocalD
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[1].BitmapWidgets[1].RenderData[0].ShaderType Solid
+SetField HudWidgets[1].BitmapWidgets[1].RenderData[0].OutputColorA ScoreboardFriendly
+SetField HudWidgets[1].BitmapWidgets[1].RenderData[0].OutputColorB ScoreboardFriendly
+SetField HudWidgets[1].BitmapWidgets[1].RenderData[0].OutputColorC LocalA
+SetField HudWidgets[1].BitmapWidgets[2].RenderData[0].OutputColorB LocalD
+SetField HudWidgets[1].BitmapWidgets[4].RenderData[0].OutputColorA HighlightForeground
+SetField HudWidgets[1].BitmapWidgets[4].RenderData[0].OutputColorC LocalB
+SetField HudWidgets[1].TextWidgets[0].RenderData[0].LocalColorA 0 44 66 11
+SetField HudWidgets[2].StateData[0].SkinState None
+SetField HudWidgets[2].ParallaxData null
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].LocalColorA 0 15 15 2
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorB LocalD
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[2].BitmapWidgets[1].RenderData[0].ShaderType Solid
+SetField HudWidgets[2].BitmapWidgets[1].RenderData[0].OutputColorA ScoreboardEnemy
+SetField HudWidgets[2].BitmapWidgets[1].RenderData[0].OutputColorB ScoreboardEnemy
+SetField HudWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorB LocalD
+SetField HudWidgets[2].TextWidgets[0].RenderData[0].LocalColorA 0 44 66 11
+SetField HudWidgets[3].ParallaxData null
+SetField HudWidgets[3].TextWidgets[0].RenderData[0].OutputColorA HighlightForeground
+SetField HudWidgets[4].ParallaxData null
+SetField HudWidgets[5].StateData[0].SkinState None
+SetField HudWidgets[5].ParallaxData null
+SetField HudWidgets[6].ParallaxData null
+SetField HudWidgets[7].ParallaxData null
+SetField HudWidgets[7].BitmapWidgets[0].StateData[0].UnitMiscState BinocularsDisabled
+SetField HudWidgets[7].BitmapWidgets[1].StateData[0].UnitMiscState BinocularsDisabled
+SetField HudWidgets[7].BitmapWidgets[2].StateData[0].UnitMiscState BinocularsDisabled
+SetField HudWidgets[7].BitmapWidgets[3].StateData[0].UnitMiscState BinocularsDisabled
+SetField HudWidgets[8].ParallaxData null
+SaveTagChanges
+Exit
+
+EditTag ui\chud\flood_globals.chud_globals_definition
+RemoveBlockElements HudGlobals 1 2
+Setfield HudGlobals[0].ScoreboardHud ui\chud\scoreboard_flood.chdt
+SetField HudGlobals[0].PrimaryBackground 0 30 30 15
+SetField HudGlobals[0].SecondaryBackground 0 75 75 15
+SetField HudGlobals[0].HighlightForeground 0 35 40 5
+SetField HudGlobals[0].CrosshairNormal 0 40 50 15
+SetField HudGlobals[0].CrosshairFriendly 0 30 75 15
+SetField HudGlobals[0].SelfBlip 0 50 60 10
+SetField HudGlobals[0].NeutralBlip 0 50 55 0
+SetField HudGlobals[0].FriendlyBlip 0 50 55 0
+SetField HudGlobals[0].NavpointFriendly 0 50 55 9
+SetField HudGlobals[0].NavpointEnemy 0 187 5 5
+SetField HudGlobals[0].NavpointAllyText 0 50 55 9
+SetField HudGlobals[0].GrenadeAnchorOffset 79.5
+SetField HudGlobals[0].EquipmentHorizontalSize 56
+SetField HudGlobals[0].EquipmentVerticalOffsetDual 35
+SetField HudGlobals[0].DirectionalArrowScale 45
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 8
+SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 104.5 988
+SetField HudGlobals[0].HudAttributes[0].MotionSensorRadius 87
+SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0.016 0.16
+SetField HudGlobals[0].HudAttributes[0].MessageAnchorVerticalOffset 0.1
+SetField HudGlobals[0].HudAttributes[1].MessageAnchorVerticalOffset 0.15
+SetField HudGlobals[0].HudAttributes[0].MedalScale 1
+SetField HudGlobals[0].HudAttributes[0].MedalWidth 58
+SetField HudGlobals[0].HudAttributes[0].MultiplayerMedalsOffset 0.64 2
+SetField HudGlobals[0].DamageMicrotexture ui\chud\bitmaps\flood_damage_mask.bitm
+SetField HudGlobals[0].DamageNoise ui\chud\bitmaps\gravemind_tile.bitm
+SetField MicrotextureScale 5000
+SetField SprintFovMultiplier 1.1
+SetField SprintFovTransitionInTime 0.15
+SetField SprintFovTransitionOutTime 0.5
+SetField ParallaxData ui\chud\parallax\flood.cprl
+SetField CameraShakeRunning.Period 0.25
+SetField CameraShakeRunning.Horizontal.Data 083400000000000000000000000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SetField CameraShakeRunning.Vertical.Data 083400000000000000000000000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SetField CameraShakeRunning.Yaw.Data 083400006F1283BA6F12833A000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SetField CameraShakeRunning.Pitch.Data 083400006F1283BA6F12833A000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SetField CameraShakeRunning.Roll.Data 083400006F1283BA6F12833A000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SaveTagChanges
+Exit
+
+edittag objects\characters\masterchief\mp_masterchief\mp_masterchief.bipd
+copyblockelements Attachments 5 1
+exit
+
+edittag objects\characters\flood_tank\flood_tank.bipd
+pasteblockelements attachments
+setfield attachments[*].type objects\characters\flood_tank\screech_tank.effe
+addblockelements attachments
+setfield attachments[*].type objects\characters\flood\vision.effe
+savetagchanges
+exit
+edittag objects\characters\floodcombat_brute\floodcombat_brute.bipd
+pasteblockelements attachments
+setfield attachments[*].type objects\characters\floodcombat_brute\floodcombat_brute_screech.effe
+addblockelements attachments
+setfield attachments[*].type objects\characters\flood\vision.effe
+savetagchanges
+exit
+edittag objects\characters\floodcombat_elite\floodcombat_elite.bipd
+pasteblockelements attachments
+setfield attachments[*].type objects\characters\floodcombat\screech_general.effe
+addblockelements attachments
+setfield attachments[*].type objects\characters\flood\vision.effe
+savetagchanges
+exit
+edittag objects\characters\floodcombat_human\floodcombat_human.bipd
+pasteblockelements attachments
+setfield attachments[*].type objects\characters\floodcombat\screech_general.effe
+addblockelements attachments
+setfield attachments[*].type objects\characters\flood\vision.effe
+savetagchanges
+exit
+
+EditTag objects\characters\floodcombat_brute\floodcombat_brute.bipd
+SetField MeleeImpactSound sound\materials\tough\squish_hits.sound
+SetField UnitFlags.Flags FiresFromCamera,ResistsPings,MeleeAttackersCannotAttach,NotInstantlyKilledByMelee,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming
+SetField FeignDeathChance 0
+SetField FeignRepeatChance 0
+SetField AimingVelocityMaximum 0
+SetField AimingAccelerationMaximum 0
+SetField CasualAimingModifier 0
+SetField LookingVelocityMaximum 0
+SetField LookingAccelerationMaximum 0
+SetField GrenadeVelocity 10
+SetField GrenadeCount 4
+SetField MovingTurningSpeed 486.2
+SetField StationaryTurningThreshold 80
+SetField MinimumHardLandingTime 0.1
+SetField MinimumSoftLandingVelocity 0.5
+SetField MinimumHardLandingVelocity 6
+SetField MaximumHardLandingVelocity 10
+SetField CameraInterpolationStart 15
+SetField CameraInterpolationEnd 90
+setfield CameraForwardMovementScale 0.75
+setfield CameraSideMovementScale 0.5
+setfield CameraVerticalMovementScale 0.5
+SetField CameraExclusionDistance 0.13
+SetField LockonFlags LockedByPlasmaTargeting
+SetField PhysicsFlags.Halo3ODST UsePlayerPhysics
+AddBlockElements HudInterfaces
+Setfield HudInterfaces[0].UnitHudInterface ui\chud\flood_combat.chdt
+addblockelements Weapons
+setfield Weapons[0].Weapon objects\weapons\melee\flood_arm\flood_arm.weap
+copyblockelements Weapons
+SaveTagChanges
+Exit
+
+EditTag objects\characters\floodcombat_elite\floodcombat_elite.bipd
+SetField MeleeImpactSound sound\materials\tough\squish_hits.sound
+SetField UnitFlags.Flags FiresFromCamera,ResistsPings,MeleeAttackersCannotAttach,NotInstantlyKilledByMelee,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming
+SetField FeignDeathChance 0
+SetField FeignRepeatChance 0
+SetField AimingVelocityMaximum 0
+SetField AimingAccelerationMaximum 0
+SetField CasualAimingModifier 0
+SetField LookingVelocityMaximum 0
+SetField LookingAccelerationMaximum 0
+SetField GrenadeVelocity 10
+SetField GrenadeCount 4
+SetField MovingTurningSpeed 486.2
+SetField StationaryTurningThreshold 80
+SetField MinimumHardLandingTime 0.1
+SetField MinimumSoftLandingVelocity 0.5
+SetField MinimumHardLandingVelocity 6
+SetField MaximumHardLandingVelocity 10
+SetField CameraInterpolationStart 15
+SetField CameraInterpolationEnd 90
+setfield CameraForwardMovementScale 0.75
+setfield CameraSideMovementScale 0.5
+setfield CameraVerticalMovementScale 0.5
+SetField CameraExclusionDistance 0.13
+SetField LockonFlags LockedByPlasmaTargeting
+SetField PhysicsFlags.Halo3ODST UsePlayerPhysics
+AddBlockElements HudInterfaces
+Setfield HudInterfaces[0].UnitHudInterface ui\chud\flood_combat.chdt
+pasteblockelements Weapons
+SaveTagChanges
+Exit
+
+EditTag objects\characters\floodcombat_human\floodcombat_human.bipd
+SetField MeleeImpactSound sound\materials\tough\squish_hits.sound
+SetField UnitFlags.Flags FiresFromCamera,ResistsPings,MeleeAttackersCannotAttach,NotInstantlyKilledByMelee,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming
+SetField FeignDeathChance 0
+SetField FeignRepeatChance 0
+SetField AimingVelocityMaximum 0
+SetField AimingAccelerationMaximum 0
+SetField CasualAimingModifier 0
+SetField LookingVelocityMaximum 0
+SetField LookingAccelerationMaximum 0
+SetField GrenadeVelocity 10
+SetField GrenadeCount 4
+SetField MovingTurningSpeed 486.2
+SetField StationaryTurningThreshold 80
+SetField MinimumHardLandingTime 0.1
+SetField MinimumSoftLandingVelocity 0.5
+SetField MinimumHardLandingVelocity 6
+SetField MaximumHardLandingVelocity 10
+SetField CameraInterpolationStart 15
+SetField CameraInterpolationEnd 90
+setfield CameraForwardMovementScale 0.75
+setfield CameraSideMovementScale 0.5
+setfield CameraVerticalMovementScale 0.5
+SetField CameraExclusionDistance 0.13
+SetField LockonFlags LockedByPlasmaTargeting
+SetField PhysicsFlags.Halo3ODST UsePlayerPhysics
+AddBlockElements HudInterfaces
+Setfield HudInterfaces[0].UnitHudInterface ui\chud\flood_combat.chdt
+pasteblockelements Weapons
+SaveTagChanges
+Exit
+
+EditTag objects\characters\flood_tank\flood_tank.bipd
+SetField MeleeImpactSound sound\materials\tough\squish_hits.sound
+SetField UnitFlags.Flags FiresFromCamera,ResistsPings,MeleeAttackersCannotAttach,NotInstantlyKilledByMelee,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming
+SetField FeignDeathChance 0
+SetField FeignRepeatChance 0
+SetField AimingVelocityMaximum 0
+SetField AimingAccelerationMaximum 0
+SetField CasualAimingModifier 0
+SetField LookingVelocityMaximum 0
+SetField LookingAccelerationMaximum 0
+SetField GrenadeVelocity 10
+SetField GrenadeCount 4
+SetField MovingTurningSpeed 486.2
+SetField StationaryTurningThreshold 80
+SetField MinimumHardLandingTime 0.1
+SetField MinimumSoftLandingVelocity 0.1
+SetField MinimumHardLandingVelocity 6
+SetField MaximumHardLandingVelocity 10
+SetField CameraInterpolationStart 15
+SetField CameraInterpolationEnd 90
+setfield CameraForwardMovementScale 0.75
+setfield CameraSideMovementScale 0.5
+setfield CameraVerticalMovementScale 0.5
+SetField CameraExclusionDistance 0.13
+SetField LockonFlags LockedByPlasmaTargeting
+SetField PhysicsFlags.Halo3ODST UsePlayerPhysics
+AddBlockElements HudInterfaces
+Setfield HudInterfaces[0].UnitHudInterface ui\chud\flood_combat.chdt
+pasteblockelements Weapons
+setfield weapons[0].weapon objects\weapons\melee\flood_tank_arm\flood_tank_arm.weap
+addblockelements MovementGates
+setfield MovementGates[0].Period 2
+setfield MovementGates[0].ZOffset 0.1
+setfield MovementGates[0].ConstantZOffset 0.2
+setfield MovementGates[0].YOffset 3
+setfield MovementGates[0].DefaultFunction.Data 08340000CDCCCCBDCDCCCC3D000000000000000000000000000000001C00000001000000070000CDFFFF7F7F00000000000080C00000804000000000
+SaveTagChanges
+Exit
+
+edittag objects\characters\flood_tank\flood_tank.model_animation_graph
+setanimation combat:any:any:melee 8
+addblockelements Modes[0].WeaponClass[0].WeaponType[0].Set.Actions
+setfield Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[*].Label airborne_arc
+setfield Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[*].GraphIndex -1
+setfield Modes[0].WeaponClass[0].WeaponType[0].Set.Actions[*].Animation 23
+setanimation combat:any:any:land_hard 10 addaction
+setanimation combat:any:any:melee_lunge 39 addoverlay
+setanimation combat:any:any:melee_lunge_airborne 39 addoverlay
+setanimation combat:any:any:melee_lunge_unaimed 39 addoverlay
+setanimation combat:any:any:melee_lunge_unaimed_airborne 39 addoverlay
+setanimation combat:any:any:melee_dash 39 addoverlay
+setanimation combat:any:any:melee_dash_airborne 39 addoverlay
+savetagchanges
+exit
+
+edittag objects\characters\floodcombat_human\floodcombat_human.model_animation_graph
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 40
+savetagchanges
+exit
+
+edittag objects\characters\floodcombat_elite\floodcombat_elite.model_animation_graph
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 49
+savetagchanges
+exit
+
+edittag objects\characters\floodcombat_brute\floodcombat_brute.model_animation_graph
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_lunge_unaimed_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+addblockelements Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Label melee_dash_airborne
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].GraphIndex -1
+setfield Modes[0].WeaponClass[1].WeaponType[0].Set.Overlays[*].Animation 58
+savetagchanges
+exit
+
+SaveTagNames
 
 # Set globals.globals
 edittag globals\globals.globals

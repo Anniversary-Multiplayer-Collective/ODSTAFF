@@ -16,3 +16,7 @@ Scoring broken on Coastal Raceway
 
 Other:
 Remove Herobrine
+
+Pak Removal:
+Look into shader issues.
+Visor color change maps are broken.
