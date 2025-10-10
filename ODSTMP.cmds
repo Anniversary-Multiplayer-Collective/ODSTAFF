@@ -3390,7 +3390,7 @@ nametag levels\atlas\c100\c100_faux_lightmap.scenario_lightmap levels\ui\mainmen
 nametag levels\ui\mainmenu\mainmenu.scnr levels\ui\mainmenu\mainmenu_ho
 savetagnames
 
-OpenCacheFile "h3mythicmaps\mainmenu.map"
+OpenCacheFile "workingdir\CustomMaps\mainmenu.map"
 porttag replace ui\halox\main_menu\bottom_gradient_ui.bitm
 porttag replace ui\halox\main_menu\bungielogo.bitm
 porttag replace ui\halox\main_menu\mainmenu_bkd.bitm
