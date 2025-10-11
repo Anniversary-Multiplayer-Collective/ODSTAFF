@@ -4803,6 +4803,13 @@ edittag levels\atlas\shared\decals\graffiti\bitmaps\graffiti_glassthis.bitmap
 importbitmap 0 workingdir\bitmaps\graffiti_glassthis.dds
 exit
 
+## echo fix homefront crash
+
+edittag cone_collective\levels\multi\homefront\homefront.scenario
+compilescripts workingdir\scripts\homefront.hsc
+savetagchanges
+exit
+
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
