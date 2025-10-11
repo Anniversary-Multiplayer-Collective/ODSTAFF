@@ -4643,6 +4643,11 @@ importmapvariant MapFile "workingdir\DefaultVariants\rallypoint\sandbox.map"
 SaveTagChanges
 Exit
 
+EditTag levels\dlc\spacecamp\spacecamp.scnr
+importmapvariant MapFile "workingdir\DefaultVariants\Orbital\sandbox.map"
+SaveTagChanges
+Exit
+
 ## echo forge monitor VISR
 edittag objects\characters\monitor\monitor_editor.biped
 addblockelements Functions
