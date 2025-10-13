@@ -10,7 +10,6 @@ Look into replacing Winning/Losing music with ODST music
 
 Map Variant:
 Add grenade pickups to all maps
-Day Streets fix podium
 
 Other:
 Remove Herobrine
