@@ -154,3 +154,15 @@ EditTag ui\chud\missile.chud_definition
 SetField HudWidgets[1].PlacementData[0].Offset 0 975
 savetagchanges
 exit
+
+echo fix shaky waypoints
+
+Edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 4.5
+SetField HudGlobals[0].HudAttributes[0].ScaleUnknown1 1
+SetField HudGlobals[0].HudAttributes[0].SpacingUnknown1 200
+SetField HudGlobals[0].HudAttributes[0].ScaleUnknown2 0.05
+SetField HudGlobals[0].HudAttributes[0].SpacingUnknown2 100
+savetagchanges
+exit
+
