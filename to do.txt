@@ -5,18 +5,12 @@ Mod:
 DMR pickup string
 DMR HUD (including variants)
 Add Overshield colours for hud
-Rebalance flood tank
 Add or replace emotes
 Look into replacing Winning/Losing music with ODST music
 
 Map Variant:
 Add grenade pickups to all maps
 Day Streets fix podium
-Scoring broken on Coastal Raceway
 
 Other:
 Remove Herobrine
-
-Pak Removal:
-Look into shader issues.
-Visor color change maps are broken.
