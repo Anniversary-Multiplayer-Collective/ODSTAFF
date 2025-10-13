@@ -4815,6 +4815,26 @@ compilescripts workingdir\scripts\homefront.hsc
 savetagchanges
 exit
 
+## echo fix oilfaunt
+
+EditTag objects\vehicles\olifaunt\olifaunt.vehicle
+RemoveBlockElements Attachments 5 1
+
+SetField Seats[0].Label behemoth_d
+SetField Seats[0].FlippedEvictionTime 1
+SetField Seats[0].BoardingSeat -1
+SetField Seats[0].RuntimeInvisibleSeatRegionIndex -1
+SetField Seats[0].EntryRadius 5
+SetField Seats[0].EntryMarkerConeAngle 25
+SetField Seats[0].EntryMarkerFacingAngle 70
+SetField Seats[0].InvisibleSeatRegion invalid
+SetField Seats[0].Flags Driver,Gunner,ThirdPersonCamera,MeleeInstantKillable
+SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\wraith_d_camera.camera_track
+SaveTagChanges
+exit
+
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
 ////////////////////////////////////////////////////////////////////////////////
