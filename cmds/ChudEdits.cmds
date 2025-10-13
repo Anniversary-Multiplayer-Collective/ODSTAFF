@@ -149,3 +149,8 @@ edittag ui\chud\odst_recon.chud_definition
 setfield HudWidgets[15].TextWidgets[4].PlacementData[0].Offset 0 155
 savetagchanges
 exit
+
+EditTag ui\chud\missile.chud_definition
+SetField HudWidgets[1].PlacementData[0].Offset 0 975
+savetagchanges
+exit
