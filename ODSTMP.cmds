@@ -4833,6 +4833,12 @@ SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\wraith_d_camera.camera
 SaveTagChanges
 exit
 
+EditTag objects\vehicles\olifaunt\olifaunt.render_model
+SetField MarkerGroups[4].Markers[0].Translation 2 0.5 0.5
+savetagchanges
+exit
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
