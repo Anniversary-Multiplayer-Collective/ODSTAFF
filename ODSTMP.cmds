@@ -6,6 +6,7 @@ SetVariable h3mccmaps ""
 SetVariable reachmaps ""
 SetVariable workingdir ""
 SetVariable modsfolder ""
+SetVariable odstmccmaps ""
 
 // Update at the end of the script
 CreateModPackage 1 Large
@@ -13,7 +14,7 @@ ODST Anniversary Multiplayer
 ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
 Vegetal & AMP Collective
 0.3
-Mainmenu Multiplayer Character
+Mainmenu Multiplayer Character Firefight
 
 ////////////////////////////////////////////////////////////////////////////////
 // Set variables, apply pre-port
@@ -4838,8 +4839,12 @@ SetField MarkerGroups[4].Markers[0].Translation 2 0.5 0.5
 savetagchanges
 exit
 
+////////////////////////////////////////////////////////////////////////////////
+// FIREFIGHT
+// !!!!!COMMENT THE RUNCOMMANDS OUT IF YOU DONT WANT IT INCLUDED IN A BUILD!!!!!
+////////////////////////////////////////////////////////////////////////////////
 
-
+runcommands workingdir\cmds\firefight.cmds
 
 ////////////////////////////////////////////////////////////////////////////////
 // CLEANSE, SAVE AND QUIT
@@ -4853,7 +4858,7 @@ ODST Anniversary Multiplayer
 ODST Anniversary Multiplayer (ODSTAMP) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
 Vegetal & AMP Collective
 0.3
-MainMenu Multiplayer Character
+MainMenu Multiplayer Character Firefight
 
 openmodpackage modsfolder\ODSTAMP.pak
 ApplyModPackageTags
