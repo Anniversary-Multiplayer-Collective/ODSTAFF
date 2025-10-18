@@ -4839,6 +4839,14 @@ SetField MarkerGroups[4].Markers[0].Translation 2 0.5 0.5
 savetagchanges
 exit
 
+##echo buff automag
+
+EditTag objects\weapons\pistol\automag\damage_effects\automag_bullet.damage_effect
+SetField DamageUpperBound 12 12
+savetagchanges
+exit
+
+
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFIGHT
 // !!!!!COMMENT THE RUNCOMMANDS OUT IF YOU DONT WANT IT INCLUDED IN A BUILD!!!!!
