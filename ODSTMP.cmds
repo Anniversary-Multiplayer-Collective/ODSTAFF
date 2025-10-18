@@ -4846,6 +4846,23 @@ SetField DamageUpperBound 12 12
 savetagchanges
 exit
 
+##echo buff melee
+
+edittag objects\weapons\damage_effects\strike_melee.damage_effect
+setfield DamageLowerBound 70
+setfield DamageUpperBound 70 70
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\smash_melee.damage_effect
+setfield DamageLowerBound 80
+setfield DamageUpperBound 80 80
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // FIREFIGHT
