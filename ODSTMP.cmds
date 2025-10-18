@@ -4862,6 +4862,36 @@ setfield InstantaneousAcceleration 0.1
 savetagchanges
 exit
 
+##echo Fix Scorpion Side Seats
+
+stringid add scorpion_p_n
+EditTag ui\hud\hud_messages.unic
+SetString english scorpion_p_n "\uE461\uE45F to ride on Scorpion"
+savetagchanges
+exit
+
+Edittag objects\vehicles\scorpion\scorpion.vehicle
+SetField Seats[1].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[1].EnterSeatString scorpion_p_n
+SetField Seats[2].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[2].EnterSeatString scorpion_p_n
+SetField Seats[2].Label scorpion_p_lf
+AddBlockElements Seats[2].UnitCamera.CameraTracks
+SetField Seats[2].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+SetField Seats[3].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[3].EnterSeatString scorpion_p_n
+SetField Seats[3].Label scorpion_p_lf
+AddBlockElements Seats[3].UnitCamera.CameraTracks
+SetField Seats[3].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+SetField Seats[4].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[4].EnterSeatString scorpion_p_n
+SetField Seats[4].Label scorpion_p_lf
+AddBlockElements Seats[4].UnitCamera.CameraTracks
+SetField Seats[4].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+savetagchanges
+exit
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////
