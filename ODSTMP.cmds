@@ -1,12 +1,12 @@
 "E:\ElDewrito 0.7 Official\maps\tags.dat"
-SetVariable h3maps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 maps"
-SetVariable h3mythicmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 Mythic maps"
-SetVariable odstmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo 3 ODST maps"
-SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
-SetVariable reachmaps "Z:\Halo Stuff\retail maps for porting and ed caches\Halo Reach maps"
-SetVariable workingdir "C:\Users\zekken\Documents\AMP PROJECTS\ODSTAMP"
-SetVariable modsfolder "E:\ElDewrito 0.7 Official\mods"
-SetVariable odstmccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3odst\maps"
+SetVariable h3maps ""
+SetVariable h3mythicmaps ""
+SetVariable odstmaps ""
+SetVariable h3mccmaps ""
+SetVariable reachmaps ""
+SetVariable workingdir ""
+SetVariable modsfolder ""
+SetVariable odstmccmaps ""
 
 // Update at the end of the script
 CreateModPackage 1 Large
