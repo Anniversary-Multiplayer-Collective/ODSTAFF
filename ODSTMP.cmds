@@ -4894,6 +4894,13 @@ SetField Seats[4].UnitCamera.CameraTracks[0].Track camera\board_large_camera.cam
 savetagchanges
 exit
 
+##echo Troop Hog Fix
+
+EditTag objects\vehicles\warthog\turrets\troop\troop.vehicle
+SetField Seats[2].YawMaximum -90
+SetField Seats[2].YawMinimum 90
+SaveTagChanges
+Exit
 
 
 
