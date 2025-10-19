@@ -75,11 +75,15 @@ exit
 OpenModPackage "workingdir\paks\civcar.pak"
 ApplyModPackage
 ExitModPackage
+OpenModPackage "workingdir\paks\odstcargotruck.pak"
+ApplyModPackage
+ExitModPackage
 AddForgeItem "CAR, MLX" VEHICLES flog\vehicles\mlx\mlx.vehicle
 AddForgeItem "CAR, CIVILIAN" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
 AddForgeItem "CAR, POLICE" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
 AddForgeItem "CAR, POLICE LIT" VEHICLES objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
 AddForgeItem "BUS, CIVILIAN" VEHICLES objects\vehicles\civilian\bus_new\bus_vehicle\bus_vehicle.vehicle
+AddForgeItem "CARGO TRUCK, CIVILIAN" VEHICLES objects\vehicles\human\civilian\cargo_truck\cargo_truck.vehicle
 AddForgeItem "COYOTE MOTORBIKE" VEHICLES objects\vehicles\mongoose\motogoose\motogoose.vehicle
 
 #Vehicle speed and other values, up to change!
@@ -113,6 +117,42 @@ SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
 SaveTagChanges
 Exit
+
+# Change color truck
+Edittag objects\vehicles\human\civilian\cargo_truck\cargo_truck.vehicle
+RemoveBlockElements ChangeColors 0 *
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SaveTagChanges
+exit
+
+Edittag objects\vehicles\civilian\cargo_truck\cargo_truck.crate
+AddBlockElements ChangeColors
+AddBlockElements ChangeColors[0].InitialPermutations
+SetField ChangeColors[0].InitialPermutations[0].ColorLowerBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[0].ColorUpperBound 1 1 1
+SetField ChangeColors[0].InitialPermutations[0].Weight 1
+SaveTagChanges
+exit
+
+edittag objects\vehicles\civilian\shaders\cargo_truck.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
+
+edittag objects\vehicles\civilian\shaders\cargo_truck_damaged.shader
+addblockelements ShaderProperties[0].Functions
+setfield ShaderProperties[0].Functions[0].Function.Data 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+setfield ShaderProperties[0].Functions[0].Type ChangeColorPrimary
+AddFunction albedo_color Real 0
+savetagchanges
+exit
 
 OpenCacheFile "h3mythicmaps\midship.map"
 ignoreblamtag objects\characters\elite\mp_elite\mp_elite.biped
@@ -4706,6 +4746,10 @@ SetString english mlx_board "\uE461\uE45F to board enemy MLX"
 SetString english mlx_enter_driver "\uE461\uE45F to drive MLX"
 SetString english mlx_enter_passenger "\uE461\uE45F to ride in MLX"
 SetString english mlx_flip "\uE461\uE45F to flip MLX"
+
+SetString english truck_enter_driver "\uE461\uE45F to drive Cargo Truck"
+SetString english truck_enter_passenger "\uE461\uE45F to ride in Cargo Truck"
+SetString english truck_flip "\uE461\uE45F to flip Cargo Truck"
 SaveTagChanges
 Exit
 
