@@ -4946,6 +4946,42 @@ SetField Seats[2].YawMinimum 90
 SaveTagChanges
 Exit
 
+##echo render distance for vehicles
+
+EditTag objects\gear\atlas\civilian\hu_civ_car_lite\hu_civ_car_lite.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+savetagchanges
+exit
+
+EditTag objects\vehicles\civilian\truck_cab_large\truck_cab_large.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+savetagchanges
+exit
+
+EditTag objects\vehicles\civilian\truck_cab_large\bed_long\bed_long.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+savetagchanges
+exit
+
+EditTag objects\vehicles\civilian\cargo_truck\cargo_truck.model
+SetField DisappearDistance 255
+SetField BeginFadeDistance 255
+savetagchanges
+exit
+
+EditTag objects\gear\covenant\military\crate_space_b\crate_space_b.model
+SetField BeginFadeDistance 255
+SetField DisappearDistance 255
+savetagchanges
+exit
+
+
+
+
+
 
 
 ////////////////////////////////////////////////////////////////////////////////

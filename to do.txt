@@ -6,6 +6,7 @@ DMR pickup string
 DMR HUD (including variants)
 Add Overshield colours for hud
 Look into replacing Winning/Losing music with ODST music
+Vehicle Turning speed
 
 Map Variant:
 Add grenade pickups to all maps
