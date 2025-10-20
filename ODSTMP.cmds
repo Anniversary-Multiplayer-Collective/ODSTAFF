@@ -91,30 +91,60 @@ EditTag flog\vehicles\mlx\mlx.vehicle
 SetField VehicleFlags CanTriggerAutomaticOpeningDoors,AiDriverEnable,EnableWheeliePoppingHack
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 16
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 3500
+
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 9.5
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumLeftTurn 1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumRightTurn -1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.TurnRate 9.424778
 SaveTagChanges
 Exit
 
 EditTag objects\vehicles\mongoose\motogoose\motogoose.vehicle
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 14
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 9.5
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumLeftTurn 1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumRightTurn -1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.TurnRate 9.424778
 SaveTagChanges
 Exit
 
 EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car.vehicle
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 9.5
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumLeftTurn 1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumRightTurn -1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.TurnRate 9.424778
 SaveTagChanges
 Exit
 
 EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police.vehicle
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 9.5
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumLeftTurn 1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumRightTurn -1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.TurnRate 9.424778
 SaveTagChanges
 Exit
 
 EditTag objects\gear\atlas\civilian\hu_civ_car\hu_civ_car_police_lit.vehicle
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 2000
 SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 12
+
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMomentum 700
+SetField PhysicsTypes.HumanJeep[0].Engine.EngineMaximumAngularVelocity 9.5
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumLeftTurn 1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.MaximumRightTurn -1.0471976
+SetField PhysicsTypes.HumanJeep[0].Turning.TurnRate 9.424778
 SaveTagChanges
 Exit
 
