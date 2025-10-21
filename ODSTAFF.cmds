@@ -1,0 +1,2768 @@
+E:\Games\Eldewrito\0.7\game\ElDewrito\maps
+SetVariable h3maps "D:\Halo Maps\Halo 3 Mythic maps"
+SetVariable h3mythicmaps "D:\Halo Maps\Halo 3 Mythic maps"
+SetVariable odstmaps "D:\Halo Maps\Halo 3 ODST maps"
+SetVariable h3mccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+SetVariable reachmaps "D:\Halo Maps\Halo Reach maps"
+SetVariable workingdir "D:\Development\eldewrito_modding\ODSTAFF"
+SetVariable modsfolder "E:\Games\Eldewrito\0.7\game\ElDewrito\mods"
+SetVariable odstmccmaps "E:\SteamLibrary\steamapps\common\Halo The Master Chief Collection\halo3odst\maps"
+
+// Update at the end of the script
+CreateModPackage 1 Large
+ODST Anniversary Firefight
+ODST Anniversary Firefight (ODSTAFF) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
+Vegetal & AMP Collective
+0.1
+Character Firefight
+
+////////////////////////////////////////////////////////////////////////////////
+// Set variables, apply pre-port
+////////////////////////////////////////////////////////////////////////////////
+
+useaudiocache workingdir\caches\audiocache
+useshadercache workingdir\caches\shadercache
+
+////////////////////////////////////////////////////////////////////////////////
+// Port maps
+////////////////////////////////////////////////////////////////////////////////
+
+echo ==h100==
+opencachefile odstmaps\h100.map
+ignoreblamtag sound\dialog\atlas\h100\h100.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\h100\h100_000.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_030.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_040.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_060.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_080.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_090.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_oni.scenario_structure_bsp
+ignoreblamtag levels\atlas\h100\h100_shaft.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+exit
+
+echo ==l200==
+opencachefile odstmaps\l200.map
+ignoreblamtag sound\dialog\atlas\l200\l200.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\cop1.dialogue
+ignoreblamtag sound\dialog\combat\cop2.dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\l200\l200_000.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_002.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_004.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_006.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_010.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_020.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_050.scenario_structure_bsp
+ignoreblamtag levels\atlas\l200\l200_060.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+echo ==l300==
+opencachefile odstmaps\l300.map
+ignoreblamtag sound\dialog\atlas\l300\l300.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\l300\l300_010.scenario_structure_bsp
+ignoreblamtag levels\atlas\l300\h100_010.scenario_structure_bsp
+ignoreblamtag levels\atlas\l300\h100_shared.scenario_structure_bsp
+ignoreblamtag levels\atlas\l300\l300_020.scenario_structure_bsp
+ignoreblamtag levels\atlas\l300\h100_l200.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+echo ==sc100==
+opencachefile odstmaps\sc100.map
+ignoreblamtag sound\dialog\atlas\sc100\sc100.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine1.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\sc100\h100_060.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc100\h100_080.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+echo ==sc110==
+opencachefile odstmaps\sc110.map
+ignoreblamtag sound\dialog\atlas\sc110\sc110.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine1.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\sc110\sc110_000.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc110\sc110_005.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc110\sc110_010.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc110\sc110_030.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc110\h100_090.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+echo ==sc120==
+opencachefile odstmaps\sc120.map
+ignoreblamtag sound\dialog\atlas\sc120\sc120.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine1.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge1.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\sc120\h100_030.scenario_structure_bsp
+ignoreblamtag levels\atlas\sc120\h100_040.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+EditTag levels\atlas\sc120\sky\sc120_sky.sky_atm_parameters
+setfield TransparentSortDistance 200
+SaveTagChanges
+Exit
+
+echo ==sc130==
+opencachefile odstmaps\sc130.map
+ignoreblamtag sound\dialog\atlas\sc130\sc130.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\cop1.dialogue
+ignoreblamtag sound\dialog\combat\cop2.dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine1.dialogue
+ignoreblamtag sound\dialog\combat\fem_marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge1.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\sc130\sc130_005.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+echo ==sc140==
+opencachefile odstmaps\sc140.map
+ignoreblamtag sound\dialog\atlas\sc140\sc140.ai_mission_dialogue
+ignoreblamtag sound\dialog\combat\cop1.dialogue
+ignoreblamtag sound\dialog\combat\cop2.dialogue
+ignoreblamtag sound\dialog\combat\dare.dialogue
+ignoreblamtag sound\dialog\combat\marine1.dialogue
+ignoreblamtag sound\dialog\combat\marine2.dialogue
+ignoreblamtag sound\dialog\combat\marine3.dialogue
+ignoreblamtag sound\dialog\combat\marine4.dialogue
+ignoreblamtag sound\dialog\combat\marine5.dialogue
+ignoreblamtag sound\dialog\combat\marine6.dialogue
+ignoreblamtag sound\dialog\combat\rookie.dialogue
+ignoreblamtag sound\dialog\combat\sarge2.dialogue
+ignoreblamtag sound\dialog\combat\sgt_johnson.dialogue
+ignoreblamtag levels\atlas\sc140\sc140_020.scenario_structure_bsp
+porttag !updatemapfiles *.scnr
+Exit
+
+/////////////////////////////////////////////////
+// H3 Porting
+/////////////////////////////////////////////////
+
+OpenCacheFile "h3mythicmaps\sandbox.map"
+donotreplacegroups foot
+ignoreblamtag objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+ignoreblamtag objects\characters\masterchief\fp\weapons\melee\fp_energy_blade\fp_energy_blade.model_animation_graph
+ignoreblamtag objects\characters\masterchief\fp\weapons\melee\fp_gravity_hammer\fp_gravity_hammer.model_animation_graph
+ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\melee\fp_energy_blade\fp_energy_blade.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\melee\fp_gravity_hammer\fp_gravity_hammer.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+PortTag Replace objects\vehicles\banshee\banshee.vehi
+PortTag Replace objects\vehicles\brute_chopper\brute_chopper.vehi
+PortTag Replace objects\vehicles\ghost\ghost.vehi
+PortTag Replace objects\vehicles\mongoose\mongoose.vehi
+PortTag Replace objects\vehicles\scorpion\scorpion.vehi
+PortTag Replace objects\vehicles\warthog\warthog.vehi
+PortTag Replace objects\weapons\rifle\battle_rifle\battle_rifle.weap
+PortTag Replace objects\weapons\pistol\magnum\magnum.weap
+PortTag Replace objects\weapons\rifle\smg\smg.weap
+PortTag Replace objects\weapons\melee\energy_blade\energy_blade.weap
+PortTag Replace objects\weapons\melee\gravity_hammer\gravity_hammer.weap
+PortTag Replace objects\weapons\rifle\plasma_rifle\plasma_rifle.weap
+PortTag Replace objects\equipment\bubbleshield\fx\detonation.effe
+PortTag Replace objects\equipment\bubbleshield\fx\active.effe
+PortTag Replace sound\weapons\equipment\regenerator\creation_effect_for_sound.effe
+PortTag Replace ui\chud\scoreboard.chdt
+Exit
+
+/////////////////////////////////////////////////
+// ODST porting
+/////////////////////////////////////////////////
+
+OpenCacheFile "odstmaps\h100.map"
+donotreplacegroups foot
+donotreplacegroups unic
+PortTag sound\dialog\combat\rookie.udlg
+PortTag !Dialogue objects\characters\odst_recon\odst_recon.biped
+PortTag objects\characters\odst_recon\fp_body\fp_body.render_model
+PortTag objects\characters\odst_recon\fp\fp.render_model
+PortTag sound\game_sfx\ui\hud_ui\vision_on.sound
+PortTag sound\game_sfx\ui\hud_ui\vision_off.sound
+PortTag Replace globals\falling.damage_effect
+PortTag Replace globals\collision_damage\landing_soft.damage_effect
+PortTag Replace globals\collision_damage\landing_hard.damage_effect
+PortTag Replace globals\hs_damage.damage_effect
+PortTag Replace globals\distance.damage_effect
+PortTag Replace ui\chud\globals.chgd
+PortTag Replace ui\chud\odst_recon.chdt
+PortTag Replace ui\chud\bitmaps\init_lines.bitm
+PortTag Replace ui\chud\survival_scoreboard.chdt
+PortTag Replace globals\default_vision_mode.vmdx
+#donotreplacegroups bitm
+PortTag objects\levels\atlas\beacons\recon_helmet_damaged\recon_helmet_damaged.hlmt
+ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+PortTag Replace objects\weapons\pistol\excavator\excavator.weapon
+PortTag Replace objects\weapons\pistol\needler\needler.weapon
+PortTag Replace objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+PortTag Replace objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+PortTag Replace objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+PortTag Replace objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+PortTag Replace objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+PortTag Replace objects\weapons\rifle\shotgun\shotgun.weapon
+PortTag Replace objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+PortTag Replace objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+PortTag Replace objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+PortTag Replace objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+PortTag Replace objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+PortTag Replace objects\weapons\support_low\brute_shot\brute_shot.weapon
+PortTag Replace objects\weapons\turret\machinegun_turret\machinegun_turret.vehicle
+PortTag Replace objects\weapons\turret\machinegun_turret\machinegun_turret.weapon
+PortTag Replace objects\weapons\turret\machinegun_turret\machinegun_turret_integrated.weapon
+PortTag Replace objects\weapons\grenade\claymore_grenade\claymore_grenade.equipment
+PortTag Replace objects\weapons\grenade\firebomb_grenade\firebomb_grenade.equipment
+PortTag Replace objects\weapons\grenade\frag_grenade\frag_grenade.equipment
+PortTag Replace objects\weapons\grenade\plasma_grenade\plasma_grenade.equipment
+PortTag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+PortTag objects\weapons\pistol\automag\automag.weapon
+PortTag Replace ui\chud\animations\init_wipe_vertical.chad
+Exit
+
+OpenCacheFile "odstmaps\l300.map"
+donotreplacegroups foot
+PortTag Replace objects\characters\odst_recon\odst_recon.jmad
+ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+ignoreblamtag objects\characters\dervish\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+PortTag Replace objects\vehicles\wraith\wraith.vehi
+Exit
+
+OpenCacheFile "odstmaps\sc120.map"
+donotreplacegroups foot
+PortTag sound\dialog\combat\fem_marine1.udlg
+Exit
+
+OpenCacheFile "h3maps\100_citadel.map"
+donotreplacegroups foot
+# odst1: aus
+#PortTag sound\dialog\combat\odst2.udlg
+PortTag Replace objects\weapons\rifle\covenant_carbine\damage_effects\carbine_slug.damage_effect
+Exit
+
+////////////////////////////////////////////////////////////////////////////////
+// Additional porting
+////////////////////////////////////////////////////////////////////////////////
+
+nametag objects\powerups\health_pack\health_pack_large.eqip temp_large
+nametag objects\powerups\health_pack\health_pack_medium.eqip temp_medium
+nametag objects\powerups\health_pack\health_pack_small.eqip temp_small
+savetagnames
+
+opencachefile "odstmaps\h100.map"
+	# game_sfx porting
+porttag replace ui\default_sounds.uise
+	# Healthpack porting
+nametag objects\equipment\regenerator_equipment\regenerator_equipment.eqip objects\powerups\health_pack\health_pack_large
+savetagnames
+PortTag Replace objects\powerups\health_pack\health_pack_large.eqip
+nametag objects\powerups\health_pack\health_pack_large.eqip objects\equipment\regenerator_equipment\regenerator_equipment
+nametag temp_large.eqip objects\powerups\health_pack\health_pack_large
+nametag temp_medium.eqip objects\powerups\health_pack\health_pack_medium
+nametag temp_small.eqip objects\powerups\health_pack\health_pack_small
+	# rmss fix
+porttag replace fx\screen_fx\screen_shaders\vision_mode.shader_screen
+porttag replace fx\screen_fx\screen_shaders\vision_mode_damage.shader_screen
+porttag replace fx\screen_fx\screen_shaders\vision_mode_health.shader_screen
+savetagnames
+exit
+
+////////////////////////////////////////////////////////////////////////////////
+// Healthpack fixup and replace
+////////////////////////////////////////////////////////////////////////////////
+
+edittag objects\equipment\regenerator_equipment\regenerator_equipment.eqip
+setfield runtimeflags 2
+setfield collisiondamage globals\collision_damage\equipment.cddf
+setfield materialeffects fx\material_effects\weapons\equipment.foot
+addblockelements multiplayerobject
+setfield multiplayerobject[0].spawntimertype StartsOnDisturbance
+setfield multiplayerobject[0].DefaultSpawnTime 60
+setfield multiplayerobject[0].DefaultAbandonTime 60
+setfield PickupSound sound\game_sfx\ui\pickup_health.sound
+setfield ActivationEffect objects\powerups\health_pack\fx\activate_large.effect
+setfield ActiveEffect null
+savetagchanges
+exit
+
+extracttag objects\equipment\regenerator_equipment\regenerator_equipment.eqip "workingdir\tags\healthpack.eqip"
+
+importtag objects\equipment\jammer_equipment\jammer_equipment.eqip "workingdir\tags\healthpack.eqip"
+importtag objects\equipment\powerdrain_equipment\powerdrain_equipment.eqip "workingdir\tags\healthpack.eqip"
+importtag objects\powerups\health_pack\health_pack_large.eqip "workingdir\tags\healthpack.eqip"
+importtag objects\powerups\health_pack\health_pack_medium.eqip "workingdir\tags\healthpack.eqip"
+importtag objects\powerups\health_pack\health_pack_small.eqip "workingdir\tags\healthpack.eqip"
+
+////////////////////////////////////////////////////////////////////////////////
+// Biped setup
+////////////////////////////////////////////////////////////////////////////////
+
+opencachefile "h3maps\020_base.map"
+porttag objects\characters\marine\crewman\crewman.collision_model
+exit
+
+edittag objects\characters\marine\crewman\crewman.collision_model
+setfield regions[1].permutations[0].Name helmet
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.bipd
+SetField DefaultModelVariant odst_mp
+	# fix 
+SetField DefaultTeam Human
+	# equipment etc
+AddBlockElements RevivingEquipment 3
+SetField RevivingEquipment[3].Instance objects\equipment\jammer_equipment\jammer_equipment.eqip
+SetField RevivingEquipment[4].Instance objects\equipment\powerdrain_equipment\powerdrain_equipment.eqip
+SetField RevivingEquipment[5].Instance objects\equipment\regenerator_equipment\regenerator_equipment.eqip
+SetField UnitFlags.Flags FiresFromCamera,MeleeAttackersCannotAttach,FlashlightPowerDoesntTransferToWeapon,RunsAroundFlaming
+SetField BoardingMeleeResponse objects\characters\masterchief\damage_effects\masterchief_boarding_melee_response.damage_effect
+SetField EvictionMeleeDamage objects\characters\masterchief\damage_effects\masterchief_ejection_melee.damage_effect
+SetField EvictionMeleeResponse objects\characters\masterchief\damage_effects\masterchief_ejection_melee_response.damage_effect
+SetField ShieldPopDamage globals\damage_effects\shield_pop_melee.damage_effect
+SetField AssassinationDamage globals\damage_effects\assassination.damage_effect
+SetField GrenadeCount 4
+#SetField AutoaimWidth 0
+#SetField MaximumSlopeAngle 50
+#SetField DownhillFalloffAngle 45
+#SetField DownhillCutoffAngle 50
+#SetField UphillFalloffAngle 45
+#SetField UphillCutoffAngle 50
+SetField BipedGroundPhysics.RuntimeMinimumNormalK 0.6427876
+SetField BipedGroundPhysics.RuntimeUphillK0 0.7071068
+SetField BipedGroundPhysics.RuntimeUphillK1 0.7660444
+setfield GrenadeAngle 10	// down from 15 default
+setfield GrenadeVelocity 9.125	// up from 8.25 default. spartan is 10
+	# assassinations
+setfield Assassination.ToolStowAnchor knife_stow_anchor
+setfield Assassination.ToolHandMarker right_hand
+setfield Assassination.ToolMarker ass_wpn_placement
+setfield Assassination.Weapon objects\props\human\unsc\spartan_knife\spartan_knife.scenery
+setfield Assassination.Response globals\damage_responses\player_assassination.damage_response_definition
+addblockelements SyncActionCamera.CameraTracks
+setfield SyncActionCamera.CameraTracks[0].Track camera\biped_assassination_camera.camera_track
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.hlmt
+	# fix targets
+SetField Targets[0].MarkerName body
+SetFIeld Targets[1].MarkerName head
+	# add helmet coll region
+SetField CollisionModel objects\characters\marine\crewman\crewman.collision_model
+SetField CollisionRegions[10].CollisionRegionIndex 1
+SetField CollisionRegions[10].Permutations[0].CollisionPermutationIndex 0
+SetField CollisionRegions[10].Permutations[1].CollisionPermutationIndex 0
+	# variant stuff
+RemoveBlockElements Variants 19 4
+RemoveBlockElements Variants 0 18
+Foreach Variants[0].Regions SetField ParentVariant 0
+SetField Variants[0].Voice sound\dialog\combat\rookie.udlg
+#RemoveBlockElements Variants[0].Regions[1].Permutations 1 1
+#RemoveBlockElements Variants[0].Regions[4].Permutations 1 1
+#RemoveBlockElements Variants[0].Regions[5].Permutations 1 5
+#RemoveBlockElements Variants[0].Regions[11].Permutations 1 1
+#RemoveBlockElements Variants[0].Regions[12].Permutations 1 1
+
+#SetField Materials[0].MaterialName hard_metal_thin_hum_masterchief
+#SetField Materials[0].GlobalMaterialIndex 56
+#SetField Materials[1].MaterialName hard_metal_thin_hum_masterchief
+#SetField Materials[1].GlobalMaterialIndex 56
+
+SetField NewDamageInfo[0].MaximumVitality 30
+SetField NewDamageInfo[0].MaxShieldVitality 30
+SetField NewDamageInfo[0].GlobalShieldMaterialName hard_metal_thin_hum_object
+SetField NewDamageInfo[0].GlobalShieldMaterialIndex 199
+
+SetField PrimaryDialogue sound\dialog\combat\rookie.udlg
+SetField SecondaryDialogue sound\dialog\combat\fem_marine1.udlg
+SetField ShieldImpactThirdPerson null
+SetField ShieldImpactFirstPerson null
+SetField OvershieldThirdPerson fx\shield_impacts\overshield_3p.shield_impact
+SetField OvershieldFirstPerson fx\shield_impacts\overshield_1p.shield_impact
+	# fix permutation names
+setfield Variants[0].Regions[1].Permutations[0].Name base
+setfield Variants[0].Regions[6].Permutations[0].Name base
+setfield Variants[0].Regions[8].Permutations[0].Name base
+setfield Variants[0].Regions[10].Permutations[0].Name base
+savetagchanges
+exit
+
+	# armor
+edittag objects\characters\odst\odst.render_model
+SetField Regions[5].Permutations[0].MeshIndex 17
+SetField Regions[5].Permutations[2].MeshIndex 17
+SetField Regions[8].Permutations[0].MeshIndex 36
+SetField Regions[8].Permutations[1].MeshIndex 36
+SetField Regions[8].Permutations[2].MeshIndex 36
+SetField Regions[8].Permutations[3].MeshIndex 36
+SetField Regions[8].Permutations[4].MeshIndex 36
+SetField Regions[10].Permutations[1].MeshIndex 10
+SetField Regions[13].Permutations[1].MeshIndex 13
+SetField Regions[14].Permutations[0].MeshIndex 24
+SetField Materials[22].RenderMethod objects\characters\masterchief\shaders\mc_emblem.shader_decal
+setfield Materials[24].RenderMethod objects\characters\odst_recon\shaders\odst_fp_arms.shader
+		# fix base permutation names
+setfield Regions[2].Permutations[1].Name base
+setfield Regions[6].Permutations[4].Name base
+setfield Regions[9].Permutations[4].Name base
+setfield Regions[11].Permutations[1].Name base
+savetagchanges
+exit
+
+edittag objects\characters\odst\bitmaps\odst_cc.bitmap
+ImportBitmap 0 "workingdir\bitmaps\odst_cc_pants.dds"
+savetagchanges
+exit
+
+edittag objects\characters\odst\bitmaps\name_tags.bitmap
+importbitmap 0 "workingdir\bitmaps\blank.dds"
+savetagchanges
+exit
+
+edittag objects\characters\odst\bitmaps\odst_gear_standard.bitmap
+importbitmap 0 "workingdir\bitmaps\odst_gear_yeet_mickey.dds"
+savetagchanges
+exit
+
+	# fix forearm cc
+GenerateBitmap objects\characters\odst_recon\fp\bitmaps\fp_skin_cc "workingdir\bitmaps\blank.dds"
+
+edittag objects\characters\odst_recon\shaders\fp_skin.shader
+setbitmap change_color_map objects\characters\odst_recon\fp\bitmaps\fp_skin_cc.bitmap
+savetagchanges
+exit
+
+edittag objects\characters\odst\shaders\fp_skin.shader
+setbitmap change_color_map objects\characters\odst_recon\fp\bitmaps\fp_skin_cc.bitmap
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_cc.bitmap
+importbitmap 0 "workingdir\bitmaps\odst_fp_arms_cc.dds"
+savetagchanges
+exit
+
+extracttag objects\characters\odst_recon\shaders\odst_armor.shader "workingdir\tags\odst_armor_cc.rmsh"
+importtag objects\characters\odst_recon\shaders\odst_fp_arms.shader "workingdir\tags\odst_armor_cc.rmsh"
+edittag objects\characters\odst_recon\shaders\odst_fp_arms.shader
+setbitmap base_map objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_diffuse.bitmap
+setbitmap detail_map shaders\default_bitmaps\bitmaps\default_detail.bitmap
+setbitmap change_color_map objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_cc.bitmap
+setbitmap bump_map objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_zbump.bitmap
+setbitmap bump_detail_map objects\characters\odst\bitmaps\odst_armor_detailbump.bitmap
+setbitmap material_texture objects\characters\odst_recon\fp\bitmaps\odst_fp_arms_material.bitmap
+setargument base_map 1 1 0 0
+setargument detail_map 16 16 0 0
+setargument change_color_map 1 1 0 0
+setargument bump_map 1 1 0 0
+setargument bump_detail_map 16 16 0 0
+setargument bump_detail_coefficient 1 1 1 1
+setargument diffuse_coefficient 0.5 0.5 0.5 0.5
+setargument specular_coefficient 0.5 0.5 0.5 0.5
+setargument specular_tint 0.7215686 0.7215686 0.6431373 1
+setargument fresnel_color 0.4784314 0.5686275 0.8078432 1
+#setargument use_fresnel_color_environment 0 0 0 0
+#setargument fresnel_color_environment 0.5019608 0.5019608 0.5019608 0
+#setargument fresnel_power 1 1 1 1
+setargument roughness 0.3 0.3 0.3 0.3
+setargument area_specular_contribution 0.3 0.3 0.3 0.3
+setargument analytical_specular_contribution 1.2 1.2 1.2 1.2
+setargument environment_map_specular_contribution 0.5 0.5 0.5 0.5
+setargument material_texture 1 1 0 0
+#setargument albedo_blend_with_specular_tint 0 0 0 0
+setargument albedo_blend 0.9 0.9 0.9 0.9
+setargument analytical_anti_shadow_control 0 0 0 0
+#setargument rim_fresnel_coefficient 0 0 0 0
+#setargument rim_fresnel_color 1 1 1 0
+#setargument rim_fresnel_power 2 2 2 2
+#setargument rim_fresnel_albedo_blend 0 0 0 0
+setargument env_tint_color 1 1 1 1
+setargument env_roughness_scale 2.5 2.5 2.5 2.5
+savetagchanges
+exit
+
+	# fix health/stamina effect
+edittag objects\characters\odst_recon\fx\stamina_effect\stamina_effect.sefc
+SetField ScreenEffects[0].Name odst_health
+savetagchanges
+exit
+
+	# increase footstep gain from -10,-10
+edittag sound\sound_classes.sncl
+SetField Classes[18].GainBounds -4 -4
+savetagchanges
+exit
+
+////////////////////////////////////////////////////////////////////////////////
+// HUD General
+////////////////////////////////////////////////////////////////////////////////
+
+	# import fonts
+ImportFonts "workingdir\fonts\odstmp.bin"
+
+	# chgd
+edittag ui\chud\globals.chgd
+SetField HudGlobals[0].HudAttributes[0].StateMessageScale 0.88
+SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0.423 0.847
+SetField HudGlobals[0].HudAttributes[0].MedalScale 1.3
+SetField HudGlobals[0].HudAttributes[0].MedalWidth 70
+SetField HudGlobals[0].HudAttributes[0].SurvivalMedalsOffset 0.482 0.75
+SetField HudGlobals[0].HudAttributes[0].MessageScale 1
+SetField HudGlobals[0].WaypointMinDistanceScale 0.3	// formerly 0
+SetFIeld HudGlobals[0].WaypointMaxDistanceScale 0.8	// formerly 0.65
+SetFIeld HudGlobals[0].WaypointScale 0.4	// default 0, not present in ODST
+SetField HudGlobals[0].NavpointNeutral 0 220 173 41
+SetField HudGlobals[0].NavpointAllyText 0 220 173 41
+SetField HudGlobals[0].ScoreboardHUD ui\chud\survival_scoreboard.chdt
+SetField HudGlobals[0].Medals ui\chud\bitmaps\medals\medals.bitmap
+SetField HudGlobals[0].MedalHudAnimation2 ui\chud\animations\medal_animation.chud_animation_definition
+# restore variant colors
+setfield HudGlobals[0].DefaultItemOutline 0 177 133 45
+setfield HudGlobals[0].MagazineItemOutline 100 23 114 244
+setfield HudGlobals[0].DamageItemOutline 100 255 12 39
+setfield HudGlobals[0].AccuracyItemOutline 100 67 255 26
+setfield HudGlobals[0].FastFireItemOutline 100 192 76 2
+setfield HudGlobals[0].RangeItemOutline 0 172 54 255
+setfield HudGlobals[0].PowerItemOutline 0 255 192 1
+# add missing hudshaders
+addblockelements hudshaders
+setfield hudshaders[*].vertexshader rasterizer\shaders\chud_unknown.vtsh
+setfield hudshaders[*].vertexshader rasterizer\shaders\chud_unknown.pixl
+# fix chgd for forge
+copyblockelements hudglobals
+pasteblockelements hudglobals
+setfield HudGlobals[*].ForgeHud ui\chud\sandbox.chud_definition
+setfield HudGlobals[*].ScoreboardHud null
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\top_middle.bitmap
+ImportBitmap 0 "workingdir\bitmaps\top_middle.dds"
+SetField Images[0].Width 398
+SetField Images[0].Height 104
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\bottom_middle.bitmap
+ImportBitmap 0 "workingdir\bitmaps\bottom_middle.dds"
+SetField Images[0].Width 640
+SetField Images[0].Height 220
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\health_bar.bitmap
+ImportBitmap 0 "workingdir\bitmaps\health_bar.dds"
+SetField Images[0].Width 300
+SetField Images[0].Height 32
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\weapon_scematics.bitmap
+ImportBitmap 0 "workingdir\bitmaps\weap_schematics_translated.dds"
+SetField Images[0].Width 512
+SetField Images[0].Height 256
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\grenade_scematics.bitmap
+ImportBitmap 0 "workingdir\bitmaps\grenade_schematic_translated.dds"
+SetField Images[0].Width 128
+SetField Images[0].Height 128
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\ballistic_meters.bitmap
+ImportBitmap 0 "workingdir\bitmaps\ballistics_translate_retailblue_ARGB_32F.dds"
+SetField Images[0].Width 512
+SetField Images[0].Height 256
+savetagchanges
+exit
+
+	# this is completely unnecessary as everything is in consumeable_scematics :(
+#edittag ui\chud\bitmaps\equipment_scematics.bitmap
+#ImportBitmap 0 "workingdir\bitmaps\equipment_scematics_from_svg.dds"
+#SetField Images[0].Width 256
+#SetField Images[0].Height 128
+#savetagchanges
+#exit
+
+#edittag ui\chud\bitmaps\consumable_scematics.bitmap
+#importbitmap 0 "Mod_Assets\HDhud\consumable_schematics.dds"
+#setfield images[0].width 256
+#setfield images[0].height 256
+#savetagchanges
+#exit
+
+edittag ui\chud\bitmaps\rulers_h.bitmap
+ImportBitmap 0 "workingdir\bitmaps\compass.dds"
+SetField Images[0].Width 1024
+SetField Images[0].Height 24
+savetagchanges
+exit
+
+
+edittag ui\chud\battle_rifle.chdt
+	# warning flash
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+	# backpack
+SetField HudWidgets[4].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[4].PlacementData[0].Offset 75 -127.5
+	# ammo area
+SetField HudWidgets[5].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[5].PlacementData[0].Offset 93 -135
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\magnum.chdt
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+	# backpack
+SetField HudWidgets[4].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[4].PlacementData[0].Offset 75 -127.5
+	# ammo area
+SetField HudWidgets[5].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[5].PlacementData[0].Offset 93 -135
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\smg.chdt
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+	# backpack
+SetField HudWidgets[4].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[4].PlacementData[0].Offset 75 -127.5
+	# ammo area
+SetField HudWidgets[5].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[5].PlacementData[0].Offset 93 -135
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\sword.chdt
+	# warning flash
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+	# backpack
+SetField HudWidgets[4].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[4].PlacementData[0].Offset 75 -127.5
+	# ammo area
+SetField HudWidgets[2].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[2].PlacementData[0].Offset 93 -135
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\hammer.chdt
+	# warning flash
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Origin 0 1
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Offset -106.5 43.5
+SetField HudWidgets[0].BitmapWidgets[0].PlacementData[0].Scale 2.4 2.4
+	# backpack
+SetField HudWidgets[4].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[4].PlacementData[0].Offset 75 -127.5
+	# ammo area
+SetField HudWidgets[2].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[2].PlacementData[0].Offset 93 -135
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\unarmed_bomb.chdt
+SetField HudWidgets[2].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[2].PlacementData[0].Offset 93 -135
+savetagchanges
+exit
+
+edittag ui\chud\unarmed_flag.chdt
+SetField HudWidgets[2].PlacementData[0].Anchor BottomRight
+SetField HudWidgets[2].PlacementData[0].Offset 93 -135
+savetagchanges
+exit
+
+#edittag ui\chud\bitmaps\scopes\battle_rifle_scope.bitmap
+#importbitmap 0 "Mod_Assets\HDbitmaps\battle_rifle_scope_dxt5.dds"
+#setfield images[0].width 123
+#setfield images[0].height 123
+#savetagchanges
+#exit
+
+#edittag ui\chud\bitmaps\scopes\battle_rifle_scope_elements.bitmap
+#importbitmap 0 "Mod_Assets\HDbitmaps\battle_rifle_scope_elements.dds"
+#setfield images[0].width 128
+#setfield images[0].height 128
+#savetagchanges
+#exit
+
+edittag ui\chud\automag.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\assault_rifle.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\dmr.chdt
+	# text
+foreach hudwidgets[6].textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\excavator.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\flamethrower.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\fuel_rod_cannon.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\needler.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\plasma_pistol.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\plasma_rifle.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+copyblockelements hudwidgets
+savetagchanges
+exit
+
+edittag ui\chud\rocket.chdt
+	# text
+foreach hudwidgets[4].textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets[4].textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\sentinel_beam.chdt
+#	# text
+#foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+#foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+removeblockelements hudwidgets 0 *
+pasteblockelements hudwidgets
+setfield HudWidgets[1].BitmapWidgets[0].BitmapSequenceIndex 21
+setfield HudWidgets[2].BitmapWidgets[0].Bitmap ui\chud\bitmaps\weapon_scematics\sentinel_beam.bitmap
+setfield HudWidgets[2].BitmapWidgets[0].BitmapSequenceIndex 0
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Offset 5 72
+setfield HudWidgets[2].BitmapWidgets[0].PlacementData[0].Scale 0.5 0.5
+setfield HudWidgets[3].BitmapWidgets[1].Bitmap ui\chud\bitmaps\weapon_scematics\sentinel_beam.bitmap
+setfield HudWidgets[3].BitmapWidgets[1].BitmapSequenceIndex 0
+setfield HudWidgets[3].BitmapWidgets[1].PlacementData[0].Offset -28 3
+setfield HudWidgets[3].BitmapWidgets[1].PlacementData[0].Scale 0.65 0.65
+savetagchanges
+exit
+
+edittag ui\chud\shotgun.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\sniper_rifle.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\spike_rifle.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\carbine.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\brute_shot.chdt
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+#duplicatetag ui\chud\bitmaps\scoreboard_meter.bitmap ui\chud\bitmaps\scoreboard_meter_dxt5
+#edittag ui\chud\bitmaps\scoreboard_meter_dxt5.bitm
+#reencodebitmap dxt5
+#savetagchanges
+#exit
+
+////////////////////////////////////////////////////////////////////////////////
+// HUD ODST_RECON
+////////////////////////////////////////////////////////////////////////////////
+
+edittag ui\chud\spartan.chdt
+copyblockelements HudWidgets 19 1
+exit
+
+edittag ui\chud\odst_recon.chdt
+## frag
+foreach HudWidgets[4].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[4].TextWidgets foreach placementdata setfield scale 0.43 0.43
+## plasma
+foreach HudWidgets[5].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[5].TextWidgets foreach placementdata setfield scale 0.43 0.43
+## spike
+foreach HudWidgets[6].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[6].TextWidgets foreach placementdata setfield scale 0.43 0.43
+## firebomb
+foreach HudWidgets[7].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[7].TextWidgets foreach placementdata setfield scale 0.43 0.43
+## equipment
+PasteBlockElements HudWidgets
+SetField HudWidgets[*].PlacementData[0].Anchor BottomLeft
+SetField HudWidgets[*].PlacementData[0].Offset -57 -135
+SetField HudWidgets[*].BitmapWidgets[0].RuntimeWidgetIndex 401
+SetField HudWidgets[*].BitmapWidgets[0].RuntimeWidgetIndex 402
+// repurpose campaign objective
+setfield HudWidgets[15].StateData[0].MiscState None
+#FriendlyPossession,EnemyPossession removed
+setfield HudWidgets[15].StateData[0].GameEngineStateHO ArmingMeterAvailable,VariantCustomA,VariantCustomB
+setfield HudWidgets[15].BitmapWidgets[2].Bitmap null
+setfield HudWidgets[15].BitmapWidgets[3].Bitmap null
+// mp objective text
+# ctf flag stolen
+addblockelements HudWidgets[15].TextWidgets[0].StateData
+setfield HudWidgets[15].TextWidgets[0].Name flag_stolen
+setfield HudWidgets[15].TextWidgets[0].StateData[0].GameState MPCTF
+setfield HudWidgets[15].TextWidgets[0].StateData[0].GameEngineStateHO VariantCustomB
+setfield HudWidgets[15].TextWidgets[0].StateData[0].UnitZoomState Unzoomed
+setfield HudWidgets[15].TextWidgets[0].InputString gm_flag_stolen
+# keep health meter on top
+foreach hudwidgets[0].bitmapwidgets setfield SortLayer Middle
+savetagchanges
+exit
+
+// mp objective hud merge
+
+#edittag ui\chud\scoreboard.chdt
+#copyblockelements hudwidgets[4].bitmapwidgets
+#exit
+#
+#edittag ui\chud\odst_recon.chdt
+#pasteblockelements hudwidgets[15].bitmapwidgets
+#savetagchanges
+#exit
+
+//edittag ui\chud\scoreboard.chdt
+//copyblockelements hudwidgets[4].bitmapwidgets
+//exit
+//
+//edittag ui\chud\odst_recon.chdt
+//pasteblockelements hudwidgets[15].bitmapwidgets
+//savetagchanges
+//exit
+//
+//edittag ui\chud\scoreboard.chdt
+//copyblockelements hudwidgets[4].textwidgets
+//exit
+//
+//edittag ui\chud\odst_recon.chdt
+//pasteblockelements hudwidgets[15].textwidgets
+//savetagchanges
+//exit
+
+edittag ui\chud\odst_recon.chdt
+#pasteblockelements hudwidgets
+copyblockelements hudwidgets[15].placementdata
+pasteblockelements hudwidgets[*].placementdata
+copyblockelements hudwidgets[15].animationdata
+pasteblockelements hudwidgets[*].animationdata
+foreach hudwidgets[*].textwidgets setfield AnimationData[0].Readying.Animation ui\chud\animations\help_in.chad
+foreach hudwidgets[*].textwidgets setfield AnimationData[0].Unreadying.Animation ui\chud\animations\fade_out_slow.chad
+foreach hudwidgets[*].textwidgets setfield Font SplitscreenHudMessage
+foreach hudwidgets[*].textwidgets setfield placementdata[0].scale 0.42 0.42
+savetagchanges
+exit
+
+edittag ui\chud\scoreboard.chdt
+copyblockelements hudwidgets[4].textwidgets
+exit
+
+edittag ui\chud\odst_recon.chdt
+pasteblockelements hudwidgets[15].textwidgets
+savetagchanges
+exit
+
+edittag ui\chud\scoreboard.chdt
+copyblockelements hudwidgets[5].textwidgets
+exit
+
+// add gameplay strings
+edittag ui\hud\hud_messages.multilingual_unicode_string_list
+setstring bomb_attacker_planted "Attackers have planted the bomb!"
+setstring bomb_defender_planted "Defenders have planted the bomb!"
+
+setstring variant_custom_oddball_b "customB"
+setstring variant_custom_oddball_c "customC"
+savetagchanges
+exit
+
+
+edittag ui\chud\odst_recon.chdt
+pasteblockelements hudwidgets[15].textwidgets
+//standardization
+copyblockelements hudwidgets[15].bitmapwidgets[0].placementdata
+foreach hudwidgets[15].bitmapwidgets removeblockelements placementdata
+foreach hudwidgets[15].bitmapwidgets pasteblockelements placementdata
+copyblockelements hudwidgets[15].textwidgets[0].placementdata
+foreach hudwidgets[15].textwidgets removeblockelements placementdata
+foreach hudwidgets[15].textwidgets pasteblockelements placementdata
+//fixups
+foreach hudwidgets[15].textwidgets setfield ScriptingClass UseParent
+foreach hudwidgets[15].textwidgets setfield SortLayer Foreground
+foreach hudwidgets[15].textwidgets setfield placementdata[0].Anchor Parent
+foreach hudwidgets[15].textwidgets setfield placementdata[0].origin 0 0
+foreach hudwidgets[15].textwidgets setfield placementdata[0].offset 0 100
+foreach hudwidgets[15].textwidgets setfield placementdata[0].scale 0.42 0.42
+foreach hudwidgets[15].textwidgets setfield AnimationData[0].Readying.Animation ui\chud\animations\help_in.chad
+foreach hudwidgets[15].textwidgets setfield AnimationData[0].Unreadying.Animation ui\chud\animations\fade_out_slow.chad
+foreach hudwidgets[15].textwidgets setfield Font SplitscreenHudMessage
+#removeblockelements hudwidgets[15].bitmapwidgets 12 1
+removeblockelements hudwidgets[15].textwidgets 5 1
+
+
+// init_wipe_vertical fixup
+setfield HudWidgets[10].BitmapWidgets[15].AnimationData[0].Initializing.Animation ui\chud\animations\init_wipe_vertical.chad
+setfield HudWidgets[10].BitmapWidgets[15].PlacementData[0].Scale 127.5 5
+
+// fix widget indices
+setfield HudWidgets[15].TextWidgets[1].RuntimeWidgetIndex 500
+setfield HudWidgets[15].TextWidgets[1].RuntimeWidgetIndex 501
+setfield HudWidgets[15].TextWidgets[2].RuntimeWidgetIndex 502
+setfield HudWidgets[15].TextWidgets[3].RuntimeWidgetIndex 503
+setfield HudWidgets[15].TextWidgets[4].RuntimeWidgetIndex 504
+setfield HudWidgets[15].TextWidgets[5].RuntimeWidgetIndex 505
+setfield HudWidgets[15].TextWidgets[6].RuntimeWidgetIndex 506
+setfield HudWidgets[15].TextWidgets[7].RuntimeWidgetIndex 507
+
+
+setfield HudWidgets[15].TextWidgets[8].RuntimeWidgetIndex 508
+setfield HudWidgets[15].TextWidgets[9].RuntimeWidgetIndex 509
+#setfield HudWidgets[15].TextWidgets[10].RuntimeWidgetIndex 510
+
+
+
+savetagchanges
+exit
+
+edittag ui\chud\animations\ctf_notify.chad
+setfield Flags Loop
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\help.bitmap
+importbitmap 0 "workingdir\bitmaps\help.dds"
+setfield images[0].width 256
+setfield images[0].height 64
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\help_cap_left.bitmap
+importbitmap 0 "workingdir\bitmaps\help_cap_left.dds"
+setfield images[0].width 128
+setfield images[0].height 32
+savetagchanges
+exit
+
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 1 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 36
+
+setfield HudWidgets[4].PlacementData[0].Offset -45 150
+setfield HudWidgets[4].BitmapWidgets[0].PlacementData[0].Offset 35 -75
+setfield HudWidgets[4].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[4].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[5].PlacementData[0].Offset -45 150
+setfield HudWidgets[5].BitmapWidgets[0].PlacementData[0].Offset 28 -78
+setfield HudWidgets[5].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[5].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[6].PlacementData[0].Offset -45 150
+setfield HudWidgets[6].BitmapWidgets[0].PlacementData[0].Offset 29 -75
+setfield HudWidgets[6].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[6].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[7].PlacementData[0].Offset -45 150
+setfield HudWidgets[7].BitmapWidgets[0].PlacementData[0].Offset 35 -75
+setfield HudWidgets[7].BitmapWidgets[1].PlacementData[0].Offset 8 -80
+setfield HudWidgets[7].TextWidgets[0].PlacementData[0].Offset 22 -60
+
+setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 209 180 45
+savetagchanges
+exit
+
+edittag ui\chud\scoreboard.chud_definition
+copyblockelements HudWidgets 7 1
+exit
+
+edittag ui\chud\survival_scoreboard.chud_definition
+pasteblockelements HudWidgets 17
+setfield HudWidgets[17].BitmapWidgets[0].RuntimeWidgetIndex 182
+setfield HudWidgets[17].BitmapWidgets[1].RuntimeWidgetIndex 183
+setfield HudWidgets[17].BitmapWidgets[2].RuntimeWidgetIndex 184
+setfield HudWidgets[17].BitmapWidgets[3].RuntimeWidgetIndex 185
+setfield HudWidgets[17].PlacementData[0].Offset -5 -775
+savetagchanges
+exit
+
+
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 20 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 37
+savetagchanges
+exit
+
+edittag ui\chud\spartan.chud_definition
+copyblockelements HudWidgets 21 1
+exit
+
+edittag ui\chud\odst_recon.chud_definition
+PasteBlockElements HudWidgets 38
+setfield HudWidgets[38].BitmapWidgets[2].PlacementData[0].Offset -110 -75
+setfield HudWidgets[38].BitmapWidgets[2].PlacementData[0].Scale 0.8 0.8
+setfield HudWidgets[38].ParallaxData null
+setfield HudWidgets[36].ParallaxData null
+setfield HudWidgets[34].ParallaxData null
+setfield HudWidgets[36].BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[1].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[2].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[3].RenderData[0].LocalColorA 0 0 0 0
+setfield HudWidgets[36].BitmapWidgets[4].RenderData[0].LocalColorA 0 0 0 0
+savetagchanges
+exit
+
+edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpSourceFovY 1
+SetField HudGlobals[0].HudAttributes[0].MotionSensorOrigin 122 996
+SetField HudGlobals[0].HudAttributes[0].MotionSensorRadius 90
+SetField HudGlobals[0].HudAttributes[0].BlipRadius 6
+SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameHorizontal 1
+SetField HudGlobals[0].HudAttributes[0].GlobalSafeFrameVertical 1
+SetField HudGlobals[0].HudAttributes[0].ResolutionFlags _720pFullscreen,_480iFullscreen
+SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0.3 0.847
+SaveTagChanges
+Exit
+
+////////////////////////////////////////////////////////////////////////////////
+// HUD SCOREBOARD
+////////////////////////////////////////////////////////////////////////////////
+
+# fix scoreboard colors not showing in FFA
+edittag ui\chud\bitmaps\scoreboard_meter.bitm
+importbitmap 0 "workingdir\bitmaps\atlas_scoreboard_meter.dds"
+setfield Images[0].Width 192
+setfield Images[0].Height 33
+savetagchanges
+exit
+
+edittag ui\chud\survival_scoreboard.chdt
+	# timer
+SetField HudWidgets[0].TextWidgets[2].StateData[0].GameEngineStateHO TimeLeftAvailable
+SetField HudWidgets[0].TextWidgets[2].TextFlags none
+SetField HudWidgets[0].TextWidgets[2].InputString chud_time_left
+	# variant name
+SetField HudWidgets[0].TextWidgets[3].StateData[0].GameEngineStateHO VariantNameAvailable
+SetField HudWidgets[0].TextWidgets[3].PlacementData[0].Anchor Parent
+SetField HudWidgets[0].TextWidgets[3].TextFlags none
+SetField HudWidgets[0].TextWidgets[3].InputString chud_variant_name
+	# p1_bar -> friendly area
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].ExternalInput FriendlyScore
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].RangeInput ScoreToWin
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorB LocalA
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorC LocalA
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputColorF LocalA
+	# p1_bar -> friendly area text
+SetField HudWidgets[1].TextWidgets[0].Name friendly_score
+SetField HudWidgets[1].TextWidgets[0].SortLayer Inherited
+SetField HudWidgets[1].TextWidgets[0].RenderData[0].ExternalInput FriendlyScore
+SetField HudWidgets[1].TextWidgets[0].RuntimeWidgetIndex 6
+SetField HudWidgets[1].TextWidgets[0].TextFlags StringIsANumber
+SetField HudWidgets[1].TextWidgets[0].InputString chud_out_b
+	# p1_bar -> convert to friendly background
+setfield HudWidgets[1].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scoreboard_meter.bitmap
+setfield HudWidgets[1].BitmapWidgets[3].RenderData[0].OutputColorA ScoreboardFriendly
+	# p1_bar -> "team indicator" i.e. who am i
+SetField HudWidgets[1].BitmapWidgets[4].StateData[0].HindsightState none
+SetField HudWidgets[1].BitmapWidgets[4].RenderData[0].OutputColorA LocalA
+	# p2_bar -> enemy area
+SetField HudWidgets[2].StateData[0].GameEngineStateHO EnemyScoreAvailable
+SetField HudWidgets[2].StateData[0].HindsightState None
+setfield HudWidgets[2].BitmapWidgets[0].RenderData[0].ExternalInput EnemyScore
+setfield HudWidgets[2].BitmapWidgets[0].RenderData[0].RangeInput ScoreToWin
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorA LocalA
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorB LocalA
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorC LocalA
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorE LocalA
+SetField HudWidgets[2].BitmapWidgets[0].RenderData[0].OutputColorF LocalA
+SetField HudWidgets[2].BitmapWidgets[1].Bitmap null
+	# p2_bar -> enemy area text
+SetField HudWidgets[2].TextWidgets[0].Name enemy_score
+SetField HudWidgets[2].TextWidgets[0].SortLayer Inherited
+SetField HudWidgets[2].TextWidgets[0].RenderData[0].ExternalInput EnemyScore
+SetField HudWidgets[2].TextWidgets[0].RuntimeWidgetIndex 7
+SetField HudWidgets[2].TextWidgets[0].TextFlags StringIsANumber
+SetField HudWidgets[2].TextWidgets[0].InputString chud_out_b
+	# p2_bar -> convert to enemy background
+setfield HudWidgets[2].BitmapWidgets[3].Bitmap ui\chud\bitmaps\scoreboard_meter.bitmap
+setfield HudWidgets[2].BitmapWidgets[3].RenderData[0].OutputColorA ScoreboardEnemy
+	// MOVE+SCALE i.e. PLACEMENT EDITS
+	# TIME FRAME
+SetField HudWidgets[5].BitmapWidgets[10].PlacementData[0].Anchor Parent
+SetField HudWidgets[5].BitmapWidgets[10].PlacementData[0].Offset 1152 -16
+	# TIME
+SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Anchor Parent
+SetField HudWidgets[0].TextWidgets[2].PlacementData[0].Offset -185 -57.5
+	# VARIANT NAME
+SetField HudWidgets[0].TextWidgets[3].PlacementData[0].Anchor Parent
+SetField HudWidgets[0].TextWidgets[3].PlacementData[0].Offset 0 -57.5
+SetField HudWidgets[0].TextWidgets[3].PlacementData[0].Scale 0.9 0.9
+	# ENEMY REGION
+SetField HudWidgets[2].PlacementData[0].Offset 0 165
+	# disable firefight skull bitmaps
+Foreach HudWidgets[12].BitmapWidgets SetField Bitmap null
+Foreach HudWidgets[13].BitmapWidgets SetField Bitmap null
+Foreach HudWidgets[14].BitmapWidgets SetField Bitmap null
+Foreach HudWidgets[15].BitmapWidgets SetField Bitmap null
+	# part 2
+foreach HudWidgets[0].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[0].TextWidgets foreach placementdata setfield scale 0.46 0.44
+setfield HudWidgets[0].TextWidgets[3].PlacementData[0].Scale 0.45 0.4
+foreach HudWidgets[1].TextWidgets setfield font SplitscreenHudMessage
+setfield HudWidgets[1].TextWidgets[0].PlacementData[0].Offset -6 1
+setfield HudWidgets[1].TextWidgets[0].PlacementData[0].Scale 0.56 0.56
+foreach HudWidgets[2].TextWidgets setfield font SplitscreenHudMessage
+setfield HudWidgets[2].TextWidgets[0].PlacementData[0].Offset -6.7 1
+setfield HudWidgets[2].TextWidgets[0].PlacementData[0].Scale 0.43 0.43
+foreach HudWidgets[5].TextWidgets setfield font SplitscreenHudMessage
+foreach HudWidgets[5].TextWidgets setfield PlacementData[0].Scale 0.42 0.42
+//remove survival ticker stuff (left)
+setfield HudWidgets[5].BitmapWidgets[0].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[1].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[2].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[3].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[4].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[5].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[6].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[7].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[8].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[9].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[11].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[12].Bitmap null
+setfield HudWidgets[5].BitmapWidgets[13].Bitmap null
+removeblockelements HudWidgets[5].TextWidgets 0 *
+# copy blocks for sandbox hud
+copyblockelements hudwidgets 0 2
+savetagchanges
+exit
+
+
+	# odst respawn sounds
+	
+edittag sound\game_sfx\multiplayer\countdown_for_respawn.sound
+importsound "workingdir\sounds\game_sfx_countdown.mp3"
+savetagchanges
+exit
+
+edittag sound\game_sfx\multiplayer\player_respawn.sound
+importsound "workingdir\sounds\respawn.mp3"
+setfield SoundClass.HaloOnline GameEvent
+#setfield Playback.GainBase -5
+savetagchanges
+exit
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations New
+////////////////////////////////////////////////////////////////////////////////
+
+nametag objects\characters\odst_recon\odst_recon.jmad objects\characters\odst_recon\odst_podium
+importloosetag objects\characters\odst_recon\odst_recon "workingdir\tags\loose\odst_recon.model_animation_graph"
+
+edittag *.jmad
+setfield effectreferences[1].reference objects\weapons\melee\gravity_hammer\fx\gravity_hammer_impact.effect
+setfield effectreferences[2].reference objects\characters\masterchief\damage_effects\wraith_board_melee.effect
+setfield effectreferences[3].reference objects\characters\masterchief\damage_effects\scorpion_board_melee.effect
+setfield SoundReferences[0].Reference sound\characters\marines\medic\med_scan_beep.snd!
+setfield SoundReferences[1].Reference sound\characters\marines\crouch_rifle_turn.snd!
+setfield SoundReferences[2].Reference sound\characters\marines\stand_pistol_turn.snd!
+setfield SoundReferences[3].Reference sound\characters\marines\marine_shortmove.snd!
+setfield SoundReferences[4].Reference sound\characters\marines\crouch_shortmove.snd!
+setfield SoundReferences[5].Reference sound\characters\marines\crouch_longmove.snd!
+setfield SoundReferences[6].Reference sound\characters\marines\move_frontback.snd!
+setfield SoundReferences[7].Reference sound\characters\marines\idle_2_combat_move_front.snd!
+setfield SoundReferences[8].Reference sound\characters\marines\stop.snd!
+setfield SoundReferences[9].Reference sound\characters\marines\marine_jump.snd!
+setfield SoundReferences[10].Reference sound\characters\marines\marines_longmove.snd!
+setfield SoundReferences[11].Reference sound\weapons\rocket_launcher\rocket_melee_strike.snd!
+setfield SoundReferences[12].Reference sound\weapons\rocket_launcher\rocket_reload.snd!
+setfield SoundReferences[13].Reference sound\characters\bodyfalls\bodythud.snd!
+setfield SoundReferences[14].Reference sound\characters\elite\stand_pistol_throw_grenade.snd!
+setfield SoundReferences[15].Reference sound\weapons\ball\ball_melee_var2.snd!
+setfield SoundReferences[16].Reference sound\weapons\magnum\magnum_fp\magnum_reload.snd!
+setfield SoundReferences[17].Reference sound\weapons\battle_rifle\battle_rifle_fp\br_melee1.snd!
+setfield SoundReferences[18].Reference sound\weapons\battle_rifle\battle_rifle_fp\br_reload_full.snd!
+setfield SoundReferences[19].Reference sound\weapons\shotgun\shotgun_fp\sg_reload_loop.snd!
+setfield SoundReferences[20].Reference sound\weapons\excavator\excavator_fp\excavator_reload.snd!
+setfield SoundReferences[21].Reference sound\weapons\covenant_carbine\reload_empty.snd!
+setfield SoundReferences[22].Reference sound\weapons\assault_rifle\ar_reload.snd!
+setfield SoundReferences[23].Reference sound\weapons\shotgun\shotgun_fp\sg_reload_exit.snd!
+setfield SoundReferences[24].Reference sound\weapons\brute_shot\fp_brute_shot\fp_brute_shot_reload.snd!
+setfield SoundReferences[25].Reference sound\weapons\spike_rifle\fp_spike_rifle\fp_spike_rifle_reload_full.snd!
+setfield SoundReferences[26].Reference sound\weapons\smg\smg_fp\smg_reload.snd!
+setfield SoundReferences[27].Reference sound\weapons\flak_cannon\flak_cannon_reload.snd!
+setfield SoundReferences[28].Reference sound\weapons\sniper_rifle\sniper_rifle_fp\sr_reload.snd!
+setfield SoundReferences[29].Reference sound\weapons\needler\needler_fp\needler_reload.snd!
+setfield SoundReferences[30].Reference sound\characters\masterchief\mc_ghost_d_enter.snd!
+setfield SoundReferences[31].Reference sound\characters\masterchief\mc_ghost_d_exit.snd!
+setfield SoundReferences[32].Reference sound\characters\masterchief\mc_scorpion_d_enter.snd!
+setfield SoundReferences[33].Reference sound\characters\masterchief\mc_scorpion_d_exit.snd!
+setfield SoundReferences[34].Reference sound\characters\masterchief\mc_warthog_p_exit.snd!
+setfield SoundReferences[35].Reference sound\characters\masterchief\mc_warthog_p_enter.snd!
+setfield SoundReferences[36].Reference sound\characters\masterchief\mc_warthog_d_enter.snd!
+setfield SoundReferences[37].Reference sound\characters\masterchief\mc_warthog_d_exit.snd!
+setfield SoundReferences[38].Reference sound\characters\masterchief\mc_warthog_g_enter.snd!
+setfield SoundReferences[39].Reference sound\characters\masterchief\mc_warthog_g_exit.snd!
+setfield SoundReferences[40].Reference sound\characters\masterchief\mc_warthog_b_d_board.snd!
+setfield SoundReferences[41].Reference sound\weapons\frag_grenade\frag_throw.snd!
+setfield SoundReferences[42].Reference sound\characters\masterchief\mc_wraith_d_enter.snd!
+setfield SoundReferences[43].Reference sound\characters\masterchief\mc_wraith_d_exit.snd!
+setfield SoundReferences[44].Reference sound\characters\masterchief\mc_banshee_enter.snd!
+setfield SoundReferences[45].Reference sound\characters\masterchief\mc_banshee_exit.snd!
+setfield SoundReferences[46].Reference sound\characters\masterchief\mc_mongoose_enter.snd!
+setfield SoundReferences[47].Reference sound\characters\masterchief\mc_mongoose_exit.snd!
+setfield SoundReferences[48].Reference sound\characters\masterchief\mc_mongoose_p_enter.snd!
+setfield SoundReferences[49].Reference sound\characters\masterchief\mc_mongoose_p_exit.snd!
+setfield SoundReferences[50].Reference sound\characters\masterchief\mc_wraith_turret_enter.snd!
+setfield SoundReferences[51].Reference sound\characters\masterchief\mc_wraith_turret_exit.snd!
+setfield SoundReferences[52].Reference sound\characters\marines\chopper_d_any_enter.snd!
+setfield SoundReferences[53].Reference sound\characters\marines\chopper_d_any_exit_jmm.snd!
+setfield SoundReferences[54].Reference sound\characters\marines\chopper_d_any_enter.snd!
+setfield SoundReferences[55].Reference sound\characters\marines\hornet_d_any_enter_jmm.snd!
+setfield SoundReferences[56].Reference sound\characters\marines\hornet_d_any_exit_jmm.snd!
+setfield SoundReferences[57].Reference sound\characters\marines\hornet_g_any_enter_jmm.snd!
+setfield SoundReferences[58].Reference sound\characters\marines\hornet_g_any_exit_jmm.snd!
+setfield SoundReferences[59].Reference sound\characters\marines\hornet_p_l_any_enter_jmm.snd!
+setfield SoundReferences[60].Reference sound\characters\marines\hornet_p_l_any_exit_jmm.snd!
+setfield SoundReferences[61].Reference sound\characters\marines\mauler_d_enter_jmm.snd!
+setfield SoundReferences[62].Reference sound\characters\marines\mauler_d_exit_jmm.snd!
+setfield SoundReferences[63].Reference sound\characters\marines\mauler_g_enter_a_jmm.snd!
+setfield SoundReferences[64].Reference sound\characters\marines\mauler_g_exit_jmm.snd!
+setfield SoundReferences[65].Reference sound\characters\marines\mauler_p_r_exit_jmm.snd!
+setfield SoundReferences[66].Reference sound\characters\marines\mauler_p_r_enter_jmm.snd!
+setfield SoundReferences[67].Reference sound\characters\marines\scorpion_g_any_enter_jmm.snd!
+setfield SoundReferences[68].Reference sound\characters\marines\scorpion_g_any_exit_jmm.snd!
+setfield SoundReferences[69].Reference sound\characters\marines\scorpion_p_lf_any_enter_jmm.snd!
+setfield SoundReferences[70].Reference sound\characters\marines\human_flood_morph.snd!
+setfield SoundReferences[71].Reference sound\characters\marines\marine_resurrect.snd!
+#setfield SoundReferences[72].Reference sound\dialog\combat\civilian1\23_idle\cowering.snd!
+setfield SoundReferences[73].Reference sound\levels\020_base\bomb_idles\act_work_standidlevar1.snd!
+setfield SoundReferences[74].Reference sound\levels\020_base\bomb_idles\act_work_standidlevar3.snd!
+setfield SoundReferences[75].Reference sound\levels\020_base\bomb_idles\act_work_standidlevar4.snd!
+setfield SoundReferences[76].Reference sound\characters\marines\medic\med_scanner.snd!
+setfield SoundReferences[77].Reference sound\characters\marines\medic\med_scan_beep.snd!
+setfield SoundReferences[78].Reference sound\characters\masterchief\mc_combat_turret_ready.snd!
+setfield SoundReferences[79].Reference sound\characters\masterchief\mc_turret_land.snd!
+setfield SoundReferences[80].Reference sound\characters\masterchief\mc_turret_shortmove.snd!
+setfield SoundReferences[81].Reference sound\characters\masterchief\mc_turret_longmove.snd!
+setfield SoundReferences[82].Reference sound\weapons\plasma_cannon\turret_generic_ready.snd!
+setfield SoundReferences[83].Reference sound\characters\masterchief\mc_stationary_turret.snd!
+setfield SoundReferences[84].Reference sound\characters\masterchief\mc_stationarty_turret_exit.snd!
+setfield SoundReferences[85].Reference sound\weapons\machinegun_turret\turret_detach.snd!
+setfield SoundReferences[86].Reference sound\characters\masterchief\mc_shade_d_enter.snd!
+setfield SoundReferences[87].Reference sound\characters\masterchief\mc_shade_d_exit.snd!
+#setfield SoundReferences[88].Reference sound\device_machines\atlas\pod_sequence\jump_from_pod.snd!
+setfield SoundReferences[89].Reference sound\characters\masterchief\mc_board_hit.snd!
+setfield SoundReferences[90].Reference sound\characters\masterchief\mc_warthog_turret_board.snd!
+setfield SoundReferences[91].Reference sound\characters\masterchief\mc_warthog_b_g_enter.snd!
+setfield SoundReferences[92].Reference sound\characters\masterchief\mc_warthog_passenger_board.snd!
+setfield SoundReferences[93].Reference sound\characters\masterchief\mc_ghost_b_b_enter.snd!
+foreach soundreferences setfield Flags AllowOnPlayer
+# fix reload sounds playing twice due to AllowOnPlayer
+setfield SoundReferences[12].Flags None
+setfield SoundReferences[16].Flags None
+setfield SoundReferences[18].Flags None
+setfield SoundReferences[19].Flags None
+setfield SoundReferences[20].Flags None
+setfield SoundReferences[21].Flags None
+setfield SoundReferences[22].Flags None
+setfield SoundReferences[23].Flags None
+setfield SoundReferences[24].Flags None
+setfield SoundReferences[25].Flags None
+setfield SoundReferences[26].Flags None
+setfield SoundReferences[27].Flags None
+setfield SoundReferences[28].Flags None
+setfield SoundReferences[29].Flags None
+	# flag
+copyblockelements Modes[0].WeaponClass 9 1
+pasteblockelements Modes[0].WeaponClass
+setfield Modes[0].WeaponClass[*].Label flag
+setfield Modes[0].WeaponClass[*].WeaponType[1].Label f
+	# inherit ED spartan animations
+setinheritance mcc objects\characters\masterchief\masterchief.model_animation_graph TightenNodes
+	# modify inheritance to inherit animations to finger bones as well
+SetField InheritanceList[0].NodeMap[21].LocalNode 43
+SetField InheritanceList[0].NodeMap[24].LocalNode 44
+SetField InheritanceList[0].NodeMap[25].LocalNode 45
+SetField InheritanceList[0].NodeMap[26].LocalNode 46
+SetField InheritanceList[0].NodeMap[29].LocalNode 47
+SetField InheritanceList[0].NodeMap[30].LocalNode 48
+SetField InheritanceList[0].NodeMap[31].LocalNode 49
+SetField InheritanceList[0].NodeMap[34].LocalNode 50
+SetField InheritanceList[0].NodeMap[35].LocalNode 51
+SetField InheritanceList[0].NodeMap[36].LocalNode 52
+SetField InheritanceList[0].NodeMap[39].LocalNode 53
+SetField InheritanceList[0].NodeMap[40].LocalNode 54
+	# end sort
+sortmodes
+savetagchanges
+exit
+
+# Fix graph for inheritance usage
+edittag objects\characters\masterchief\masterchief.model_animation_graph
+FixGraphForInheritance
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\odst_recon.hlmt
+setfield Animation objects\characters\odst_recon\odst_recon.jmad
+savetagchanges
+exit
+
+# fix sentinel beam ik, weapon still angled down but left hand attached at least
+edittag objects\weapons\support_low\sentinel_gun\sentinel_gun.render_model
+copyblockelements markergroups 5 1
+pasteblockelements markergroups
+setfield markergroups[*].name left_hand
+#copyblockelements markergroups 8 1
+#pasteblockelements markergroups
+#setfield markergroups[*].name right_hand
+savetagchanges
+exit
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Animations FP
+////////////////////////////////////////////////////////////////////////////////
+
+edittag objects\characters\masterchief\fp\weapons\rifle\fp_battle_rifle\fp_battle_rifle.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_dmr\fp_dmr.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_smg_silenced\fp_smg_silenced.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_assault_rifle\fp_assault_rifle.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_covenant_carbine\fp_covenant_carbine.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_plasma_rifle\fp_plasma_rifle.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_shotgun\fp_shotgun.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_high\fp_flak_cannon\fp_flak_cannon.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_high\fp_rocket_launcher\fp_rocket_launcher.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\support_low\fp_brute_shot\fp_brute_shot.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\rifle\fp_spike_rifle\fp_spike_rifle.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_excavator\fp_excavator.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_needler\fp_needler.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_plasma_pistol\fp_plasma_pistol.model_animation_graph
+savetagchanges
+exit
+
+# these don't inherit halo online sprint well. just use base cache jmads instead
+edittag objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\rifle\fp_beam_rifle\fp_beam_rifle.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+setfield FirstPerson[0].FirstPersonAnimations objects\characters\masterchief\fp\weapons\support_high\fp_spartan_laser\fp_spartan_laser.model_animation_graph
+savetagchanges
+exit
+
+edittag objects\characters\odst_recon\fp\weapons\pistol\fp_automag\fp_automag.model_animation_graph
+setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:any:any:throw_equipment objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+setinheritance any:dual objects\characters\masterchief\fp\weapons\pistol\fp_magnum\fp_magnum.model_animation_graph
+#setinheritance any:any:any:sprint_enter objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+#setinheritance any:any:any:sprint_loop objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+#setinheritance any:any:any:sprint_loop_airborne objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+#setinheritance any:any:any:sprint_exit objects\characters\masterchief\fp\weapons\rifle\fp_smg\fp_smg.model_animation_graph
+savetagchanges
+exit
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Reticles
+////////////////////////////////////////////////////////////////////////////////
+		
+edittag ui\chud\bitmaps\hud_reticles.bitmap
+ImportBitmap 0 "workingdir\bitmaps\mcc_aligned_ms23_reticles.dds"
+SetField Images[0].Height 512
+SetField Images[0].Width 512
+savetagchanges
+exit
+
+DuplicateTag ui\chud\bitmaps\hud_reticles.bitmap ui\chud\bitmaps\odst_mcc_reticles
+edittag ui\chud\bitmaps\odst_mcc_reticles.bitmap
+ImportBitmap 0 "workingdir\bitmaps\odst_reticles_mcc.dds"
+SetField Images[0].Height 512
+SetField Images[0].Width 512
+SetField Sequences[13].Sprites[0].Left 0.3125
+SetField Sequences[13].Sprites[0].Right 0.4335938
+SetField Sequences[13].Sprites[0].Top 0.3789063
+SetField Sequences[13].Sprites[0].Bottom 0.5
+SetField Sequences[13].Sprites[0].RegistrationPoint 0.06054688 0.06054688
+SetField Sequences[22].Sprites[0].Left 0.8515625
+SetField Sequences[22].Sprites[0].Right 0.9960938
+SetField Sequences[22].Sprites[0].Top 0.2070313
+SetField Sequences[22].Sprites[0].Bottom 0.3515625
+SetField Sequences[22].Sprites[0].RegistrationPoint 0.07226563 0.07226563
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\hud_vehicle_reticles.bitmap
+ImportBitmap 0 "workingdir\bitmaps\mcc_vehicle_reticle_translate.dds"
+SetField Images[0].Width 512
+SetField Images[0].Height 256
+savetagchanges
+exit
+
+edittag ui\chud\bitmaps\scopes\ssmg.bitmap
+importbitmap 0 "workingdir\bitmaps\ssmg_mask.dds"
+SetField Images[0].Width 172
+SetField Images[0].Height 172
+savetagchanges
+exit
+
+
+edittag ui\chud\smg_silenced.chdt
+SetField HudWidgets[1].BitmapWidgets[0].Bitmap ui\chud\bitmaps\odst_mcc_reticles.bitmap
+	# text
+foreach hudwidgets foreach textwidgets setfield font SplitscreenHudMessage
+foreach hudwidgets foreach textwidgets setfield placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+edittag ui\chud\spartan_laser.chdt
+SetField HudWidgets[5].BitmapWidgets[0].Bitmap ui\chud\bitmaps\odst_mcc_reticles.bitmap
+SetField HudWidgets[5].BitmapWidgets[1].Bitmap ui\chud\bitmaps\odst_mcc_reticles.bitmap
+	# text
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.44 0.44
+savetagchanges
+exit
+
+////////////////////////////////////////////////////////////////////////////////
+// HUD Variants
+////////////////////////////////////////////////////////////////////////////////
+	
+foreach chdt named: assault_rifle_ setfield hudwidgets[2].placementdata[0].anchor BottomRight
+foreach chdt named: assault_rifle_ setfield hudwidgets[2].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: assault_rifle_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: assault_rifle_ setfield hudwidgets[4].placementdata[0].offset 110 -80
+foreach chdt named: assault_rifle_ foreach hudwidgets[4].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+edittag ui\chud\battle_rifle_damage.chud_definition
+copyblockelements hudwidgets 4 1
+pasteblockelements hudwidgets
+removeblockelements hudwidgets 4 1
+copyblockelements hudwidgets 1 1
+pasteblockelements hudwidgets 1
+savetagchanges
+exit
+
+foreach chdt named: battle_rifle_ setfield hudwidgets[6].placementdata[0].anchor BottomRight
+foreach chdt named: battle_rifle_ setfield hudwidgets[6].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: battle_rifle_ setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: battle_rifle_ setfield hudwidgets[5].placementdata[0].offset 110 -80
+foreach chdt named: battle_rifle_ foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+edittag ui\chud\smg_damage.chud_definition
+removeblockelements hudwidgets 3 1
+savetagchanges
+exit
+
+foreach chdt named: smg_accuracy setfield hudwidgets[3].placementdata[0].anchor BottomRight
+foreach chdt named: smg_accuracy setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: smg_accuracy setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: smg_accuracy setfield hudwidgets[5].placementdata[0].offset 110 -80
+foreach chdt named: smg_accuracy foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+foreach chdt named: smg_damage setfield hudwidgets[3].placementdata[0].anchor BottomRight
+foreach chdt named: smg_damage setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: smg_damage setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: smg_damage setfield hudwidgets[5].placementdata[0].offset 110 -80
+foreach chdt named: smg_damage foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+foreach chdt named: smg_power setfield hudwidgets[3].placementdata[0].anchor BottomRight
+foreach chdt named: smg_power setfield hudwidgets[3].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: smg_power setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: smg_power setfield hudwidgets[5].placementdata[0].offset 110 -80
+foreach chdt named: smg_power foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+foreach chdt named: smg_rof setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: smg_rof setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: smg_rof setfield hudwidgets[6].placementdata[0].anchor BottomRight
+foreach chdt named: smg_rof setfield hudwidgets[6].placementdata[0].offset 110 -80
+foreach chdt named: smg_rof foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+foreach chdt named: excavator_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: excavator_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: excavator_ setfield hudwidgets[7].placementdata[0].anchor BottomRight
+foreach chdt named: excavator_ setfield hudwidgets[7].placementdata[0].offset 110 -80
+foreach chdt named: excavator_ foreach hudwidgets[7].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+foreach chdt named: plasma_pistol_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: plasma_pistol_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: plasma_pistol_ setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: plasma_pistol_ setfield hudwidgets[5].placementdata[0].offset 130 -110
+foreach chdt named: plasma_pistol_ foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+foreach chdt named: plasma_rifle_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: plasma_rifle_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: plasma_rifle_ setfield hudwidgets[5].placementdata[0].anchor BottomRight
+foreach chdt named: plasma_rifle_ setfield hudwidgets[5].placementdata[0].offset 130 -110
+foreach chdt named: plasma_rifle_ foreach hudwidgets[5].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+edittag ui\chud\dmr_damage.chud_definition
+copyblockelements hudwidgets 1 1
+pasteblockelements hudwidgets 1
+savetagchanges
+exit
+
+foreach chdt named: dmr setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: dmr setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: dmr setfield hudwidgets[6].placementdata[0].anchor BottomRight
+foreach chdt named: dmr setfield hudwidgets[6].placementdata[0].offset 110 -80
+foreach chdt named: dmr foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+edittag ui\chud\covenant_carbine_range.chud_definition
+copyblockelements hudwidgets 5 2
+removeblockelements hudwidgets 5 2
+pasteblockelements hudwidgets 2
+removeblockelements hudwidgets 1 1
+savetagchanges
+exit
+
+foreach chdt named: carbine_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: carbine_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].anchor BottomRight
+foreach chdt named: carbine_ setfield hudwidgets[6].placementdata[0].offset 130 -110
+foreach chdt named: carbine_ foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+foreach chdt named: magnum_ setfield hudwidgets[4].placementdata[0].anchor BottomRight
+foreach chdt named: magnum_ setfield hudwidgets[4].bitmapwidgets[0].placementdata[0].origin -0.5 5.5
+foreach chdt named: magnum_power setfield hudwidgets[7].placementdata[0].anchor BottomRight
+foreach chdt named: magnum_power setfield hudwidgets[7].placementdata[0].offset 130 -110
+foreach chdt named: magnum_power foreach hudwidgets[7].textwidgets setfield placementdata[0].scale 0.55 0.55
+foreach chdt named: magnum_damage setfield hudwidgets[6].placementdata[0].anchor BottomRight
+foreach chdt named: magnum_damage setfield hudwidgets[6].placementdata[0].offset 130 -110
+foreach chdt named: magnum_damage foreach hudwidgets[6].textwidgets setfield placementdata[0].scale 0.55 0.55
+
+////////////////////////////////////////////////////////////////////////////////
+// HUD Summary
+////////////////////////////////////////////////////////////////////////////////
+
+edittag ui\chud\multiplayer_intro\summary_slayer.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[1].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[1].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_king.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[1].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[1].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_oddball.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[1].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[1].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[3].bitmapwidgets[0].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_juggernaut.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[1].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[1].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[1].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[1].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[1].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[1].textwidgets[2].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_infection.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].LocalColorA 0 0 0 0
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarB RangeInput
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarC LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarD LocalB
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarE LocalC
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputScalarF LocalD
+setfield hudwidgets[1].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[1].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[1].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[1].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[1].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[1].textwidgets[2].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_assault.chdt
+foreach hudwidgets[0].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[1].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[2].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+foreach hudwidgets[3].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[2].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[3].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[3].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[4].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[4].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_ctf.chdt
+foreach hudwidgets[0].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[1].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[2].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+foreach hudwidgets[3].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[2].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[3].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[3].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[4].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[4].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_territories.chdt
+foreach hudwidgets[0].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[1].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[1].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[1].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[2].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+foreach hudwidgets[3].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[2].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[3].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[3].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[4].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[4].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_editor.chdt
+foreach hudwidgets[0].bitmapwidgets foreach renderdata setfield ShaderType Simple
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorA LocalA
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorB ScoreboardFriendly
+setfield hudwidgets[0].bitmapwidgets[0].renderdata[0].OutputColorC ScoreboardFriendly
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].OutputScalarA LocalA
+setfield HudWidgets[0].BitmapWidgets[0].RenderData[0].LocalScalarA 0.5
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorC HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorB HighlightForeground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorC HighlightForeground
+foreach hudwidgets[1].bitmapwidgets foreach renderdata setfield OutputColorA SecondaryBackground
+setfield hudwidgets[1].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[1].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[1].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[1].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+edittag ui\chud\multiplayer_intro\summary_vip.chdt
+setfield hudwidgets[0].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[0].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[0].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[1].bitmapwidgets[0].bitmap ui\chud\bitmaps\objective_help.bitm
+setfield hudwidgets[1].bitmapwidgets[1].bitmap ui\chud\bitmaps\objective_help_cap_right.bitm
+setfield hudwidgets[1].bitmapwidgets[2].bitmap ui\chud\bitmaps\objective_help_cap_left.bitm
+setfield hudwidgets[0].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[0].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[1].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+foreach hudwidgets[2].bitmapwidgets setfield renderdata[0].OutputColorA PrimaryBackground
+foreach hudwidgets[3].bitmapwidgets setfield renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[4].bitmapwidgets[1].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[4].bitmapwidgets[2].renderdata[0].OutputColorA PrimaryBackground
+setfield hudwidgets[2].textwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[2].textwidgets[2].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[2].textwidgets[3].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[2].textwidgets[4].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[3].textwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[5].textwidgets[1].renderdata[0].OutputColorA HighlightForeground
+setfield hudwidgets[2].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[2].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[2].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[2].textwidgets[2].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[3].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[3].font SplitscreenHudMessage
+setfield hudwidgets[2].textwidgets[4].placementdata[0].scale 0.65 0.65
+setfield hudwidgets[2].textwidgets[4].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[3].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[3].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[3].textwidgets[1].font SplitscreenHudMessage
+setfield hudwidgets[5].textwidgets[0].placementdata[0].scale 0.6 0.6
+setfield hudwidgets[5].textwidgets[0].font SplitscreenHudMessage
+setfield hudwidgets[5].textwidgets[1].placementdata[0].scale 0.55 0.55
+setfield hudwidgets[5].textwidgets[1].font SplitscreenHudMessage
+savetagchanges
+exit
+
+////////////////////////////////////////////////////////////////////////////////
+// WEAPON GENERAL FIXUPS
+////////////////////////////////////////////////////////////////////////////////
+
+// Fix the little screen being offset on the sniper
+
+edittag objects\weapons\rifle\sniper_rifle\shaders\scope_alpha.shader_halogram
+setargument self_illum_map 0.6 0.6 0.2 0.2
+savetagchanges
+exit
+
+// Remove Grenades from player starting profiles
+	
+foreach scnr foreach PlayerStartingProfile SetField StartingFragGrenadeCount 0
+
+// Set Silenced SMG and Magnum in player starting profiles
+
+foreach scnr foreach PlayerStartingProfile SetField PrimaryWeapon objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+foreach scnr foreach PlayerStartingProfile SetField PrimaryRoundsLoaded 48
+foreach scnr foreach PlayerStartingProfile SetField PrimaryRoundsTotal 480
+foreach scnr foreach PlayerStartingProfile SetField SecondaryWeapon objects\weapons\pistol\automag\automag.weapon
+foreach scnr foreach PlayerStartingProfile SetField SecondaryRoundsLoaded 12
+foreach scnr foreach PlayerStartingProfile SetField SecondaryRoundsTotal 72
+
+// nerf sniper and beamrifle
+
+edittag objects\weapons\rifle\sniper_rifle\damage_effects\sniper_rifle_bullet.damage_effect
+setfield damageupperbound 55 55
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\beam_rifle\damage_effects\beam_rifle_impact.damage_effect
+setfield damageupperbound 55 55
+#setfield GeneralDamage bullet_fast
+savetagchanges
+exit
+
+// melee nerfs
+
+edittag objects\weapons\damage_effects\strike_melee.damage_effect
+setfield DamageLowerBound 15
+setfield DamageUpperBound 15 15
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\smash_melee.damage_effect
+setfield DamageLowerBound 15
+setfield DamageUpperBound 15 15
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\slice_melee.damage_effect
+setfield InstantaneousAcceleration 0.3
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\oneshot_melee.damage_effect
+setfield InstantaneousAcceleration 0.3
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\dash_melee.damage_effect
+setfield InstantaneousAcceleration 0.35
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\cut_melee.damage_effect
+setfield InstantaneousAcceleration 0.25
+savetagchanges
+exit
+
+////////////////////////////////////////////////////////////////////////////////
+// WEAPON EDITS
+////////////////////////////////////////////////////////////////////////////////
+
+// MISC
+edittag objects\weapons\melee\energy_blade\energy_blade.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\energy_blade\energy_blade_useless.weapon
+setfield WeaponTypeName offset_energy_sword
+savetagchanges
+exit
+
+edittag objects\weapons\melee\gravity_hammer\gravity_hammer.weapon
+setfield WeaponTypeName offset_gravity_hammer
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_magnum
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.7
+setfield Barrels[0].DualWeaponError.ErrorAngle 0.2 0.5
+setfield Barrels[0].DualWeaponError.MinimumError 0.05
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_magnum
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\magnum\magnum_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\excavator\excavator.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_mauler
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\excavator_power\excavator_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\needler\needler.weapon
+setfield WeaponTypeName offset_needler
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\assault_rifle\assault_rifle.weapon
+setfield WeaponTypeName offset_assault_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\battle_rifle\battle_rifle.weapon
+setfield WeaponTypeName offset_battle_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\beam_rifle\beam_rifle.weapon
+setfield WeaponTypeName offset_beam_rifle
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\covenant_carbine.weapon
+setfield WeaponTypeName offset_carbine_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_accuracy.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_damage.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_power.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg\smg_rof.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_smg
+setfield Barrels[0].DualWeaponError.DualWieldDamageScale 0.9
+setfield Barrels[0].DualWeaponError.MinimumError 0.5
+setfield Barrels[0].DualWeaponError.RuntimeDecelerationRate 5
+setfield Barrels[0].DualWeaponError.RuntimeAccelerationRate 1
+setfield Barrels[0].DualWeaponError.AccelerationTime 1
+setfield Barrels[0].DualWeaponError.DecelerationTime 0.2
+setfield Barrels[0].DualWeaponError.ErrorAngle 1 2
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,CanBeDualWielded
+setfield WeaponTypeName offset_plasma_pistol
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\plasma_pistol\plasma_pistol_power.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\sniper_rifle\sniper_rifle.weapon
+setfield WeaponTypeName offset_sniper_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\spike_rifle\spike_rifle.weapon
+setfield WeaponFlags.NewFlags CanBeDualWielded
+setfield WeaponTypeName offset_spiker
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\shotgun\shotgun.weapon
+setfield WeaponTypeName offset_shotgun
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
+setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle_red\plasma_rifle_red.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
+setfield WeaponTypeName offset_plasma_rife
+savetagchanges
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\plasma_rifle_power.weapon
+setfield WeaponFlags.NewFlags CannotFireAtMaximumAge,LoopFPFiringAnimation,CanBeDualWielded
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\flak_cannon\flak_cannon.weapon
+setfield WeaponTypeName offset_fuel_rod
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\rocket_launcher.weapon
+setfield WeaponTypeName offset_rocket_launcher
+savetagchanges
+exit
+
+edittag objects\weapons\support_high\spartan_laser\spartan_laser.weapon
+setfield WeaponTypeName offset_spartan_laser
+savetagchanges
+exit
+
+edittag objects\weapons\support_low\brute_shot\brute_shot.weapon
+setfield WeaponTypeName offset_bruteshot
+savetagchanges
+exit
+
+// AUTOMAG
+
+edittag objects\weapons\pistol\automag\projectiles\automag_bullet.proj
+setfield MaximumRange 150
+setfield InitialVelocity 1000
+setfield FinalVelocity 1000
+savetagchanges
+exit
+
+edittag objects\weapons\pistol\automag\automag.weapon
+setfield WeaponAimAssist.AutoaimAngle 2.25
+setfield WeaponAimAssist.AutoaimRange 20
+setfield WeaponAimAssist.AutoaimFalloffRange 10
+setfield WeaponAimAssist.MagnetismAngle 6
+setfield WeaponAimAssist.MagnetismRange 20
+setfield WeaponAimAssist.MagnetismFalloffRange 10
+setfield WeaponAimAssist.MagnetismNearFalloffRange 1
+setfield ActiveCamoDing 0.25
+setfield Barrels[0].FiringError.AccelerationTime 0.2
+setfield Barrels[0].FiringError.DecelerationTime 0.1
+setfield Barrels[0].ProjectileMinimumError 0
+setfield Barrels[0].ProjectileErrorAngle 0.15 0.5
+setfield Barrels[0].VerticalRecoil.AngleChangePerShot 0 0.1
+setfield Barrels[0].VerticalRecoil.AngleChangeAccelerationTime 0
+setfield Barrels[0].VerticalRecoil.AngleChangeDecelerationTime 0
+setfield Barrels[0].VerticalRecoil.AngleChangeFunction Linear
+savetagchanges
+exit
+
+// SILENCED SMG
+
+edittag objects\weapons\rifle\smg_silenced\smg_silenced.weapon
+setfield Barrels[0].VerticalRecoil.AngleChangePerShot 0 0.35
+setfield Barrels[0].VerticalRecoil.AngleChangeFunction Early
+savetagchanges
+exit
+
+
+////////////////////////////////////////////////////////////////////////////////
+// CUSTOMIZATION AND GLOBALS
+////////////////////////////////////////////////////////////////////////////////
+
+// GLOBALS
+
+stringid add odst_recon
+stringid add odst_mp_player
+
+edittag globals\globals.matg
+SetField PlayerRepresentation[2].Name odst_recon
+SetField PlayerRepresentation[2].FirstPersonHands objects\characters\odst_recon\fp\fp.render_model
+SetField PlayerRepresentation[2].FirstPersonBody objects\characters\odst_recon\fp_body\fp_body.render_model
+SetField PlayerRepresentation[2].ThirdPersonUnit objects\characters\odst_recon\odst_recon.biped
+SetField PlayerCharacterTypes[0].Name odst_mp_player
+RemoveBlockElements PlayerCharacterTypes 1 1
+SetField PlayerInformation[0].FlashlightOn sound\game_sfx\ui\hud_ui\vision_on.sound
+SetField PlayerInformation[0].FlashlightOff sound\game_sfx\ui\hud_ui\vision_off.sound
+## nuke sprint
+#foreach playercontrol setfield sprintstartdelay 0
+#foreach playercontrol setfield sprintfullspeedtime 0
+#foreach playercontrol setfield sprintdecayrate 0
+#foreach playercontrol setfield sprintfullspeedmultiplier 0.35
+# modify sprint values
+foreach playercontrol setfield sprintstartdelay 0
+foreach playercontrol setfield sprintfullspeedtime 0.8
+foreach playercontrol setfield sprintdecayrate 0.5
+foreach playercontrol setfield sprintfullspeedmultiplier 0.35
+foreach playercontrol setfield SprintPeggedMagnitude 0.85
+foreach playercontrol setfield SprintPeggedAngularThreshold 30
+
+	
+# nuke global shit
+edittag globals\rasterizer_globals.rasg
+setfield DefaultShieldImpact null
+savetagchanges
+exit
+
+
+// NIGHTTIME BLOOM Fix
+edittag levels\atlas\h100\sky\h100_sky.camera_fx_settings
+setfield bloomintensity.strength 0.1
+savetagchanges
+exit
+
+edittag levels\atlas\l200\sky\l200.camera_fx_settings
+setfield bloomintensity.strength 0.2
+savetagchanges
+exit
+
+// Generate Mopps
+RunCommands workingdir\cmds\GenerateMopps.cmds
+
+
+## echo Post mainmenu edits
+runcommands workingdir\cmds\Customization.cmds
+
+## echo Weapon Variants
+runcommands workingdir\cmds\WeaponVariants.cmds
+
+// echo Automag & Silenced SMG font fix
+runcommands workingdir\cmds\odstweapstrings.cmds
+
+## echo fix hud scaling
+runcommands workingdir\cmds\ChudEdits.cmds
+
+## echo Gameplay Balance
+runcommands workingdir\cmds\GameplayBalance.cmds
+
+## echo ==Fall Damage setup==
+
+opencachefile odstmaps\sc100.map
+porttag replace globals\collision_damage\biped_player.collision_damage
+exit
+
+edittag globals\collision_damage\biped_player.collision_damage
+setfield AbsoluteDamageAccelerationBounds 7.5 15
+savetagchanges
+exit
+
+## echo fix troop warthog seats
+EditTag objects\vehicles\warthog\turrets\troop\troop.vehicle
+SetField Seats[0].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[1].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[2].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter
+SetField Seats[0].EnterSeatString warthog_enter_passenger
+SetField Seats[1].EnterSeatString warthog_enter_passenger
+SetField Seats[2].EnterSeatString warthog_enter_passenger
+SetField Seats[0].YawMinimum 0
+SetField Seats[0].YawMaximum 180
+SetField Seats[1].YawMinimum -180
+SetField Seats[1].YawMaximum 360
+SaveTagChanges
+Exit
+
+## echo add the correct health packs to the wall mounted medical kiosk
+EditTag objects\levels\atlas\shared\medical_kiosk_wall\medical_kiosk_wall.model
+SetField Variants[0].Objects[0].ChildObject objects\powerups\health_pack\health_pack_large.equipment
+SetField Variants[0].Objects[1].ChildObject objects\powerups\health_pack\health_pack_large.equipment
+SaveTagChanges
+Exit
+
+EditTag objects\gear\atlas\military\health_pack_mount\health_pack_mount.model
+SetField Variants[0].Objects[0].ChildObject objects\powerups\health_pack\health_pack_large.equipment
+SaveTagChanges
+Exit
+
+## echo Vehicle CC
+runcommands workingdir\cmds\VehicleCC.cmds
+
+## echo fix weapon viewmodels
+runcommands workingdir\cmds\Viewmodels.cmds
+
+## echo decal fix
+generatebitmap decal\dank\with\tits\fix workingdir\bitmaps\decal_fix.dds
+
+## echo HD weapon skins
+runcommands workingdir\cmds\HDWeapons.cmds
+
+## echo HD weapon skins
+runcommands workingdir\cmds\DualHud.cmds
+
+edittag levels\atlas\shared\decals\panels\panel_slot_huge.decal_system
+setfield Decal[0].RenderMethod.ShaderProperties[0].TextureConstants[0].Bitmap decal\dank\with\tits\fix.bitmap
+savetagchanges
+exit
+
+edittag levels\atlas\shared\decals\graffiti\bitmaps\graffiti_glassthis.bitmap
+importbitmap 0 workingdir\bitmaps\graffiti_glassthis.dds
+exit
+
+## echo fix oilfaunt
+
+EditTag objects\vehicles\olifaunt\olifaunt.vehicle
+RemoveBlockElements Attachments 5 1
+
+SetField Seats[0].Label behemoth_d
+SetField Seats[0].FlippedEvictionTime 1
+SetField Seats[0].BoardingSeat -1
+SetField Seats[0].RuntimeInvisibleSeatRegionIndex -1
+SetField Seats[0].EntryRadius 5
+SetField Seats[0].EntryMarkerConeAngle 25
+SetField Seats[0].EntryMarkerFacingAngle 70
+SetField Seats[0].InvisibleSeatRegion invalid
+SetField Seats[0].Flags Driver,Gunner,ThirdPersonCamera,MeleeInstantKillable
+SetField Seats[0].UnitCamera.CameraTracks[0].Track camera\wraith_d_camera.camera_track
+SaveTagChanges
+exit
+
+EditTag objects\vehicles\olifaunt\olifaunt.render_model
+SetField MarkerGroups[4].Markers[0].Translation 2 0.5 0.5
+savetagchanges
+exit
+
+##echo buff automag
+
+EditTag objects\weapons\pistol\automag\damage_effects\automag_bullet.damage_effect
+SetField DamageUpperBound 12 12
+savetagchanges
+exit
+
+##echo buff melee
+
+edittag objects\weapons\damage_effects\strike_melee.damage_effect
+setfield DamageLowerBound 70
+setfield DamageUpperBound 70 70
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+edittag objects\weapons\damage_effects\smash_melee.damage_effect
+setfield DamageLowerBound 80
+setfield DamageUpperBound 80 80
+setfield InstantaneousAcceleration 0.1
+savetagchanges
+exit
+
+##echo Fix Scorpion Side Seats
+
+stringid add scorpion_p_n
+EditTag ui\hud\hud_messages.unic
+SetString english scorpion_p_n "\uE461\uE45F to ride on Scorpion"
+savetagchanges
+exit
+
+Edittag objects\vehicles\scorpion\scorpion.vehicle
+SetField Seats[1].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[1].EnterSeatString scorpion_p_n
+SetField Seats[2].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[2].EnterSeatString scorpion_p_n
+SetField Seats[2].Label scorpion_p_lf
+AddBlockElements Seats[2].UnitCamera.CameraTracks
+SetField Seats[2].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+SetField Seats[3].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[3].EnterSeatString scorpion_p_n
+SetField Seats[3].Label scorpion_p_lf
+AddBlockElements Seats[3].UnitCamera.CameraTracks
+SetField Seats[3].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+SetField Seats[4].Flags ThirdPersonCamera,AllowsWeapons,ThirdPersonOnEnter,NotValidWithoutDriver
+setfield Seats[4].EnterSeatString scorpion_p_n
+SetField Seats[4].Label scorpion_p_lf
+AddBlockElements Seats[4].UnitCamera.CameraTracks
+SetField Seats[4].UnitCamera.CameraTracks[0].Track camera\board_large_camera.camera_track
+savetagchanges
+exit
+
+##echo Troop Hog Fix
+
+EditTag objects\vehicles\warthog\turrets\troop\troop.vehicle
+SetField Seats[2].YawMaximum -90
+SetField Seats[2].YawMinimum 90
+SaveTagChanges
+Exit
+
+##echo render distance for vehicles
+
+EditTag objects\gear\covenant\military\crate_space_b\crate_space_b.model
+SetField BeginFadeDistance 255
+SetField DisappearDistance 255
+savetagchanges
+exit
+
+echo ==Vehicles...==
+edittag levels\atlas\sc110\sc110.scenario
+addblockelements VehiclePalette
+setfield VehiclePalette[*].Object objects\vehicles\warthog\warthog_gauss.vehicle
+copyblockelements Vehicles 20 1
+pasteblockelements Vehicles
+setfield Vehicles[27].PaletteIndex 12
+setfield Vehicles[27].PlacementFlags.Flags None
+setfield Vehicles[27].CanAttachToBspFlags 32767
+setfield Vehicles[27].ObjectId.UniqueId 0 0
+setfield Vehicles[27].BspPolicy AlwaysPlaced
+setfield Vehicles[27].NameIndex 0
+setfield Vehicles[27].Position -218.2514 -508.4238 6.283329
+SaveTagChanges
+Exit
+
+echo ==Floodfight...==
+runcommands workingdir\cmds\floodfight\floodfight.cmds
+
+echo ==AI...==
+runcommands workingdir\cmds\vehicles.cmds
+runcommands workingdir\cmds\characterweapons.cmds
+runcommands workingdir\cmds\portelites.cmds
+
+edittag objects\characters\grunt\ai\grunt_ultra.character
+removeblockelements FiringPatternProperties 0 1
+SaveTagChanges
+Exit
+
+cs < workingdir\WeaponsandSquads.cs
+
+echo ==Gruntpocalypse...==
+runcommands workingdir\cmds\gruntpocalypse.cmds
+
+echo ==Shield Impacts...==
+runcommands workingdir\cmds\shields.cmds
+
+GenerateCampaignFile workingdir\CustomMaps\info
+UpdateMapFiles workingdir\CustomMaps\info
+
+////////////////////////////////////////////////////////////////////////////////
+// CLEANSE, SAVE AND QUIT
+////////////////////////////////////////////////////////////////////////////////
+
+SaveModPackage "modsfolder\ODSTAFF.pak"
+ExitModPackage
+
+CreateModPackage 1 large
+ODST Anniversary Firefight
+ODST Anniversary Firefight (ODSTAFF) is a community-driven project that reimagines ElDewrito as a full Halo 3: ODST multiplayer experience, preserving core ED features while introducing a wide array of enhancements and new content. Who said Spartans get to have all the fun? 
+Vegetal & AMP Collective
+0.1
+Character Firefight
+
+openmodpackage modsfolder\ODSTAFF.pak
+ApplyModPackageTags
+Done
+ExitModPackage
+
+AddModFiles "workingdir\assets"
+
+SaveModPackage "modsfolder\ODSTAFF.pak"
+
+DumpLog workingdir\logs\ODSTAFF_LOG.cmds
